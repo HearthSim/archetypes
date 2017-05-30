@@ -52,7 +52,7 @@ class ClusterSet:
 		# % of deck within a cluster that need to have a card to be considerd a tech card
 		self.TECH_CARD_DECK_THRESHOLD = 0.3
 		# % of decks that need to contains the card as to count it as common_card accross the class (remove it from signatures)
-		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.8
+		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.93
 		self.MERGE_THRESHOLD = 0.5
 
 		self._clusters = []
@@ -67,13 +67,29 @@ class ClusterSet:
 		self.merge_history = {}
 		self._merge_pass = 1
 
+		common_cards_tmp = defaultdict(float)
+		for deck in self._decks:
+			for card, count in deck['cards'].items():
+				common_cards_tmp[card] += 1.0
+
+		common_cards = {}
+		num_decks = float(len(self._decks))
+		for card, count in common_cards_tmp.items():
+			prevalence = count / num_decks
+			if prevalence >= self.COMMON_CARD_CLUSTER_THRESHOLD:
+				common_cards[card] = prevalence
+
 		for deck in self._decks:
 			# deck is a dict with 'deck_list', 'cards', 'observations'
 			vector = [0] * self.collectible_card_count
 			for card, count in deck['cards'].items():
+				if card in common_cards:
+					continue
+
 				vector[int(card)] = count
 			self._deck_matrix.append(vector)
 
+		self.final_common_cards = common_cards
 		self.make_clusters()
 
 	def __repr__(self):
@@ -97,7 +113,8 @@ class ClusterSet:
 
 	@property
 	def total_deck_count(self):
-		return float(sum(d['observations'] for d in self._decks))
+		# float(sum(d['observations'] for d in self._decks)) - previous implementation
+		return float(sum(1 for d in self._decks))
 
 	@property
 	def cluster_class_name(self):
@@ -105,26 +122,28 @@ class ClusterSet:
 
 	@property
 	def common_cards_map(self):
-		self._common_cards_for_class = {}
-		for card in self._card_map.keys():
-			total_decks_with_card = self.total_deck_count_for_card(card)
-			total_decks = self.total_deck_count
-			card_prevalance = total_decks_with_card / total_decks
+		if not self._common_cards_for_class:
+			self._common_cards_for_class = {}
+			for card in self._card_map.keys():
+				total_decks_with_card = self.total_deck_count_for_card(card)
+				total_decks = self.total_deck_count
+				card_prevalance = total_decks_with_card / total_decks
 
-			if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
-				self._common_cards_for_class[card] = card_prevalance
+				if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
+					self._common_cards_for_class[card] = card_prevalance
 		return self._common_cards_for_class
 
 	@property
 	def common_card_scores(self):
-		self._common_card_scores = {}
-		for card in self._card_map.keys():
-			total_decks_with_card = self.total_deck_count_for_card(card)
-			total_decks = self.total_deck_count
-			card_prevalance = total_decks_with_card / total_decks
+		if not self._common_card_scores:
+			self._common_card_scores = {}
+			for card in self._card_map.keys():
+				total_decks_with_card = self.total_deck_count_for_card(card)
+				total_decks = self.total_deck_count
+				card_prevalance = total_decks_with_card / total_decks
 
-			if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
-				self._common_card_scores[self.card_name(card)] = (total_decks_with_card, total_decks)
+				if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
+					self._common_card_scores[self.card_name(card)] = (total_decks_with_card, total_decks)
 		return self._common_card_scores
 
 	@property
@@ -155,9 +174,11 @@ class ClusterSet:
 			card_list.append(card_name)
 			zValues.append(clusters)
 
+		common_cards = [self.card_name(c) for c in self.final_common_cards.keys()]
+		card_list.extend(common_cards)
 		data = {
 			"class": self.cluster_class_name,
-			"common_cards": self.common_cards_map.keys(),
+			"common_cards": common_cards,
 			"num_clusters": len(self._clusters),
 			"card_list": card_list,
 			"clusters": []
@@ -193,7 +214,7 @@ class ClusterSet:
 		return db[card_id].name.replace(",", "")
 
 	def make_clusters(self):
-		# Reset any cached intermediates here.
+		# FixMe: This can be removed.
 		self._common_cards_for_class = None
 		self._clusters = []
 
@@ -302,14 +323,22 @@ class Cluster:
 		self._cards_in_cluster = None
 		self._signature_dict = None
 
-		self._core_cards = None
-		self._common_core_cards = None
+		# FixMe: Delete Me
+		# self._core_cards = None
+		# self._common_core_cards = None
+		#
+		# self._tech_cards = None
+		# self._common_tech_cards = None
+		#
+		# self._discard_cards = None
+		# self._common_discarded_cards = None
 
-		self._tech_cards = None
-		self._common_tech_cards = None
+		self._common_cards = {} # common accross the class
+		self._core_cards = {} # card which are core to the deck
+		self._tech_cards = {} # cards that are teched into deck
+		self._discarded_cards = {} # odd balls
 
-		self._discard_cards = None
-		self._common_discarded_cards = None
+		self._tag_cards_by_type()
 
 	def __repr__(self):
 		return str(self)
@@ -438,21 +467,15 @@ class Cluster:
 
 	def _tag_cards_by_type(self):
 
-		self._common_cards = {} # common accross the class
-		self._core_cards = {} # card which are core to the deck
-		self._tech_cards = {} # cards that are teched into deck
-		self._discarded_cards = {} # odd balls
-
-
 		CORE_CUTOFF = self._cluster_set.CORE_CARD_DECK_THRESHOLD
 		TECH_CUTOFF = self._cluster_set.TECH_CARD_DECK_THRESHOLD
-		common_cards = self._cluster_set.common_cards_map.keys()
+		#common_cards = self._cluster_set.common_cards_map.keys()
 
 		for card in self.cards_in_cluster:
 			prevalence = self.deck_count_for_card(card) / self.deck_count
 			
 			# card is shared among all cluster
-			if card in common_cards:
+			if card in self._cluster_set.final_common_cards:
 				self._common_cards[card] = prevalence
 				continue
 
@@ -465,7 +488,7 @@ class Cluster:
 			if prevalence >= TECH_CUTOFF:
 				self._tech_cards[card] = prevalence
 				continue
-			
+
 			# odd ball, discarding
 			self._discarded_cards[card] = prevalence
 
