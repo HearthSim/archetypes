@@ -180,20 +180,23 @@ class ClusterSet:
 			"class": self.cluster_class_name,
 			"common_cards": common_cards,
 			"num_clusters": len(self._clusters),
-			"card_list": card_list,			
-			"clusters": [],
+			"card_list": card_list,
+			"clusters": None,
 			"cluster_ids": cluster_ids
 		}
 
+		clusters_for_data = []
 		for cluster in self._clusters:
 			observations = sum(d['observations'] for d in cluster._decks)
-			data["clusters"].append({
+			clusters_for_data.append({
 				"core_cards": cluster.pretty_core_cards,
 				"tech_cards": cluster.pretty_tech_cards,
 				"num_decks": cluster._deck_count,
 				"num_observations": observations
 			})
 
+		clusters_for_data = sorted(clusters_for_data, key=lambda c: c["num_observations"], reverse=True)
+		data["clusters"] = clusters_for_data
 		return data
 
 	def print_most_common_cards(self, limit=20):
