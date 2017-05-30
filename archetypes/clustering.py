@@ -52,7 +52,7 @@ class ClusterSet:
 		# % of deck within a cluster that need to have a card to be considerd a tech card
 		self.TECH_CARD_DECK_THRESHOLD = 0.3
 		# % of decks that need to contains the card as to count it as common_card accross the class (remove it from signatures)
-		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.9
+		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.8
 		# weighting for the signature coeff
 		self.CORE_CARD_WEIGHT = 10.0
 		# weighting for the signature coeff
@@ -109,23 +109,26 @@ class ClusterSet:
 
 	@property
 	def common_cards_map(self):
-		if not self._common_cards_for_class:
-			self._common_cards_for_class = {}
-			self._common_card_scores = {}
-			for card in self._card_map.keys():
-				total_decks_with_card = self.total_deck_count_for_card(card)
-				total_decks = self.total_deck_count
-				card_prevalance = total_decks_with_card / total_decks
-				self._common_card_scores[self.card_name(card)] = (total_decks_with_card, total_decks)
+		self._common_cards_for_class = {}
+		for card in self._card_map.keys():
+			total_decks_with_card = self.total_deck_count_for_card(card)
+			total_decks = self.total_deck_count
+			card_prevalance = total_decks_with_card / total_decks
 
-				if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
-					self._common_cards_for_class[card] = card_prevalance
+			if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
+				self._common_cards_for_class[card] = card_prevalance
 		return self._common_cards_for_class
 
 	@property
 	def common_card_scores(self):
-		if not self._common_card_scores:
-			card_map = self.common_cards_map
+		self._common_card_scores = {}
+		for card in self._card_map.keys():
+			total_decks_with_card = self.total_deck_count_for_card(card)
+			total_decks = self.total_deck_count
+			card_prevalance = total_decks_with_card / total_decks
+
+			if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
+				self._common_card_scores[self.card_name(card)] = (total_decks_with_card, total_decks)
 		return self._common_card_scores
 
 	@property
