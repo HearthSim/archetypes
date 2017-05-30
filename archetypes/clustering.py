@@ -351,7 +351,8 @@ class Cluster:
 	@property
 	def deck_count(self):
 		if not self._deck_count:
-			self._deck_count = float(sum(d['observations'] for d in self._decks))
+			##self._deck_count = float(sum(d['observations'] for d in self._decks)) # seems to favor the popular one's too much
+			self._deck_count = float(sum(1 for d in self._decks)) # each deck is equal
 		return self._deck_count
 
 	@property
@@ -364,9 +365,10 @@ class Cluster:
 		return self._cards_in_cluster
 
 	def deck_count_for_card(self, card):
-		#FIXME: wrong counting
+		"Number of decks a card appears in"
 		if card not in self._deck_counts_for_card:
-			self._deck_counts_for_card[card] = float(sum(d['observations'] for d in self._decks if card in d['cards']))
+			#self._deck_counts_for_card[card] = float(sum(d['observations'] for d in self._decks if card in d['cards'])) #favor popular deck too much
+			self._deck_counts_for_card[card] = float(sum(1 for d in self._decks if card in d['cards']))
 		return self._deck_counts_for_card[card]
 
 	@property
@@ -440,14 +442,12 @@ class Cluster:
 		return card_names, result
 
 	def _tag_cards_by_type(self):
-		self._core_cards = {}
-		self._common_core_cards = []
 
-		self._tech_cards = {}
-		self._common_tech_cards = []
+		self._common_cards = {} # common accross the class
+		self._core_cards = {} # card which are core to the deck
+		self._tech_cards = {} # cards that are teched into deck
+		self._discarded_cards = {} # odd balls
 
-		self._discarded_cards = {}
-		self._common_discarded_cards = []
 
 		CORE_CUTOFF = self._cluster_set.CORE_CARD_DECK_THRESHOLD
 		TECH_CUTOFF = self._cluster_set.TECH_CARD_DECK_THRESHOLD
@@ -458,24 +458,21 @@ class Cluster:
 			
 			# card is shared among all cluster
 			if card in common_cards:
-				self._core_card	[card] = prevalence
+				self._common_cards[card] = prevalence
 				continue
 
+			# card core to the cluster
 			if prevalence >= CORE_CUTOFF:
-				if card not in common_cards:
-					self._core_cards[card] = prevalence
-				else:
-					self._common_core_cards.append(card)
-			elif prevalence >= TECH_CUTOFF:
-				if card not in common_cards:
-					self._tech_cards[card] = prevalence
-				else:
-					self._common_tech_cards.append(card)
-			else:
-				if card not in common_cards:
-					self._discarded_cards[card] = prevalence
-				else:
-					self._common_discarded_cards.append(card)
+				self._core_cards[card] = prevalence
+				continue
+			
+			# card that is likely used as a tech card
+			if prevalence >= TECH_CUTOFF:
+				self._tech_cards[card] = prevalence
+				continue
+			
+			# odd ball, discarding
+			self._discarded_cards[card] = prevalence
 
 	def signature_match(self, card_list):
 		# Given a new card_list the similarity score is calculated based on the cluster signature
