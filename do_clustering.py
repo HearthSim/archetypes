@@ -30,7 +30,7 @@ heatmap_data = []
 
 
 for player_class, cluster_set in clusters.items():
-	print(str(cluster_set))
+	#print(str(cluster_set))
 	#print(cluster_set.print_most_common_cards())
 	cluster_set.merge_clusters()
 	heatmap_data.append(cluster_set.heatmap_data)
