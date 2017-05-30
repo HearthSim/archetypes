@@ -1,0 +1,8 @@
+enum34
+hearthstone
+pytest
+mock
+requests
+numpy
+scikit-learn[alldeps]
+
