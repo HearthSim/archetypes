@@ -51,7 +51,7 @@ class ClusterSet:
 		self.CORE_CARD_DECK_THRESHOLD = 0.8
 		# % of deck within a cluster that need to have a card to be considerd a tech card
 		self.TECH_CARD_DECK_THRESHOLD = 0.3
-		# % of cluster that need to contains the card as a core card to count it as common_card (remove it from signatures)
+		# % of decks that need to contains the card as to count it as common_card accross the class (remove it from signatures)
 		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.9
 		# weighting for the signature coeff
 		self.CORE_CARD_WEIGHT = 10.0
@@ -115,11 +115,11 @@ class ClusterSet:
 			for card in self._card_map.keys():
 				total_decks_with_card = self.total_deck_count_for_card(card)
 				total_decks = self.total_deck_count
-				cluster_prevalance = total_decks_with_card / total_decks
+				card_prevalance = total_decks_with_card / total_decks
 				self._common_card_scores[self.card_name(card)] = (total_decks_with_card, total_decks)
 
-				if cluster_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
-					self._common_cards_for_class[card] = cluster_prevalance
+				if card_prevalance >= self.COMMON_CARD_CLUSTER_THRESHOLD:
+					self._common_cards_for_class[card] = card_prevalance
 		return self._common_cards_for_class
 
 	@property
@@ -450,20 +450,20 @@ class Cluster:
 		common_cards = self._cluster_set.common_cards_map.keys()
 
 		for card in self.cards_in_cluster:
-			prevelance = self.deck_count_for_card(card) / self.deck_count
-			if prevelance >= CORE_CUTOFF:
+			prevalence = self.deck_count_for_card(card) / self.deck_count
+			if prevalence >= CORE_CUTOFF:
 				if card not in common_cards:
-					self._core_cards[card] = prevelance
+					self._core_cards[card] = prevalence
 				else:
 					self._common_core_cards.append(card)
-			elif prevelance >= TECH_CUTOFF:
+			elif prevalence >= TECH_CUTOFF:
 				if card not in common_cards:
-					self._tech_cards[card] = prevelance
+					self._tech_cards[card] = prevalence
 				else:
 					self._common_tech_cards.append(card)
 			else:
 				if card not in common_cards:
-					self._discarded_cards[card] = prevelance
+					self._discarded_cards[card] = prevalence
 				else:
 					self._common_discarded_cards.append(card)
 
