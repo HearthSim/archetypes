@@ -148,7 +148,7 @@ class ClusterSet:
 
 	@property
 	def heatmap_data(self):
-		xValues = []
+		cluster_ids = []
 		zValues = []
 
 		card_list = []
@@ -167,7 +167,7 @@ class ClusterSet:
 					cards[card][cluster_id] = .5
 
 			cluster_id  += 1
-			xValues.append(cluster_id)
+			cluster_ids.append(cluster_id)
 
 		for card_id, clusters in cards.items():
 			card_name = self.card_name(card_id)
@@ -181,7 +181,8 @@ class ClusterSet:
 			"common_cards": common_cards,
 			"num_clusters": len(self._clusters),
 			"card_list": card_list,			
-			"clusters": []
+			"clusters": [],
+			"cluster_ids": cluster_ids
 		}
 
 		for cluster in self._clusters:

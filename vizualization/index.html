@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            table {
+                    table-layout: fixed;
+                    border-collapse: collapse;
+            }
+            th {
+                font-size: 20px;
+            }
+            td {
+                    text-align: center;
+                    width:40px;
+                    height: 40px;
+                    font-size: 16px;
+            }
+
+            .card {
+                width: 250px;
+                font-size: 20px;
+                text-align: right;
+                padding-right: 10px;
+            }
+            .core {
+                background-color: #1565C0;
+            }
+
+            .tech {
+                background-color: #EF6C00;
+                color: black;
+            }
+            .selected {
+                color: green;
+            }
+        </style>
+        <script src="js/axios.js"></script>
+        <script src="js/vue.js"></script>
+    </head>
+    <body>
+
+        <div id="data">
+            <!-- class select !-->
+            <select id="class_selector" v-on:change="setClass" v-model="selected">
+                <option v-for="option in options" v-bind:value="option.value">
+                {{ option.text }}
+                </option>
+            </select>
+            <span>Selected: {{ selected }}</span>
+            <br><br><br><br>
+            <!-- core cards !-->
+            <table>
+                <tr>
+                    <th class="card">cards</th>
+                    <th v-for="cluster in current_class.cluster_ids">
+                        <div v-on:click="setSortCluster(cluster - 1)">
+                            {{cluster}}
+                        </div>
+                    </th>
+                </tr>
+                <tr v-for="card in cards">
+                    <td class="card">{{card.name}}</td>
+                    <td v-bind:class="d.type" v-for="d in card.data">
+                        <span  v-if="d.value > 0">
+                            {{d.value.toFixed(2)}}
+                        </span>
+                        <span class="empty" v-if="d.value == 0">
+                        </span>
+                    <td/>
+                </tr>
+            </table>
+        
+        
+        </div>
+    </body>
+    <footer>
+        <script src="js/clusters_viz.js"></script>
+    </footer>
+</html>

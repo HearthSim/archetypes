@@ -4,8 +4,8 @@ from archetypes.clustering import get_clusters
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
-INPUTS_DIR = os.path.join(BASE_DIR, "inputs")
+OUTPUT_DIR = os.path.join(BASE_DIR, "vizualization")
+INPUTS_DIR = os.path.join(BASE_DIR, "data")
 
 if not os.path.exists(OUTPUT_DIR):
 	os.mkdir(OUTPUT_DIR)
@@ -35,6 +35,6 @@ for player_class, cluster_set in clusters.items():
 	heatmap_data.append(cluster_set.heatmap_data)
 	cluster_set.print_summary()
 
-output_path = os.path.join(OUTPUT_DIR, "wild_heatmap_data.json" if wild else "standard_heatmap_data.json")
+output_path = os.path.join(OUTPUT_DIR, "wild.json" if wild else "standard.json")
 with open(output_path, "w") as out:
 	out.write(json.dumps(heatmap_data, indent=4))
