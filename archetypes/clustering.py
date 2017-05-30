@@ -53,10 +53,6 @@ class ClusterSet:
 		self.TECH_CARD_DECK_THRESHOLD = 0.3
 		# % of decks that need to contains the card as to count it as common_card accross the class (remove it from signatures)
 		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.8
-		# weighting for the signature coeff
-		self.CORE_CARD_WEIGHT = 10.0
-		# weighting for the signature coeff
-		self.TECH_CARD_WEIGHT = 2.0
 		self.MERGE_THRESHOLD = 0.5
 
 		self._clusters = []
@@ -134,9 +130,9 @@ class ClusterSet:
 	@property
 	def heatmap_data(self):
 		xValues = []
-		yValues = []
 		zValues = []
 
+		card_list = []
 		num_clusters = len(self._clusters)
 		cards = {}
 
@@ -156,15 +152,14 @@ class ClusterSet:
 
 		for card_id, clusters in cards.items():
 			card_name = self.card_name(card_id)
-			yValues.append(card_name)
+			card_list.append(card_name)
 			zValues.append(clusters)
 
 		data = {
 			"class": self.cluster_class_name,
+			"common_cards": self.common_cards_map.keys(),
 			"num_clusters": len(self._clusters),
-			"x": xValues,
-			"y": yValues,
-			"z": zValues,
+			"card_list": card_list,
 			"clusters": []
 		}
 
@@ -413,11 +408,11 @@ class Cluster:
 	def signature(self):
 		if not self._signature_dict:
 			self._signature_dict = {}
-			for card, prevalance in self.core_cards_map.items():
-				self._signature_dict[card] = prevalance * self._cluster_set.CORE_CARD_WEIGHT
+			for card, prevalence in self.core_cards_map.items():
+				self._signature_dict[card] = prevalence
 
-			for card, prevalance in self.tech_cards_map.items():
-				self._signature_dict[card] = prevalance * self._cluster_set.TECH_CARD_WEIGHT
+			for card, prevalence in self.tech_cards_map.items():
+				self._signature_dict[card] = prevalence
 
 		return self._signature_dict
 
