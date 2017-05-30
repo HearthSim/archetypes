@@ -361,6 +361,7 @@ class Cluster:
 		return self._cards_in_cluster
 
 	def deck_count_for_card(self, card):
+		#FIXME: wrong counting
 		if card not in self._deck_counts_for_card:
 			self._deck_counts_for_card[card] = float(sum(d['observations'] for d in self._decks if card in d['cards']))
 		return self._deck_counts_for_card[card]
@@ -451,6 +452,12 @@ class Cluster:
 
 		for card in self.cards_in_cluster:
 			prevalence = self.deck_count_for_card(card) / self.deck_count
+			
+			# card is shared among all cluster
+			if card in common_cards:
+				self._core_card	[card] = prevalence
+				continue
+
 			if prevalence >= CORE_CUTOFF:
 				if card not in common_cards:
 					self._core_cards[card] = prevalence
