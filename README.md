@@ -10,4 +10,4 @@ Copyright (c) 2017 HearthSim
 ### Community
 
 This is a [HearthSim](https://hearthsim.info) project. All development
-happens on our [Discord](https://discord.gg/r5G3ffq).
+happens on our [Discord](https://discord.gg/hearthsim-devs).
