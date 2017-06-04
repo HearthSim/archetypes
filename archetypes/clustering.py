@@ -1,4 +1,5 @@
 import pprint
+import numpy as np
 from itertools import combinations
 from collections import defaultdict
 from sklearn.cluster import KMeans
@@ -190,12 +191,12 @@ class ClusterSet:
 
 		clusters_for_data = []
 		for cluster in self._clusters:
-			observations = sum(d['observations'] for d in cluster._decks)
 			clusters_for_data.append({
 				"core_cards": cluster.pretty_core_cards,
 				"tech_cards": cluster.pretty_tech_cards,
 				"num_decks": cluster._deck_count,
-				"num_observations": observations
+				"num_observations": cluster.observations,
+				"prevalence": cluster.prevalence,
 			})
 
 		clusters_for_data = sorted(clusters_for_data, key=lambda c: c["num_observations"], reverse=True)
@@ -252,9 +253,29 @@ class ClusterSet:
 	def total_deck_count_for_card(self, card):
 		return float(sum(c.deck_count_for_card(str(card)) for c in self._clusters if str(card) in c.cards_in_cluster))
 
+	def compute_cluster_metrics(self):
+		"Compute various metrics such as prevalence"	
+		observations = {}
+		for cluster in self._clusters:
+			cluster.observations = sum(d['observations'] for d in cluster._decks)
+			observations[cluster.cluster_id] = cluster.observations
+		
+		na = np.array(observations.values())
+		avg = np.mean(na, axis=0)
+		std = np.std(na, axis=0)
+		total = np.sum(na, axis=0)
+		cut_off = avg / self.LOW_VOLUME_CLUSTER_MULTIPLIER
+		
+		for cluster in self.clusters:
+			if observations[cluster.cluster_id] > cut_off:
+				cluster.prevalence = "common"
+			else:
+				cluster.prevalence = "rare"
+
 	def merge_clusters(self, distance_function=cluster_similarity):
 		next_cluster_id = len(self._clusters)
 		self._clusters = self._do_merge_clusters(self._clusters, distance_function, next_cluster_id)
+		self.compute_cluster_metrics()
 
 	def _do_merge_clusters(self, clusters, distance_function, first_new_cluster_id):
 		done = False
@@ -319,29 +340,15 @@ class ClusterSet:
 			print(str(cluster))
 
 	def generate_signatures(self):
+		"Extract the signatures that allows to match decks to clusters"
 		signatures = {}
-		observations = []
-		cnt = 0
 		for cluster in self._clusters:
 			cid, signature = cluster.get_signature()
 			signatures[cid] = signature
-			observations.append(signature['observations'])
-		
-		import numpy
-		na = numpy.array(observations)
-		avg = numpy.mean(na, axis=0)
-		std = numpy.std(na, axis=0)
-		total = numpy.sum(na, axis=0)
-		cut_off = avg / self.LOW_VOLUME_CLUSTER_MULTIPLIER
-		for cluster in signatures.values():
-			if cluster['observations'] > cut_off:
-				cluster['prevalence'] = "common"
-			else:
-				cluster['prevalence'] = "rare"
 		return signatures
 
 class Cluster:
-	"""A single cluster within a set of clusters"""
+	"""A single cluster entity"""
 
 	def __init__(self, cluster_set, cluster_id, decks, parents=None, parent_similarity=None):
 		self._parents = parents
@@ -359,6 +366,8 @@ class Cluster:
 		self._tech_cards = {} # cards that are teched into deck
 		self._discarded_cards = {} # odd balls
 
+		self.prevalence = 'NA' # is this a common or rare cluster
+		self.observations = 0
 		self._tag_cards_by_type()
 
 	def __repr__(self):
@@ -379,7 +388,8 @@ class Cluster:
 			"core_cards_name": self.pretty_core_cards.keys(),
 			"tech_cards": self._signature_dict['tech'],
 			"tech_cards_name": self.pretty_tech_cards.keys(),
-			"observations": sum(d['observations'] for d in self._decks),
+			"observations": self.observations,
+			"prevalence": self.prevalence,
 			"num_decks": self.deck_count
 		}
 		#"card_name": self._cluster_set.card_name(card_index),
