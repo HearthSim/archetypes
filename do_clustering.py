@@ -22,7 +22,7 @@ def get_input_data(wild=False):
 
 	return input_data
 
-wild = False
+wild = True
 input_data = get_input_data(wild=wild)
 
 clusters = get_clusters(input_data)

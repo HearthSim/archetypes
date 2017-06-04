@@ -2,7 +2,7 @@
 
 
 // loading clusters
-axios.get('standard.json')
+axios.get('wild.json')
   .then(function (response) {
 
     create_data(response.data);
@@ -27,15 +27,16 @@ function create_data(data) {
     data: {
       card_list: [],
       current_sorting_cluster: 0,
+      displayAllDecks: true,
       selected: 'warrior',
         options: [
-          { text: 'Druid', value: 'druid'},
-          { text: 'Priest', value: 'priest' },          
+          { text: 'Druid', value: 'druid'},          
+          { text: 'Hunter', value: 'hunter' },
           { text: 'Mage', value: 'mage'},
-          { text: 'Hunter', value: 'hunter' },          
-          { text: 'Shaman', value: 'shaman'},
+          { text: 'Rogue', value: 'rogue'},     
           { text: 'Paladin', value: 'paladin' },          
-          { text: 'Priest', value: 'priest'},
+          { text: 'Priest', value: 'priest'},  
+          { text: 'Shaman', value: 'shaman'},
           { text: 'Warrior', value: 'warrior' },
           { text: 'Warlock', value: 'warlock'}
         ],
@@ -68,17 +69,33 @@ function create_data(data) {
           }
           //console.log(card_list);
           for (var cid in info.clusters) {
+            //console.log(info.clusters[cid].num_observations);
+              //cluster core card
               for (var card in info.clusters[cid].core_cards ){
+
                 value = info.clusters[cid].core_cards[card];
-                card_list_obj[card]['data'][cid] = {
-                  type: "core",
-                  value: value
-                }
-              }
+                  if (this.displayAllDecks) {
+                    ctype = info.clusters[cid].num_observations > 5000 ? "core": "core-faded";
+                  } else {
+                    ctype = info.clusters[cid].num_observations > 5000 ? "core": "invisible";
+                  }
+                  card_list_obj[card]['data'][cid] = {
+                    type: ctype,
+                    value: value
+                  }
+             
+               }
+              //cluster tech cards
               for (var card in info.clusters[cid].tech_cards ){
                   value = info.clusters[cid].tech_cards[card];
+                  if (this.displayAllDecks) {
+                    ctype = info.clusters[cid].num_observations > 5000 ? "tech": "tech-faded";
+                  } else {
+                    ctype = info.clusters[cid].num_observations > 5000 ? "tech": "invisible";
+                  }
+
                   card_list_obj[card]['data'][cid] = {
-                    type: "tech",
+                    type: ctype,
                     value: value
                   }
               }

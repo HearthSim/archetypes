@@ -21,16 +21,32 @@
                 text-align: right;
                 padding-right: 10px;
             }
+
+            .core-faded {
+                background-color: #BBDEFB;
+                color: #CCCCCC;
+            }
+
             .core {
                 background-color: #1565C0;
             }
 
+            .tech-faded {
+                background-color: #FFCCBC;
+            }
             .tech {
-                background-color: #EF6C00;
+                background-color: #D84315;
                 color: black;
+            }
+            .invisible {
+                visibility: hidden;
             }
             .selected {
                 color: green;
+            }
+            .selectable {
+                text-decoration: underline;
+                color: #03A9F4;
             }
         </style>
         <script src="js/axios.js"></script>
@@ -39,21 +55,41 @@
     <body>
 
         <div id="data">
+            select class:
             <!-- class select !-->
             <select id="class_selector" v-on:change="setClass" v-model="selected">
                 <option v-for="option in options" v-bind:value="option.value">
                 {{ option.text }}
                 </option>
             </select>
-            <span>Selected: {{ selected }}</span>
-            <br><br><br><br>
-            <!-- core cards !-->
+            <span>
+                display clusters with few plays? <input type="checkbox" v-model="displayAllDecks">
+            </span>
+
+            <div>
+                <h2>clusters stats for {{selected}}</h2>
+                    <span>Faded clusters have seen very little play</span><br>
+                    current cluster:
+                    <ul>
+                    <li>number of decks: {{current_class.clusters[current_sorting_cluster].num_decks}}</li>
+                    <li>numbers games seen: {{current_class.clusters[current_sorting_cluster].num_observations}} </li>
+                    </ul>
+            </div>
+            <div>
+                <h2>Cluster composition</h2>
+
+                <br><br>
+            </div>
+            <div>
             <table>
                 <tr>
                     <th class="card">cards</th>
                     <th v-for="cluster in current_class.cluster_ids">
                         <div v-on:click="setSortCluster(cluster - 1)">
-                            {{cluster}}
+                            <div v-if="(current_class.clusters[current_sorting_cluster].num_observations > 5000) || (displayAllDecks)">
+                                <span v-if="cluster - 1 == current_sorting_cluster">{{cluster}} &darr;</span>
+                                <span class="selectable" v-else>{{cluster}}</span>
+                            </div>
                         </div>
                     </th>
                 </tr>
