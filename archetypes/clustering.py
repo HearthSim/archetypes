@@ -383,11 +383,11 @@ class Cluster:
 		"Return the cluster signature"
 		signature = {
 			"name": "",
-			"type": "FIXME",
+			#"type": "FIXME",
 			"core_cards": self._signature_dict['core'],
-			"core_cards_name": self.pretty_core_cards.keys(),
+			"core_cards_name": self.pretty_core_cards,
 			"tech_cards": self._signature_dict['tech'],
-			"tech_cards_name": self.pretty_tech_cards.keys(),
+			"tech_cards_name": self.pretty_tech_cards,
 			"observations": self.observations,
 			"prevalence": self.prevalence,
 			"num_decks": self.deck_count
@@ -454,7 +454,7 @@ class Cluster:
 
 	@property
 	def pretty_core_cards(self):
-		return {self._cluster_set.card_name(c):p for c,p in self.core_cards_map.items()}
+		return {self._cluster_set.card_name(c): round(p, 2) for c,p in self.core_cards_map.items()}
 
 	@property
 	def tech_cards_map(self):
@@ -468,7 +468,7 @@ class Cluster:
 
 	@property
 	def pretty_tech_cards(self):
-		return {self._cluster_set.card_name(c):p for c,p in self.tech_cards_map.items()}
+		return {self._cluster_set.card_name(c): round(p, 2) for c,p in self.tech_cards_map.items()}
 
 	@property
 	def discarded_card_ids(self):

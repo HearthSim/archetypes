@@ -49,3 +49,13 @@ for wild in [True, False]:
 	with open(output_path, "w") as out:
 		out.write(json.dumps(signatures, indent=4))
 
+	#signature for common deck
+	common_clusters_signatures = {}
+	for player_class, clusters in signatures.items():
+		common_clusters_signatures[player_class] = {}
+		for cluster_id, cluster in clusters.items():
+			if cluster['prevalence'] == 'common':
+				common_clusters_signatures[player_class][cluster_id] = cluster
+	output_path = os.path.join(SIG_OUTPUT_DIR, "common-" + fname)
+	with open(output_path, "w") as out:
+		out.write(json.dumps(common_clusters_signatures, indent=4))
