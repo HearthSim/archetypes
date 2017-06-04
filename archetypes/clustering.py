@@ -13,9 +13,11 @@ db, _ = load()
 
 def cluster_similarity(c1, c2):
 	"Compute a weighted similarity based of the signatures"
-	c1_sig = c1.signature
+
+	## Maybe use tech cards as well?
+	c1_sig = c1.signature['core']
 	c1_card_list = c1_sig.keys()
-	c2_sig = c2.signature
+	c2_sig = c2.signature['core']
 	c2_card_list = c2_sig.keys()
 
 	intersection = list(set(c1_card_list) & set(c2_card_list))
@@ -54,6 +56,7 @@ class ClusterSet:
 		# % of decks that need to contains the card as to count it as common_card accross the class (remove it from signatures)
 		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.93
 		self.MERGE_THRESHOLD = 0.5
+		self.LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
 
 		self._clusters = []
 		self._all_clusters =[]
@@ -157,14 +160,14 @@ class ClusterSet:
 
 		cluster_id = 0
 		for cluster in self._clusters:
-			for card, score in cluster.signature.items():
-				if card not in cards:
-					cards[card] = [0] * num_clusters
-
-				if card in cluster.core_cards_map:
-					cards[card][cluster_id] = 1
-				else:
-					cards[card][cluster_id] = .5
+			for ctype, tmp in cluster.signature.items():
+				for card, value in tmp.items():
+					if card not in cards:
+						cards[card] = [0] * num_clusters
+					if ctype == "core":
+						cards[card][cluster_id] = 1
+					else:
+						cards[card][cluster_id] = .5
 
 			cluster_id  += 1
 			cluster_ids.append(cluster_id)
@@ -315,6 +318,27 @@ class ClusterSet:
 		for cluster in self._clusters:
 			print(str(cluster))
 
+	def generate_signatures(self):
+		signatures = {}
+		observations = []
+		cnt = 0
+		for cluster in self._clusters:
+			cid, signature = cluster.get_signature()
+			signatures[cid] = signature
+			observations.append(signature['observations'])
+		
+		import numpy
+		na = numpy.array(observations)
+		avg = numpy.mean(na, axis=0)
+		std = numpy.std(na, axis=0)
+		total = numpy.sum(na, axis=0)
+		cut_off = avg / self.LOW_VOLUME_CLUSTER_MULTIPLIER
+		for cluster in signatures.values():
+			if cluster['observations'] > cut_off:
+				cluster['prevalence'] = "common"
+			else:
+				cluster['prevalence'] = "rare"
+		return signatures
 
 class Cluster:
 	"""A single cluster within a set of clusters"""
@@ -329,16 +353,6 @@ class Cluster:
 		self._deck_counts_for_card = {}
 		self._cards_in_cluster = None
 		self._signature_dict = None
-
-		# FixMe: Delete Me
-		# self._core_cards = None
-		# self._common_core_cards = None
-		#
-		# self._tech_cards = None
-		# self._common_tech_cards = None
-		#
-		# self._discard_cards = None
-		# self._common_discarded_cards = None
 
 		self._common_cards = {} # common accross the class
 		self._core_cards = {} # card which are core to the deck
@@ -355,6 +369,22 @@ class Cluster:
 
 	def as_str(self):
 		return "cluster %s (%i decks): %s" % (self.full_cluster_id, self.deck_count, self.pretty_signature)
+
+	def get_signature(self):
+		"Return the cluster signature"
+		signature = {
+			"name": "",
+			"type": "FIXME",
+			"core_cards": self._signature_dict['core'],
+			"core_cards_name": self.pretty_core_cards.keys(),
+			"tech_cards": self._signature_dict['tech'],
+			"tech_cards_name": self.pretty_tech_cards.keys(),
+			"observations": sum(d['observations'] for d in self._decks),
+			"num_decks": self.deck_count
+		}
+		#"card_name": self._cluster_set.card_name(card_index),
+		
+		return [self.cluster_id, signature]
 
 	def lineage(self, depth):
 		result = ""
@@ -443,12 +473,15 @@ class Cluster:
 	@property
 	def signature(self):
 		if not self._signature_dict:
-			self._signature_dict = {}
+			self._signature_dict = {
+				"core": {},
+				"tech": {}
+			}
 			for card, prevalence in self.core_cards_map.items():
-				self._signature_dict[card] = prevalence
+				self._signature_dict['core'][card] = prevalence
 
 			for card, prevalence in self.tech_cards_map.items():
-				self._signature_dict[card] = prevalence
+				self._signature_dict['tech'][card] = prevalence
 
 		return self._signature_dict
 

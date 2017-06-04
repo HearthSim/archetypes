@@ -4,37 +4,48 @@ from archetypes.clustering import get_clusters
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-OUTPUT_DIR = os.path.join(BASE_DIR, "vizualization")
+VIZ_OUTPUT_DIR = os.path.join(BASE_DIR, "visualization")
+SIG_OUTPUT_DIR = os.path.join(BASE_DIR, "signatures")
+
 INPUTS_DIR = os.path.join(BASE_DIR, "data")
 
-if not os.path.exists(OUTPUT_DIR):
-	os.mkdir(OUTPUT_DIR)
-
-if not os.path.exists(INPUTS_DIR):
-	os.mkdir(INPUTS_DIR)
+for path in [VIZ_OUTPUT_DIR, SIG_OUTPUT_DIR, INPUTS_DIR]:
+	if not os.path.exists(path):
+		os.mkdir(path)
 
 
-def get_input_data(wild=False):
+for wild in [True, False]:
+
+	if wild:
+		fname = "wild.json"
+	else:
+		fname = "standard.json"
+
 	input_data = None
-	path = os.path.join(INPUTS_DIR, "wild.json" if wild else "standard.json")
+	path = os.path.join(INPUTS_DIR, fname)
 	if os.path.exists(path):
 		input_data = json.loads(open(path, "rb").read())
 
-	return input_data
+	clusters = get_clusters(input_data)
+	heatmap_data = []
 
-wild = True
-input_data = get_input_data(wild=wild)
+	signatures = {}
+	for player_class, cluster_set in clusters.items():
+		cluster_signatures = {}
+		#print(str(cluster_set))
+		cluster_set.merge_clusters()
+		heatmap_data.append(cluster_set.heatmap_data)
+		#cluster_set.print_summary()
+		signatures[player_class] = cluster_set.generate_signatures()
+		#print signatures
 
-clusters = get_clusters(input_data)
-heatmap_data = []
+	#heatmap
+	output_path = os.path.join(VIZ_OUTPUT_DIR, fname)
+	with open(output_path, "w") as out:
+		out.write(json.dumps(heatmap_data, indent=4))
 
+	#signatures
+	output_path = os.path.join(SIG_OUTPUT_DIR, fname)
+	with open(output_path, "w") as out:
+		out.write(json.dumps(signatures, indent=4))
 
-for player_class, cluster_set in clusters.items():
-	print(str(cluster_set))
-	cluster_set.merge_clusters()
-	heatmap_data.append(cluster_set.heatmap_data)
-	cluster_set.print_summary()
-
-output_path = os.path.join(OUTPUT_DIR, "wild.json" if wild else "standard.json")
-with open(output_path, "w") as out:
-	out.write(json.dumps(heatmap_data, indent=4))
