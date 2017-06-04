@@ -1273,7 +1273,7 @@
     }, 
     "PRIEST": {
         "0": {
-            "name": "", 
+            "name": "Combo", 
             "core_cards_name": {
                 "Kabal Talonpriest": 1.0, 
                 "Circle of Healing": 0.8, 
@@ -1323,7 +1323,7 @@
             "observations": 13243
         }, 
         "11": {
-            "name": "", 
+            "name": "Reno", 
             "core_cards_name": {
                 "Tortollan Shellraiser": 0.94, 
                 "Kazakus": 1.0, 
@@ -1399,7 +1399,7 @@
             "observations": 10352
         }, 
         "4": {
-            "name": "", 
+            "name": "Dragon", 
             "core_cards_name": {
                 "Kabal Talonpriest": 0.9, 
                 "Twilight Whelp": 1.0, 
