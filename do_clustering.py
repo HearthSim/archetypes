@@ -35,9 +35,10 @@ for wild in [True, False]:
 		print(str(cluster_set))
 		cluster_set.merge_clusters()
 		heatmap_data.append(cluster_set.heatmap_data)
-		#cluster_set.print_summary()
-		signatures[player_class] = cluster_set.generate_signatures()
-		#print signatures
+		cluster_set.print_summary()
+		print("\n\n")
+		signatures[player_class] = cluster_set.serialize()
+
 
 	#heatmap
 	output_path = os.path.join(VIZ_OUTPUT_DIR, fname)
