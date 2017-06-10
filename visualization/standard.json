@@ -22,24 +22,22 @@
             "Deathwing", 
             "Twisting Nether", 
             "Lakkari Sacrifice", 
-            "Voodoo Doctor", 
+            "Finja the Flying Star", 
             "Spellbreaker", 
             "Argent Squire", 
             "Defender of Argus", 
             "Ravasaur Runt", 
             "Grimscale Oracle", 
-            "Frostwolf Warlord", 
             "Medivh the Guardian", 
             "Barnes", 
             "Sunfury Protector", 
             "DOOM!", 
             "Golakka Crawler", 
-            "Fire Fly", 
+            "Mountain Giant", 
             "Tar Lurker", 
             "Ravenous Pterrordax", 
             "Lord Jaraxxus", 
             "Mortal Coil", 
-            "Crazed Alchemist", 
             "Bluegill Warrior", 
             "C'Thun", 
             "Beckoner of Evil", 
@@ -62,25 +60,25 @@
             "Demonfire", 
             "Siphon Soul", 
             "Succubus", 
-            "Argent Commander", 
             "Violet Illusionist", 
             "Felfire Potion", 
             "Blowgill Sniper", 
             "Abyssal Enforcer", 
             "Kabal Trafficker", 
+            "Bloodsail Corsair", 
             "Y'Shaarj Rage Unbound", 
-            "Mountain Giant", 
+            "Fire Fly", 
             "Hellfire", 
             "Abusive Sergeant", 
             "Acidic Swamp Ooze", 
             "Drain Life", 
             "Shadow Bolt", 
-            "Finja the Flying Star", 
+            "Patches the Pirate", 
+            "Voodoo Doctor", 
             "Crazed Worshipper", 
             "Elise the Trailblazer", 
             "Second-Rate Bruiser", 
             "Devilsaur Egg", 
-            "Eggnapper", 
             "Stonehill Defender", 
             "Rockpool Hunter", 
             "Doomsayer", 
@@ -114,46 +112,75 @@
         ], 
         "clusters": [
             {
-                "num_decks": 35.0, 
                 "prevalence": "common", 
-                "num_observations": 32820, 
-                "tech_cards": {
-                    "Silverware Golem": 0.69, 
-                    "Argent Squire": 0.34, 
-                    "Ravasaur Runt": 0.57, 
-                    "Abusive Sergeant": 0.37, 
-                    "Fire Fly": 0.57, 
-                    "Ravenous Pterrordax": 0.74, 
-                    "Knife Juggler": 0.74, 
-                    "Clutchmother Zavas": 0.31, 
-                    "Malchezaar's Imp": 0.71, 
-                    "Devilsaur Egg": 0.49, 
-                    "Darkshire Librarian": 0.63
-                }, 
                 "core_cards": {
+                    "Ravenous Pterrordax": 0.96, 
                     "Voidwalker": 1.0, 
-                    "Doomguard": 0.97, 
-                    "Defender of Argus": 0.86, 
-                    "Flame Imp": 0.97, 
-                    "Dire Wolf Alpha": 0.94, 
-                    "Darkshire Councilman": 0.97, 
-                    "Possessed Villager": 0.86, 
-                    "Soulfire": 0.83
-                }
+                    "Doomguard": 0.89, 
+                    "Defender of Argus": 1.0, 
+                    "Flame Imp": 0.96, 
+                    "Dire Wolf Alpha": 0.96, 
+                    "Darkshire Councilman": 0.96, 
+                    "Possessed Villager": 0.93
+                }, 
+                "tech_cards": {
+                    "Silverware Golem": 0.54, 
+                    "Argent Squire": 0.5, 
+                    "Ravasaur Runt": 0.75, 
+                    "Abusive Sergeant": 0.43, 
+                    "Fire Fly": 0.68, 
+                    "Knife Juggler": 0.79, 
+                    "Malchezaar's Imp": 0.57, 
+                    "Devilsaur Egg": 0.68, 
+                    "Darkshire Librarian": 0.5, 
+                    "Soulfire": 0.71
+                }, 
+                "winrate": {
+                    "max": 59.829999999999998, 
+                    "min": 32.670000000000002, 
+                    "stddev": 5.7435525964834184, 
+                    "mean": 50.485000000000007
+                }, 
+                "num_observations": 27144, 
+                "num_decks": 28.0
             }, 
             {
-                "num_decks": 8.0, 
                 "prevalence": "common", 
-                "num_observations": 5395, 
-                "tech_cards": {
-                    "Spellbreaker": 0.5, 
-                    "Shadow Bolt": 0.63, 
-                    "Dirty Rat": 0.38, 
-                    "Tar Creeper": 0.38, 
-                    "Elise the Trailblazer": 0.63, 
-                    "Abyssal Enforcer": 0.75, 
-                    "Doomsayer": 0.63
+                "core_cards": {
+                    "Silverware Golem": 1.0, 
+                    "Voidwalker": 1.0, 
+                    "Doomguard": 1.0, 
+                    "Lakkari Felhound": 0.89, 
+                    "Flame Imp": 1.0, 
+                    "Dire Wolf Alpha": 0.89, 
+                    "Malchezaar's Imp": 1.0, 
+                    "Darkshire Councilman": 1.0, 
+                    "Soulfire": 1.0, 
+                    "Darkshire Librarian": 0.89
                 }, 
+                "tech_cards": {
+                    "Golakka Crawler": 0.56, 
+                    "Abusive Sergeant": 0.33, 
+                    "Fire Fly": 0.33, 
+                    "Bloodsail Corsair": 0.78, 
+                    "Knife Juggler": 0.67, 
+                    "Defender of Argus": 0.44, 
+                    "Clutchmother Zavas": 0.78, 
+                    "Patches the Pirate": 0.78, 
+                    "Possessed Villager": 0.67, 
+                    "Succubus": 0.56
+                }, 
+                "winrate": {
+                    "max": 59.560000000000002, 
+                    "min": 40.770000000000003, 
+                    "stddev": 5.2204145807647997, 
+                    "mean": 54.212222222222223
+                }, 
+                "num_observations": 6418, 
+                "num_decks": 9.0
+            }, 
+            {
+                "prevalence": "common", 
                 "core_cards": {
                     "Lord Jaraxxus": 1.0, 
                     "Mistress of Mixtures": 0.88, 
@@ -169,19 +196,27 @@
                     "Hellfire": 0.88, 
                     "Ancient Watcher": 1.0, 
                     "Siphon Soul": 0.88
-                }
+                }, 
+                "tech_cards": {
+                    "Spellbreaker": 0.5, 
+                    "Shadow Bolt": 0.63, 
+                    "Dirty Rat": 0.38, 
+                    "Tar Creeper": 0.38, 
+                    "Elise the Trailblazer": 0.63, 
+                    "Abyssal Enforcer": 0.75, 
+                    "Doomsayer": 0.63
+                }, 
+                "winrate": {
+                    "max": 48.039999999999999, 
+                    "min": 40.520000000000003, 
+                    "stddev": 2.7563698953514919, 
+                    "mean": 44.43
+                }, 
+                "num_observations": 5395, 
+                "num_decks": 8.0
             }, 
             {
-                "num_decks": 4.0, 
                 "prevalence": "rare", 
-                "num_observations": 2652, 
-                "tech_cards": {
-                    "Mortal Coil": 0.75, 
-                    "Earthen Ring Farseer": 0.75, 
-                    "Tar Lurker": 0.75, 
-                    "Soulfire": 0.75, 
-                    "Alexstrasza": 0.75
-                }, 
                 "core_cards": {
                     "Mistress of Mixtures": 1.0, 
                     "Tar Creeper": 1.0, 
@@ -194,12 +229,36 @@
                     "Faceless Shambler": 1.0, 
                     "Hellfire": 1.0, 
                     "Doomsayer": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Mortal Coil": 0.75, 
+                    "Earthen Ring Farseer": 0.75, 
+                    "Tar Lurker": 0.75, 
+                    "Soulfire": 0.75, 
+                    "Alexstrasza": 0.75
+                }, 
+                "winrate": {
+                    "max": 48.32, 
+                    "min": 37.409999999999997, 
+                    "stddev": 3.9807819583594393, 
+                    "mean": 43.224999999999994
+                }, 
+                "num_observations": 2652, 
+                "num_decks": 4.0
             }, 
             {
-                "num_decks": 4.0, 
                 "prevalence": "rare", 
-                "num_observations": 1872, 
+                "core_cards": {
+                    "Silverware Golem": 1.0, 
+                    "Lakkari Felhound": 1.0, 
+                    "Doomguard": 1.0, 
+                    "Tar Creeper": 1.0, 
+                    "Malchezaar's Imp": 1.0, 
+                    "Soulfire": 1.0, 
+                    "Darkshire Librarian": 1.0, 
+                    "Lakkari Sacrifice": 1.0, 
+                    "Corrupting Mist": 1.0
+                }, 
                 "tech_cards": {
                     "Lord Jaraxxus": 0.75, 
                     "Cruel Dinomancer": 0.5, 
@@ -213,23 +272,17 @@
                     "Stonehill Defender": 0.5, 
                     "Siphon Soul": 0.75
                 }, 
-                "core_cards": {
-                    "Silverware Golem": 1.0, 
-                    "Lakkari Felhound": 1.0, 
-                    "Doomguard": 1.0, 
-                    "Tar Creeper": 1.0, 
-                    "Malchezaar's Imp": 1.0, 
-                    "Soulfire": 1.0, 
-                    "Darkshire Librarian": 1.0, 
-                    "Lakkari Sacrifice": 1.0, 
-                    "Corrupting Mist": 1.0
-                }
+                "winrate": {
+                    "max": 41.729999999999997, 
+                    "min": 35.710000000000001, 
+                    "stddev": 2.1807954397421128, 
+                    "mean": 39.162499999999994
+                }, 
+                "num_observations": 1872, 
+                "num_decks": 4.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 1277, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Bluegill Warrior": 1.0, 
                     "Doomguard": 1.0, 
@@ -248,25 +301,19 @@
                     "Murloc Tidehunter": 1.0, 
                     "Voidwalker": 1.0, 
                     "Seadevil Stinger": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 56.0, 
+                    "min": 56.0, 
+                    "stddev": 0.0, 
+                    "mean": 56.0
+                }, 
+                "num_observations": 1277, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 3.0, 
                 "prevalence": "rare", 
-                "num_observations": 1134, 
-                "tech_cards": {
-                    "Acidic Swamp Ooze": 0.33, 
-                    "Fire Fly": 0.67, 
-                    "Violet Illusionist": 0.67, 
-                    "Alexstrasza": 0.33, 
-                    "Voidwalker": 0.67, 
-                    "Earthen Ring Farseer": 0.33, 
-                    "Defender of Argus": 0.33, 
-                    "Mountain Giant": 0.33, 
-                    "Elise the Trailblazer": 0.67, 
-                    "Voodoo Doctor": 0.67, 
-                    "Doomsayer": 0.33
-                }, 
                 "core_cards": {
                     "Lord Jaraxxus": 1.0, 
                     "Bloodbloom": 1.0, 
@@ -280,42 +327,31 @@
                     "Mortal Coil": 1.0, 
                     "Hellfire": 1.0, 
                     "Siphon Soul": 1.0
-                }
-            }, 
-            {
-                "num_decks": 2.0, 
-                "prevalence": "rare", 
-                "num_observations": 742, 
-                "tech_cards": {
-                    "Crazed Alchemist": 0.5, 
-                    "Feeding Time": 0.5, 
-                    "Argent Commander": 0.5, 
-                    "Shadowflame": 0.5, 
-                    "Mortal Coil": 0.5
                 }, 
-                "core_cards": {
-                    "Argent Squire": 1.0, 
-                    "Ravasaur Runt": 1.0, 
-                    "Abusive Sergeant": 1.0, 
-                    "Fire Fly": 1.0, 
-                    "Frostwolf Warlord": 1.0, 
-                    "Voidwalker": 1.0, 
-                    "Knife Juggler": 1.0, 
-                    "Defender of Argus": 1.0, 
-                    "Flame Imp": 1.0, 
-                    "Dire Wolf Alpha": 1.0, 
-                    "Darkshire Councilman": 1.0, 
-                    "Devilsaur Egg": 1.0, 
-                    "Ravenous Pterrordax": 1.0, 
-                    "Eggnapper": 1.0, 
-                    "Possessed Villager": 1.0
-                }
+                "tech_cards": {
+                    "Acidic Swamp Ooze": 0.33, 
+                    "Fire Fly": 0.67, 
+                    "Violet Illusionist": 0.67, 
+                    "Alexstrasza": 0.33, 
+                    "Voidwalker": 0.67, 
+                    "Earthen Ring Farseer": 0.33, 
+                    "Defender of Argus": 0.33, 
+                    "Mountain Giant": 0.33, 
+                    "Elise the Trailblazer": 0.67, 
+                    "Voodoo Doctor": 0.67, 
+                    "Doomsayer": 0.33
+                }, 
+                "winrate": {
+                    "max": 42.380000000000003, 
+                    "min": 38.979999999999997, 
+                    "stddev": 1.389612256070818, 
+                    "mean": 40.633333333333333
+                }, 
+                "num_observations": 1134, 
+                "num_decks": 3.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 637, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Felfire Potion": 1.0, 
                     "Lord Jaraxxus": 1.0, 
@@ -335,13 +371,19 @@
                     "Blastcrystal Potion": 1.0, 
                     "Earthen Ring Farseer": 1.0, 
                     "Siphon Soul": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 49.799999999999997, 
+                    "min": 49.799999999999997, 
+                    "stddev": 0.0, 
+                    "mean": 49.799999999999997
+                }, 
+                "num_observations": 637, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 556, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Shadow Bolt": 1.0, 
                     "Kazakus": 1.0, 
@@ -373,20 +415,19 @@
                     "Twisting Nether": 1.0, 
                     "DOOM!": 1.0, 
                     "Doomsayer": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 43.310000000000002, 
+                    "min": 43.310000000000002, 
+                    "stddev": 0.0, 
+                    "mean": 43.310000000000002
+                }, 
+                "num_observations": 556, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 506, 
-                "tech_cards": {
-                    "Forbidden Ritual": 0.5, 
-                    "Drain Life": 0.5, 
-                    "Twisting Nether": 0.5, 
-                    "Demonfire": 0.5, 
-                    "Feeding Time": 0.5, 
-                    "Siphon Soul": 0.5
-                }, 
                 "core_cards": {
                     "Bloodbloom": 1.0, 
                     "Shadow Bolt": 1.0, 
@@ -401,7 +442,23 @@
                     "Corruption": 1.0, 
                     "Mortal Coil": 1.0, 
                     "Corrupting Mist": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Forbidden Ritual": 0.5, 
+                    "Drain Life": 0.5, 
+                    "Twisting Nether": 0.5, 
+                    "Demonfire": 0.5, 
+                    "Feeding Time": 0.5, 
+                    "Siphon Soul": 0.5
+                }, 
+                "winrate": {
+                    "max": 37.960000000000001, 
+                    "min": 37.460000000000001, 
+                    "stddev": 0.25, 
+                    "mean": 37.710000000000001
+                }, 
+                "num_observations": 506, 
+                "num_decks": 2.0
             }
         ], 
         "num_clusters": 10, 
@@ -416,13 +473,14 @@
             5, 
             6, 
             7, 
-            8
+            8, 
+            9
         ], 
         "common_cards": [
             "Fiery War Axe"
         ], 
         "card_list": [
-            "Disciple of C'Thun", 
+            "Servant of Kalimos", 
             "Cornered Sentry", 
             "Sudden Genesis", 
             "Cairne Bloodhoof", 
@@ -430,168 +488,171 @@
             "Tar Creeper", 
             "The Curator", 
             "Bloodsail Raider", 
-            "Battle Rage", 
+            "Golakka Crawler", 
             "Stubborn Gastropod", 
-            "Leeroy Jenkins", 
+            "Whirlwind", 
             "Commanding Shout", 
             "Upgrade!", 
             "Wild Pyromancer", 
             "Southsea Deckhand", 
-            "Iron Hide", 
             "Shield Block", 
+            "Inner Rage", 
             "Mortal Strike", 
             "Southsea Captain", 
             "Frothing Berserker", 
             "Primordial Drake", 
             "Execute", 
             "Armorsmith", 
-            "Alexstrasza", 
             "Youthful Brewmaster", 
             "Sleep with the Fishes", 
-            "Twilight Summoner", 
+            "N'Zoth's First Mate", 
             "Dirty Rat", 
             "Blood To Ichor", 
             "Ravaging Ghoul", 
             "Beckoner of Evil", 
-            "Devilsaur Egg", 
             "C'Thun's Chosen", 
             "Bloodsail Cultist", 
             "Kor'kron Elite", 
+            "Gluttonous Ooze", 
             "Ysera", 
             "C'Thun", 
             "Slam", 
-            "Golakka Crawler", 
+            "Battle Rage", 
             "Acolyte of Pain", 
-            "Friendly Bartender", 
-            "Toxic Sewer Ooze", 
+            "Don Han'Cho", 
             "Bloodhoof Brave", 
             "Grommash Hellscream", 
             "Brawl", 
-            "Ornery Direhorn", 
             "Direhorn Hatchling", 
             "Stolen Goods", 
-            "Tar Lord", 
-            "N'Zoth's First Mate", 
-            "Gluttonous Ooze", 
-            "Book Wyrm", 
+            "Twilight Summoner", 
+            "Cruel Taskmaster", 
+            "Tol'vir Stoneshaper", 
             "Ancient Shieldbearer", 
-            "Whirlwind", 
+            "Loot Hoarder", 
+            "Leeroy Jenkins", 
             "Shield Slam", 
-            "Acidic Swamp Ooze", 
+            "Fire Fly", 
             "Alley Armorsmith", 
             "Heroic Strike", 
             "Patches the Pirate", 
             "Twin Emperor Vek'lor", 
             "N'Zoth the Corruptor", 
             "Naga Corsair", 
-            "Netherspite Historian", 
             "Elise the Trailblazer", 
             "Second-Rate Bruiser", 
+            "Blazecaller", 
             "Arcanite Reaper", 
-            "Mistress of Mixtures", 
-            "Cruel Taskmaster", 
+            "Devilsaur Egg", 
             "Doomcaller", 
             "Public Defender", 
             "Stonehill Defender", 
             "Harrison Jones", 
             "Barnes", 
-            "Infested Tauren", 
+            "Disciple of C'Thun", 
             "Dread Corsair", 
             "Fiery War Axe"
         ], 
         "clusters": [
             {
-                "num_decks": 334.0, 
                 "prevalence": "common", 
-                "num_observations": 333520, 
-                "tech_cards": {
-                    "Leeroy Jenkins": 0.72, 
-                    "Golakka Crawler": 0.42, 
-                    "Naga Corsair": 0.78
-                }, 
                 "core_cards": {
-                    "Heroic Strike": 0.99, 
+                    "Heroic Strike": 1.0, 
                     "N'Zoth's First Mate": 1.0, 
                     "Upgrade!": 1.0, 
-                    "Dread Corsair": 0.99, 
+                    "Dread Corsair": 1.0, 
                     "Arcanite Reaper": 1.0, 
                     "Mortal Strike": 0.9, 
                     "Kor'kron Elite": 1.0, 
-                    "Bloodsail Cultist": 0.99, 
+                    "Bloodsail Cultist": 1.0, 
                     "Patches the Pirate": 0.98, 
                     "Southsea Deckhand": 1.0, 
                     "Frothing Berserker": 1.0, 
                     "Bloodsail Raider": 1.0, 
                     "Southsea Captain": 0.89
-                }
+                }, 
+                "tech_cards": {
+                    "Leeroy Jenkins": 0.72, 
+                    "Golakka Crawler": 0.42, 
+                    "Naga Corsair": 0.78
+                }, 
+                "winrate": {
+                    "max": 66.280000000000001, 
+                    "min": 40.229999999999997, 
+                    "stddev": 2.8914005198753951, 
+                    "mean": 55.518258258258264
+                }, 
+                "num_observations": 333134, 
+                "num_decks": 333.0
             }, 
             {
-                "num_decks": 264.0, 
                 "prevalence": "common", 
-                "num_observations": 229266, 
+                "core_cards": {
+                    "The Curator": 0.93, 
+                    "Bloodhoof Brave": 0.95, 
+                    "Execute": 1.0, 
+                    "Acolyte of Pain": 0.86, 
+                    "Fire Plume's Heart": 0.98, 
+                    "Ravaging Ghoul": 1.0, 
+                    "Sleep with the Fishes": 0.85, 
+                    "Primordial Drake": 0.98, 
+                    "Alley Armorsmith": 0.97, 
+                    "Direhorn Hatchling": 0.93, 
+                    "Brawl": 0.98, 
+                    "Stonehill Defender": 0.97, 
+                    "Whirlwind": 0.84
+                }, 
                 "tech_cards": {
-                    "Shield Block": 0.47, 
+                    "Shield Block": 0.46, 
                     "Battle Rage": 0.31, 
                     "Dirty Rat": 0.71, 
                     "Armorsmith": 0.6, 
-                    "Tar Creeper": 0.73, 
-                    "Shield Slam": 0.34, 
+                    "Tar Creeper": 0.75, 
+                    "Shield Slam": 0.33, 
                     "Slam": 0.71
                 }, 
-                "core_cards": {
-                    "The Curator": 0.92, 
-                    "Bloodhoof Brave": 0.94, 
-                    "Execute": 1.0, 
-                    "Acolyte of Pain": 0.87, 
-                    "Fire Plume's Heart": 0.96, 
-                    "Ravaging Ghoul": 1.0, 
-                    "Sleep with the Fishes": 0.84, 
-                    "Primordial Drake": 0.97, 
-                    "Alley Armorsmith": 0.96, 
-                    "Direhorn Hatchling": 0.92, 
-                    "Brawl": 0.98, 
-                    "Stonehill Defender": 0.95, 
-                    "Whirlwind": 0.84
-                }
+                "winrate": {
+                    "max": 63.439999999999998, 
+                    "min": 44.170000000000002, 
+                    "stddev": 2.782290517164542, 
+                    "mean": 55.007325581395349
+                }, 
+                "num_observations": 224789, 
+                "num_decks": 258.0
             }, 
             {
-                "num_decks": 17.0, 
                 "prevalence": "rare", 
-                "num_observations": 21158, 
-                "tech_cards": {
-                    "Book Wyrm": 0.35, 
-                    "Alexstrasza": 0.35, 
-                    "Armorsmith": 0.71, 
-                    "Netherspite Historian": 0.35, 
-                    "Gluttonous Ooze": 0.53, 
-                    "Slam": 0.59
-                }, 
                 "core_cards": {
                     "Shield Block": 1.0, 
-                    "Execute": 1.0, 
+                    "Execute": 0.96, 
                     "Ravaging Ghoul": 1.0, 
-                    "Sleep with the Fishes": 0.88, 
-                    "Primordial Drake": 0.94, 
-                    "Alley Armorsmith": 0.94, 
-                    "Shield Slam": 1.0, 
-                    "Elise the Trailblazer": 0.94, 
-                    "Acolyte of Pain": 1.0, 
-                    "Brawl": 1.0, 
-                    "Ysera": 0.94, 
-                    "Grommash Hellscream": 1.0, 
-                    "Whirlwind": 0.94
-                }
+                    "Brawl": 0.96, 
+                    "Alley Armorsmith": 0.83, 
+                    "Shield Slam": 0.92, 
+                    "Elise the Trailblazer": 0.83, 
+                    "Acolyte of Pain": 0.96, 
+                    "Whirlwind": 0.83
+                }, 
+                "tech_cards": {
+                    "Sleep with the Fishes": 0.79, 
+                    "Armorsmith": 0.71, 
+                    "Primordial Drake": 0.75, 
+                    "Slam": 0.63, 
+                    "Gluttonous Ooze": 0.46, 
+                    "Grommash Hellscream": 0.79, 
+                    "Ysera": 0.67
+                }, 
+                "winrate": {
+                    "max": 55.719999999999999, 
+                    "min": 25.649999999999999, 
+                    "stddev": 5.7168087324427193, 
+                    "mean": 49.447499999999991
+                }, 
+                "num_observations": 25933, 
+                "num_decks": 24.0
             }, 
             {
-                "num_decks": 5.0, 
                 "prevalence": "rare", 
-                "num_observations": 5241, 
-                "tech_cards": {
-                    "Sleep with the Fishes": 0.4, 
-                    "Youthful Brewmaster": 0.6, 
-                    "Alley Armorsmith": 0.6, 
-                    "Whirlwind": 0.4
-                }, 
                 "core_cards": {
                     "Shield Block": 1.0, 
                     "C'Thun": 1.0, 
@@ -607,13 +668,24 @@
                     "C'Thun's Chosen": 1.0, 
                     "Beckoner of Evil": 1.0, 
                     "Doomcaller": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Sleep with the Fishes": 0.4, 
+                    "Youthful Brewmaster": 0.6, 
+                    "Alley Armorsmith": 0.6, 
+                    "Whirlwind": 0.4
+                }, 
+                "winrate": {
+                    "max": 50.329999999999998, 
+                    "min": 45.310000000000002, 
+                    "stddev": 1.6358606297603704, 
+                    "mean": 48.170000000000002
+                }, 
+                "num_observations": 5241, 
+                "num_decks": 5.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 1412, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Second-Rate Bruiser": 1.0, 
                     "Bloodhoof Brave": 1.0, 
@@ -631,21 +703,19 @@
                     "Alley Armorsmith": 1.0, 
                     "Stonehill Defender": 1.0, 
                     "Acolyte of Pain": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 48.93, 
+                    "min": 48.93, 
+                    "stddev": 0.0, 
+                    "mean": 48.93
+                }, 
+                "num_observations": 1412, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 3.0, 
                 "prevalence": "rare", 
-                "num_observations": 1290, 
-                "tech_cards": {
-                    "Shield Block": 0.33, 
-                    "Battle Rage": 0.67, 
-                    "Dirty Rat": 0.33, 
-                    "Armorsmith": 0.67, 
-                    "Harrison Jones": 0.33, 
-                    "Shield Slam": 0.33, 
-                    "Elise the Trailblazer": 0.67
-                }, 
                 "core_cards": {
                     "Execute": 1.0, 
                     "Cruel Taskmaster": 1.0, 
@@ -661,64 +731,117 @@
                     "Direhorn Hatchling": 1.0, 
                     "Cairne Bloodhoof": 1.0, 
                     "Whirlwind": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Shield Block": 0.33, 
+                    "Battle Rage": 0.67, 
+                    "Dirty Rat": 0.33, 
+                    "Armorsmith": 0.67, 
+                    "Harrison Jones": 0.33, 
+                    "Shield Slam": 0.33, 
+                    "Elise the Trailblazer": 0.67
+                }, 
+                "winrate": {
+                    "max": 45.579999999999998, 
+                    "min": 42.43, 
+                    "stddev": 1.3381662411258504, 
+                    "mean": 44.266666666666673
+                }, 
+                "num_observations": 1290, 
+                "num_decks": 3.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 414, 
-                "tech_cards": {
-                    "Blood To Ichor": 0.5, 
-                    "Infested Tauren": 0.5, 
-                    "Battle Rage": 0.5, 
-                    "Ravaging Ghoul": 0.5, 
-                    "Brawl": 0.5, 
-                    "Iron Hide": 0.5, 
-                    "Elise the Trailblazer": 0.5, 
-                    "Stonehill Defender": 0.5, 
-                    "Commanding Shout": 0.5, 
-                    "Barnes": 0.5, 
-                    "Wild Pyromancer": 0.5
+                "core_cards": {
+                    "Bloodsail Raider": 1.0, 
+                    "Battle Rage": 1.0, 
+                    "Fire Fly": 1.0, 
+                    "Ravaging Ghoul": 1.0, 
+                    "Grommash Hellscream": 1.0, 
+                    "Tar Creeper": 1.0, 
+                    "Tol'vir Stoneshaper": 1.0, 
+                    "Servant of Kalimos": 1.0, 
+                    "Cruel Taskmaster": 1.0, 
+                    "Slam": 1.0, 
+                    "Patches the Pirate": 1.0, 
+                    "Southsea Deckhand": 1.0, 
+                    "Blazecaller": 1.0, 
+                    "Frothing Berserker": 1.0, 
+                    "N'Zoth's First Mate": 1.0, 
+                    "Kor'kron Elite": 1.0
                 }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 49.469999999999999, 
+                    "min": 49.469999999999999, 
+                    "stddev": 0.0, 
+                    "mean": 49.469999999999999
+                }, 
+                "num_observations": 386, 
+                "num_decks": 1.0
+            }, 
+            {
+                "prevalence": "rare", 
                 "core_cards": {
                     "Shield Block": 1.0, 
-                    "Execute": 1.0, 
+                    "Blood To Ichor": 1.0, 
+                    "Battle Rage": 1.0, 
                     "Acolyte of Pain": 1.0, 
                     "Sleep with the Fishes": 1.0, 
+                    "Execute": 1.0, 
                     "Shield Slam": 1.0, 
                     "Slam": 1.0, 
                     "Direhorn Hatchling": 1.0, 
+                    "Commanding Shout": 1.0, 
+                    "Barnes": 1.0, 
                     "N'Zoth the Corruptor": 1.0, 
                     "Cairne Bloodhoof": 1.0, 
                     "Whirlwind": 1.0, 
+                    "Wild Pyromancer": 1.0, 
                     "Twilight Summoner": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 51.799999999999997, 
+                    "min": 51.799999999999997, 
+                    "stddev": 0.0, 
+                    "mean": 51.799999999999997
+                }, 
+                "num_observations": 214, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 303, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Shield Block": 1.0, 
-                    "Acidic Swamp Ooze": 1.0, 
-                    "Golakka Crawler": 1.0, 
-                    "Bloodhoof Brave": 1.0, 
-                    "Mistress of Mixtures": 1.0, 
-                    "Armorsmith": 1.0, 
-                    "Tar Creeper": 1.0, 
-                    "Gluttonous Ooze": 1.0, 
-                    "Alley Armorsmith": 1.0, 
+                    "Execute": 1.0, 
+                    "Leeroy Jenkins": 1.0, 
+                    "Sudden Genesis": 1.0, 
                     "Ravaging Ghoul": 1.0, 
-                    "Toxic Sewer Ooze": 1.0, 
-                    "Tar Lord": 1.0, 
-                    "Stonehill Defender": 1.0, 
-                    "Friendly Bartender": 1.0, 
-                    "Ornery Direhorn": 1.0
-                }
+                    "Brawl": 1.0, 
+                    "Armorsmith": 1.0, 
+                    "Alley Armorsmith": 1.0, 
+                    "Shield Slam": 1.0, 
+                    "Slam": 1.0, 
+                    "Loot Hoarder": 1.0, 
+                    "Acolyte of Pain": 1.0, 
+                    "Sleep with the Fishes": 1.0, 
+                    "Inner Rage": 1.0, 
+                    "Don Han'Cho": 1.0, 
+                    "Whirlwind": 1.0
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 31.469999999999999, 
+                    "min": 31.469999999999999, 
+                    "stddev": 0.0, 
+                    "mean": 31.469999999999999
+                }, 
+                "num_observations": 205, 
+                "num_decks": 1.0
             }
         ], 
-        "num_clusters": 8, 
+        "num_clusters": 9, 
         "class": "WARRIOR"
     }, 
     {
@@ -737,12 +860,12 @@
             "Hydrologist"
         ], 
         "card_list": [
-            "Doomsayer", 
             "Servant of Kalimos", 
+            "Doomsayer", 
             "Vilefin Inquisitor", 
             "Spikeridged Steed", 
             "Murloc Tidecaller", 
-            "The Last Kaleidosaur", 
+            "Tar Creeper", 
             "The Curator", 
             "Grimestreet Outfitter", 
             "Golakka Crawler", 
@@ -757,11 +880,12 @@
             "Vinecleaver", 
             "Bluegill Warrior", 
             "Consecration", 
+            "The Voraxx", 
             "Primalfin Champion", 
             "Grimscale Chum", 
-            "Knife Juggler", 
+            "Steward of Darkshire", 
             "Madam Goya", 
-            "Tar Creeper", 
+            "The Last Kaleidosaur", 
             "Stand Against Darkness", 
             "Dinosize", 
             "Sunkeeper Tarim", 
@@ -771,23 +895,22 @@
             "Nesting Roc", 
             "Gentle Megasaur", 
             "Murloc Warleader", 
+            "Knife Juggler", 
             "Blessing of Might", 
             "Rallying Blade", 
             "Acolyte of Pain", 
             "Cult Master", 
-            "Grimestreet Enforcer", 
+            "Smuggler's Run", 
             "Silvermoon Portal", 
-            "The Voraxx", 
+            "Grimestreet Enforcer", 
             "Runic Egg", 
             "Ivory Knight", 
             "Hemet Jungle Hunter", 
             "Coldlight Seer", 
             "Small-Time Recruits", 
             "Tol'vir Stoneshaper", 
-            "Molten Giant", 
             "Igneous Elemental", 
             "Blessing of Kings", 
-            "Smuggler's Run", 
             "Loot Hoarder", 
             "Argent Squire", 
             "Equality", 
@@ -800,114 +923,125 @@
             "Yogg-Saron Hope's End", 
             "Grimscale Oracle", 
             "Lightfused Stegodon", 
-            "Steward of Darkshire", 
+            "Dread Corsair", 
             "Adaptation", 
             "Blazecaller", 
             "Primordial Drake", 
             "Stampeding Kodo", 
             "Devilsaur Egg", 
             "Forbidden Healing", 
-            "Fire Plume Phoenix", 
+            "Blessing of Wisdom", 
             "Stonehill Defender", 
             "Rockpool Hunter", 
             "Tirion Fordring", 
-            "Dread Corsair", 
+            "Molten Giant", 
             "Ragnaros Lightlord", 
             "Divine Strength", 
-            "Blessing of Wisdom", 
+            "Fire Plume Phoenix", 
             "Wickerflame Burnbristle", 
             "Hydrologist"
         ], 
         "clusters": [
             {
-                "num_decks": 319.0, 
                 "prevalence": "common", 
-                "num_observations": 278512, 
-                "tech_cards": {
-                    "Rockpool Hunter": 0.7, 
-                    "Murloc Tidecaller": 0.42, 
-                    "Gentle Megasaur": 0.7, 
-                    "Vilefin Inquisitor": 0.7, 
-                    "Wild Pyromancer": 0.34, 
-                    "Murloc Warleader": 0.7, 
-                    "Wickerflame Burnbristle": 0.37, 
-                    "Ivory Knight": 0.41
-                }, 
                 "core_cards": {
                     "The Curator": 0.92, 
                     "Sunkeeper Tarim": 0.93, 
                     "Truesilver Champion": 0.99, 
-                    "Equality": 0.99, 
-                    "Primordial Drake": 0.88, 
+                    "Equality": 0.98, 
+                    "Primordial Drake": 0.87, 
                     "Consecration": 1.0, 
                     "Tirion Fordring": 1.0, 
-                    "Ragnaros Lightlord": 0.86, 
+                    "Ragnaros Lightlord": 0.85, 
                     "Spikeridged Steed": 0.98, 
                     "Stampeding Kodo": 0.82, 
                     "Stonehill Defender": 0.97, 
-                    "Aldor Peacekeeper": 0.99
-                }
+                    "Aldor Peacekeeper": 1.0
+                }, 
+                "tech_cards": {
+                    "Rockpool Hunter": 0.7, 
+                    "Murloc Tidecaller": 0.43, 
+                    "Gentle Megasaur": 0.7, 
+                    "Vilefin Inquisitor": 0.7, 
+                    "Wild Pyromancer": 0.33, 
+                    "Murloc Warleader": 0.7, 
+                    "Wickerflame Burnbristle": 0.37, 
+                    "Ivory Knight": 0.41
+                }, 
+                "winrate": {
+                    "max": 64.280000000000001, 
+                    "min": 45.909999999999997, 
+                    "stddev": 2.9049910028540138, 
+                    "mean": 56.160804953560366
+                }, 
+                "num_observations": 283572, 
+                "num_decks": 323.0
             }, 
             {
-                "num_decks": 169.0, 
                 "prevalence": "common", 
-                "num_observations": 137607, 
+                "core_cards": {
+                    "Sunkeeper Tarim": 0.85, 
+                    "Tirion Fordring": 0.92, 
+                    "Bluegill Warrior": 0.95, 
+                    "Truesilver Champion": 0.98, 
+                    "Rockpool Hunter": 1.0, 
+                    "Grimscale Chum": 0.98, 
+                    "Blessing of Kings": 0.92, 
+                    "Murloc Tidecaller": 0.99, 
+                    "Gentle Megasaur": 1.0, 
+                    "Vilefin Inquisitor": 1.0, 
+                    "Coldlight Seer": 0.95, 
+                    "Consecration": 0.93, 
+                    "Finja the Flying Star": 0.87, 
+                    "Murloc Warleader": 1.0, 
+                    "Spikeridged Steed": 0.94
+                }, 
                 "tech_cards": {
                     "Divine Favor": 0.78, 
                     "Stampeding Kodo": 0.63
                 }, 
-                "core_cards": {
-                    "Sunkeeper Tarim": 0.86, 
-                    "Tirion Fordring": 0.93, 
-                    "Bluegill Warrior": 0.94, 
-                    "Truesilver Champion": 0.98, 
-                    "Rockpool Hunter": 1.0, 
-                    "Grimscale Chum": 0.95, 
-                    "Blessing of Kings": 0.93, 
-                    "Murloc Tidecaller": 0.99, 
-                    "Gentle Megasaur": 1.0, 
-                    "Vilefin Inquisitor": 1.0, 
-                    "Coldlight Seer": 0.93, 
-                    "Consecration": 0.94, 
-                    "Finja the Flying Star": 0.89, 
-                    "Murloc Warleader": 1.0, 
-                    "Spikeridged Steed": 0.96
-                }
+                "winrate": {
+                    "max": 64.700000000000003, 
+                    "min": 49.82, 
+                    "stddev": 2.5052072399874619, 
+                    "mean": 56.665089820359277
+                }, 
+                "num_observations": 134498, 
+                "num_decks": 167.0
             }, 
             {
-                "num_decks": 36.0, 
                 "prevalence": "rare", 
-                "num_observations": 33706, 
-                "tech_cards": {
-                    "Sunkeeper Tarim": 0.67, 
-                    "Steward of Darkshire": 0.69, 
-                    "Finja the Flying Star": 0.72, 
-                    "Stonehill Defender": 0.75, 
-                    "Bluegill Warrior": 0.36
-                }, 
                 "core_cards": {
                     "Rockpool Hunter": 1.0, 
                     "Grimscale Chum": 0.97, 
-                    "Grimscale Oracle": 0.83, 
+                    "Grimscale Oracle": 0.88, 
                     "Murloc Tidecaller": 1.0, 
-                    "Bilefin Tidehunter": 0.81, 
+                    "Bilefin Tidehunter": 0.85, 
                     "Gentle Megasaur": 1.0, 
                     "Vilefin Inquisitor": 1.0, 
-                    "Divine Favor": 0.94, 
+                    "Divine Favor": 0.97, 
                     "Coldlight Seer": 0.97, 
                     "Murloc Warleader": 1.0, 
-                    "Murloc Tidehunter": 0.89
-                }
+                    "Murloc Tidehunter": 0.91
+                }, 
+                "tech_cards": {
+                    "Sunkeeper Tarim": 0.71, 
+                    "Steward of Darkshire": 0.74, 
+                    "Finja the Flying Star": 0.74, 
+                    "Stonehill Defender": 0.79, 
+                    "Bluegill Warrior": 0.32
+                }, 
+                "winrate": {
+                    "max": 63.509999999999998, 
+                    "min": 52.579999999999998, 
+                    "stddev": 2.9405628918809521, 
+                    "mean": 57.763235294117649
+                }, 
+                "num_observations": 31755, 
+                "num_decks": 34.0
             }, 
             {
-                "num_decks": 10.0, 
                 "prevalence": "rare", 
-                "num_observations": 6731, 
-                "tech_cards": {
-                    "Stonehill Defender": 0.6, 
-                    "Blazecaller": 0.6, 
-                    "Wickerflame Burnbristle": 0.3
-                }, 
                 "core_cards": {
                     "Fire Plume Phoenix": 0.9, 
                     "Truesilver Champion": 0.9, 
@@ -922,21 +1056,23 @@
                     "Grimestreet Outfitter": 1.0, 
                     "Grimestreet Enforcer": 0.9, 
                     "Aldor Peacekeeper": 0.9
-                }
+                }, 
+                "tech_cards": {
+                    "Stonehill Defender": 0.6, 
+                    "Blazecaller": 0.6, 
+                    "Wickerflame Burnbristle": 0.3
+                }, 
+                "winrate": {
+                    "max": 54.719999999999999, 
+                    "min": 44.280000000000001, 
+                    "stddev": 3.2589054911120083, 
+                    "mean": 50.305
+                }, 
+                "num_observations": 6731, 
+                "num_decks": 10.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 1015, 
-                "tech_cards": {
-                    "Sunkeeper Tarim": 0.5, 
-                    "Argent Squire": 0.5, 
-                    "Truesilver Champion": 0.5, 
-                    "Ivory Knight": 0.5, 
-                    "Tar Creeper": 0.5, 
-                    "Acolyte of Pain": 0.5, 
-                    "Wild Pyromancer": 0.5
-                }, 
                 "core_cards": {
                     "Tirion Fordring": 1.0, 
                     "Fire Fly": 1.0, 
@@ -951,16 +1087,27 @@
                     "Spikeridged Steed": 1.0, 
                     "Stonehill Defender": 1.0, 
                     "Divine Strength": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Sunkeeper Tarim": 0.5, 
+                    "Argent Squire": 0.5, 
+                    "Truesilver Champion": 0.5, 
+                    "Ivory Knight": 0.5, 
+                    "Tar Creeper": 0.5, 
+                    "Acolyte of Pain": 0.5, 
+                    "Wild Pyromancer": 0.5
+                }, 
+                "winrate": {
+                    "max": 40.869999999999997, 
+                    "min": 36.880000000000003, 
+                    "stddev": 1.9949999999999974, 
+                    "mean": 38.875
+                }, 
+                "num_observations": 1015, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 849, 
-                "tech_cards": {
-                    "Tirion Fordring": 0.5, 
-                    "Madam Goya": 0.5
-                }, 
                 "core_cards": {
                     "Truesilver Champion": 1.0, 
                     "Equality": 1.0, 
@@ -978,13 +1125,22 @@
                     "Doomsayer": 1.0, 
                     "Stonehill Defender": 1.0, 
                     "Aldor Peacekeeper": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Tirion Fordring": 0.5, 
+                    "Madam Goya": 0.5
+                }, 
+                "winrate": {
+                    "max": 51.460000000000001, 
+                    "min": 45.840000000000003, 
+                    "stddev": 2.8099999999999987, 
+                    "mean": 48.650000000000006
+                }, 
+                "num_observations": 849, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 577, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Holy Wrath": 1.0, 
                     "Small-Time Recruits": 1.0, 
@@ -1002,13 +1158,19 @@
                     "Doomsayer": 1.0, 
                     "Wild Pyromancer": 1.0, 
                     "Aldor Peacekeeper": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 17.16, 
+                    "min": 16.190000000000001, 
+                    "stddev": 0.48499999999999943, 
+                    "mean": 16.675000000000001
+                }, 
+                "num_observations": 577, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 292, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Argent Squire": 1.0, 
                     "Mana Addict": 1.0, 
@@ -1027,13 +1189,19 @@
                     "Divine Favor": 1.0, 
                     "Divine Strength": 1.0, 
                     "Devilsaur Egg": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 33.329999999999998, 
+                    "min": 33.329999999999998, 
+                    "stddev": 0.0, 
+                    "mean": 33.329999999999998
+                }, 
+                "num_observations": 292, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 269, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Sunkeeper Tarim": 1.0, 
                     "Tirion Fordring": 1.0, 
@@ -1054,7 +1222,16 @@
                     "Blessing of Wisdom": 1.0, 
                     "Rallying Blade": 1.0, 
                     "Stonehill Defender": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 50.0, 
+                    "min": 50.0, 
+                    "stddev": 0.0, 
+                    "mean": 50.0
+                }, 
+                "num_observations": 269, 
+                "num_decks": 1.0
             }
         ], 
         "num_clusters": 9, 
@@ -1070,8 +1247,7 @@
             6, 
             7, 
             8, 
-            9, 
-            10
+            9
         ], 
         "common_cards": [
             "Kill Command", 
@@ -1083,58 +1259,61 @@
             "Houndmaster"
         ], 
         "card_list": [
+            "Grievous Bite", 
             "Jeweled Macaw", 
             "The Curator", 
             "Golakka Crawler", 
+            "Stubborn Gastropod", 
             "Fire Fly", 
-            "Novice Engineer", 
+            "Stegodon", 
             "Timber Wolf", 
             "Tracking", 
             "Explosive Trap", 
             "Bluegill Warrior", 
+            "Hunter's Mark", 
             "Cat Trick", 
             "Secretkeeper", 
-            "Gentle Megasaur", 
+            "Ysera", 
             "Rat Pack", 
             "Knife Juggler", 
-            "Ysera", 
+            "Gentle Megasaur", 
             "Murloc Warleader", 
             "Eaglehorn Bow", 
-            "Bloodsail Corsair", 
             "Cult Master", 
             "Nesting Roc", 
             "Deadly Shot", 
             "Call of the Wild", 
-            "Deathwing", 
+            "Infested Wolf", 
             "Dire Wolf Alpha", 
-            "Stranglethorn Tiger", 
             "Hungry Crab", 
             "Snake Trap", 
-            "Cloaked Huntress", 
+            "Finja the Flying Star", 
             "Stampede", 
             "Raptor Hatchling", 
             "Tol'vir Warden", 
             "The Marsh Queen", 
+            "Swamp King Dred", 
             "Igneous Elemental", 
-            "Tundra Rhino", 
+            "Spellbreaker", 
             "Starving Buzzard", 
             "Abusive Sergeant", 
-            "Argent Squire", 
             "Leeroy Jenkins", 
-            "Oasis Snapjaw", 
+            "Arcane Shot", 
             "Freezing Trap", 
-            "Hunter's Mark", 
-            "Finja the Flying Star", 
+            "Ravasaur Runt", 
+            "Cloaked Huntress", 
             "Kindly Grandmother", 
-            "Snipe", 
+            "Yogg-Saron Hope's End", 
+            "Tundra Rhino", 
             "Wolfrider", 
             "Glacial Shard", 
-            "Infested Wolf", 
-            "Patches the Pirate", 
+            "Deathwing", 
             "Vicious Fledgling", 
             "Savannah Highmane", 
             "Flare", 
             "Barnes", 
+            "Smuggler's Crate", 
+            "Snipe", 
             "Fiery Bat", 
             "Kill Command", 
             "Crackling Razormaw", 
@@ -1146,107 +1325,124 @@
         ], 
         "clusters": [
             {
-                "num_decks": 168.0, 
                 "prevalence": "common", 
-                "num_observations": 121221, 
-                "tech_cards": {
-                    "Golakka Crawler": 0.7, 
-                    "Deadly Shot": 0.39, 
-                    "Infested Wolf": 0.51, 
-                    "Hungry Crab": 0.38, 
-                    "Dire Wolf Alpha": 0.45, 
-                    "Nesting Roc": 0.36, 
-                    "Tundra Rhino": 0.78
-                }, 
                 "core_cards": {
-                    "Eaglehorn Bow": 0.98, 
-                    "Jeweled Macaw": 0.95, 
-                    "Rat Pack": 0.83, 
-                    "Kindly Grandmother": 0.98, 
-                    "Savannah Highmane": 0.96
-                }
-            }, 
-            {
-                "num_decks": 115.0, 
-                "prevalence": "common", 
-                "num_observations": 87917, 
-                "tech_cards": {
-                    "Kindly Grandmother": 0.7, 
-                    "Rat Pack": 0.44, 
-                    "Deadly Shot": 0.57, 
-                    "Hunter's Mark": 0.38
-                }, 
-                "core_cards": {
-                    "Jeweled Macaw": 1.0, 
-                    "Fiery Bat": 0.86, 
-                    "Nesting Roc": 0.9, 
-                    "Savannah Highmane": 0.99, 
-                    "Eaglehorn Bow": 0.99, 
-                    "Tundra Rhino": 0.92
-                }
-            }, 
-            {
-                "num_decks": 21.0, 
-                "prevalence": "common", 
-                "num_observations": 24748, 
-                "tech_cards": {
-                    "Rat Pack": 0.38, 
-                    "Knife Juggler": 0.38, 
-                    "Jeweled Macaw": 0.33, 
-                    "Vicious Fledgling": 0.48, 
-                    "Hungry Crab": 0.62, 
-                    "Dire Wolf Alpha": 0.76, 
-                    "Tundra Rhino": 0.48
-                }, 
-                "core_cards": {
-                    "Eaglehorn Bow": 0.9, 
-                    "Kindly Grandmother": 0.9, 
-                    "Fiery Bat": 0.81, 
-                    "Leeroy Jenkins": 0.81, 
-                    "Golakka Crawler": 0.81
-                }
-            }, 
-            {
-                "num_decks": 18.0, 
-                "prevalence": "rare", 
-                "num_observations": 12508, 
-                "tech_cards": {
-                    "Rat Pack": 0.72, 
-                    "Kindly Grandmother": 0.78, 
-                    "Hungry Crab": 0.33
-                }, 
-                "core_cards": {
-                    "Golakka Crawler": 0.83, 
-                    "Tol'vir Warden": 0.89, 
-                    "Jeweled Macaw": 0.94, 
-                    "Timber Wolf": 0.83, 
-                    "Savannah Highmane": 0.89, 
-                    "Tundra Rhino": 0.94
-                }
-            }, 
-            {
-                "num_decks": 7.0, 
-                "prevalence": "rare", 
-                "num_observations": 8782, 
-                "tech_cards": {
-                    "Flare": 0.57, 
-                    "Tracking": 0.71, 
-                    "Fiery Bat": 0.71, 
-                    "Snake Trap": 0.43, 
-                    "Wolfrider": 0.57
-                }, 
-                "core_cards": {
-                    "Explosive Trap": 1.0, 
-                    "Cat Trick": 1.0, 
+                    "Eaglehorn Bow": 0.95, 
+                    "Jeweled Macaw": 0.97, 
+                    "Savannah Highmane": 0.98, 
                     "Kindly Grandmother": 0.86, 
-                    "Cloaked Huntress": 1.0, 
-                    "Eaglehorn Bow": 1.0
-                }
+                    "Tundra Rhino": 0.84
+                }, 
+                "tech_cards": {
+                    "Rat Pack": 0.68, 
+                    "Golakka Crawler": 0.55, 
+                    "Deadly Shot": 0.46, 
+                    "Infested Wolf": 0.38, 
+                    "Fiery Bat": 0.51, 
+                    "Nesting Roc": 0.56
+                }, 
+                "winrate": {
+                    "max": 63.420000000000002, 
+                    "min": 45.340000000000003, 
+                    "stddev": 2.8115394908437219, 
+                    "mean": 55.37145270270269
+                }, 
+                "num_observations": 220268, 
+                "num_decks": 296.0
             }, 
             {
-                "num_decks": 2.0, 
+                "prevalence": "common", 
+                "core_cards": {
+                    "Fiery Bat": 0.83
+                }, 
+                "tech_cards": {
+                    "Tracking": 0.3, 
+                    "Leeroy Jenkins": 0.65, 
+                    "Golakka Crawler": 0.65, 
+                    "Knife Juggler": 0.3, 
+                    "Jeweled Macaw": 0.39, 
+                    "Vicious Fledgling": 0.3, 
+                    "Hungry Crab": 0.57, 
+                    "Dire Wolf Alpha": 0.57, 
+                    "Eaglehorn Bow": 0.78, 
+                    "Rat Pack": 0.39, 
+                    "Kindly Grandmother": 0.78, 
+                    "Tundra Rhino": 0.57
+                }, 
+                "winrate": {
+                    "max": 59.57, 
+                    "min": 38.600000000000001, 
+                    "stddev": 4.8333013448738296, 
+                    "mean": 51.087391304347825
+                }, 
+                "num_observations": 20318, 
+                "num_decks": 23.0
+            }, 
+            {
                 "prevalence": "rare", 
-                "num_observations": 2207, 
+                "core_cards": {
+                    "Eaglehorn Bow": 1.0, 
+                    "Stubborn Gastropod": 1.0, 
+                    "Smuggler's Crate": 1.0, 
+                    "Knife Juggler": 1.0, 
+                    "Kindly Grandmother": 1.0
+                }, 
+                "tech_cards": {
+                    "Stegodon": 0.75, 
+                    "Leeroy Jenkins": 0.5, 
+                    "Golakka Crawler": 0.5, 
+                    "Jeweled Macaw": 0.5, 
+                    "Vicious Fledgling": 0.75, 
+                    "Dire Wolf Alpha": 0.75, 
+                    "Fiery Bat": 0.5, 
+                    "Cult Master": 0.5
+                }, 
+                "winrate": {
+                    "max": 55.520000000000003, 
+                    "min": 50.189999999999998, 
+                    "stddev": 2.1577360821008695, 
+                    "mean": 52.725000000000001
+                }, 
+                "num_observations": 7554, 
+                "num_decks": 4.0
+            }, 
+            {
+                "prevalence": "rare", 
+                "core_cards": {
+                    "Cat Trick": 1.0, 
+                    "Wolfrider": 1.0, 
+                    "Cloaked Huntress": 1.0, 
+                    "Explosive Trap": 1.0, 
+                    "Flare": 1.0, 
+                    "Kindly Grandmother": 1.0, 
+                    "Tracking": 1.0, 
+                    "Fiery Bat": 1.0, 
+                    "Eaglehorn Bow": 1.0
+                }, 
+                "tech_cards": {
+                    "Leeroy Jenkins": 0.5
+                }, 
+                "winrate": {
+                    "max": 49.979999999999997, 
+                    "min": 46.909999999999997, 
+                    "stddev": 1.1250555541838811, 
+                    "mean": 48.369999999999997
+                }, 
+                "num_observations": 6474, 
+                "num_decks": 4.0
+            }, 
+            {
+                "prevalence": "rare", 
+                "core_cards": {
+                    "Cat Trick": 1.0, 
+                    "Cloaked Huntress": 1.0, 
+                    "Freezing Trap": 1.0, 
+                    "Snipe": 1.0, 
+                    "Eaglehorn Bow": 1.0, 
+                    "Tracking": 1.0, 
+                    "Secretkeeper": 1.0, 
+                    "Savannah Highmane": 1.0
+                }, 
                 "tech_cards": {
                     "Deadly Shot": 0.5, 
                     "Explosive Trap": 0.5, 
@@ -1258,29 +1454,50 @@
                     "Call of the Wild": 0.5, 
                     "Tundra Rhino": 0.5
                 }, 
-                "core_cards": {
-                    "Cat Trick": 1.0, 
-                    "Cloaked Huntress": 1.0, 
-                    "Freezing Trap": 1.0, 
-                    "Snipe": 1.0, 
-                    "Eaglehorn Bow": 1.0, 
-                    "Tracking": 1.0, 
-                    "Secretkeeper": 1.0, 
-                    "Savannah Highmane": 1.0
-                }
+                "winrate": {
+                    "max": 54.119999999999997, 
+                    "min": 51.689999999999998, 
+                    "stddev": 1.2149999999999999, 
+                    "mean": 52.905000000000001
+                }, 
+                "num_observations": 2207, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 662, 
-                "tech_cards": {
-                    "Rat Pack": 0.5, 
-                    "Barnes": 0.5, 
-                    "Eaglehorn Bow": 0.5, 
-                    "Gentle Megasaur": 0.5, 
-                    "Deathwing": 0.5, 
-                    "Ysera": 0.5
+                "core_cards": {
+                    "Jeweled Macaw": 1.0, 
+                    "Savannah Highmane": 1.0, 
+                    "Spellbreaker": 1.0
                 }, 
+                "tech_cards": {
+                    "Call of the Wild": 0.33, 
+                    "Ravasaur Runt": 0.33, 
+                    "Timber Wolf": 0.67, 
+                    "Golakka Crawler": 0.67, 
+                    "Deadly Shot": 0.33, 
+                    "Fire Fly": 0.33, 
+                    "Knife Juggler": 0.33, 
+                    "Kindly Grandmother": 0.67, 
+                    "Vicious Fledgling": 0.33, 
+                    "Tol'vir Warden": 0.67, 
+                    "Swamp King Dred": 0.33, 
+                    "Flare": 0.33, 
+                    "Eaglehorn Bow": 0.67, 
+                    "Tundra Rhino": 0.67, 
+                    "Infested Wolf": 0.33
+                }, 
+                "winrate": {
+                    "max": 56.299999999999997, 
+                    "min": 49.479999999999997, 
+                    "stddev": 2.8078144921312416, 
+                    "mean": 52.633333333333326
+                }, 
+                "num_observations": 1012, 
+                "num_decks": 3.0
+            }, 
+            {
+                "prevalence": "rare", 
                 "core_cards": {
                     "The Curator": 1.0, 
                     "Deadly Shot": 1.0, 
@@ -1292,57 +1509,54 @@
                     "Savannah Highmane": 1.0, 
                     "Kindly Grandmother": 1.0, 
                     "Tundra Rhino": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Rat Pack": 0.5, 
+                    "Barnes": 0.5, 
+                    "Eaglehorn Bow": 0.5, 
+                    "Gentle Megasaur": 0.5, 
+                    "Deathwing": 0.5, 
+                    "Ysera": 0.5
+                }, 
+                "winrate": {
+                    "max": 53.100000000000001, 
+                    "min": 52.100000000000001, 
+                    "stddev": 0.5, 
+                    "mean": 52.600000000000001
+                }, 
+                "num_observations": 662, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 531, 
-                "tech_cards": {}, 
                 "core_cards": {
-                    "Tracking": 1.0, 
-                    "Nesting Roc": 1.0, 
-                    "Deadly Shot": 1.0, 
-                    "Infested Wolf": 1.0, 
+                    "Cat Trick": 1.0, 
+                    "Cloaked Huntress": 1.0, 
+                    "Arcane Shot": 1.0, 
+                    "Yogg-Saron Hope's End": 1.0, 
+                    "Explosive Trap": 1.0, 
                     "Jeweled Macaw": 1.0, 
-                    "Vicious Fledgling": 1.0, 
-                    "Novice Engineer": 1.0, 
-                    "Fiery Bat": 1.0, 
-                    "Hunter's Mark": 1.0, 
-                    "Oasis Snapjaw": 1.0, 
-                    "Savannah Highmane": 1.0, 
-                    "Tundra Rhino": 1.0, 
-                    "Stranglethorn Tiger": 1.0
-                }
-            }, 
-            {
-                "num_decks": 1.0, 
-                "prevalence": "rare", 
-                "num_observations": 218, 
-                "tech_cards": {}, 
-                "core_cards": {
-                    "Argent Squire": 1.0, 
+                    "Snake Trap": 1.0, 
+                    "Freezing Trap": 1.0, 
                     "Tracking": 1.0, 
-                    "Glacial Shard": 1.0, 
-                    "Cult Master": 1.0, 
-                    "Abusive Sergeant": 1.0, 
-                    "Fire Fly": 1.0, 
-                    "Knife Juggler": 1.0, 
-                    "Bloodsail Corsair": 1.0, 
-                    "Tol'vir Warden": 1.0, 
-                    "Raptor Hatchling": 1.0, 
-                    "Timber Wolf": 1.0, 
-                    "Fiery Bat": 1.0, 
-                    "Patches the Pirate": 1.0, 
-                    "The Marsh Queen": 1.0, 
-                    "Hunter's Mark": 1.0
-                }
+                    "Call of the Wild": 1.0, 
+                    "Savannah Highmane": 1.0, 
+                    "Eaglehorn Bow": 1.0, 
+                    "Hunter's Mark": 1.0, 
+                    "Grievous Bite": 1.0
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 51.450000000000003, 
+                    "min": 51.450000000000003, 
+                    "stddev": 0.0, 
+                    "mean": 51.450000000000003
+                }, 
+                "num_observations": 299, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 216, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Glacial Shard": 1.0, 
                     "Cult Master": 1.0, 
@@ -1358,10 +1572,19 @@
                     "Starving Buzzard": 1.0, 
                     "The Marsh Queen": 1.0, 
                     "Tundra Rhino": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 44.75, 
+                    "min": 44.75, 
+                    "stddev": 0.0, 
+                    "mean": 44.75
+                }, 
+                "num_observations": 216, 
+                "num_decks": 1.0
             }
         ], 
-        "num_clusters": 10, 
+        "num_clusters": 9, 
         "class": "HUNTER"
     }, 
     {
@@ -1372,33 +1595,32 @@
             4, 
             5, 
             6, 
-            7, 
-            8
+            7
         ], 
         "common_cards": [
             "Innervate"
         ], 
         "card_list": [
             "Power of the Wild", 
+            "Sabretooth Stalker", 
             "Pantry Spider", 
             "Aya Blackpaw", 
             "Enchanted Raven", 
-            "Murloc Tidecaller", 
             "Tar Creeper", 
-            "The Curator", 
+            "Y'Shaarj Rage Unbound", 
             "Cenarius", 
             "Bloodsail Corsair", 
-            "Primalfin Lookout", 
+            "Bog Creeper", 
             "Fire Fly", 
             "Ancient of War", 
             "Coldlight Oracle", 
-            "Violet Teacher", 
+            "Moonglade Portal", 
             "Ironbeak Owl", 
             "Bluegill Warrior", 
             "Savage Roar", 
             "Wild Growth", 
             "Druid of the Claw", 
-            "Bog Creeper", 
+            "Deathwing Dragonlord", 
             "Jade Spirit", 
             "Jade Blossom", 
             "C'Thun", 
@@ -1415,93 +1637,90 @@
             "Golakka Crawler", 
             "Mire Keeper", 
             "Doomcaller", 
-            "The Black Knight", 
-            "Moonglade Portal", 
+            "Wrath", 
             "Deathwing", 
             "Fandral Staghelm", 
-            "Y'Shaarj Rage Unbound", 
+            "Ravasaur Runt", 
             "Stranglethorn Tiger", 
             "Hungry Crab", 
             "Mark of Y'Shaarj", 
             "Feral Rage", 
             "Twin Emperor Vek'lor", 
-            "Gadgetzan Auctioneer", 
+            "Jungle Panther", 
             "Harrison Jones", 
-            "Ravasaur Runt", 
+            "Gadgetzan Auctioneer", 
             "Kun the Forgotten King", 
             "Nourish", 
             "Tyrantus", 
+            "The Curator", 
             "Bloodmage Thalnos", 
             "Jungle Giants", 
+            "Stubborn Gastropod", 
             "Argent Squire", 
             "Verdant Longneck", 
-            "Tol'vir Stoneshaper", 
-            "Igneous Elemental", 
-            "Rockpool Hunter", 
-            "Jade Idol", 
+            "Dire Wolf Alpha", 
+            "Defender of Argus", 
+            "Menagerie Warden", 
             "Patches the Pirate", 
             "Finja the Flying Star", 
             "Dark Arakkoa", 
-            "Menagerie Warden", 
             "Twilight Elder", 
             "Jade Behemoth", 
             "Bright-Eyed Scout", 
-            "Living Mana", 
+            "Jade Idol", 
             "Crazed Worshipper", 
             "Mark of the Lotus", 
             "Volcanosaur", 
             "Primordial Drake", 
-            "Thunder Lizard", 
             "Soggoth the Slitherer", 
             "Tortollan Forager", 
             "Vicious Fledgling", 
             "Eggnapper", 
             "Stonehill Defender", 
-            "Deathwing Dragonlord", 
+            "Living Mana", 
             "Barnes", 
             "Disciple of C'Thun", 
             "Sunfury Protector", 
             "Klaxxi Amber-Weaver", 
-            "Wrath", 
             "Innervate"
         ], 
         "clusters": [
             {
-                "num_decks": 298.0, 
                 "prevalence": "common", 
-                "num_observations": 249094, 
+                "core_cards": {
+                    "Vicious Fledgling": 0.81, 
+                    "Power of the Wild": 0.99, 
+                    "Bloodsail Corsair": 0.98, 
+                    "Mark of Y'Shaarj": 0.99, 
+                    "Fire Fly": 0.99, 
+                    "Mark of the Lotus": 0.98, 
+                    "Enchanted Raven": 0.99, 
+                    "Living Mana": 0.97, 
+                    "Savage Roar": 1.0, 
+                    "Patches the Pirate": 0.98
+                }, 
                 "tech_cards": {
                     "Argent Squire": 0.44, 
-                    "Golakka Crawler": 0.77, 
-                    "Bluegill Warrior": 0.54, 
-                    "Swipe": 0.56, 
-                    "Hungry Crab": 0.64, 
-                    "Finja the Flying Star": 0.54, 
-                    "Murloc Warleader": 0.54, 
+                    "Golakka Crawler": 0.78, 
+                    "Bluegill Warrior": 0.52, 
+                    "Swipe": 0.58, 
+                    "Hungry Crab": 0.63, 
+                    "Finja the Flying Star": 0.52, 
+                    "Murloc Warleader": 0.52, 
                     "Eggnapper": 0.4, 
-                    "Bittertide Hydra": 0.48
+                    "Bittertide Hydra": 0.46
                 }, 
-                "core_cards": {
-                    "Vicious Fledgling": 0.84, 
-                    "Power of the Wild": 1.0, 
-                    "Bloodsail Corsair": 0.99, 
-                    "Mark of Y'Shaarj": 0.99, 
-                    "Fire Fly": 1.0, 
-                    "Mark of the Lotus": 1.0, 
-                    "Enchanted Raven": 0.99, 
-                    "Living Mana": 0.98, 
-                    "Savage Roar": 1.0, 
-                    "Patches the Pirate": 0.99
-                }
+                "winrate": {
+                    "max": 61.460000000000001, 
+                    "min": 40.039999999999999, 
+                    "stddev": 2.6710124237745547, 
+                    "mean": 53.782621359223306
+                }, 
+                "num_observations": 256428, 
+                "num_decks": 309.0
             }, 
             {
-                "num_decks": 272.0, 
                 "prevalence": "common", 
-                "num_observations": 238806, 
-                "tech_cards": {
-                    "Druid of the Claw": 0.32, 
-                    "Tar Creeper": 0.62
-                }, 
                 "core_cards": {
                     "Jade Idol": 1.0, 
                     "Nourish": 1.0, 
@@ -1517,45 +1736,55 @@
                     "Fandral Staghelm": 0.9, 
                     "Jade Spirit": 0.99, 
                     "Jade Blossom": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Druid of the Claw": 0.32, 
+                    "Tar Creeper": 0.62
+                }, 
+                "winrate": {
+                    "max": 58.390000000000001, 
+                    "min": 41.520000000000003, 
+                    "stddev": 2.7857264391719059, 
+                    "mean": 51.606985294117642
+                }, 
+                "num_observations": 238806, 
+                "num_decks": 272.0
             }, 
             {
-                "num_decks": 34.0, 
                 "prevalence": "rare", 
-                "num_observations": 25727, 
-                "tech_cards": {
-                    "Tortollan Forager": 0.44, 
-                    "Vicious Fledgling": 0.38, 
-                    "Bloodsail Corsair": 0.5, 
-                    "Living Mana": 0.62, 
-                    "Patches the Pirate": 0.5, 
-                    "Pantry Spider": 0.56
-                }, 
                 "core_cards": {
-                    "Argent Squire": 0.82, 
-                    "Ravasaur Runt": 0.82, 
-                    "Power of the Wild": 0.94, 
-                    "Golakka Crawler": 0.88, 
-                    "Fire Fly": 0.91, 
-                    "Swipe": 0.85, 
-                    "Mark of Y'Shaarj": 0.94, 
-                    "Mark of the Lotus": 0.91, 
-                    "Enchanted Raven": 0.91, 
+                    "Argent Squire": 0.84, 
+                    "Ravasaur Runt": 0.84, 
+                    "Power of the Wild": 1.0, 
+                    "Golakka Crawler": 0.8, 
+                    "Fire Fly": 1.0, 
+                    "Mark of Y'Shaarj": 0.88, 
+                    "Mark of the Lotus": 1.0, 
+                    "Enchanted Raven": 0.88, 
                     "Savage Roar": 1.0, 
-                    "Eggnapper": 0.88
-                }
+                    "Eggnapper": 0.96
+                }, 
+                "tech_cards": {
+                    "Tortollan Forager": 0.72, 
+                    "Swipe": 0.68, 
+                    "Bloodsail Corsair": 0.36, 
+                    "Living Mana": 0.52, 
+                    "Defender of Argus": 0.4, 
+                    "Patches the Pirate": 0.36, 
+                    "Vicious Fledgling": 0.48, 
+                    "Pantry Spider": 0.4
+                }, 
+                "winrate": {
+                    "max": 55.240000000000002, 
+                    "min": 43.460000000000001, 
+                    "stddev": 2.3058317718341899, 
+                    "mean": 52.122799999999998
+                }, 
+                "num_observations": 19176, 
+                "num_decks": 25.0
             }, 
             {
-                "num_decks": 15.0, 
                 "prevalence": "rare", 
-                "num_observations": 10997, 
-                "tech_cards": {
-                    "Bog Creeper": 0.33, 
-                    "Soggoth the Slitherer": 0.4, 
-                    "Ironbeak Owl": 0.47, 
-                    "Jade Blossom": 0.67, 
-                    "Bright-Eyed Scout": 0.6
-                }, 
                 "core_cards": {
                     "The Curator": 0.8, 
                     "Moonglade Portal": 1.0, 
@@ -1573,16 +1802,25 @@
                     "Ysera": 1.0, 
                     "Deathwing": 1.0, 
                     "Mire Keeper": 0.93
-                }
+                }, 
+                "tech_cards": {
+                    "Bog Creeper": 0.33, 
+                    "Soggoth the Slitherer": 0.4, 
+                    "Ironbeak Owl": 0.47, 
+                    "Jade Blossom": 0.67, 
+                    "Bright-Eyed Scout": 0.6
+                }, 
+                "winrate": {
+                    "max": 56.439999999999998, 
+                    "min": 48.119999999999997, 
+                    "stddev": 2.431267981938642, 
+                    "mean": 51.975999999999999
+                }, 
+                "num_observations": 10997, 
+                "num_decks": 15.0
             }, 
             {
-                "num_decks": 3.0, 
                 "prevalence": "rare", 
-                "num_observations": 2314, 
-                "tech_cards": {
-                    "Doomcaller": 0.33, 
-                    "Harrison Jones": 0.33
-                }, 
                 "core_cards": {
                     "Dark Arakkoa": 1.0, 
                     "C'Thun": 1.0, 
@@ -1600,23 +1838,22 @@
                     "Crazed Worshipper": 1.0, 
                     "Stonehill Defender": 1.0, 
                     "Disciple of C'Thun": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Doomcaller": 0.33, 
+                    "Harrison Jones": 0.33
+                }, 
+                "winrate": {
+                    "max": 47.490000000000002, 
+                    "min": 46.770000000000003, 
+                    "stddev": 0.33256578296631861, 
+                    "mean": 47.020000000000003
+                }, 
+                "num_observations": 2314, 
+                "num_decks": 3.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 942, 
-                "tech_cards": {
-                    "Dark Arakkoa": 0.5, 
-                    "Tortollan Forager": 0.5, 
-                    "Verdant Longneck": 0.5, 
-                    "Volcanosaur": 0.5, 
-                    "Giant Anaconda": 0.5, 
-                    "Cenarius": 0.5, 
-                    "Sunfury Protector": 0.5, 
-                    "Ancient of War": 0.5, 
-                    "Kun the Forgotten King": 0.5
-                }, 
                 "core_cards": {
                     "The Curator": 1.0, 
                     "Nourish": 1.0, 
@@ -1632,63 +1869,60 @@
                     "Coldlight Oracle": 1.0, 
                     "Jungle Giants": 1.0, 
                     "Stranglethorn Tiger": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Dark Arakkoa": 0.5, 
+                    "Tortollan Forager": 0.5, 
+                    "Verdant Longneck": 0.5, 
+                    "Volcanosaur": 0.5, 
+                    "Giant Anaconda": 0.5, 
+                    "Cenarius": 0.5, 
+                    "Sunfury Protector": 0.5, 
+                    "Ancient of War": 0.5, 
+                    "Kun the Forgotten King": 0.5
+                }, 
+                "winrate": {
+                    "max": 44.939999999999998, 
+                    "min": 41.240000000000002, 
+                    "stddev": 1.8499999999999979, 
+                    "mean": 43.090000000000003
+                }, 
+                "num_observations": 942, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 598, 
-                "tech_cards": {
-                    "Volcanosaur": 0.5, 
-                    "Hungry Crab": 0.5, 
-                    "The Black Knight": 0.5
-                }, 
                 "core_cards": {
-                    "Thunder Lizard": 1.0, 
-                    "Tortollan Forager": 1.0, 
+                    "Argent Squire": 1.0, 
                     "Nourish": 1.0, 
-                    "Golakka Crawler": 1.0, 
-                    "Fire Fly": 1.0, 
-                    "Igneous Elemental": 1.0, 
+                    "Power of the Wild": 1.0, 
+                    "Wrath": 1.0, 
+                    "Swipe": 1.0, 
                     "Mark of Y'Shaarj": 1.0, 
                     "Druid of the Claw": 1.0, 
-                    "Swipe": 1.0, 
-                    "Wrath": 1.0, 
-                    "Enchanted Raven": 1.0, 
-                    "Menagerie Warden": 1.0, 
-                    "Shellshifter": 1.0, 
-                    "Tol'vir Stoneshaper": 1.0, 
-                    "Elder Longneck": 1.0, 
-                    "Savage Roar": 1.0, 
-                    "Stranglethorn Tiger": 1.0
-                }
-            }, 
-            {
-                "num_decks": 1.0, 
-                "prevalence": "rare", 
-                "num_observations": 452, 
-                "tech_cards": {}, 
-                "core_cards": {
-                    "Tortollan Forager": 1.0, 
-                    "Ravasaur Runt": 1.0, 
-                    "Power of the Wild": 1.0, 
-                    "Bluegill Warrior": 1.0, 
-                    "Rockpool Hunter": 1.0, 
-                    "Fire Fly": 1.0, 
-                    "Mark of Y'Shaarj": 1.0, 
-                    "Murloc Tidecaller": 1.0, 
                     "Mark of the Lotus": 1.0, 
-                    "Primalfin Lookout": 1.0, 
                     "Enchanted Raven": 1.0, 
-                    "Violet Teacher": 1.0, 
+                    "Dire Wolf Alpha": 1.0, 
+                    "Stubborn Gastropod": 1.0, 
+                    "Jungle Panther": 1.0, 
                     "Savage Roar": 1.0, 
-                    "Finja the Flying Star": 1.0, 
-                    "Murloc Warleader": 1.0, 
-                    "Bittertide Hydra": 1.0
-                }
+                    "Sabretooth Stalker": 1.0, 
+                    "Eggnapper": 1.0, 
+                    "Bittertide Hydra": 1.0, 
+                    "Stranglethorn Tiger": 1.0
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 41.549999999999997, 
+                    "min": 41.549999999999997, 
+                    "stddev": 0.0, 
+                    "mean": 41.549999999999997
+                }, 
+                "num_observations": 267, 
+                "num_decks": 1.0
             }
         ], 
-        "num_clusters": 8, 
+        "num_clusters": 7, 
         "class": "DRUID"
     }, 
     {
@@ -1701,7 +1935,8 @@
             6, 
             7, 
             8, 
-            9
+            9, 
+            10
         ], 
         "common_cards": [
             "Preparation"
@@ -1710,35 +1945,39 @@
             "Servant of Kalimos", 
             "Aya Blackpaw", 
             "Youthful Brewmaster", 
-            "Small-Time Buccaneer", 
+            "Tar Creeper", 
             "Arcane Giant", 
-            "Bloodsail Raider", 
+            "Xaril Poisoned Mind", 
             "SI:7 Agent", 
             "Journey Below", 
             "Fire Fly", 
+            "Murloc Tidecaller", 
+            "Argent Squire", 
             "Southsea Deckhand", 
             "Edwin VanCleef", 
-            "Ethereal Peddler", 
             "Southsea Captain", 
             "Bluegill Warrior", 
+            "Small-Time Buccaneer", 
             "Cold Blood", 
             "Counterfeit Coin", 
             "Mistress of Mixtures", 
             "Jade Spirit", 
             "Vanish", 
-            "Tar Creeper", 
             "Deadly Poison", 
             "Elise the Trailblazer", 
             "Assassin's Blade", 
+            "Bladed Cultist", 
             "Novice Engineer", 
             "Undercity Huckster", 
             "Bilefin Tidehunter", 
-            "Xaril Poisoned Mind", 
+            "Bloodsail Raider", 
+            "Gentle Megasaur", 
             "Murloc Warleader", 
-            "Spiritsinger Umbra", 
+            "Lotus Agents", 
             "Shadowstep", 
             "Cult Master", 
-            "Lotus Agents", 
+            "Spiritsinger Umbra", 
+            "Shadow Sensei", 
             "Gadgetzan Ferryman", 
             "Jade Swarmer", 
             "Jade Shuriken", 
@@ -1750,7 +1989,7 @@
             "Obsidian Shard", 
             "Thistle Tea", 
             "Tol'vir Stoneshaper", 
-            "Bladed Cultist", 
+            "Jungle Panther", 
             "Gadgetzan Auctioneer", 
             "N'Zoth the Corruptor", 
             "Igneous Elemental", 
@@ -1766,31 +2005,26 @@
             "Finja the Flying Star", 
             "Shaku the Collector", 
             "Shadowcaster", 
+            "Lotus Assassin", 
             "Backstab", 
+            "Sergeant Sally", 
             "Hallucination", 
             "Swashburglar", 
-            "Sergeant Sally", 
+            "Ethereal Peddler", 
             "Glacial Shard", 
             "Sap", 
             "Blazecaller", 
             "Deathwing", 
             "Eviscerate", 
+            "Rockpool Hunter", 
             "Barnes", 
-            "Dread Corsair", 
             "Fire Plume Phoenix", 
             "Shadow Strike", 
             "Preparation"
         ], 
         "clusters": [
             {
-                "num_decks": 416.0, 
                 "prevalence": "common", 
-                "num_observations": 370910, 
-                "tech_cards": {
-                    "Swashburglar": 0.65, 
-                    "Bilefin Tidehunter": 0.58, 
-                    "Backstab": 0.6
-                }, 
                 "core_cards": {
                     "Mimic Pod": 0.97, 
                     "Glacial Shard": 0.89, 
@@ -1805,40 +2039,100 @@
                     "Stonetusk Boar": 0.93, 
                     "Vanish": 0.89, 
                     "Youthful Brewmaster": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Swashburglar": 0.65, 
+                    "Bilefin Tidehunter": 0.58, 
+                    "Backstab": 0.6
+                }, 
+                "winrate": {
+                    "max": 62.880000000000003, 
+                    "min": 41.219999999999999, 
+                    "stddev": 2.9266176136935997, 
+                    "mean": 51.586081730769237
+                }, 
+                "num_observations": 370910, 
+                "num_decks": 416.0
             }, 
             {
-                "num_decks": 205.0, 
                 "prevalence": "common", 
-                "num_observations": 159990, 
-                "tech_cards": {
-                    "Shaku the Collector": 0.31, 
-                    "Bloodmage Thalnos": 0.79, 
-                    "Cold Blood": 0.69, 
-                    "SI:7 Agent": 0.8, 
-                    "Mimic Pod": 0.74, 
-                    "Arcane Giant": 0.73
-                }, 
                 "core_cards": {
-                    "Razorpetal Lasher": 0.92, 
-                    "Fan of Knives": 0.88, 
-                    "Sap": 0.8, 
+                    "Razorpetal Lasher": 0.96, 
+                    "Fan of Knives": 0.93, 
+                    "Bloodmage Thalnos": 0.83, 
+                    "Sap": 0.85, 
                     "Backstab": 1.0, 
                     "Edwin VanCleef": 0.99, 
                     "Swashburglar": 0.98, 
-                    "Gadgetzan Auctioneer": 0.93, 
+                    "Gadgetzan Auctioneer": 1.0, 
                     "Vilespine Slayer": 0.97, 
                     "Patches the Pirate": 0.91, 
                     "Eviscerate": 1.0, 
                     "Hallucination": 0.99, 
-                    "Counterfeit Coin": 0.93, 
-                    "Sherazin Corpse Flower": 0.82
-                }
+                    "Counterfeit Coin": 0.98, 
+                    "Sherazin Corpse Flower": 0.88
+                }, 
+                "tech_cards": {
+                    "Cold Blood": 0.7, 
+                    "Mimic Pod": 0.77, 
+                    "SI:7 Agent": 0.78, 
+                    "Arcane Giant": 0.78
+                }, 
+                "winrate": {
+                    "max": 60.060000000000002, 
+                    "min": 41.719999999999999, 
+                    "stddev": 2.7293639046671152, 
+                    "mean": 51.328210526315793
+                }, 
+                "num_observations": 150599, 
+                "num_decks": 190.0
             }, 
             {
-                "num_decks": 7.0, 
                 "prevalence": "rare", 
-                "num_observations": 7462, 
+                "core_cards": {
+                    "Edwin VanCleef": 0.9, 
+                    "Leeroy Jenkins": 0.8, 
+                    "Backstab": 1.0, 
+                    "SI:7 Agent": 0.95, 
+                    "Swashburglar": 1.0, 
+                    "Vilespine Slayer": 0.9, 
+                    "Patches the Pirate": 0.95, 
+                    "Eviscerate": 1.0
+                }, 
+                "tech_cards": {
+                    "Razorpetal Lasher": 0.4, 
+                    "Shaku the Collector": 0.7, 
+                    "Xaril Poisoned Mind": 0.3, 
+                    "Fire Fly": 0.55, 
+                    "Undercity Huckster": 0.6, 
+                    "Argent Squire": 0.4, 
+                    "Cold Blood": 0.75, 
+                    "Southsea Deckhand": 0.45, 
+                    "Hallucination": 0.75, 
+                    "Mimic Pod": 0.3, 
+                    "Naga Corsair": 0.35
+                }, 
+                "winrate": {
+                    "max": 55.880000000000003, 
+                    "min": 45.210000000000001, 
+                    "stddev": 3.62188469584552, 
+                    "mean": 51.807500000000005
+                }, 
+                "num_observations": 10900, 
+                "num_decks": 20.0
+            }, 
+            {
+                "prevalence": "rare", 
+                "core_cards": {
+                    "Backstab": 1.0, 
+                    "Swashburglar": 0.86, 
+                    "Aya Blackpaw": 1.0, 
+                    "Jade Swarmer": 1.0, 
+                    "Jade Shuriken": 1.0, 
+                    "Journey Below": 1.0, 
+                    "Eviscerate": 1.0, 
+                    "Jade Spirit": 0.86
+                }, 
                 "tech_cards": {
                     "Undercity Huckster": 0.43, 
                     "Shaku the Collector": 0.43, 
@@ -1855,55 +2149,17 @@
                     "Hallucination": 0.43, 
                     "Mimic Pod": 0.43
                 }, 
-                "core_cards": {
-                    "Backstab": 1.0, 
-                    "Swashburglar": 0.86, 
-                    "Aya Blackpaw": 1.0, 
-                    "Jade Swarmer": 1.0, 
-                    "Jade Shuriken": 1.0, 
-                    "Journey Below": 1.0, 
-                    "Eviscerate": 1.0, 
-                    "Jade Spirit": 0.86
-                }
+                "winrate": {
+                    "max": 52.829999999999998, 
+                    "min": 40.0, 
+                    "stddev": 4.7278134912624514, 
+                    "mean": 47.627142857142857
+                }, 
+                "num_observations": 7462, 
+                "num_decks": 7.0
             }, 
             {
-                "num_decks": 7.0, 
                 "prevalence": "rare", 
-                "num_observations": 2938, 
-                "tech_cards": {
-                    "Shadowstep": 0.43, 
-                    "Razorpetal Lasher": 0.57, 
-                    "Fire Fly": 0.43, 
-                    "Xaril Poisoned Mind": 0.43, 
-                    "Vilespine Slayer": 0.71
-                }, 
-                "core_cards": {
-                    "Shaku the Collector": 0.86, 
-                    "Leeroy Jenkins": 1.0, 
-                    "Backstab": 1.0, 
-                    "Bluegill Warrior": 1.0, 
-                    "Edwin VanCleef": 0.86, 
-                    "Swashburglar": 1.0, 
-                    "Murloc Warleader": 1.0, 
-                    "Cold Blood": 1.0, 
-                    "Finja the Flying Star": 1.0, 
-                    "Patches the Pirate": 1.0, 
-                    "Southsea Deckhand": 1.0, 
-                    "Eviscerate": 1.0, 
-                    "SI:7 Agent": 0.86
-                }
-            }, 
-            {
-                "num_decks": 3.0, 
-                "prevalence": "rare", 
-                "num_observations": 1607, 
-                "tech_cards": {
-                    "Edwin VanCleef": 0.67, 
-                    "Sap": 0.67, 
-                    "SI:7 Agent": 0.67, 
-                    "Obsidian Shard": 0.67, 
-                    "Sherazin Corpse Flower": 0.33
-                }, 
                 "core_cards": {
                     "Undercity Huckster": 1.0, 
                     "Shaku the Collector": 1.0, 
@@ -1919,38 +2175,91 @@
                     "Eviscerate": 1.0, 
                     "Hallucination": 1.0, 
                     "Mimic Pod": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Edwin VanCleef": 0.67, 
+                    "Sap": 0.67, 
+                    "SI:7 Agent": 0.67, 
+                    "Obsidian Shard": 0.67, 
+                    "Sherazin Corpse Flower": 0.33
+                }, 
+                "winrate": {
+                    "max": 52.049999999999997, 
+                    "min": 36.399999999999999, 
+                    "stddev": 6.3903068957775586, 
+                    "mean": 44.313333333333333
+                }, 
+                "num_observations": 1607, 
+                "num_decks": 3.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 757, 
-                "tech_cards": {}, 
                 "core_cards": {
-                    "Undercity Huckster": 1.0, 
                     "Shaku the Collector": 1.0, 
-                    "Southsea Captain": 1.0, 
-                    "Deadly Poison": 1.0, 
-                    "Backstab": 1.0, 
-                    "Edwin VanCleef": 1.0, 
-                    "Swashburglar": 1.0, 
-                    "Dread Corsair": 1.0, 
-                    "Vilespine Slayer": 1.0, 
-                    "Cold Blood": 1.0, 
-                    "Patches the Pirate": 1.0, 
-                    "Obsidian Shard": 1.0, 
+                    "Lotus Assassin": 1.0, 
                     "Leeroy Jenkins": 1.0, 
+                    "Backstab": 1.0, 
+                    "Bluegill Warrior": 1.0, 
+                    "Swashburglar": 1.0, 
+                    "Aya Blackpaw": 1.0, 
+                    "Defender of Argus": 1.0, 
+                    "Shadow Sensei": 1.0, 
+                    "Cold Blood": 1.0, 
+                    "Finja the Flying Star": 1.0, 
+                    "Patches the Pirate": 1.0, 
+                    "Southsea Deckhand": 1.0, 
+                    "Murloc Warleader": 1.0, 
                     "Eviscerate": 1.0, 
-                    "Hallucination": 1.0, 
-                    "Naga Corsair": 1.0, 
-                    "Southsea Deckhand": 1.0
-                }
+                    "Jade Swarmer": 1.0, 
+                    "Jade Shuriken": 1.0, 
+                    "Jungle Panther": 1.0
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 46.770000000000003, 
+                    "min": 46.770000000000003, 
+                    "stddev": 0.0, 
+                    "mean": 46.770000000000003
+                }, 
+                "num_observations": 1386, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 500, 
-                "tech_cards": {}, 
+                "core_cards": {
+                    "Razorpetal Lasher": 1.0, 
+                    "Shaku the Collector": 1.0, 
+                    "Shadowcaster": 1.0, 
+                    "Backstab": 1.0, 
+                    "Fire Fly": 1.0, 
+                    "Swashburglar": 1.0, 
+                    "Fan of Knives": 1.0, 
+                    "Vilespine Slayer": 1.0, 
+                    "Servant of Kalimos": 1.0, 
+                    "Fire Plume Phoenix": 1.0, 
+                    "Patches the Pirate": 1.0, 
+                    "Blazecaller": 1.0, 
+                    "Eviscerate": 1.0, 
+                    "SI:7 Agent": 1.0, 
+                    "Hallucination": 1.0, 
+                    "Edwin VanCleef": 1.0
+                }, 
+                "tech_cards": {
+                    "Deathwing": 0.5, 
+                    "Defender of Argus": 0.5, 
+                    "Shadow Strike": 0.5
+                }, 
+                "winrate": {
+                    "max": 50.710000000000001, 
+                    "min": 50.32, 
+                    "stddev": 0.19500000000000028, 
+                    "mean": 50.515000000000001
+                }, 
+                "num_observations": 865, 
+                "num_decks": 2.0
+            }, 
+            {
+                "prevalence": "rare", 
                 "core_cards": {
                     "Undercity Huckster": 1.0, 
                     "Deadly Poison": 1.0, 
@@ -1969,13 +2278,19 @@
                     "Southsea Captain": 1.0, 
                     "Sap": 1.0, 
                     "Backstab": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 53.130000000000003, 
+                    "min": 53.130000000000003, 
+                    "stddev": 0.0, 
+                    "mean": 53.130000000000003
+                }, 
+                "num_observations": 500, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 443, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Bloodmage Thalnos": 1.0, 
                     "Xaril Poisoned Mind": 1.0, 
@@ -1996,36 +2311,51 @@
                     "Mimic Pod": 1.0, 
                     "Sergeant Sally": 1.0, 
                     "Shadowcaster": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 43.890000000000001, 
+                    "min": 43.890000000000001, 
+                    "stddev": 0.0, 
+                    "mean": 43.890000000000001
+                }, 
+                "num_observations": 443, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 301, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Razorpetal Lasher": 1.0, 
                     "Shaku the Collector": 1.0, 
-                    "Shadowcaster": 1.0, 
+                    "Bluegill Warrior": 1.0, 
+                    "Leeroy Jenkins": 1.0, 
                     "Backstab": 1.0, 
-                    "Fire Fly": 1.0, 
+                    "Rockpool Hunter": 1.0, 
+                    "Edwin VanCleef": 1.0, 
                     "Swashburglar": 1.0, 
-                    "Fan of Knives": 1.0, 
-                    "Vilespine Slayer": 1.0, 
-                    "Servant of Kalimos": 1.0, 
-                    "Fire Plume Phoenix": 1.0, 
-                    "Patches the Pirate": 1.0, 
-                    "Blazecaller": 1.0, 
                     "Eviscerate": 1.0, 
+                    "Gentle Megasaur": 1.0, 
+                    "Vilespine Slayer": 1.0, 
+                    "Cold Blood": 1.0, 
+                    "Finja the Flying Star": 1.0, 
+                    "Patches the Pirate": 1.0, 
+                    "Southsea Deckhand": 1.0, 
+                    "Murloc Warleader": 1.0, 
                     "SI:7 Agent": 1.0, 
-                    "Hallucination": 1.0, 
-                    "Shadow Strike": 1.0, 
-                    "Deathwing": 1.0, 
-                    "Edwin VanCleef": 1.0
-                }
+                    "Murloc Tidecaller": 1.0
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 54.920000000000002, 
+                    "min": 54.920000000000002, 
+                    "stddev": 0.0, 
+                    "mean": 54.920000000000002
+                }, 
+                "num_observations": 236, 
+                "num_decks": 1.0
             }
         ], 
-        "num_clusters": 9, 
+        "num_clusters": 10, 
         "class": "ROGUE"
     }, 
     {
@@ -2046,235 +2376,203 @@
         "card_list": [
             "Servant of Kalimos", 
             "Lightning Bolt", 
-            "Cairne Bloodhoof", 
-            "Aya Blackpaw", 
-            "Primal Fusion", 
-            "Earth Elemental", 
-            "Tar Creeper", 
-            "Evolve", 
-            "Thing from Below", 
-            "Bloodsail Corsair", 
-            "Primalfin Lookout", 
-            "Fire Fly", 
-            "Doomsayer", 
-            "Kalimos Primal Lord", 
-            "Earth Shock", 
-            "Totemic Might", 
-            "Nerubian Prophet", 
-            "Hex", 
-            "Bluegill Warrior", 
-            "Primordial Drake", 
-            "Y'Shaarj Rage Unbound", 
             "Murloc Tidecaller", 
-            "Jade Claws", 
-            "Jade Spirit", 
-            "Madam Goya", 
-            "C'Thun", 
-            "Beckoner of Evil", 
+            "Tar Creeper", 
+            "Primalfin Lookout", 
+            "Hot Spring Guardian", 
+            "Al'Akir the Windlord", 
             "Volcano", 
-            "Elise the Trailblazer", 
-            "Call in the Finishers", 
-            "C'Thun's Chosen", 
-            "Jade Chieftain", 
-            "Bilefin Tidehunter", 
-            "Ancestral Spirit", 
-            "Gentle Megasaur", 
-            "Murloc Warleader", 
+            "Novice Engineer", 
+            "Ysera", 
+            "Cult Master", 
             "Hallazeal the Ascended", 
             "Far Sight", 
-            "Fire Elemental", 
-            "Doppelgangster", 
-            "Malygos", 
-            "Hot Spring Guardian", 
-            "Stonehill Defender", 
-            "Spirit Echo", 
-            "Coldlight Seer", 
-            "Twin Emperor Vek'lor", 
+            "Master of Evolution", 
+            "Volatile Elemental", 
             "Tol'vir Stoneshaper", 
-            "Dirty Rat", 
             "Tidal Surge", 
             "Unite the Murlocs", 
             "Bloodlust", 
-            "Lightning Storm", 
             "Bloodmage Thalnos", 
-            "Loot Hoarder", 
+            "Argent Squire", 
+            "Defender of Argus", 
+            "Grimscale Oracle", 
+            "Primalfin Totem", 
+            "Glacial Shard", 
+            "Fire Plume Harbinger", 
+            "Frostwolf Warlord", 
+            "Deathwing Dragonlord", 
+            "Barnes", 
+            "Jinyu Waterspeaker", 
+            "Aya Blackpaw", 
+            "Cairne Bloodhoof", 
+            "Ancestral Spirit", 
+            "Bloodsail Corsair", 
+            "Fire Fly", 
+            "Kalimos Primal Lord", 
+            "Earth Shock", 
+            "Totemic Might", 
+            "Hex", 
+            "Bluegill Warrior", 
+            "C'Thun", 
+            "Beckoner of Evil", 
+            "C'Thun's Chosen", 
+            "Bilefin Tidehunter", 
             "Acolyte of Pain", 
+            "Lightning Storm", 
+            "Flametongue Totem", 
             "Murloc Tidehunter", 
-            "Master of Evolution", 
-            "Faceless Manipulator", 
+            "Twin Emperor Vek'lor", 
+            "N'Zoth the Corruptor", 
+            "Nerubian Prophet", 
+            "Gnomish Inventor", 
+            "Devolve", 
+            "Earth Elemental", 
+            "Southsea Deckhand", 
+            "Jade Claws", 
+            "Jade Spirit", 
             "Blowgill Sniper", 
+            "Y'Shaarj Rage Unbound", 
+            "Loot Hoarder", 
+            "Sea Giant", 
             "Mana Tide Totem", 
             "Patches the Pirate", 
             "Finja the Flying Star", 
-            "N'Zoth the Corruptor", 
-            "Ysera", 
             "Jade Lightning", 
-            "Grimscale Oracle", 
-            "Primalfin Totem", 
-            "Wicked Witchdoctor", 
-            "White Eyes", 
-            "Flametongue Totem", 
-            "Blazecaller", 
-            "Deathwing Dragonlord", 
-            "Devolve", 
-            "Rockpool Hunter", 
-            "Barnes", 
-            "Disciple of C'Thun", 
-            "Jinyu Waterspeaker", 
+            "Fire Elemental", 
             "Crazed Worshipper", 
+            "White Eyes", 
+            "Blazecaller", 
+            "Primordial Drake", 
+            "Eggnapper", 
+            "Stonehill Defender", 
+            "Rockpool Hunter", 
+            "Fire Plume Phoenix", 
+            "Primal Fusion", 
+            "Evolve", 
+            "Thing from Below", 
+            "Mistress of Mixtures", 
+            "Dirty Rat", 
+            "Madam Goya", 
+            "Wicked Witchdoctor", 
+            "Elise the Trailblazer", 
+            "Call in the Finishers", 
+            "Gentle Megasaur", 
+            "Murloc Warleader", 
+            "Malygos", 
+            "Spirit Echo", 
+            "Coldlight Seer", 
+            "Igneous Elemental", 
+            "Doppelgangster", 
+            "Disciple of C'Thun", 
             "Maelstrom Portal"
         ], 
         "clusters": [
             {
-                "num_decks": 81.0, 
                 "prevalence": "common", 
-                "num_observations": 73395, 
-                "tech_cards": {
-                    "Evolve": 0.62, 
-                    "Bloodsail Corsair": 0.74, 
-                    "Aya Blackpaw": 0.79, 
-                    "Doppelgangster": 0.6, 
-                    "Hex": 0.4, 
-                    "Devolve": 0.73, 
-                    "Stonehill Defender": 0.69, 
-                    "Jade Spirit": 0.31
-                }, 
                 "core_cards": {
-                    "Jade Lightning": 0.99, 
-                    "Flametongue Totem": 1.0, 
-                    "Fire Fly": 1.0, 
-                    "Primalfin Totem": 0.93, 
-                    "Mana Tide Totem": 1.0, 
+                    "Aya Blackpaw": 0.87, 
+                    "Thing from Below": 0.99, 
                     "Jade Claws": 1.0, 
-                    "Bloodlust": 1.0, 
-                    "Patches the Pirate": 0.95, 
-                    "Thing from Below": 1.0
-                }
+                    "Jade Lightning": 0.99, 
+                    "Mana Tide Totem": 0.99
+                }, 
+                "tech_cards": {
+                    "Evolve": 0.55, 
+                    "Spirit Echo": 0.38, 
+                    "Doppelgangster": 0.51, 
+                    "Fire Fly": 0.77, 
+                    "Primalfin Totem": 0.57, 
+                    "Bloodsail Corsair": 0.44, 
+                    "Hex": 0.64, 
+                    "Bloodlust": 0.71, 
+                    "Patches the Pirate": 0.55, 
+                    "Volcano": 0.41, 
+                    "Lightning Storm": 0.45, 
+                    "Flametongue Totem": 0.8, 
+                    "Devolve": 0.74, 
+                    "Stonehill Defender": 0.69, 
+                    "Jade Spirit": 0.44
+                }, 
+                "winrate": {
+                    "max": 60.039999999999999, 
+                    "min": 44.920000000000002, 
+                    "stddev": 3.1107405144163551, 
+                    "mean": 53.659854014598537
+                }, 
+                "num_observations": 124866, 
+                "num_decks": 137.0
             }, 
             {
-                "num_decks": 81.0, 
                 "prevalence": "common", 
-                "num_observations": 69601, 
-                "tech_cards": {
-                    "Jade Lightning": 0.73, 
-                    "Aya Blackpaw": 0.64, 
-                    "Mana Tide Totem": 0.64, 
-                    "Jade Claws": 0.79, 
-                    "Bloodlust": 0.35, 
-                    "Tol'vir Stoneshaper": 0.68, 
-                    "Bloodmage Thalnos": 0.41, 
-                    "Lightning Storm": 0.72, 
-                    "Devolve": 0.43
-                }, 
                 "core_cards": {
                     "Fire Fly": 0.98, 
                     "Hex": 1.0, 
-                    "Tar Creeper": 0.85, 
+                    "Tar Creeper": 0.83, 
                     "Fire Elemental": 0.95, 
-                    "Servant of Kalimos": 0.96, 
-                    "Hot Spring Guardian": 0.85, 
-                    "Blazecaller": 0.84, 
+                    "Servant of Kalimos": 0.94, 
+                    "Hot Spring Guardian": 0.83, 
                     "Flametongue Totem": 0.88, 
-                    "Kalimos Primal Lord": 0.91
-                }
+                    "Kalimos Primal Lord": 0.93
+                }, 
+                "tech_cards": {
+                    "Jade Lightning": 0.73, 
+                    "Aya Blackpaw": 0.64, 
+                    "Mana Tide Totem": 0.67, 
+                    "Jade Claws": 0.79, 
+                    "Bloodlust": 0.32, 
+                    "Tol'vir Stoneshaper": 0.65, 
+                    "Bloodmage Thalnos": 0.4, 
+                    "Blazecaller": 0.8, 
+                    "Lightning Storm": 0.73, 
+                    "Devolve": 0.45
+                }, 
+                "winrate": {
+                    "max": 61.289999999999999, 
+                    "min": 46.799999999999997, 
+                    "stddev": 3.1116652069233486, 
+                    "mean": 54.202261904761912
+                }, 
+                "num_observations": 71497, 
+                "num_decks": 84.0
             }, 
             {
-                "num_decks": 30.0, 
                 "prevalence": "common", 
-                "num_observations": 31542, 
-                "tech_cards": {
-                    "Evolve": 0.77, 
-                    "Spirit Echo": 0.73, 
-                    "Doppelgangster": 0.67, 
-                    "Bloodlust": 0.4, 
-                    "Master of Evolution": 0.77, 
-                    "Jinyu Waterspeaker": 0.4, 
-                    "Lightning Storm": 0.77, 
-                    "Devolve": 0.53
-                }, 
                 "core_cards": {
-                    "Jade Lightning": 0.9, 
-                    "Flametongue Totem": 1.0, 
-                    "Fire Fly": 0.93, 
-                    "Hex": 0.97, 
-                    "Aya Blackpaw": 0.83, 
-                    "Mana Tide Totem": 1.0, 
-                    "Jade Claws": 0.9, 
-                    "Volcano": 0.8, 
-                    "Thing from Below": 1.0, 
-                    "Stonehill Defender": 0.97
-                }
-            }, 
-            {
-                "num_decks": 36.0, 
-                "prevalence": "common", 
-                "num_observations": 25795, 
-                "tech_cards": {
-                    "Bloodmage Thalnos": 0.75, 
-                    "Jade Chieftain": 0.78, 
-                    "Hot Spring Guardian": 0.72, 
-                    "Stonehill Defender": 0.5
-                }, 
-                "core_cards": {
-                    "Jade Lightning": 1.0, 
-                    "Spirit Echo": 0.89, 
+                    "White Eyes": 0.92, 
+                    "Mana Tide Totem": 0.92, 
                     "Hex": 1.0, 
-                    "Aya Blackpaw": 1.0, 
-                    "Mana Tide Totem": 0.94, 
-                    "Jade Claws": 1.0, 
-                    "Jinyu Waterspeaker": 0.92, 
-                    "Volcano": 0.97, 
-                    "Lightning Storm": 0.94, 
-                    "Thing from Below": 0.89, 
-                    "Devolve": 0.92, 
-                    "Jade Spirit": 0.89
-                }
-            }, 
-            {
-                "num_decks": 19.0, 
-                "prevalence": "rare", 
-                "num_observations": 13769, 
-                "tech_cards": {
-                    "Ancestral Spirit": 0.53, 
-                    "Bloodmage Thalnos": 0.58, 
-                    "Spirit Echo": 0.74, 
-                    "Hallazeal the Ascended": 0.63, 
-                    "Dirty Rat": 0.58, 
-                    "Doomsayer": 0.32, 
-                    "Elise the Trailblazer": 0.37, 
-                    "Hot Spring Guardian": 0.63, 
-                    "N'Zoth the Corruptor": 0.68, 
-                    "Cairne Bloodhoof": 0.63, 
-                    "Earth Elemental": 0.37
-                }, 
-                "core_cards": {
-                    "White Eyes": 0.95, 
-                    "Mana Tide Totem": 0.95, 
-                    "Hex": 1.0, 
-                    "Jinyu Waterspeaker": 1.0, 
-                    "Tidal Surge": 0.84, 
-                    "Volcano": 1.0, 
+                    "Jinyu Waterspeaker": 0.96, 
+                    "Volcano": 0.96, 
                     "Lightning Storm": 1.0, 
-                    "Thing from Below": 0.95, 
-                    "Devolve": 0.95, 
-                    "Stonehill Defender": 0.84
-                }
+                    "Thing from Below": 0.88, 
+                    "Devolve": 0.92, 
+                    "Stonehill Defender": 0.85
+                }, 
+                "tech_cards": {
+                    "Ancestral Spirit": 0.54, 
+                    "Bloodmage Thalnos": 0.65, 
+                    "Spirit Echo": 0.69, 
+                    "Hallazeal the Ascended": 0.62, 
+                    "Dirty Rat": 0.42, 
+                    "Elise the Trailblazer": 0.31, 
+                    "Hot Spring Guardian": 0.5, 
+                    "Tidal Surge": 0.62, 
+                    "N'Zoth the Corruptor": 0.62, 
+                    "Cairne Bloodhoof": 0.46, 
+                    "Earth Elemental": 0.38
+                }, 
+                "winrate": {
+                    "max": 56.740000000000002, 
+                    "min": 44.909999999999997, 
+                    "stddev": 2.9813035997439368, 
+                    "mean": 49.325000000000003
+                }, 
+                "num_observations": 17173, 
+                "num_decks": 26.0
             }, 
             {
-                "num_decks": 13.0, 
                 "prevalence": "rare", 
-                "num_observations": 10038, 
-                "tech_cards": {
-                    "Jade Lightning": 0.31, 
-                    "Lightning Bolt": 0.31, 
-                    "Blowgill Sniper": 0.38, 
-                    "Hex": 0.38, 
-                    "Bilefin Tidehunter": 0.46, 
-                    "Primalfin Lookout": 0.77, 
-                    "Bloodlust": 0.38, 
-                    "Grimscale Oracle": 0.38, 
-                    "Jade Claws": 0.31
-                }, 
                 "core_cards": {
                     "Bluegill Warrior": 1.0, 
                     "Rockpool Hunter": 1.0, 
@@ -2288,44 +2586,126 @@
                     "Flametongue Totem": 1.0, 
                     "Primalfin Totem": 0.92, 
                     "Call in the Finishers": 1.0
-                }
-            }, 
-            {
-                "num_decks": 4.0, 
-                "prevalence": "rare", 
-                "num_observations": 2159, 
-                "tech_cards": {
-                    "Primal Fusion": 0.5, 
-                    "Ancestral Spirit": 0.5, 
-                    "Bloodmage Thalnos": 0.75, 
-                    "Flametongue Totem": 0.75, 
-                    "Fire Fly": 0.5, 
-                    "Tar Creeper": 0.5, 
-                    "Aya Blackpaw": 0.5, 
-                    "Jade Claws": 0.5, 
-                    "Jade Lightning": 0.5, 
-                    "Wicked Witchdoctor": 0.5, 
-                    "Devolve": 0.5, 
-                    "Jinyu Waterspeaker": 0.5, 
-                    "White Eyes": 0.5, 
-                    "Faceless Manipulator": 0.5, 
-                    "Lightning Storm": 0.75, 
-                    "Bloodlust": 0.5, 
-                    "Earth Elemental": 0.5, 
-                    "Stonehill Defender": 0.5, 
-                    "Totemic Might": 0.5
                 }, 
-                "core_cards": {
-                    "Thing from Below": 1.0, 
-                    "Hex": 1.0, 
-                    "Mana Tide Totem": 1.0
-                }
+                "tech_cards": {
+                    "Jade Lightning": 0.31, 
+                    "Lightning Bolt": 0.31, 
+                    "Blowgill Sniper": 0.38, 
+                    "Hex": 0.38, 
+                    "Bilefin Tidehunter": 0.46, 
+                    "Primalfin Lookout": 0.77, 
+                    "Bloodlust": 0.38, 
+                    "Grimscale Oracle": 0.38, 
+                    "Jade Claws": 0.31
+                }, 
+                "winrate": {
+                    "max": 54.289999999999999, 
+                    "min": 45.189999999999998, 
+                    "stddev": 2.6947999453692533, 
+                    "mean": 50.543846153846161
+                }, 
+                "num_observations": 10038, 
+                "num_decks": 13.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 399, 
+                "core_cards": {
+                    "Volatile Elemental": 1.0, 
+                    "Glacial Shard": 1.0, 
+                    "Fire Elemental": 1.0, 
+                    "Fire Fly": 1.0, 
+                    "Novice Engineer": 1.0, 
+                    "Frostwolf Warlord": 1.0, 
+                    "Tar Creeper": 1.0, 
+                    "Fire Plume Harbinger": 1.0, 
+                    "Bloodlust": 1.0, 
+                    "Servant of Kalimos": 1.0, 
+                    "Igneous Elemental": 1.0, 
+                    "Hot Spring Guardian": 1.0, 
+                    "Hex": 1.0, 
+                    "Gnomish Inventor": 1.0, 
+                    "Fire Plume Phoenix": 1.0, 
+                    "Flametongue Totem": 1.0
+                }, 
                 "tech_cards": {}, 
+                "winrate": {
+                    "max": 52.479999999999997, 
+                    "min": 52.479999999999997, 
+                    "stddev": 0.0, 
+                    "mean": 52.479999999999997
+                }, 
+                "num_observations": 1019, 
+                "num_decks": 1.0
+            }, 
+            {
+                "prevalence": "rare", 
+                "core_cards": {
+                    "Argent Squire": 1.0, 
+                    "Jade Lightning": 1.0, 
+                    "Flametongue Totem": 1.0, 
+                    "Cult Master": 1.0, 
+                    "Fire Fly": 1.0, 
+                    "Primalfin Totem": 1.0, 
+                    "Sea Giant": 1.0, 
+                    "Jade Claws": 1.0, 
+                    "Bloodlust": 1.0, 
+                    "Mana Tide Totem": 1.0, 
+                    "Defender of Argus": 1.0, 
+                    "Patches the Pirate": 1.0, 
+                    "Southsea Deckhand": 1.0, 
+                    "Murloc Warleader": 1.0, 
+                    "Thing from Below": 1.0, 
+                    "Eggnapper": 1.0, 
+                    "Call in the Finishers": 1.0
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 54.609999999999999, 
+                    "min": 54.609999999999999, 
+                    "stddev": 0.0, 
+                    "mean": 54.609999999999999
+                }, 
+                "num_observations": 1007, 
+                "num_decks": 1.0
+            }, 
+            {
+                "prevalence": "rare", 
+                "core_cards": {
+                    "Primal Fusion": 1.0, 
+                    "Jade Lightning": 1.0, 
+                    "Flametongue Totem": 1.0, 
+                    "Hex": 1.0, 
+                    "Aya Blackpaw": 1.0, 
+                    "Mana Tide Totem": 1.0, 
+                    "Jade Claws": 1.0, 
+                    "Bloodlust": 1.0, 
+                    "Wicked Witchdoctor": 1.0, 
+                    "Totemic Might": 1.0, 
+                    "Thing from Below": 1.0
+                }, 
+                "tech_cards": {
+                    "Al'Akir the Windlord": 0.5, 
+                    "Bloodmage Thalnos": 0.5, 
+                    "Lightning Bolt": 0.5, 
+                    "Fire Fly": 0.5, 
+                    "Mistress of Mixtures": 0.5, 
+                    "Earth Shock": 0.5, 
+                    "Primalfin Totem": 0.5, 
+                    "Barnes": 0.5, 
+                    "Lightning Storm": 0.5, 
+                    "Jade Spirit": 0.5
+                }, 
+                "winrate": {
+                    "max": 51.829999999999998, 
+                    "min": 48.399999999999999, 
+                    "stddev": 1.7149999999999999, 
+                    "mean": 50.114999999999995
+                }, 
+                "num_observations": 699, 
+                "num_decks": 2.0
+            }, 
+            {
+                "prevalence": "rare", 
                 "core_cards": {
                     "Ancestral Spirit": 1.0, 
                     "White Eyes": 1.0, 
@@ -2347,13 +2727,19 @@
                     "Malygos": 1.0, 
                     "Earth Elemental": 1.0, 
                     "Tidal Surge": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 48.890000000000001, 
+                    "min": 48.890000000000001, 
+                    "stddev": 0.0, 
+                    "mean": 48.890000000000001
+                }, 
+                "num_observations": 399, 
+                "num_decks": 1.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 273, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Nerubian Prophet": 1.0, 
                     "C'Thun": 1.0, 
@@ -2373,7 +2759,16 @@
                     "Lightning Storm": 1.0, 
                     "Devolve": 1.0, 
                     "Loot Hoarder": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 51.75, 
+                    "min": 51.75, 
+                    "stddev": 0.0, 
+                    "mean": 51.75
+                }, 
+                "num_observations": 273, 
+                "num_decks": 1.0
             }
         ], 
         "num_clusters": 9, 
@@ -2403,17 +2798,16 @@
             "Servant of Kalimos", 
             "Servant of Yogg-Saron", 
             "Cabalist's Tome", 
-            "Open the Waygate", 
+            "Tar Creeper", 
             "Pyros", 
             "Ice Block", 
-            "Vicious Fledgling", 
             "Mana Wyrm", 
             "Kabal Crystal Runner", 
             "Coldlight Oracle", 
-            "Flame Geyser", 
+            "Twilight Flamecaller", 
             "Frost Nova", 
-            "Tar Creeper", 
-            "Counterspell", 
+            "Mind Control Tech", 
+            "Blazecaller", 
             "Alexstrasza", 
             "Mistress of Mixtures", 
             "Dirty Rat", 
@@ -2425,10 +2819,11 @@
             "C'Thun's Chosen", 
             "Water Elemental", 
             "Novice Engineer", 
+            "Igneous Elemental", 
             "Blizzard", 
             "Pyroblast", 
             "Archmage Antonidas", 
-            "Acolyte of Pain", 
+            "Inkmaster Solia", 
             "Medivh's Valet", 
             "Earthen Ring Farseer", 
             "Firelands Portal", 
@@ -2438,14 +2833,14 @@
             "Molten Reflection", 
             "Tol'vir Stoneshaper", 
             "Shimmering Tempest", 
-            "Igneous Elemental", 
+            "Counterspell", 
             "Bloodmage Thalnos", 
-            "Red Mana Wyrm", 
+            "Kirin Tor Mage", 
             "Sorcerer's Apprentice", 
             "Loot Hoarder", 
             "Ice Barrier", 
             "Polymorph", 
-            "Cult Sorcerer", 
+            "Acolyte of Pain", 
             "Acidic Swamp Ooze", 
             "Defender of Argus", 
             "Flamestrike", 
@@ -2455,15 +2850,16 @@
             "Arcane Missiles", 
             "Twilight Elder", 
             "Kazakus", 
-            "Blazecaller", 
+            "Second-Rate Bruiser", 
+            "Cult Sorcerer", 
             "Volcanic Potion", 
             "Kabal Lackey", 
-            "Kirin Tor Mage", 
             "Doomcaller", 
             "Medivh the Guardian", 
-            "Inkmaster Solia", 
             "Disciple of C'Thun", 
             "Manic Soulcaster", 
+            "Flame Geyser", 
+            "Open the Waygate", 
             "Frostbolt", 
             "Arcanologist", 
             "Primordial Glyph", 
@@ -2472,17 +2868,7 @@
         ], 
         "clusters": [
             {
-                "num_decks": 431.0, 
                 "prevalence": "common", 
-                "num_observations": 403049, 
-                "tech_cards": {
-                    "Polymorph": 0.48, 
-                    "Bloodmage Thalnos": 0.66, 
-                    "Volcanic Potion": 0.69, 
-                    "Gluttonous Ooze": 0.46, 
-                    "Meteor": 0.62, 
-                    "Babbling Book": 0.65
-                }, 
                 "core_cards": {
                     "Medivh's Valet": 0.99, 
                     "Flamestrike": 0.94, 
@@ -2494,37 +2880,52 @@
                     "Pyroblast": 0.99, 
                     "Ice Barrier": 0.88, 
                     "Ice Block": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Polymorph": 0.48, 
+                    "Bloodmage Thalnos": 0.66, 
+                    "Volcanic Potion": 0.7, 
+                    "Gluttonous Ooze": 0.46, 
+                    "Meteor": 0.62, 
+                    "Babbling Book": 0.65
+                }, 
+                "winrate": {
+                    "max": 69.060000000000002, 
+                    "min": 44.93, 
+                    "stddev": 2.879564097242902, 
+                    "mean": 54.578422273781911
+                }, 
+                "num_observations": 402916, 
+                "num_decks": 431.0
             }, 
             {
-                "num_decks": 252.0, 
                 "prevalence": "common", 
-                "num_observations": 221928, 
-                "tech_cards": {
-                    "Kabal Lackey": 0.63, 
-                    "Sorcerer's Apprentice": 0.68, 
-                    "Ice Block": 0.42
-                }, 
                 "core_cards": {
-                    "Babbling Book": 0.81, 
+                    "Babbling Book": 0.82, 
                     "Counterspell": 0.98, 
-                    "Kirin Tor Mage": 0.96, 
-                    "Firelands Portal": 0.92, 
+                    "Kirin Tor Mage": 0.95, 
+                    "Firelands Portal": 0.93, 
                     "Mana Wyrm": 1.0, 
                     "Medivh's Valet": 0.97, 
-                    "Mirror Entity": 0.89, 
-                    "Kabal Crystal Runner": 0.96
-                }
+                    "Mirror Entity": 0.88, 
+                    "Kabal Crystal Runner": 0.95
+                }, 
+                "tech_cards": {
+                    "Kabal Lackey": 0.62, 
+                    "Sorcerer's Apprentice": 0.69, 
+                    "Ice Block": 0.41
+                }, 
+                "winrate": {
+                    "max": 65.079999999999998, 
+                    "min": 41.329999999999998, 
+                    "stddev": 2.8267951772706628, 
+                    "mean": 54.822078431372553
+                }, 
+                "num_observations": 223282, 
+                "num_decks": 255.0
             }, 
             {
-                "num_decks": 67.0, 
                 "prevalence": "common", 
-                "num_observations": 67603, 
-                "tech_cards": {
-                    "Flamestrike": 0.42, 
-                    "Novice Engineer": 0.36, 
-                    "Archmage Antonidas": 0.7
-                }, 
                 "core_cards": {
                     "Bloodmage Thalnos": 0.85, 
                     "Medivh's Valet": 0.94, 
@@ -2537,21 +2938,23 @@
                     "Ice Barrier": 1.0, 
                     "Doomsayer": 1.0, 
                     "Ice Block": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Flamestrike": 0.42, 
+                    "Novice Engineer": 0.36, 
+                    "Archmage Antonidas": 0.7
+                }, 
+                "winrate": {
+                    "max": 61.049999999999997, 
+                    "min": 45.0, 
+                    "stddev": 2.9000985841394735, 
+                    "mean": 51.2365671641791
+                }, 
+                "num_observations": 67603, 
+                "num_decks": 67.0
             }, 
             {
-                "num_decks": 46.0, 
                 "prevalence": "rare", 
-                "num_observations": 35268, 
-                "tech_cards": {
-                    "Bloodmage Thalnos": 0.52, 
-                    "Volcanic Potion": 0.3, 
-                    "Novice Engineer": 0.63, 
-                    "Sorcerer's Apprentice": 0.74, 
-                    "Loot Hoarder": 0.54, 
-                    "Archmage Antonidas": 0.72, 
-                    "Coldlight Oracle": 0.54
-                }, 
                 "core_cards": {
                     "Ice Barrier": 0.8, 
                     "Blizzard": 0.96, 
@@ -2562,100 +2965,98 @@
                     "Babbling Book": 0.93, 
                     "Doomsayer": 1.0, 
                     "Ice Block": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Bloodmage Thalnos": 0.52, 
+                    "Volcanic Potion": 0.3, 
+                    "Novice Engineer": 0.63, 
+                    "Sorcerer's Apprentice": 0.74, 
+                    "Loot Hoarder": 0.54, 
+                    "Archmage Antonidas": 0.72, 
+                    "Coldlight Oracle": 0.54
+                }, 
+                "winrate": {
+                    "max": 48.630000000000003, 
+                    "min": 30.390000000000001, 
+                    "stddev": 4.2567397743597448, 
+                    "mean": 41.424565217391304
+                }, 
+                "num_observations": 35268, 
+                "num_decks": 46.0
             }, 
             {
-                "num_decks": 12.0, 
                 "prevalence": "rare", 
-                "num_observations": 7469, 
-                "tech_cards": {
-                    "Blazecaller": 0.42, 
-                    "Igneous Elemental": 0.42, 
-                    "Pyros": 0.33, 
-                    "Shimmering Tempest": 0.58, 
-                    "Tar Creeper": 0.58, 
-                    "Firelands Portal": 0.42, 
-                    "Tol'vir Stoneshaper": 0.58, 
-                    "Flame Geyser": 0.75
-                }, 
                 "core_cards": {
-                    "Fire Fly": 0.83, 
+                    "Fire Fly": 0.91, 
                     "Water Elemental": 1.0, 
-                    "Servant of Kalimos": 0.92, 
+                    "Servant of Kalimos": 1.0, 
                     "Mana Wyrm": 1.0, 
                     "Sorcerer's Apprentice": 1.0, 
-                    "Steam Surger": 0.83
-                }
+                    "Flame Geyser": 0.82, 
+                    "Steam Surger": 0.91
+                }, 
+                "tech_cards": {
+                    "Igneous Elemental": 0.45, 
+                    "Pyros": 0.36, 
+                    "Shimmering Tempest": 0.55, 
+                    "Tar Creeper": 0.64, 
+                    "Firelands Portal": 0.36, 
+                    "Tol'vir Stoneshaper": 0.64, 
+                    "Blazecaller": 0.45
+                }, 
+                "winrate": {
+                    "max": 54.93, 
+                    "min": 47.25, 
+                    "stddev": 2.3305924476460471, 
+                    "mean": 50.925454545454549
+                }, 
+                "num_observations": 7104, 
+                "num_decks": 11.0
             }, 
             {
-                "num_decks": 7.0, 
                 "prevalence": "rare", 
-                "num_observations": 3849, 
-                "tech_cards": {
-                    "Manic Soulcaster": 0.71, 
-                    "Blizzard": 0.43, 
-                    "Mana Wyrm": 0.57, 
-                    "Mistress of Mixtures": 0.57, 
-                    "Pyros": 0.71, 
-                    "Earthen Ring Farseer": 0.43, 
-                    "Tar Creeper": 0.71, 
-                    "Cabalist's Tome": 0.71, 
-                    "Gluttonous Ooze": 0.71, 
-                    "Dirty Rat": 0.57, 
-                    "Pyroblast": 0.57, 
-                    "Meteor": 0.57
-                }, 
                 "core_cards": {
-                    "Kazakus": 1.0, 
-                    "Bloodmage Thalnos": 1.0, 
+                    "Kazakus": 0.86, 
+                    "Bloodmage Thalnos": 0.86, 
                     "Ice Barrier": 0.86, 
                     "Polymorph": 1.0, 
                     "Flamestrike": 1.0, 
                     "Water Elemental": 1.0, 
-                    "Volcanic Potion": 1.0, 
-                    "Firelands Portal": 1.0, 
-                    "Kabal Courier": 1.0, 
-                    "Inkmaster Solia": 1.0, 
+                    "Volcanic Potion": 0.86, 
+                    "Firelands Portal": 0.86, 
+                    "Kabal Courier": 0.86, 
+                    "Inkmaster Solia": 0.86, 
                     "Medivh the Guardian": 0.86, 
                     "Medivh's Valet": 0.86, 
-                    "Alexstrasza": 1.0, 
-                    "Babbling Book": 1.0, 
-                    "Doomsayer": 0.86, 
-                    "Ice Block": 1.0
-                }
+                    "Alexstrasza": 0.86, 
+                    "Babbling Book": 0.86, 
+                    "Ice Block": 0.86
+                }, 
+                "tech_cards": {
+                    "Acidic Swamp Ooze": 0.43, 
+                    "Manic Soulcaster": 0.57, 
+                    "Mana Wyrm": 0.71, 
+                    "Mistress of Mixtures": 0.43, 
+                    "Pyros": 0.71, 
+                    "Tar Creeper": 0.57, 
+                    "Cabalist's Tome": 0.57, 
+                    "Gluttonous Ooze": 0.57, 
+                    "Dirty Rat": 0.43, 
+                    "Pyroblast": 0.71, 
+                    "Meteor": 0.57, 
+                    "Doomsayer": 0.71
+                }, 
+                "winrate": {
+                    "max": 52.409999999999997, 
+                    "min": 44.969999999999999, 
+                    "stddev": 2.8559004441574602, 
+                    "mean": 48.745714285714278
+                }, 
+                "num_observations": 4017, 
+                "num_decks": 7.0
             }, 
             {
-                "num_decks": 3.0, 
                 "prevalence": "rare", 
-                "num_observations": 1319, 
-                "tech_cards": {
-                    "Kabal Lackey": 0.33, 
-                    "Kabal Courier": 0.33, 
-                    "Loot Hoarder": 0.33
-                }, 
-                "core_cards": {
-                    "Medivh's Valet": 1.0, 
-                    "Counterspell": 1.0, 
-                    "Firelands Portal": 1.0, 
-                    "Water Elemental": 1.0, 
-                    "Vicious Fledgling": 1.0, 
-                    "Mana Wyrm": 1.0, 
-                    "Sorcerer's Apprentice": 1.0, 
-                    "Babbling Book": 1.0, 
-                    "Red Mana Wyrm": 1.0
-                }
-            }, 
-            {
-                "num_decks": 2.0, 
-                "prevalence": "rare", 
-                "num_observations": 719, 
-                "tech_cards": {
-                    "Firelands Portal": 0.5, 
-                    "Acidic Swamp Ooze": 0.5, 
-                    "Sorcerer's Apprentice": 0.5, 
-                    "Acolyte of Pain": 0.5, 
-                    "Cult Sorcerer": 0.5
-                }, 
                 "core_cards": {
                     "C'Thun": 1.0, 
                     "Arcane Missiles": 1.0, 
@@ -2668,13 +3069,66 @@
                     "Beckoner of Evil": 1.0, 
                     "Faceless Summoner": 1.0, 
                     "Disciple of C'Thun": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Firelands Portal": 0.5, 
+                    "Acidic Swamp Ooze": 0.5, 
+                    "Sorcerer's Apprentice": 0.5, 
+                    "Acolyte of Pain": 0.5, 
+                    "Cult Sorcerer": 0.5
+                }, 
+                "winrate": {
+                    "max": 57.460000000000001, 
+                    "min": 52.789999999999999, 
+                    "stddev": 2.3350000000000009, 
+                    "mean": 55.125
+                }, 
+                "num_observations": 719, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 207, 
+                "core_cards": {
+                    "Polymorph": 1.0, 
+                    "Bloodmage Thalnos": 1.0, 
+                    "Manic Soulcaster": 1.0, 
+                    "Water Elemental": 1.0, 
+                    "Shimmering Tempest": 1.0, 
+                    "Acolyte of Pain": 1.0, 
+                    "Archmage Antonidas": 1.0, 
+                    "Mistress of Mixtures": 1.0, 
+                    "Earthen Ring Farseer": 1.0, 
+                    "Cabalist's Tome": 1.0, 
+                    "Alexstrasza": 1.0, 
+                    "Second-Rate Bruiser": 1.0, 
+                    "Kazakus": 1.0, 
+                    "Firelands Portal": 1.0, 
+                    "Kabal Courier": 1.0, 
+                    "Gluttonous Ooze": 1.0, 
+                    "Inkmaster Solia": 1.0, 
+                    "Twilight Flamecaller": 1.0, 
+                    "Blizzard": 1.0, 
+                    "Mind Control Tech": 1.0, 
+                    "Volcanic Potion": 1.0, 
+                    "Tar Creeper": 1.0, 
+                    "Dirty Rat": 1.0, 
+                    "Flamestrike": 1.0, 
+                    "Babbling Book": 1.0, 
+                    "Doomsayer": 1.0, 
+                    "Ice Block": 1.0
+                }, 
                 "tech_cards": {}, 
+                "winrate": {
+                    "max": 51.509999999999998, 
+                    "min": 51.509999999999998, 
+                    "stddev": 0.0, 
+                    "mean": 51.509999999999998
+                }, 
+                "num_observations": 295, 
+                "num_decks": 1.0
+            }, 
+            {
+                "prevalence": "rare", 
                 "core_cards": {
                     "Polymorph": 1.0, 
                     "Doomcaller": 1.0, 
@@ -2701,7 +3155,16 @@
                     "Babbling Book": 1.0, 
                     "Doomsayer": 1.0, 
                     "Ice Block": 1.0
-                }
+                }, 
+                "tech_cards": {}, 
+                "winrate": {
+                    "max": 33.200000000000003, 
+                    "min": 33.200000000000003, 
+                    "stddev": 0.0, 
+                    "mean": 33.200000000000003
+                }, 
+                "num_observations": 207, 
+                "num_decks": 1.0
             }
         ], 
         "num_clusters": 9, 
@@ -2715,10 +3178,7 @@
             4, 
             5, 
             6, 
-            7, 
-            8, 
-            9, 
-            10
+            7
         ], 
         "common_cards": [
             "Northshire Cleric", 
@@ -2726,203 +3186,217 @@
             "Power Word: Shield"
         ], 
         "card_list": [
-            "Servant of Kalimos", 
+            "Tortollan Shellraiser", 
+            "Curious Glimmerroot", 
+            "Radiant Elemental", 
             "C'Thun's Chosen", 
+            "Binding Heal", 
             "Tar Creeper", 
-            "Prophet Velen", 
-            "Thoughtsteal", 
+            "Book Wyrm", 
+            "Lorewalker Cho", 
+            "Injured Blademaster", 
+            "Wild Pyromancer", 
+            "Holy Nova", 
+            "Ancient Watcher", 
+            "Questing Adventurer", 
+            "Lightwell", 
+            "Twilight Darkmender", 
+            "Silence", 
+            "Kabal Talonpriest", 
+            "Faceless Manipulator", 
+            "C'Thun", 
+            "Beckoner of Evil", 
+            "Loot Hoarder", 
             "Mirage Caller", 
-            "Novice Engineer", 
-            "Mind Control", 
-            "Greater Healing Potion", 
+            "Skeram Cultist", 
+            "Shifting Shade", 
+            "Hooded Acolyte", 
+            "Bittertide Hydra", 
+            "Twilight Drake", 
             "Potion of Madness", 
-            "Raza the Chained", 
-            "Auctionmaster Beardo", 
-            "Gluttonous Ooze", 
+            "Spiritsinger Umbra", 
+            "Cabal Shadow Priest", 
+            "Burgly Bully", 
+            "Acolyte of Pain", 
+            "Inner Fire", 
+            "Cairne Bloodhoof", 
+            "Dragonfire Potion", 
+            "Humongous Razorleaf", 
+            "Priest of the Feast", 
+            "Purify", 
             "Volatile Elemental", 
-            "Tol'vir Stoneshaper", 
+            "Gadgetzan Auctioneer", 
             "Awaken the Makers", 
+            "Medivh the Guardian", 
             "Bloodmage Thalnos", 
             "Divine Spirit", 
             "Shadow Word: Death", 
             "Shadow Word: Pain", 
-            "Mind Blast", 
-            "Doomcaller", 
-            "Harrison Jones", 
-            "Medivh the Guardian", 
-            "Barnes", 
-            "Red Mana Wyrm", 
-            "Darkshire Alchemist", 
-            "Tortollan Shellraiser", 
-            "Curious Glimmerroot", 
-            "Radiant Elemental", 
-            "Crystalline Oracle", 
-            "Binding Heal", 
-            "Golakka Crawler", 
-            "Wild Pyromancer", 
-            "Holy Nova", 
-            "Questing Adventurer", 
-            "Lightwell", 
-            "Twilight Darkmender", 
-            "Bog Creeper", 
-            "C'Thun", 
-            "Beckoner of Evil", 
-            "Purify", 
-            "Priest of the Feast", 
-            "Acolyte of Pain", 
-            "Gadgetzan Auctioneer", 
+            "Kabal Songstealer", 
+            "Auchenai Soulpriest", 
+            "Defender of Argus", 
             "Twin Emperor Vek'lor", 
             "N'Zoth the Corruptor", 
+            "Red Mana Wyrm", 
             "Twilight Elder", 
-            "Netherspite Historian", 
-            "Lorewalker Cho", 
-            "Injured Blademaster", 
-            "Cairne Bloodhoof", 
-            "Cabal Shadow Priest", 
-            "Kabal Courier", 
-            "Silence", 
-            "Kabal Songstealer", 
-            "Inner Fire", 
-            "Dragonfire Potion", 
-            "Loot Hoarder", 
-            "Auchenai Soulpriest", 
-            "Faceless Manipulator", 
-            "Shadow Madness", 
             "Lyra the Sunshard", 
+            "Netherspite Historian", 
             "Free From Amber", 
-            "Kazakus", 
+            "Crystalline Oracle", 
             "Elise the Trailblazer", 
-            "Primordial Drake", 
-            "Doomsayer", 
-            "Book Wyrm", 
-            "Ancient Watcher", 
-            "Alexstrasza", 
-            "Kabal Talonpriest", 
-            "Dirty Rat", 
-            "Skeram Cultist", 
-            "Shifting Shade", 
-            "Hooded Acolyte", 
-            "Twilight Drake", 
-            "Spiritsinger Umbra", 
-            "Humongous Razorleaf", 
-            "Hungry Crab", 
-            "Mistress of Mixtures", 
-            "Burgly Bully", 
             "Drakonid Operative", 
-            "Shadowform", 
-            "Holy Fire", 
+            "Primordial Drake", 
+            "Mistress of Mixtures", 
+            "Doomcaller", 
             "Circle of Healing", 
             "Faceless Shambler", 
+            "Barnes", 
             "Disciple of C'Thun", 
+            "Sunfury Protector", 
+            "Darkshire Alchemist", 
             "Northshire Cleric", 
             "Shadow Visions", 
             "Power Word: Shield"
         ], 
         "clusters": [
             {
-                "num_decks": 129.0, 
                 "prevalence": "common", 
-                "num_observations": 133623, 
-                "tech_cards": {
-                    "Kabal Songstealer": 0.4, 
-                    "Lyra the Sunshard": 0.78, 
-                    "Wild Pyromancer": 0.32
-                }, 
                 "core_cards": {
-                    "Kabal Talonpriest": 0.95, 
-                    "Faceless Shambler": 0.93, 
-                    "Purify": 1.0, 
-                    "Radiant Elemental": 0.91, 
-                    "Potion of Madness": 0.81, 
-                    "Acolyte of Pain": 0.81, 
-                    "Inner Fire": 0.99, 
-                    "Humongous Razorleaf": 1.0, 
-                    "Ancient Watcher": 1.0, 
-                    "Silence": 1.0, 
-                    "Divine Spirit": 0.99
-                }
+                    "Kabal Talonpriest": 0.96, 
+                    "Lyra the Sunshard": 0.9, 
+                    "Radiant Elemental": 0.99, 
+                    "Potion of Madness": 0.94, 
+                    "Divine Spirit": 0.98, 
+                    "Inner Fire": 0.98
+                }, 
+                "tech_cards": {
+                    "Circle of Healing": 0.31, 
+                    "Faceless Shambler": 0.61, 
+                    "Purify": 0.66, 
+                    "Tar Creeper": 0.39, 
+                    "Acolyte of Pain": 0.76, 
+                    "Shadow Word: Pain": 0.35, 
+                    "Humongous Razorleaf": 0.66, 
+                    "Ancient Watcher": 0.66, 
+                    "Wild Pyromancer": 0.35, 
+                    "Silence": 0.75
+                }, 
+                "winrate": {
+                    "max": 58.789999999999999, 
+                    "min": 39.789999999999999, 
+                    "stddev": 3.6150209411349601, 
+                    "mean": 50.80335294117647
+                }, 
+                "num_observations": 174466, 
+                "num_decks": 170.0
             }, 
             {
-                "num_decks": 156.0, 
                 "prevalence": "common", 
-                "num_observations": 125303, 
-                "tech_cards": {
-                    "Lyra the Sunshard": 0.76, 
-                    "Elise the Trailblazer": 0.57, 
-                    "Holy Nova": 0.42, 
-                    "Priest of the Feast": 0.65
-                }, 
                 "core_cards": {
                     "Kabal Talonpriest": 0.85, 
                     "Book Wyrm": 0.81, 
-                    "Netherspite Historian": 1.0, 
+                    "Netherspite Historian": 0.99, 
                     "Primordial Drake": 0.97, 
-                    "Radiant Elemental": 0.89, 
-                    "Twilight Drake": 0.88, 
+                    "Radiant Elemental": 0.91, 
+                    "Twilight Drake": 0.89, 
                     "Potion of Madness": 0.89, 
-                    "Drakonid Operative": 1.0, 
+                    "Drakonid Operative": 0.99, 
                     "Shadow Word: Death": 0.98, 
                     "Shadow Word: Pain": 0.97, 
                     "Dragonfire Potion": 1.0
-                }
+                }, 
+                "tech_cards": {
+                    "Lyra the Sunshard": 0.77, 
+                    "Elise the Trailblazer": 0.55, 
+                    "Holy Nova": 0.42, 
+                    "Priest of the Feast": 0.64
+                }, 
+                "winrate": {
+                    "max": 61.299999999999997, 
+                    "min": 35.560000000000002, 
+                    "stddev": 3.1091190379355016, 
+                    "mean": 52.450000000000003
+                }, 
+                "num_observations": 122961, 
+                "num_decks": 151.0
             }, 
             {
-                "num_decks": 95.0, 
                 "prevalence": "common", 
-                "num_observations": 87104, 
+                "core_cards": {
+                    "Lyra the Sunshard": 0.91, 
+                    "Shadow Word: Pain": 0.99, 
+                    "Elise the Trailblazer": 0.88, 
+                    "Radiant Elemental": 0.92, 
+                    "Potion of Madness": 0.99, 
+                    "Shadow Word: Death": 1.0, 
+                    "Priest of the Feast": 0.94, 
+                    "Dragonfire Potion": 0.95
+                }, 
                 "tech_cards": {
                     "Kabal Talonpriest": 0.6, 
-                    "Curious Glimmerroot": 0.68, 
-                    "Binding Heal": 0.34, 
-                    "Cabal Shadow Priest": 0.35, 
-                    "Tar Creeper": 0.54, 
+                    "Curious Glimmerroot": 0.65, 
+                    "Binding Heal": 0.3, 
+                    "Cabal Shadow Priest": 0.34, 
+                    "Tar Creeper": 0.5, 
                     "Holy Nova": 0.56, 
-                    "Kabal Songstealer": 0.46, 
-                    "Medivh the Guardian": 0.68, 
-                    "Free From Amber": 0.76, 
-                    "Wild Pyromancer": 0.55
+                    "Kabal Songstealer": 0.42, 
+                    "Medivh the Guardian": 0.63, 
+                    "Free From Amber": 0.69, 
+                    "Wild Pyromancer": 0.54
                 }, 
-                "core_cards": {
-                    "Lyra the Sunshard": 0.98, 
-                    "Shadow Word: Pain": 1.0, 
-                    "Elise the Trailblazer": 0.91, 
-                    "Radiant Elemental": 0.98, 
-                    "Potion of Madness": 1.0, 
-                    "Shadow Word: Death": 1.0, 
-                    "Priest of the Feast": 0.96, 
-                    "Dragonfire Potion": 0.94
-                }
+                "winrate": {
+                    "max": 56.450000000000003, 
+                    "min": 39.0, 
+                    "stddev": 3.8595137306376031, 
+                    "mean": 50.014955752212387
+                }, 
+                "num_observations": 94889, 
+                "num_decks": 113.0
             }, 
             {
-                "num_decks": 64.0, 
-                "prevalence": "common", 
-                "num_observations": 57316, 
-                "tech_cards": {
-                    "Tortollan Shellraiser": 0.52, 
-                    "Circle of Healing": 0.36, 
-                    "Tar Creeper": 0.77, 
-                    "Servant of Kalimos": 0.38, 
-                    "Elise the Trailblazer": 0.45, 
-                    "Tol'vir Stoneshaper": 0.33, 
-                    "Acolyte of Pain": 0.55, 
-                    "Shadow Word: Death": 0.64, 
-                    "Priest of the Feast": 0.58, 
-                    "Wild Pyromancer": 0.33
-                }, 
-                "core_cards": {
-                    "Kabal Talonpriest": 0.95, 
-                    "Lyra the Sunshard": 0.97, 
-                    "Radiant Elemental": 0.98, 
-                    "Potion of Madness": 0.95, 
-                    "Divine Spirit": 0.91, 
-                    "Inner Fire": 0.91, 
-                    "Shadow Word: Pain": 0.89
-                }
-            }, 
-            {
-                "num_decks": 17.0, 
                 "prevalence": "rare", 
-                "num_observations": 11795, 
+                "core_cards": {
+                    "Kabal Talonpriest": 0.94, 
+                    "Faceless Shambler": 1.0, 
+                    "Purify": 1.0, 
+                    "Kabal Songstealer": 0.94, 
+                    "Divine Spirit": 0.94, 
+                    "Inner Fire": 0.94, 
+                    "Humongous Razorleaf": 1.0, 
+                    "Ancient Watcher": 1.0, 
+                    "Silence": 1.0, 
+                    "Sunfury Protector": 0.82
+                }, 
+                "tech_cards": {
+                    "Barnes": 0.35, 
+                    "Defender of Argus": 0.41, 
+                    "Radiant Elemental": 0.41, 
+                    "Acolyte of Pain": 0.47, 
+                    "Shadow Word: Pain": 0.35, 
+                    "Bittertide Hydra": 0.41
+                }, 
+                "winrate": {
+                    "max": 56.07, 
+                    "min": 45.689999999999998, 
+                    "stddev": 3.1021103431881469, 
+                    "mean": 51.337647058823528
+                }, 
+                "num_observations": 13705, 
+                "num_decks": 17.0
+            }, 
+            {
+                "prevalence": "rare", 
+                "core_cards": {
+                    "Tortollan Shellraiser": 1.0, 
+                    "Awaken the Makers": 1.0, 
+                    "Mirage Caller": 0.88, 
+                    "Loot Hoarder": 0.94, 
+                    "Shadow Word: Death": 0.94, 
+                    "Shadow Word: Pain": 0.94, 
+                    "N'Zoth the Corruptor": 1.0, 
+                    "Crystalline Oracle": 1.0, 
+                    "Dragonfire Potion": 0.88
+                }, 
                 "tech_cards": {
                     "Volatile Elemental": 0.65, 
                     "Bloodmage Thalnos": 0.47, 
@@ -2936,32 +3410,17 @@
                     "Shifting Shade": 0.76, 
                     "Cairne Bloodhoof": 0.76
                 }, 
-                "core_cards": {
-                    "Tortollan Shellraiser": 1.0, 
-                    "Awaken the Makers": 1.0, 
-                    "Mirage Caller": 0.88, 
-                    "Loot Hoarder": 0.94, 
-                    "Shadow Word: Death": 0.94, 
-                    "Shadow Word: Pain": 0.94, 
-                    "N'Zoth the Corruptor": 1.0, 
-                    "Crystalline Oracle": 1.0, 
-                    "Dragonfire Potion": 0.88
-                }
+                "winrate": {
+                    "max": 52.140000000000001, 
+                    "min": 38.57, 
+                    "stddev": 3.1027814288402125, 
+                    "mean": 45.160588235294121
+                }, 
+                "num_observations": 11795, 
+                "num_decks": 17.0
             }, 
             {
-                "num_decks": 2.0, 
                 "prevalence": "rare", 
-                "num_observations": 1946, 
-                "tech_cards": {
-                    "Kabal Talonpriest": 0.5, 
-                    "Skeram Cultist": 0.5, 
-                    "Twin Emperor Vek'lor": 0.5, 
-                    "Injured Blademaster": 0.5, 
-                    "Darkshire Alchemist": 0.5, 
-                    "C'Thun's Chosen": 0.5, 
-                    "Shadow Word: Pain": 0.5, 
-                    "Wild Pyromancer": 0.5
-                }, 
                 "core_cards": {
                     "C'Thun": 1.0, 
                     "Doomcaller": 1.0, 
@@ -2974,89 +3433,28 @@
                     "Twilight Darkmender": 1.0, 
                     "Holy Nova": 1.0, 
                     "Disciple of C'Thun": 1.0
-                }
-            }, 
-            {
-                "num_decks": 4.0, 
-                "prevalence": "rare", 
-                "num_observations": 1269, 
-                "tech_cards": {
-                    "Kabal Talonpriest": 0.75, 
-                    "Mind Control": 0.5, 
-                    "Curious Glimmerroot": 0.75, 
-                    "Cabal Shadow Priest": 0.75, 
-                    "Lyra the Sunshard": 0.5, 
-                    "Primordial Drake": 0.5, 
-                    "Auchenai Soulpriest": 0.5, 
-                    "Kabal Songstealer": 0.5, 
-                    "Elise the Trailblazer": 0.5, 
-                    "Crystalline Oracle": 0.75, 
-                    "Wild Pyromancer": 0.75, 
-                    "Greater Healing Potion": 0.5
                 }, 
-                "core_cards": {
-                    "Kazakus": 1.0, 
-                    "Raza the Chained": 1.0, 
-                    "Shadow Madness": 1.0, 
-                    "Dirty Rat": 1.0, 
-                    "Thoughtsteal": 1.0, 
-                    "Holy Fire": 1.0, 
-                    "Kabal Courier": 1.0, 
-                    "Gluttonous Ooze": 1.0, 
-                    "Radiant Elemental": 1.0, 
-                    "Potion of Madness": 1.0, 
-                    "Shadow Word: Pain": 1.0, 
-                    "Shadow Word: Death": 1.0, 
-                    "Priest of the Feast": 1.0, 
-                    "Free From Amber": 1.0, 
-                    "Medivh the Guardian": 1.0, 
-                    "Doomsayer": 1.0, 
-                    "Holy Nova": 1.0, 
-                    "Dragonfire Potion": 1.0
-                }
-            }, 
-            {
-                "num_decks": 2.0, 
-                "prevalence": "rare", 
-                "num_observations": 1115, 
                 "tech_cards": {
-                    "Hungry Crab": 0.5, 
-                    "Golakka Crawler": 0.5
+                    "Kabal Talonpriest": 0.5, 
+                    "Skeram Cultist": 0.5, 
+                    "Twin Emperor Vek'lor": 0.5, 
+                    "Injured Blademaster": 0.5, 
+                    "Darkshire Alchemist": 0.5, 
+                    "C'Thun's Chosen": 0.5, 
+                    "Shadow Word: Pain": 0.5, 
+                    "Wild Pyromancer": 0.5
                 }, 
-                "core_cards": {
-                    "Mind Control": 1.0, 
-                    "Auchenai Soulpriest": 1.0, 
-                    "Acolyte of Pain": 1.0, 
-                    "Shadow Word: Pain": 1.0, 
-                    "Dragonfire Potion": 1.0, 
-                    "Cabal Shadow Priest": 1.0, 
-                    "Dirty Rat": 1.0, 
-                    "Elise the Trailblazer": 1.0, 
-                    "Auctionmaster Beardo": 1.0, 
-                    "Loot Hoarder": 1.0, 
-                    "Greater Healing Potion": 1.0, 
-                    "Holy Nova": 1.0, 
-                    "Kazakus": 1.0, 
-                    "Raza the Chained": 1.0, 
-                    "Bog Creeper": 1.0, 
-                    "Holy Fire": 1.0, 
-                    "Shadowform": 1.0, 
-                    "Gluttonous Ooze": 1.0, 
-                    "Shadow Word: Death": 1.0, 
-                    "Medivh the Guardian": 1.0, 
-                    "Silence": 1.0, 
-                    "Tar Creeper": 1.0, 
-                    "Wild Pyromancer": 1.0, 
-                    "Potion of Madness": 1.0, 
-                    "Priest of the Feast": 1.0, 
-                    "Free From Amber": 1.0
-                }
+                "winrate": {
+                    "max": 52.399999999999999, 
+                    "min": 44.380000000000003, 
+                    "stddev": 4.009999999999998, 
+                    "mean": 48.390000000000001
+                }, 
+                "num_observations": 1946, 
+                "num_decks": 2.0
             }, 
             {
-                "num_decks": 1.0, 
                 "prevalence": "rare", 
-                "num_observations": 404, 
-                "tech_cards": {}, 
                 "core_cards": {
                     "Faceless Manipulator": 1.0, 
                     "Kabal Talonpriest": 1.0, 
@@ -3077,33 +3475,19 @@
                     "Wild Pyromancer": 1.0, 
                     "Divine Spirit": 1.0, 
                     "Burgly Bully": 1.0
-                }
-            }, 
-            {
-                "num_decks": 1.0, 
-                "prevalence": "rare", 
-                "num_observations": 291, 
+                }, 
                 "tech_cards": {}, 
-                "core_cards": {
-                    "Bloodmage Thalnos": 1.0, 
-                    "Dragonfire Potion": 1.0, 
-                    "Binding Heal": 1.0, 
-                    "Doomsayer": 1.0, 
-                    "Lyra the Sunshard": 1.0, 
-                    "Holy Fire": 1.0, 
-                    "Alexstrasza": 1.0, 
-                    "Potion of Madness": 1.0, 
-                    "Radiant Elemental": 1.0, 
-                    "Novice Engineer": 1.0, 
-                    "Shadow Word: Death": 1.0, 
-                    "Shadow Word: Pain": 1.0, 
-                    "Harrison Jones": 1.0, 
-                    "Mind Blast": 1.0, 
-                    "Prophet Velen": 1.0
-                }
+                "winrate": {
+                    "max": 46.350000000000001, 
+                    "min": 46.350000000000001, 
+                    "stddev": 0.0, 
+                    "mean": 46.350000000000001
+                }, 
+                "num_observations": 404, 
+                "num_decks": 1.0
             }
         ], 
-        "num_clusters": 10, 
+        "num_clusters": 7, 
         "class": "PRIEST"
     }
 ]

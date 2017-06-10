@@ -197,6 +197,7 @@ class ClusterSet:
 				"num_decks": cluster._deck_count,
 				"num_observations": cluster.observations,
 				"prevalence": cluster.prevalence,
+				"winrate": cluster.win_rate
 			})
 
 		clusters_for_data = sorted(clusters_for_data, key=lambda c: c["num_observations"], reverse=True)
@@ -259,7 +260,17 @@ class ClusterSet:
 		for cluster in self._clusters:
 			cluster.observations = sum(d['observations'] for d in cluster._decks)
 			observations[cluster.cluster_id] = cluster.observations
-		
+			wr = []
+			for d in cluster._decks:
+				wr.append(d['win_rate'])
+			wr = np.array(wr)
+			cluster.win_rate = {
+				"mean": np.mean(wr, axis=0),
+				"stddev": np.std(wr, axis=0),
+				"max": np.max(wr, axis=0),
+				"min": np.min(wr, axis=0)
+			}
+ 		
 		na = np.array(observations.values())
 		avg = np.mean(na, axis=0)
 		std = np.std(na, axis=0)
@@ -368,6 +379,7 @@ class Cluster:
 
 		self.prevalence = 'NA' # is this a common or rare cluster
 		self.observations = 0
+		self.win_rate = {}
 		self._tag_cards_by_type()
 
 	def __repr__(self):
@@ -390,7 +402,8 @@ class Cluster:
 			"tech_cards_name": self.pretty_tech_cards,
 			"observations": self.observations,
 			"prevalence": self.prevalence,
-			"num_decks": self.deck_count
+			"num_decks": self.deck_count,
+			"win_rate": self.win_rate
 		}
 		#"card_name": self._cluster_set.card_name(card_index),
 		

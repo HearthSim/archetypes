@@ -1,58 +1,12 @@
 {
     "WARLOCK": {
-        "0": {
-            "name": "", 
-            "core_cards_name": {
-                "Voidwalker": 1.0, 
-                "Doomguard": 0.97, 
-                "Defender of Argus": 0.86, 
-                "Flame Imp": 0.97, 
-                "Dire Wolf Alpha": 0.94, 
-                "Darkshire Councilman": 0.97, 
-                "Possessed Villager": 0.86, 
-                "Soulfire": 0.83
+        "1": {
+            "win_rate": {
+                "max": 48.039999999999999, 
+                "min": 40.520000000000003, 
+                "stddev": 2.7563698953514919, 
+                "mean": 44.43
             }, 
-            "core_cards": {
-                "309": 0.9428571428571428, 
-                "777": 0.9714285714285714, 
-                "101": 0.8285714285714286, 
-                "245": 0.9714285714285714, 
-                "3": 1.0, 
-                "327": 0.9714285714285714, 
-                "824": 0.8571428571428571, 
-                "268": 0.8571428571428571
-            }, 
-            "tech_cards_name": {
-                "Silverware Golem": 0.69, 
-                "Argent Squire": 0.34, 
-                "Ravasaur Runt": 0.57, 
-                "Abusive Sergeant": 0.37, 
-                "Fire Fly": 0.57, 
-                "Ravenous Pterrordax": 0.74, 
-                "Knife Juggler": 0.74, 
-                "Clutchmother Zavas": 0.31, 
-                "Malchezaar's Imp": 0.71, 
-                "Devilsaur Egg": 0.49, 
-                "Darkshire Librarian": 0.63
-            }, 
-            "num_decks": 35.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "1069": 0.5714285714285714, 
-                "776": 0.6285714285714286, 
-                "323": 0.7428571428571429, 
-                "889": 0.6857142857142857, 
-                "1123": 0.5714285714285714, 
-                "1169": 0.3142857142857143, 
-                "1088": 0.7428571428571429, 
-                "1107": 0.4857142857142857, 
-                "168": 0.37142857142857144, 
-                "265": 0.34285714285714286, 
-                "914": 0.7142857142857143
-            }, 
-            "observations": 32820
-        }, 
-        "5": {
             "name": "", 
             "core_cards_name": {
                 "Lord Jaraxxus": 1.0, 
@@ -107,74 +61,142 @@
                 "94": 0.625
             }, 
             "observations": 5395
+        }, 
+        "0": {
+            "win_rate": {
+                "max": 59.829999999999998, 
+                "min": 32.670000000000002, 
+                "stddev": 5.7435525964834184, 
+                "mean": 50.485000000000007
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Ravenous Pterrordax": 0.96, 
+                "Voidwalker": 1.0, 
+                "Doomguard": 0.89, 
+                "Defender of Argus": 1.0, 
+                "Flame Imp": 0.96, 
+                "Dire Wolf Alpha": 0.96, 
+                "Darkshire Councilman": 0.96, 
+                "Possessed Villager": 0.93
+            }, 
+            "core_cards": {
+                "309": 0.9642857142857143, 
+                "777": 0.9642857142857143, 
+                "1088": 0.9642857142857143, 
+                "245": 0.8928571428571429, 
+                "3": 1.0, 
+                "327": 0.9642857142857143, 
+                "824": 0.9285714285714286, 
+                "268": 1.0
+            }, 
+            "tech_cards_name": {
+                "Silverware Golem": 0.54, 
+                "Argent Squire": 0.5, 
+                "Ravasaur Runt": 0.75, 
+                "Abusive Sergeant": 0.43, 
+                "Fire Fly": 0.68, 
+                "Knife Juggler": 0.79, 
+                "Malchezaar's Imp": 0.57, 
+                "Devilsaur Egg": 0.68, 
+                "Darkshire Librarian": 0.5, 
+                "Soulfire": 0.71
+            }, 
+            "num_decks": 28.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "1069": 0.75, 
+                "776": 0.5, 
+                "323": 0.7857142857142857, 
+                "889": 0.5357142857142857, 
+                "1123": 0.6785714285714286, 
+                "1107": 0.6785714285714286, 
+                "168": 0.42857142857142855, 
+                "265": 0.5, 
+                "914": 0.5714285714285714, 
+                "101": 0.7142857142857143
+            }, 
+            "observations": 27144
+        }, 
+        "9": {
+            "win_rate": {
+                "max": 59.560000000000002, 
+                "min": 40.770000000000003, 
+                "stddev": 5.2204145807647997, 
+                "mean": 54.212222222222223
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Silverware Golem": 1.0, 
+                "Voidwalker": 1.0, 
+                "Doomguard": 1.0, 
+                "Lakkari Felhound": 0.89, 
+                "Flame Imp": 1.0, 
+                "Dire Wolf Alpha": 0.89, 
+                "Malchezaar's Imp": 1.0, 
+                "Darkshire Councilman": 1.0, 
+                "Soulfire": 1.0, 
+                "Darkshire Librarian": 0.89
+            }, 
+            "core_cards": {
+                "309": 0.8888888888888888, 
+                "777": 1.0, 
+                "776": 0.8888888888888888, 
+                "889": 1.0, 
+                "1166": 0.8888888888888888, 
+                "245": 1.0, 
+                "3": 1.0, 
+                "327": 1.0, 
+                "914": 1.0, 
+                "101": 1.0
+            }, 
+            "tech_cards_name": {
+                "Golakka Crawler": 0.56, 
+                "Abusive Sergeant": 0.33, 
+                "Fire Fly": 0.33, 
+                "Bloodsail Corsair": 0.78, 
+                "Knife Juggler": 0.67, 
+                "Defender of Argus": 0.44, 
+                "Clutchmother Zavas": 0.78, 
+                "Patches the Pirate": 0.78, 
+                "Possessed Villager": 0.67, 
+                "Succubus": 0.56
+            }, 
+            "num_decks": 9.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "964": 0.7777777777777778, 
+                "312": 0.7777777777777778, 
+                "1123": 0.3333333333333333, 
+                "1169": 0.7777777777777778, 
+                "323": 0.6666666666666666, 
+                "63": 0.5555555555555556, 
+                "168": 0.3333333333333333, 
+                "1121": 0.5555555555555556, 
+                "824": 0.6666666666666666, 
+                "268": 0.4444444444444444
+            }, 
+            "observations": 6418
         }
     }, 
     "WARRIOR": {
-        "1": {
-            "name": "", 
-            "core_cards_name": {
-                "The Curator": 0.92, 
-                "Bloodhoof Brave": 0.94, 
-                "Execute": 1.0, 
-                "Acolyte of Pain": 0.87, 
-                "Fire Plume's Heart": 0.96, 
-                "Ravaging Ghoul": 1.0, 
-                "Sleep with the Fishes": 0.84, 
-                "Primordial Drake": 0.97, 
-                "Alley Armorsmith": 0.96, 
-                "Direhorn Hatchling": 0.92, 
-                "Brawl": 0.98, 
-                "Stonehill Defender": 0.95, 
-                "Whirlwind": 0.84
-            }, 
-            "core_cards": {
-                "1050": 0.8446969696969697, 
-                "146": 0.9772727272727273, 
-                "1174": 0.9242424242424242, 
-                "793": 1.0, 
-                "1147": 0.9621212121212122, 
-                "884": 0.9166666666666666, 
-                "985": 0.9621212121212122, 
-                "1100": 0.9545454545454546, 
-                "70": 0.8371212121212122, 
-                "367": 0.8674242424242424, 
-                "1181": 0.9696969696969697, 
-                "86": 0.9962121212121212, 
-                "816": 0.9356060606060606
-            }, 
-            "tech_cards_name": {
-                "Shield Block": 0.47, 
-                "Battle Rage": 0.31, 
-                "Dirty Rat": 0.71, 
-                "Armorsmith": 0.6, 
-                "Tar Creeper": 0.73, 
-                "Shield Slam": 0.34, 
-                "Slam": 0.71
-            }, 
-            "num_decks": 264.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "1052": 0.7083333333333334, 
-                "1144": 0.7310606060606061, 
-                "194": 0.3068181818181818, 
-                "111": 0.4734848484848485, 
-                "324": 0.7121212121212122, 
-                "226": 0.3409090909090909, 
-                "236": 0.6022727272727273
-            }, 
-            "observations": 229266
-        }, 
         "10": {
+            "win_rate": {
+                "max": 66.280000000000001, 
+                "min": 40.229999999999997, 
+                "stddev": 2.8914005198753951, 
+                "mean": 55.518258258258264
+            }, 
             "name": "", 
             "core_cards_name": {
-                "Heroic Strike": 0.99, 
+                "Heroic Strike": 1.0, 
                 "N'Zoth's First Mate": 1.0, 
                 "Upgrade!": 1.0, 
-                "Dread Corsair": 0.99, 
+                "Dread Corsair": 1.0, 
                 "Arcanite Reaper": 1.0, 
                 "Mortal Strike": 0.9, 
                 "Kor'kron Elite": 1.0, 
-                "Bloodsail Cultist": 0.99, 
+                "Bloodsail Cultist": 1.0, 
                 "Patches the Pirate": 0.98, 
                 "Southsea Deckhand": 1.0, 
                 "Frothing Berserker": 1.0, 
@@ -182,253 +204,367 @@
                 "Southsea Captain": 0.89
             }, 
             "core_cards": {
-                "964": 0.9820359281437125, 
+                "964": 0.9819819819819819, 
                 "855": 1.0, 
-                "313": 0.9970059880239521, 
-                "858": 0.9940119760479041, 
-                "218": 0.9970059880239521, 
-                "34": 0.9970059880239521, 
+                "313": 0.996996996996997, 
+                "858": 0.996996996996997, 
+                "218": 1.0, 
+                "34": 1.0, 
                 "1": 1.0, 
                 "258": 1.0, 
-                "253": 0.8922155688622755, 
-                "279": 0.8982035928143712, 
-                "250": 0.9970059880239521, 
-                "107": 0.9940119760479041, 
-                "291": 0.9940119760479041
+                "279": 0.9009009009009009, 
+                "253": 0.8948948948948949, 
+                "250": 0.996996996996997, 
+                "107": 0.996996996996997, 
+                "291": 0.996996996996997
             }, 
             "tech_cards_name": {
                 "Leeroy Jenkins": 0.72, 
                 "Golakka Crawler": 0.42, 
                 "Naga Corsair": 0.78
             }, 
-            "num_decks": 334.0, 
+            "num_decks": 333.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "1121": 0.4161676646706587, 
-                "1026": 0.7754491017964071, 
-                "228": 0.718562874251497
+                "1121": 0.4174174174174174, 
+                "1026": 0.7777777777777778, 
+                "228": 0.7207207207207207
             }, 
-            "observations": 333520
+            "observations": 333134
+        }, 
+        "2": {
+            "win_rate": {
+                "max": 63.439999999999998, 
+                "min": 44.170000000000002, 
+                "stddev": 2.782290517164542, 
+                "mean": 55.007325581395349
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "The Curator": 0.93, 
+                "Bloodhoof Brave": 0.95, 
+                "Execute": 1.0, 
+                "Acolyte of Pain": 0.86, 
+                "Fire Plume's Heart": 0.98, 
+                "Ravaging Ghoul": 1.0, 
+                "Sleep with the Fishes": 0.85, 
+                "Primordial Drake": 0.98, 
+                "Alley Armorsmith": 0.97, 
+                "Direhorn Hatchling": 0.93, 
+                "Brawl": 0.98, 
+                "Stonehill Defender": 0.97, 
+                "Whirlwind": 0.84
+            }, 
+            "core_cards": {
+                "1050": 0.8488372093023255, 
+                "146": 0.9767441860465116, 
+                "1174": 0.9302325581395349, 
+                "793": 1.0, 
+                "1147": 0.9806201550387597, 
+                "884": 0.9341085271317829, 
+                "985": 0.9689922480620154, 
+                "1100": 0.9651162790697675, 
+                "70": 0.8410852713178295, 
+                "367": 0.8643410852713178, 
+                "1181": 0.9844961240310077, 
+                "86": 0.9961240310077519, 
+                "816": 0.9534883720930233
+            }, 
+            "tech_cards_name": {
+                "Shield Block": 0.46, 
+                "Battle Rage": 0.31, 
+                "Dirty Rat": 0.71, 
+                "Armorsmith": 0.6, 
+                "Tar Creeper": 0.75, 
+                "Shield Slam": 0.33, 
+                "Slam": 0.71
+            }, 
+            "num_decks": 258.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "1052": 0.7131782945736435, 
+                "1144": 0.748062015503876, 
+                "194": 0.313953488372093, 
+                "111": 0.46124031007751937, 
+                "324": 0.7093023255813954, 
+                "226": 0.32945736434108525, 
+                "236": 0.5968992248062015
+            }, 
+            "observations": 224789
         }
     }, 
     "PALADIN": {
-        "0": {
+        "1": {
+            "win_rate": {
+                "max": 64.700000000000003, 
+                "min": 49.82, 
+                "stddev": 2.5052072399874619, 
+                "mean": 56.665089820359277
+            }, 
             "name": "", 
             "core_cards_name": {
-                "Sunkeeper Tarim": 0.86, 
-                "Tirion Fordring": 0.93, 
-                "Bluegill Warrior": 0.94, 
+                "Sunkeeper Tarim": 0.85, 
+                "Tirion Fordring": 0.92, 
+                "Bluegill Warrior": 0.95, 
                 "Truesilver Champion": 0.98, 
                 "Rockpool Hunter": 1.0, 
-                "Grimscale Chum": 0.95, 
-                "Blessing of Kings": 0.93, 
+                "Grimscale Chum": 0.98, 
+                "Blessing of Kings": 0.92, 
                 "Murloc Tidecaller": 0.99, 
                 "Gentle Megasaur": 1.0, 
                 "Vilefin Inquisitor": 1.0, 
-                "Coldlight Seer": 0.93, 
-                "Consecration": 0.94, 
-                "Finja the Flying Star": 0.89, 
+                "Coldlight Seer": 0.95, 
+                "Consecration": 0.93, 
+                "Finja the Flying Star": 0.87, 
                 "Murloc Warleader": 1.0, 
-                "Spikeridged Steed": 0.96
+                "Spikeridged Steed": 0.94
             }, 
             "core_cards": {
-                "977": 0.9526627218934911, 
-                "1024": 0.8875739644970414, 
+                "977": 0.9760479041916168, 
+                "1024": 0.874251497005988, 
                 "743": 1.0, 
-                "1160": 0.9585798816568047, 
-                "213": 0.9940828402366864, 
-                "206": 0.9289940828402367, 
-                "1072": 0.863905325443787, 
-                "52": 0.9408284023668639, 
-                "98": 0.9349112426035503, 
+                "1160": 0.9401197604790419, 
+                "213": 0.9880239520958084, 
+                "206": 0.9520958083832335, 
+                "1072": 0.8502994011976048, 
+                "52": 0.9341317365269461, 
+                "98": 0.9221556886227545, 
                 "1113": 1.0, 
                 "321": 1.0, 
                 "1101": 1.0, 
-                "90": 0.9822485207100592, 
-                "80": 0.9408284023668639, 
-                "294": 0.9289940828402367
+                "90": 0.9820359281437125, 
+                "80": 0.9461077844311377, 
+                "294": 0.9161676646706587
             }, 
             "tech_cards_name": {
                 "Divine Favor": 0.78, 
                 "Stampeding Kodo": 0.63
             }, 
-            "num_decks": 169.0, 
+            "num_decks": 167.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "252": 0.7751479289940828, 
-                "357": 0.6331360946745562
+                "252": 0.7844311377245509, 
+                "357": 0.6287425149700598
             }, 
-            "observations": 137607
+            "observations": 134498
         }, 
         "10": {
+            "win_rate": {
+                "max": 64.280000000000001, 
+                "min": 45.909999999999997, 
+                "stddev": 2.9049910028540138, 
+                "mean": 56.160804953560366
+            }, 
             "name": "", 
             "core_cards_name": {
                 "The Curator": 0.92, 
                 "Sunkeeper Tarim": 0.93, 
                 "Truesilver Champion": 0.99, 
-                "Equality": 0.99, 
-                "Primordial Drake": 0.88, 
+                "Equality": 0.98, 
+                "Primordial Drake": 0.87, 
                 "Consecration": 1.0, 
                 "Tirion Fordring": 1.0, 
-                "Ragnaros Lightlord": 0.86, 
+                "Ragnaros Lightlord": 0.85, 
                 "Spikeridged Steed": 0.98, 
                 "Stampeding Kodo": 0.82, 
                 "Stonehill Defender": 0.97, 
-                "Aldor Peacekeeper": 0.99
+                "Aldor Peacekeeper": 1.0
             }, 
             "core_cards": {
-                "344": 0.9937304075235109, 
-                "1160": 0.9780564263322884, 
-                "884": 0.9247648902821317, 
-                "1072": 0.9310344827586207, 
-                "1181": 0.8840125391849529, 
-                "357": 0.8244514106583072, 
-                "1100": 0.9717868338557993, 
-                "264": 0.987460815047022, 
-                "90": 0.987460815047022, 
+                "344": 0.9969040247678018, 
+                "1160": 0.9814241486068112, 
+                "884": 0.9164086687306502, 
+                "1072": 0.9318885448916409, 
+                "1181": 0.8730650154798761, 
+                "357": 0.8204334365325078, 
+                "1100": 0.9690402476780186, 
+                "264": 0.9752321981424149, 
+                "90": 0.9876160990712074, 
                 "294": 1.0, 
-                "52": 0.9968652037617555, 
-                "821": 0.8557993730407524
+                "52": 0.9969040247678018, 
+                "821": 0.8513931888544891
             }, 
             "tech_cards_name": {
                 "Rockpool Hunter": 0.7, 
-                "Murloc Tidecaller": 0.42, 
+                "Murloc Tidecaller": 0.43, 
                 "Gentle Megasaur": 0.7, 
                 "Vilefin Inquisitor": 0.7, 
-                "Wild Pyromancer": 0.34, 
+                "Wild Pyromancer": 0.33, 
                 "Murloc Warleader": 0.7, 
                 "Wickerflame Burnbristle": 0.37, 
                 "Ivory Knight": 0.41
             }, 
-            "num_decks": 319.0, 
+            "num_decks": 323.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "743": 0.6990595611285266, 
-                "213": 0.4231974921630094, 
-                "893": 0.4106583072100313, 
-                "314": 0.3385579937304075, 
-                "1113": 0.6990595611285266, 
-                "321": 0.6990595611285266, 
-                "1101": 0.6990595611285266, 
-                "1000": 0.3730407523510972
+                "743": 0.7027863777089783, 
+                "213": 0.43343653250773995, 
+                "893": 0.4055727554179567, 
+                "314": 0.33436532507739936, 
+                "1113": 0.7027863777089783, 
+                "321": 0.7027863777089783, 
+                "1101": 0.7027863777089783, 
+                "1000": 0.3746130030959752
             }, 
-            "observations": 278512
+            "observations": 283572
         }
     }, 
     "HUNTER": {
-        "0": {
+        "1": {
+            "win_rate": {
+                "max": 59.57, 
+                "min": 38.600000000000001, 
+                "stddev": 4.8333013448738296, 
+                "mean": 51.087391304347825
+            }, 
             "name": "", 
             "core_cards_name": {
-                "Eaglehorn Bow": 0.9, 
-                "Kindly Grandmother": 0.9, 
-                "Fiery Bat": 0.81, 
-                "Leeroy Jenkins": 0.81, 
-                "Golakka Crawler": 0.81
+                "Fiery Bat": 0.83
             }, 
             "core_cards": {
-                "1121": 0.8095238095238095, 
-                "900": 0.9047619047619048, 
-                "368": 0.9047619047619048, 
-                "805": 0.8095238095238095, 
-                "228": 0.8095238095238095
+                "805": 0.8260869565217391
             }, 
             "tech_cards_name": {
-                "Rat Pack": 0.38, 
-                "Knife Juggler": 0.38, 
-                "Jeweled Macaw": 0.33, 
-                "Vicious Fledgling": 0.48, 
-                "Hungry Crab": 0.62, 
-                "Dire Wolf Alpha": 0.76, 
-                "Tundra Rhino": 0.48
+                "Tracking": 0.3, 
+                "Leeroy Jenkins": 0.65, 
+                "Golakka Crawler": 0.65, 
+                "Knife Juggler": 0.3, 
+                "Jeweled Macaw": 0.39, 
+                "Vicious Fledgling": 0.3, 
+                "Hungry Crab": 0.57, 
+                "Dire Wolf Alpha": 0.57, 
+                "Eaglehorn Bow": 0.78, 
+                "Rat Pack": 0.39, 
+                "Kindly Grandmother": 0.78, 
+                "Tundra Rhino": 0.57
             }, 
-            "num_decks": 21.0, 
+            "num_decks": 23.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "1129": 0.3333333333333333, 
-                "205": 0.6190476190476191, 
-                "309": 0.7619047619047619, 
-                "957": 0.38095238095238093, 
-                "76": 0.47619047619047616, 
-                "1102": 0.47619047619047616, 
-                "323": 0.38095238095238093
+                "1129": 0.391304347826087, 
+                "900": 0.782608695652174, 
+                "205": 0.5652173913043478, 
+                "309": 0.5652173913043478, 
+                "1121": 0.6521739130434783, 
+                "112": 0.30434782608695654, 
+                "957": 0.391304347826087, 
+                "76": 0.5652173913043478, 
+                "1102": 0.30434782608695654, 
+                "368": 0.782608695652174, 
+                "228": 0.6521739130434783, 
+                "323": 0.30434782608695654
             }, 
-            "observations": 24748
+            "observations": 20318
         }, 
-        "3": {
+        "10": {
+            "win_rate": {
+                "max": 63.420000000000002, 
+                "min": 45.340000000000003, 
+                "stddev": 2.8115394908437219, 
+                "mean": 55.37145270270269
+            }, 
             "name": "", 
             "core_cards_name": {
-                "Jeweled Macaw": 1.0, 
-                "Fiery Bat": 0.86, 
-                "Nesting Roc": 0.9, 
-                "Savannah Highmane": 0.99, 
-                "Eaglehorn Bow": 0.99, 
-                "Tundra Rhino": 0.92
+                "Eaglehorn Bow": 0.95, 
+                "Jeweled Macaw": 0.97, 
+                "Savannah Highmane": 0.98, 
+                "Kindly Grandmother": 0.86, 
+                "Tundra Rhino": 0.84
             }, 
             "core_cards": {
-                "1129": 1.0, 
-                "76": 0.9217391304347826, 
-                "368": 0.991304347826087, 
-                "350": 0.991304347826087, 
-                "1118": 0.9043478260869565, 
-                "805": 0.8608695652173913
+                "1129": 0.9662162162162162, 
+                "900": 0.8648648648648649, 
+                "76": 0.8445945945945946, 
+                "368": 0.9459459459459459, 
+                "350": 0.9763513513513513
             }, 
             "tech_cards_name": {
-                "Kindly Grandmother": 0.7, 
-                "Rat Pack": 0.44, 
-                "Deadly Shot": 0.57, 
-                "Hunter's Mark": 0.38
+                "Rat Pack": 0.68, 
+                "Golakka Crawler": 0.55, 
+                "Deadly Shot": 0.46, 
+                "Infested Wolf": 0.38, 
+                "Fiery Bat": 0.51, 
+                "Nesting Roc": 0.56
             }, 
-            "num_decks": 115.0, 
+            "num_decks": 296.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "11": 0.3826086956521739, 
-                "900": 0.7043478260869566, 
-                "329": 0.5739130434782609, 
-                "957": 0.4434782608695652
+                "1121": 0.5506756756756757, 
+                "957": 0.6824324324324325, 
+                "1118": 0.5641891891891891, 
+                "329": 0.4560810810810811, 
+                "815": 0.375, 
+                "805": 0.5101351351351351
             }, 
-            "observations": 87917
-        }, 
-        "7": {
-            "name": "", 
-            "core_cards_name": {
-                "Eaglehorn Bow": 0.98, 
-                "Jeweled Macaw": 0.95, 
-                "Rat Pack": 0.83, 
-                "Kindly Grandmother": 0.98, 
-                "Savannah Highmane": 0.96
-            }, 
-            "core_cards": {
-                "1129": 0.9464285714285714, 
-                "900": 0.9761904761904762, 
-                "957": 0.8273809523809523, 
-                "368": 0.9761904761904762, 
-                "350": 0.9642857142857143
-            }, 
-            "tech_cards_name": {
-                "Golakka Crawler": 0.7, 
-                "Deadly Shot": 0.39, 
-                "Infested Wolf": 0.51, 
-                "Hungry Crab": 0.38, 
-                "Dire Wolf Alpha": 0.45, 
-                "Nesting Roc": 0.36, 
-                "Tundra Rhino": 0.78
-            }, 
-            "num_decks": 168.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "309": 0.4523809523809524, 
-                "205": 0.375, 
-                "1121": 0.7023809523809523, 
-                "76": 0.7797619047619048, 
-                "1118": 0.3630952380952381, 
-                "329": 0.39285714285714285, 
-                "815": 0.5119047619047619
-            }, 
-            "observations": 121221
+            "observations": 220268
         }
     }, 
     "DRUID": {
-        "1": {
+        "11": {
+            "win_rate": {
+                "max": 61.460000000000001, 
+                "min": 40.039999999999999, 
+                "stddev": 2.6710124237745547, 
+                "mean": 53.782621359223306
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Vicious Fledgling": 0.81, 
+                "Power of the Wild": 0.99, 
+                "Bloodsail Corsair": 0.98, 
+                "Mark of Y'Shaarj": 0.99, 
+                "Fire Fly": 0.99, 
+                "Mark of the Lotus": 0.98, 
+                "Enchanted Raven": 0.99, 
+                "Living Mana": 0.97, 
+                "Savage Roar": 1.0, 
+                "Patches the Pirate": 0.98
+            }, 
+            "core_cards": {
+                "216": 0.9870550161812298, 
+                "964": 0.9805825242718447, 
+                "1123": 0.9902912621359223, 
+                "887": 0.9902912621359223, 
+                "756": 0.9935275080906149, 
+                "312": 0.9805825242718447, 
+                "945": 0.9838187702265372, 
+                "1102": 0.8122977346278317, 
+                "1060": 0.9741100323624595, 
+                "81": 1.0
+            }, 
+            "tech_cards_name": {
+                "Argent Squire": 0.44, 
+                "Golakka Crawler": 0.78, 
+                "Bluegill Warrior": 0.52, 
+                "Swipe": 0.58, 
+                "Hungry Crab": 0.63, 
+                "Finja the Flying Star": 0.52, 
+                "Murloc Warleader": 0.52, 
+                "Eggnapper": 0.4, 
+                "Bittertide Hydra": 0.46
+            }, 
+            "num_decks": 309.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "1024": 0.5210355987055016, 
+                "205": 0.6343042071197411, 
+                "1121": 0.7799352750809061, 
+                "1111": 0.4627831715210356, 
+                "321": 0.5210355987055016, 
+                "5": 0.5792880258899676, 
+                "1103": 0.39805825242718446, 
+                "265": 0.44336569579288027, 
+                "80": 0.5210355987055016
+            }, 
+            "observations": 256428
+        }, 
+        "12": {
+            "win_rate": {
+                "max": 58.390000000000001, 
+                "min": 41.520000000000003, 
+                "stddev": 2.7857264391719059, 
+                "mean": 51.606985294117642
+            }, 
             "name": "", 
             "core_cards_name": {
                 "Jade Idol": 1.0, 
@@ -473,62 +609,72 @@
                 "254": 0.3235294117647059
             }, 
             "observations": 238806
-        }, 
-        "11": {
-            "name": "", 
-            "core_cards_name": {
-                "Vicious Fledgling": 0.84, 
-                "Power of the Wild": 1.0, 
-                "Bloodsail Corsair": 0.99, 
-                "Mark of Y'Shaarj": 0.99, 
-                "Fire Fly": 1.0, 
-                "Mark of the Lotus": 1.0, 
-                "Enchanted Raven": 0.99, 
-                "Living Mana": 0.98, 
-                "Savage Roar": 1.0, 
-                "Patches the Pirate": 0.99
-            }, 
-            "core_cards": {
-                "216": 1.0, 
-                "964": 0.9899328859060402, 
-                "1123": 0.9966442953020134, 
-                "887": 0.9899328859060402, 
-                "756": 0.9899328859060402, 
-                "312": 0.9899328859060402, 
-                "945": 1.0, 
-                "1102": 0.8389261744966443, 
-                "1060": 0.9832214765100671, 
-                "81": 1.0
-            }, 
-            "tech_cards_name": {
-                "Argent Squire": 0.44, 
-                "Golakka Crawler": 0.77, 
-                "Bluegill Warrior": 0.54, 
-                "Swipe": 0.56, 
-                "Hungry Crab": 0.64, 
-                "Finja the Flying Star": 0.54, 
-                "Murloc Warleader": 0.54, 
-                "Eggnapper": 0.4, 
-                "Bittertide Hydra": 0.48
-            }, 
-            "num_decks": 298.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "1024": 0.5369127516778524, 
-                "205": 0.6409395973154363, 
-                "1121": 0.7684563758389261, 
-                "1111": 0.4798657718120805, 
-                "321": 0.5369127516778524, 
-                "5": 0.5570469798657718, 
-                "1103": 0.3959731543624161, 
-                "265": 0.4395973154362416, 
-                "80": 0.5369127516778524
-            }, 
-            "observations": 249094
         }
     }, 
     "ROGUE": {
+        "1": {
+            "win_rate": {
+                "max": 60.060000000000002, 
+                "min": 41.719999999999999, 
+                "stddev": 2.7293639046671152, 
+                "mean": 51.328210526315793
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Razorpetal Lasher": 0.96, 
+                "Fan of Knives": 0.93, 
+                "Bloodmage Thalnos": 0.83, 
+                "Sap": 0.85, 
+                "Backstab": 1.0, 
+                "Edwin VanCleef": 0.99, 
+                "Swashburglar": 0.98, 
+                "Gadgetzan Auctioneer": 1.0, 
+                "Vilespine Slayer": 0.97, 
+                "Patches the Pirate": 0.91, 
+                "Eviscerate": 1.0, 
+                "Hallucination": 0.99, 
+                "Counterfeit Coin": 0.98, 
+                "Sherazin Corpse Flower": 0.88
+            }, 
+            "core_cards": {
+                "959": 0.9842105263157894, 
+                "1095": 0.9736842105263158, 
+                "1096": 0.8789473684210526, 
+                "1091": 0.9631578947368421, 
+                "17": 1.0, 
+                "1187": 0.9947368421052631, 
+                "908": 0.9789473684210527, 
+                "304": 1.0, 
+                "50": 0.8473684210526315, 
+                "964": 0.9052631578947369, 
+                "261": 0.8263157894736842, 
+                "73": 0.9263157894736842, 
+                "179": 0.9947368421052631, 
+                "298": 1.0
+            }, 
+            "tech_cards_name": {
+                "Cold Blood": 0.7, 
+                "Mimic Pod": 0.77, 
+                "SI:7 Agent": 0.78, 
+                "Arcane Giant": 0.78
+            }, 
+            "num_decks": 190.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "891": 0.7842105263157895, 
+                "334": 0.7789473684210526, 
+                "1092": 0.7736842105263158, 
+                "170": 0.7
+            }, 
+            "observations": 150599
+        }, 
         "0": {
+            "win_rate": {
+                "max": 62.880000000000003, 
+                "min": 41.219999999999999, 
+                "stddev": 2.9266176136935997, 
+                "mean": 51.586081730769237
+            }, 
             "name": "", 
             "core_cards_name": {
                 "Mimic Pod": 0.97, 
@@ -573,258 +719,288 @@
                 "798": 0.5817307692307693
             }, 
             "observations": 370910
-        }, 
-        "10": {
-            "name": "", 
-            "core_cards_name": {
-                "Razorpetal Lasher": 0.92, 
-                "Fan of Knives": 0.88, 
-                "Sap": 0.8, 
-                "Backstab": 1.0, 
-                "Edwin VanCleef": 0.99, 
-                "Swashburglar": 0.98, 
-                "Gadgetzan Auctioneer": 0.93, 
-                "Vilespine Slayer": 0.97, 
-                "Patches the Pirate": 0.91, 
-                "Eviscerate": 1.0, 
-                "Hallucination": 0.99, 
-                "Counterfeit Coin": 0.93, 
-                "Sherazin Corpse Flower": 0.82
-            }, 
-            "core_cards": {
-                "959": 0.9317073170731708, 
-                "1095": 0.9707317073170731, 
-                "1096": 0.824390243902439, 
-                "1091": 0.9219512195121952, 
-                "17": 1.0, 
-                "1187": 0.9853658536585366, 
-                "908": 0.9804878048780488, 
-                "304": 0.9317073170731708, 
-                "50": 0.8048780487804879, 
-                "964": 0.9073170731707317, 
-                "73": 0.8780487804878049, 
-                "179": 0.9853658536585366, 
-                "298": 1.0
-            }, 
-            "tech_cards_name": {
-                "Shaku the Collector": 0.31, 
-                "Bloodmage Thalnos": 0.79, 
-                "Cold Blood": 0.69, 
-                "SI:7 Agent": 0.8, 
-                "Mimic Pod": 0.74, 
-                "Arcane Giant": 0.73
-            }, 
-            "num_decks": 205.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "891": 0.7317073170731707, 
-                "1027": 0.3121951219512195, 
-                "1092": 0.7365853658536585, 
-                "334": 0.7951219512195122, 
-                "261": 0.7902439024390244, 
-                "170": 0.6926829268292682
-            }, 
-            "observations": 159990
         }
     }, 
     "SHAMAN": {
-        "9": {
-            "name": "", 
-            "core_cards_name": {
-                "Jade Lightning": 0.9, 
-                "Flametongue Totem": 1.0, 
-                "Fire Fly": 0.93, 
-                "Hex": 0.97, 
-                "Aya Blackpaw": 0.83, 
-                "Mana Tide Totem": 1.0, 
-                "Jade Claws": 0.9, 
-                "Volcano": 0.8, 
-                "Thing from Below": 1.0, 
-                "Stonehill Defender": 0.97
+        "1": {
+            "win_rate": {
+                "max": 61.289999999999999, 
+                "min": 46.799999999999997, 
+                "stddev": 3.1116652069233486, 
+                "mean": 54.202261904761912
             }, 
-            "core_cards": {
-                "976": 0.9, 
-                "989": 0.8333333333333334, 
-                "962": 0.9, 
-                "1079": 0.8, 
-                "748": 1.0, 
-                "1123": 0.9333333333333333, 
-                "108": 1.0, 
-                "1100": 0.9666666666666667, 
-                "83": 0.9666666666666667, 
-                "220": 1.0
-            }, 
-            "tech_cards_name": {
-                "Evolve": 0.77, 
-                "Spirit Echo": 0.73, 
-                "Doppelgangster": 0.67, 
-                "Bloodlust": 0.4, 
-                "Master of Evolution": 0.77, 
-                "Jinyu Waterspeaker": 0.4, 
-                "Lightning Storm": 0.77, 
-                "Devolve": 0.53
-            }, 
-            "num_decks": 30.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "869": 0.7666666666666667, 
-                "1043": 0.6666666666666666, 
-                "1171": 0.7333333333333333, 
-                "747": 0.7666666666666667, 
-                "120": 0.4, 
-                "244": 0.7666666666666667, 
-                "1009": 0.5333333333333333, 
-                "924": 0.4
-            }, 
-            "observations": 31542
-        }, 
-        "0": {
-            "name": "", 
-            "core_cards_name": {
-                "Jade Lightning": 1.0, 
-                "Spirit Echo": 0.89, 
-                "Hex": 1.0, 
-                "Aya Blackpaw": 1.0, 
-                "Mana Tide Totem": 0.94, 
-                "Jade Claws": 1.0, 
-                "Jinyu Waterspeaker": 0.92, 
-                "Volcano": 0.97, 
-                "Lightning Storm": 0.94, 
-                "Thing from Below": 0.89, 
-                "Devolve": 0.92, 
-                "Jade Spirit": 0.89
-            }, 
-            "core_cards": {
-                "976": 1.0, 
-                "975": 0.8888888888888888, 
-                "989": 1.0, 
-                "962": 1.0, 
-                "1171": 0.8888888888888888, 
-                "1079": 0.9722222222222222, 
-                "748": 0.8888888888888888, 
-                "244": 0.9444444444444444, 
-                "1009": 0.9166666666666666, 
-                "83": 1.0, 
-                "924": 0.9166666666666666, 
-                "220": 0.9444444444444444
-            }, 
-            "tech_cards_name": {
-                "Bloodmage Thalnos": 0.75, 
-                "Jade Chieftain": 0.78, 
-                "Hot Spring Guardian": 0.72, 
-                "Stonehill Defender": 0.5
-            }, 
-            "num_decks": 36.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "261": 0.75, 
-                "1149": 0.7222222222222222, 
-                "954": 0.7777777777777778, 
-                "1100": 0.5
-            }, 
-            "observations": 25795
-        }, 
-        "10": {
-            "name": "", 
-            "core_cards_name": {
-                "Jade Lightning": 0.99, 
-                "Flametongue Totem": 1.0, 
-                "Fire Fly": 1.0, 
-                "Primalfin Totem": 0.93, 
-                "Mana Tide Totem": 1.0, 
-                "Jade Claws": 1.0, 
-                "Bloodlust": 1.0, 
-                "Patches the Pirate": 0.95, 
-                "Thing from Below": 1.0
-            }, 
-            "core_cards": {
-                "964": 0.9506172839506173, 
-                "976": 1.0, 
-                "962": 0.9876543209876543, 
-                "748": 1.0, 
-                "1063": 0.9259259259259259, 
-                "1123": 1.0, 
-                "120": 1.0, 
-                "108": 1.0, 
-                "220": 1.0
-            }, 
-            "tech_cards_name": {
-                "Evolve": 0.62, 
-                "Bloodsail Corsair": 0.74, 
-                "Aya Blackpaw": 0.79, 
-                "Doppelgangster": 0.6, 
-                "Hex": 0.4, 
-                "Devolve": 0.73, 
-                "Stonehill Defender": 0.69, 
-                "Jade Spirit": 0.31
-            }, 
-            "num_decks": 81.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "1043": 0.6049382716049383, 
-                "975": 0.30864197530864196, 
-                "989": 0.7901234567901234, 
-                "1100": 0.691358024691358, 
-                "747": 0.6172839506172839, 
-                "312": 0.7407407407407407, 
-                "1009": 0.7283950617283951, 
-                "83": 0.3950617283950617
-            }, 
-            "observations": 73395
-        }, 
-        "3": {
             "name": "", 
             "core_cards_name": {
                 "Fire Fly": 0.98, 
                 "Hex": 1.0, 
-                "Tar Creeper": 0.85, 
+                "Tar Creeper": 0.83, 
                 "Fire Elemental": 0.95, 
-                "Servant of Kalimos": 0.96, 
-                "Hot Spring Guardian": 0.85, 
-                "Blazecaller": 0.84, 
+                "Servant of Kalimos": 0.94, 
+                "Hot Spring Guardian": 0.83, 
                 "Flametongue Totem": 0.88, 
-                "Kalimos Primal Lord": 0.91
+                "Kalimos Primal Lord": 0.93
             }, 
             "core_cards": {
-                "1142": 0.9629629629629629, 
-                "1123": 0.9753086419753086, 
-                "1144": 0.8518518518518519, 
-                "18": 0.9506172839506173, 
-                "1149": 0.8518518518518519, 
-                "1180": 0.8395061728395061, 
-                "1127": 0.9135802469135802, 
-                "108": 0.8765432098765432, 
+                "1142": 0.9404761904761905, 
+                "1123": 0.9761904761904762, 
+                "1144": 0.8333333333333334, 
+                "18": 0.9523809523809523, 
+                "1149": 0.8333333333333334, 
+                "1127": 0.9285714285714286, 
+                "108": 0.8809523809523809, 
                 "83": 1.0
             }, 
             "tech_cards_name": {
                 "Jade Lightning": 0.73, 
                 "Aya Blackpaw": 0.64, 
-                "Mana Tide Totem": 0.64, 
+                "Mana Tide Totem": 0.67, 
                 "Jade Claws": 0.79, 
-                "Bloodlust": 0.35, 
-                "Tol'vir Stoneshaper": 0.68, 
-                "Bloodmage Thalnos": 0.41, 
-                "Lightning Storm": 0.72, 
-                "Devolve": 0.43
+                "Bloodlust": 0.32, 
+                "Tol'vir Stoneshaper": 0.65, 
+                "Bloodmage Thalnos": 0.4, 
+                "Blazecaller": 0.8, 
+                "Lightning Storm": 0.73, 
+                "Devolve": 0.45
             }, 
-            "num_decks": 81.0, 
+            "num_decks": 84.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "976": 0.7901234567901234, 
-                "989": 0.6419753086419753, 
-                "962": 0.7283950617283951, 
-                "1098": 0.6790123456790124, 
-                "120": 0.345679012345679, 
-                "244": 0.7160493827160493, 
-                "261": 0.4074074074074074, 
-                "1009": 0.43209876543209874, 
-                "220": 0.6419753086419753
+                "976": 0.7857142857142857, 
+                "989": 0.6428571428571429, 
+                "962": 0.7261904761904762, 
+                "1098": 0.6547619047619048, 
+                "1180": 0.7976190476190477, 
+                "120": 0.32142857142857145, 
+                "244": 0.7261904761904762, 
+                "261": 0.40476190476190477, 
+                "1009": 0.4523809523809524, 
+                "220": 0.6666666666666666
             }, 
-            "observations": 69601
+            "observations": 71497
+        }, 
+        "0": {
+            "win_rate": {
+                "max": 60.039999999999999, 
+                "min": 44.920000000000002, 
+                "stddev": 3.1107405144163551, 
+                "mean": 53.659854014598537
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Aya Blackpaw": 0.87, 
+                "Thing from Below": 0.99, 
+                "Jade Claws": 1.0, 
+                "Jade Lightning": 0.99, 
+                "Mana Tide Totem": 0.99
+            }, 
+            "core_cards": {
+                "748": 0.9854014598540146, 
+                "976": 1.0, 
+                "989": 0.8686131386861314, 
+                "962": 0.9927007299270073, 
+                "220": 0.9927007299270073
+            }, 
+            "tech_cards_name": {
+                "Evolve": 0.55, 
+                "Spirit Echo": 0.38, 
+                "Doppelgangster": 0.51, 
+                "Fire Fly": 0.77, 
+                "Primalfin Totem": 0.57, 
+                "Bloodsail Corsair": 0.44, 
+                "Hex": 0.64, 
+                "Bloodlust": 0.71, 
+                "Patches the Pirate": 0.55, 
+                "Volcano": 0.41, 
+                "Lightning Storm": 0.45, 
+                "Flametongue Totem": 0.8, 
+                "Devolve": 0.74, 
+                "Stonehill Defender": 0.69, 
+                "Jade Spirit": 0.44
+            }, 
+            "num_decks": 137.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "1043": 0.5109489051094891, 
+                "964": 0.5547445255474452, 
+                "975": 0.43795620437956206, 
+                "1123": 0.7737226277372263, 
+                "1100": 0.6861313868613139, 
+                "1171": 0.3795620437956204, 
+                "747": 0.5474452554744526, 
+                "312": 0.43795620437956206, 
+                "1063": 0.5693430656934306, 
+                "1079": 0.40875912408759124, 
+                "120": 0.708029197080292, 
+                "244": 0.44525547445255476, 
+                "108": 0.7956204379562044, 
+                "1009": 0.7372262773722628, 
+                "83": 0.6423357664233577
+            }, 
+            "observations": 124866
+        }, 
+        "10": {
+            "win_rate": {
+                "max": 56.740000000000002, 
+                "min": 44.909999999999997, 
+                "stddev": 2.9813035997439368, 
+                "mean": 49.325000000000003
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "White Eyes": 0.92, 
+                "Mana Tide Totem": 0.92, 
+                "Hex": 1.0, 
+                "Jinyu Waterspeaker": 0.96, 
+                "Volcano": 0.96, 
+                "Lightning Storm": 1.0, 
+                "Thing from Below": 0.88, 
+                "Devolve": 0.92, 
+                "Stonehill Defender": 0.85
+            }, 
+            "core_cards": {
+                "1009": 0.9230769230769231, 
+                "1079": 0.9615384615384616, 
+                "748": 0.8846153846153846, 
+                "968": 0.9230769230769231, 
+                "244": 1.0, 
+                "1100": 0.8461538461538461, 
+                "83": 1.0, 
+                "924": 0.9615384615384616, 
+                "220": 0.9230769230769231
+            }, 
+            "tech_cards_name": {
+                "Ancestral Spirit": 0.54, 
+                "Bloodmage Thalnos": 0.65, 
+                "Spirit Echo": 0.69, 
+                "Hallazeal the Ascended": 0.62, 
+                "Dirty Rat": 0.42, 
+                "Elise the Trailblazer": 0.31, 
+                "Hot Spring Guardian": 0.5, 
+                "Tidal Surge": 0.62, 
+                "N'Zoth the Corruptor": 0.62, 
+                "Cairne Bloodhoof": 0.46, 
+                "Earth Elemental": 0.38
+            }, 
+            "num_decks": 26.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "1052": 0.4230769230769231, 
+                "199": 0.46153846153846156, 
+                "338": 0.38461538461538464, 
+                "1171": 0.6923076923076923, 
+                "195": 0.5384615384615384, 
+                "1149": 0.5, 
+                "1182": 0.3076923076923077, 
+                "786": 0.6153846153846154, 
+                "1153": 0.6153846153846154, 
+                "261": 0.6538461538461539, 
+                "811": 0.6153846153846154
+            }, 
+            "observations": 17173
         }
     }, 
     "MAGE": {
         "1": {
+            "win_rate": {
+                "max": 65.079999999999998, 
+                "min": 41.329999999999998, 
+                "stddev": 2.8267951772706628, 
+                "mean": 54.822078431372553
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Babbling Book": 0.82, 
+                "Counterspell": 0.98, 
+                "Kirin Tor Mage": 0.95, 
+                "Firelands Portal": 0.93, 
+                "Mana Wyrm": 1.0, 
+                "Medivh's Valet": 0.97, 
+                "Mirror Entity": 0.88, 
+                "Kabal Crystal Runner": 0.95
+            }, 
+            "core_cards": {
+                "878": 0.8156862745098039, 
+                "196": 1.0, 
+                "987": 0.9490196078431372, 
+                "149": 0.9764705882352941, 
+                "260": 0.9450980392156862, 
+                "916": 0.9686274509803922, 
+                "160": 0.8823529411764706, 
+                "912": 0.9254901960784314
+            }, 
+            "tech_cards_name": {
+                "Kabal Lackey": 0.62, 
+                "Sorcerer's Apprentice": 0.69, 
+                "Ice Block": 0.41
+            }, 
+            "num_decks": 255.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "159": 0.40784313725490196, 
+                "929": 0.6235294117647059, 
+                "241": 0.6901960784313725
+            }, 
+            "observations": 223282
+        }, 
+        "10": {
+            "win_rate": {
+                "max": 69.060000000000002, 
+                "min": 44.93, 
+                "stddev": 2.879564097242902, 
+                "mean": 54.578422273781911
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Medivh's Valet": 0.99, 
+                "Flamestrike": 0.94, 
+                "Alexstrasza": 0.97, 
+                "Firelands Portal": 0.99, 
+                "Kabal Courier": 0.88, 
+                "Mana Wyrm": 1.0, 
+                "Medivh the Guardian": 0.96, 
+                "Pyroblast": 0.99, 
+                "Ice Barrier": 0.88, 
+                "Ice Block": 1.0
+            }, 
+            "core_cards": {
+                "972": 0.8816705336426914, 
+                "159": 1.0, 
+                "196": 0.9953596287703016, 
+                "326": 0.9907192575406032, 
+                "243": 0.8793503480278422, 
+                "920": 0.962877030162413, 
+                "916": 0.988399071925754, 
+                "106": 0.9373549883990719, 
+                "232": 0.974477958236659, 
+                "912": 0.9907192575406032
+            }, 
+            "tech_cards_name": {
+                "Polymorph": 0.48, 
+                "Bloodmage Thalnos": 0.66, 
+                "Volcanic Potion": 0.7, 
+                "Gluttonous Ooze": 0.46, 
+                "Meteor": 0.62, 
+                "Babbling Book": 0.65
+            }, 
+            "num_decks": 431.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "878": 0.6519721577726219, 
+                "1170": 0.6241299303944315, 
+                "1155": 0.4593967517401392, 
+                "928": 0.6960556844547564, 
+                "261": 0.6635730858468677, 
+                "8": 0.4802784222737819
+            }, 
+            "observations": 402916
+        }, 
+        "2": {
+            "win_rate": {
+                "max": 61.049999999999997, 
+                "min": 45.0, 
+                "stddev": 2.9000985841394735, 
+                "mean": 51.2365671641791
+            }, 
             "name": "", 
             "core_cards_name": {
                 "Bloodmage Thalnos": 0.85, 
@@ -865,274 +1041,166 @@
                 "325": 0.7014925373134329
             }, 
             "observations": 67603
-        }, 
-        "9": {
-            "name": "", 
-            "core_cards_name": {
-                "Babbling Book": 0.81, 
-                "Counterspell": 0.98, 
-                "Kirin Tor Mage": 0.96, 
-                "Firelands Portal": 0.92, 
-                "Mana Wyrm": 1.0, 
-                "Medivh's Valet": 0.97, 
-                "Mirror Entity": 0.89, 
-                "Kabal Crystal Runner": 0.96
-            }, 
-            "core_cards": {
-                "878": 0.8134920634920635, 
-                "196": 1.0, 
-                "987": 0.9642857142857143, 
-                "149": 0.9801587301587301, 
-                "260": 0.9603174603174603, 
-                "916": 0.9722222222222222, 
-                "160": 0.8928571428571429, 
-                "912": 0.9246031746031746
-            }, 
-            "tech_cards_name": {
-                "Kabal Lackey": 0.63, 
-                "Sorcerer's Apprentice": 0.68, 
-                "Ice Block": 0.42
-            }, 
-            "num_decks": 252.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "159": 0.4166666666666667, 
-                "929": 0.626984126984127, 
-                "241": 0.6825396825396826
-            }, 
-            "observations": 221928
-        }, 
-        "10": {
-            "name": "", 
-            "core_cards_name": {
-                "Medivh's Valet": 0.99, 
-                "Flamestrike": 0.94, 
-                "Alexstrasza": 0.97, 
-                "Firelands Portal": 0.99, 
-                "Kabal Courier": 0.88, 
-                "Mana Wyrm": 1.0, 
-                "Medivh the Guardian": 0.96, 
-                "Pyroblast": 0.99, 
-                "Ice Barrier": 0.88, 
-                "Ice Block": 1.0
-            }, 
-            "core_cards": {
-                "972": 0.8816705336426914, 
-                "159": 0.9976798143851509, 
-                "196": 0.9953596287703016, 
-                "326": 0.9930394431554525, 
-                "243": 0.8793503480278422, 
-                "920": 0.9605568445475638, 
-                "916": 0.9860788863109049, 
-                "106": 0.9373549883990719, 
-                "232": 0.9721577726218097, 
-                "912": 0.988399071925754
-            }, 
-            "tech_cards_name": {
-                "Polymorph": 0.48, 
-                "Bloodmage Thalnos": 0.66, 
-                "Volcanic Potion": 0.69, 
-                "Gluttonous Ooze": 0.46, 
-                "Meteor": 0.62, 
-                "Babbling Book": 0.65
-            }, 
-            "num_decks": 431.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "878": 0.6519721577726219, 
-                "1170": 0.6241299303944315, 
-                "1155": 0.4593967517401392, 
-                "928": 0.6937354988399071, 
-                "261": 0.6635730858468677, 
-                "8": 0.48259860788863107
-            }, 
-            "observations": 403049
         }
     }, 
     "PRIEST": {
         "1": {
-            "name": "", 
-            "core_cards_name": {
-                "Kabal Talonpriest": 0.95, 
-                "Lyra the Sunshard": 0.97, 
-                "Radiant Elemental": 0.98, 
-                "Potion of Madness": 0.95, 
-                "Divine Spirit": 0.91, 
-                "Inner Fire": 0.91, 
-                "Shadow Word: Pain": 0.89
+            "win_rate": {
+                "max": 61.299999999999997, 
+                "min": 35.560000000000002, 
+                "stddev": 3.1091190379355016, 
+                "mean": 52.450000000000003
             }, 
-            "core_cards": {
-                "958": 0.953125, 
-                "1085": 0.984375, 
-                "1188": 0.96875, 
-                "938": 0.953125, 
-                "123": 0.90625, 
-                "125": 0.890625, 
-                "189": 0.90625
-            }, 
-            "tech_cards_name": {
-                "Tortollan Shellraiser": 0.52, 
-                "Circle of Healing": 0.36, 
-                "Tar Creeper": 0.77, 
-                "Servant of Kalimos": 0.38, 
-                "Elise the Trailblazer": 0.45, 
-                "Tol'vir Stoneshaper": 0.33, 
-                "Acolyte of Pain": 0.55, 
-                "Shadow Word: Death": 0.64, 
-                "Priest of the Feast": 0.58, 
-                "Wild Pyromancer": 0.33
-            }, 
-            "num_decks": 64.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "1087": 0.515625, 
-                "1142": 0.375, 
-                "894": 0.578125, 
-                "1144": 0.765625, 
-                "1182": 0.453125, 
-                "1098": 0.328125, 
-                "314": 0.328125, 
-                "124": 0.640625, 
-                "352": 0.359375, 
-                "367": 0.546875
-            }, 
-            "observations": 57316
-        }, 
-        "2": {
             "name": "", 
             "core_cards_name": {
                 "Kabal Talonpriest": 0.85, 
                 "Book Wyrm": 0.81, 
-                "Netherspite Historian": 1.0, 
+                "Netherspite Historian": 0.99, 
                 "Primordial Drake": 0.97, 
-                "Radiant Elemental": 0.89, 
-                "Twilight Drake": 0.88, 
+                "Radiant Elemental": 0.91, 
+                "Twilight Drake": 0.89, 
                 "Potion of Madness": 0.89, 
-                "Drakonid Operative": 1.0, 
+                "Drakonid Operative": 0.99, 
                 "Shadow Word: Death": 0.98, 
                 "Shadow Word: Pain": 0.97, 
                 "Dragonfire Potion": 1.0
             }, 
             "core_cards": {
-                "882": 0.8076923076923077, 
-                "1085": 0.8910256410256411, 
-                "905": 1.0, 
-                "958": 0.8461538461538461, 
-                "940": 1.0, 
-                "1181": 0.967948717948718, 
-                "320": 0.8846153846153846, 
-                "938": 0.8910256410256411, 
-                "124": 0.9807692307692307, 
-                "125": 0.967948717948718, 
+                "882": 0.8145695364238411, 
+                "1085": 0.9139072847682119, 
+                "905": 0.9933774834437086, 
+                "958": 0.8543046357615894, 
+                "940": 0.9933774834437086, 
+                "1181": 0.9668874172185431, 
+                "320": 0.8874172185430463, 
+                "938": 0.8874172185430463, 
+                "124": 0.9801324503311258, 
+                "125": 0.9735099337748344, 
                 "1037": 1.0
             }, 
             "tech_cards_name": {
-                "Lyra the Sunshard": 0.76, 
-                "Elise the Trailblazer": 0.57, 
+                "Lyra the Sunshard": 0.77, 
+                "Elise the Trailblazer": 0.55, 
                 "Holy Nova": 0.42, 
-                "Priest of the Feast": 0.65
+                "Priest of the Feast": 0.64
             }, 
-            "num_decks": 156.0, 
+            "num_decks": 151.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "894": 0.6474358974358975, 
-                "89": 0.4230769230769231, 
-                "1182": 0.5705128205128205, 
-                "1188": 0.7628205128205128
+                "894": 0.6423841059602649, 
+                "89": 0.41721854304635764, 
+                "1182": 0.5496688741721855, 
+                "1188": 0.7748344370860927
             }, 
-            "observations": 125303
+            "observations": 122961
         }, 
-        "5": {
+        "11": {
+            "win_rate": {
+                "max": 56.450000000000003, 
+                "min": 39.0, 
+                "stddev": 3.8595137306376031, 
+                "mean": 50.014955752212387
+            }, 
             "name": "", 
             "core_cards_name": {
-                "Kabal Talonpriest": 0.95, 
-                "Faceless Shambler": 0.93, 
-                "Purify": 1.0, 
-                "Radiant Elemental": 0.91, 
-                "Potion of Madness": 0.81, 
-                "Acolyte of Pain": 0.81, 
-                "Inner Fire": 0.99, 
-                "Humongous Razorleaf": 1.0, 
-                "Ancient Watcher": 1.0, 
-                "Silence": 1.0, 
-                "Divine Spirit": 0.99
-            }, 
-            "core_cards": {
-                "1177": 1.0, 
-                "958": 0.9534883720930233, 
-                "1085": 0.9069767441860465, 
-                "897": 1.0, 
-                "938": 0.813953488372093, 
-                "239": 1.0, 
-                "803": 0.9302325581395349, 
-                "367": 0.8062015503875969, 
-                "123": 0.9922480620155039, 
-                "189": 0.9922480620155039, 
-                "347": 1.0
-            }, 
-            "tech_cards_name": {
-                "Kabal Songstealer": 0.4, 
-                "Lyra the Sunshard": 0.78, 
-                "Wild Pyromancer": 0.32
-            }, 
-            "num_decks": 129.0, 
-            "prevalence": "common", 
-            "tech_cards": {
-                "1033": 0.3953488372093023, 
-                "1188": 0.7829457364341085, 
-                "314": 0.3178294573643411
-            }, 
-            "observations": 133623
-        }, 
-        "7": {
-            "name": "", 
-            "core_cards_name": {
-                "Lyra the Sunshard": 0.98, 
-                "Shadow Word: Pain": 1.0, 
-                "Elise the Trailblazer": 0.91, 
-                "Radiant Elemental": 0.98, 
-                "Potion of Madness": 1.0, 
+                "Lyra the Sunshard": 0.91, 
+                "Shadow Word: Pain": 0.99, 
+                "Elise the Trailblazer": 0.88, 
+                "Radiant Elemental": 0.92, 
+                "Potion of Madness": 0.99, 
                 "Shadow Word: Death": 1.0, 
-                "Priest of the Feast": 0.96, 
-                "Dragonfire Potion": 0.94
+                "Priest of the Feast": 0.94, 
+                "Dragonfire Potion": 0.95
             }, 
             "core_cards": {
-                "1085": 0.9789473684210527, 
-                "894": 0.9578947368421052, 
-                "1188": 0.9789473684210527, 
-                "1182": 0.9052631578947369, 
-                "938": 1.0, 
+                "1085": 0.9203539823008849, 
+                "894": 0.9380530973451328, 
+                "1188": 0.911504424778761, 
+                "1182": 0.8761061946902655, 
+                "938": 0.9911504424778761, 
                 "124": 1.0, 
-                "125": 1.0, 
-                "1037": 0.9368421052631579
+                "125": 0.9911504424778761, 
+                "1037": 0.9469026548672567
             }, 
             "tech_cards_name": {
                 "Kabal Talonpriest": 0.6, 
-                "Curious Glimmerroot": 0.68, 
-                "Binding Heal": 0.34, 
-                "Cabal Shadow Priest": 0.35, 
-                "Tar Creeper": 0.54, 
+                "Curious Glimmerroot": 0.65, 
+                "Binding Heal": 0.3, 
+                "Cabal Shadow Priest": 0.34, 
+                "Tar Creeper": 0.5, 
                 "Holy Nova": 0.56, 
-                "Kabal Songstealer": 0.46, 
-                "Medivh the Guardian": 0.68, 
-                "Free From Amber": 0.76, 
-                "Wild Pyromancer": 0.55
+                "Kabal Songstealer": 0.42, 
+                "Medivh the Guardian": 0.63, 
+                "Free From Amber": 0.69, 
+                "Wild Pyromancer": 0.54
             }, 
-            "num_decks": 95.0, 
+            "num_decks": 113.0, 
             "prevalence": "common", 
             "tech_cards": {
-                "1086": 0.6842105263157895, 
-                "1083": 0.3368421052631579, 
-                "1144": 0.5368421052631579, 
-                "958": 0.6, 
-                "1186": 0.7578947368421053, 
-                "314": 0.5473684210526316, 
-                "89": 0.5578947368421052, 
-                "920": 0.6842105263157895, 
-                "1033": 0.4631578947368421, 
-                "171": 0.3473684210526316
+                "1086": 0.6460176991150443, 
+                "1083": 0.3008849557522124, 
+                "1144": 0.504424778761062, 
+                "958": 0.6017699115044248, 
+                "1186": 0.6902654867256637, 
+                "314": 0.5398230088495575, 
+                "89": 0.5575221238938053, 
+                "920": 0.6283185840707964, 
+                "1033": 0.4247787610619469, 
+                "171": 0.336283185840708
             }, 
-            "observations": 87104
+            "observations": 94889
+        }, 
+        "12": {
+            "win_rate": {
+                "max": 58.789999999999999, 
+                "min": 39.789999999999999, 
+                "stddev": 3.6150209411349601, 
+                "mean": 50.80335294117647
+            }, 
+            "name": "", 
+            "core_cards_name": {
+                "Kabal Talonpriest": 0.96, 
+                "Lyra the Sunshard": 0.9, 
+                "Radiant Elemental": 0.99, 
+                "Potion of Madness": 0.94, 
+                "Divine Spirit": 0.98, 
+                "Inner Fire": 0.98
+            }, 
+            "core_cards": {
+                "958": 0.9588235294117647, 
+                "1085": 0.9882352941176471, 
+                "1188": 0.9, 
+                "938": 0.9411764705882353, 
+                "123": 0.9823529411764705, 
+                "189": 0.9823529411764705
+            }, 
+            "tech_cards_name": {
+                "Circle of Healing": 0.31, 
+                "Faceless Shambler": 0.61, 
+                "Purify": 0.66, 
+                "Tar Creeper": 0.39, 
+                "Acolyte of Pain": 0.76, 
+                "Shadow Word: Pain": 0.35, 
+                "Humongous Razorleaf": 0.66, 
+                "Ancient Watcher": 0.66, 
+                "Wild Pyromancer": 0.35, 
+                "Silence": 0.75
+            }, 
+            "num_decks": 170.0, 
+            "prevalence": "common", 
+            "tech_cards": {
+                "1177": 0.6588235294117647, 
+                "1144": 0.38823529411764707, 
+                "897": 0.6588235294117647, 
+                "314": 0.34705882352941175, 
+                "347": 0.7529411764705882, 
+                "352": 0.3058823529411765, 
+                "803": 0.6058823529411764, 
+                "367": 0.7588235294117647, 
+                "125": 0.34705882352941175, 
+                "239": 0.6588235294117647
+            }, 
+            "observations": 174466
         }
     }
 }
