@@ -283,15 +283,53 @@ class ClusterSet:
 			else:
 				cluster.prevalence = "rare"
 
-	def merge_clusters(self, distance_function=cluster_similarity):
-		next_cluster_id = len(self._clusters)
-		self._clusters = self._do_merge_clusters(self._clusters, distance_function, next_cluster_id)
+	def merge_clusters(self, distance_function=cluster_similarity):		
+		self.analyze_clusters_space(self._clusters, distance_function)
+
+		self._clusters = self._do_merge_clusters(self._clusters, distance_function)
 		self.compute_cluster_metrics()
 
-	def _do_merge_clusters(self, clusters, distance_function, first_new_cluster_id):
+	def analyze_clusters_space(self, clusters, distance_function):
+		"Determine reasonable parameters for second phase of clustering"
+		previous_c1 = None
+		distances = []
+		distances_all = [] 
+		observations_all = []
+		for c1, c2 in combinations(clusters, 2):
+			sim_score = distance_function(c1, c2)
+			if c1 != previous_c1:
+				if len(distances):
+					print "%s - %s" % (c1.cluster_id, distances)
+				previous_c1 = c1
+				distances = []
+			distances.append(round(sim_score, 2))
+			distances_all.append(round(sim_score, 2))
+
+		wr = np.array(distances_all)
+		mean = np.mean(wr, axis=0)
+		std = np.std(wr, axis=0)
+		max_val = np.max(wr, axis=0)
+		min_val = np.min(wr, axis=0)
+		threshold = mean + (std * 2) # or 3
+		print "distance tresh: %s, mean:%s, std:%s\n" % (round(threshold, 2), round(mean,2), round(std, 2))
+
+		observations = []
+		for cluster in clusters:
+			observations.append(sum(d['observations'] for d in cluster._decks))
+		wr = np.array(observations)
+		mean = np.mean(wr, axis=0)
+		std = np.std(wr, axis=0)
+		max_val = np.max(wr, axis=0)
+		min_val = np.min(wr, axis=0)
+		threshold = mean / self.LOW_VOLUME_CLUSTER_MULTIPLIER # or 3
+		print "observations: %s" % observations
+		print "observation tresh: %s, mean:%s, std:%s (can't be above)\n" % (round(threshold, 2), round(mean,2), round(std, 2))
+
+
+	def _do_merge_clusters(self, clusters, distance_function):
+		next_cluster_id = len(self._clusters)
 		done = False
 		current_clusters = list(clusters)
-		next_cluster_id = first_new_cluster_id
 		while not done:
 			most_similar = self._most_similar_pair(current_clusters, distance_function)
 			if most_similar and most_similar[2] >= self.MERGE_THRESHOLD:
