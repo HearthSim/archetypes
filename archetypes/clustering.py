@@ -548,7 +548,9 @@ class Cluster:
 
 	@property
 	def pretty_signature(self):
-		return {self._cluster_set.card_name(c):round(p, 3) for c, p in self.signature.items()}
+		result = {self._cluster_set.card_name(c):round(p, 3) for c, p in self.signature["core"].items()}
+		result.update({self._cluster_set.card_name(c):round(p, 3) for c, p in self.signature["tech"].items()})
+		return result
 
 	@property
 	def card_heatmap_data(self):
