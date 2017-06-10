@@ -255,10 +255,10 @@ class ClusterSet:
 		return float(sum(c.deck_count_for_card(str(card)) for c in self._clusters if str(card) in c.cards_in_cluster))
 
 	def compute_cluster_metrics(self):
-		"Compute various metrics such as prevalence"	
+		"Compute various metrics such as prevalence"
 		observations = {}
 		for cluster in self._clusters:
-			cluster.observations = sum(d['observations'] for d in cluster._decks)
+			# cluster.observations = sum(d['observations'] for d in cluster._decks)
 			observations[cluster.cluster_id] = cluster.observations
 			wr = []
 			for d in cluster._decks:
@@ -270,30 +270,30 @@ class ClusterSet:
 				"max": np.max(wr, axis=0),
 				"min": np.min(wr, axis=0)
 			}
- 		
+
 		na = np.array(observations.values())
 		avg = np.mean(na, axis=0)
 		std = np.std(na, axis=0)
 		total = np.sum(na, axis=0)
 		cut_off = avg / self.LOW_VOLUME_CLUSTER_MULTIPLIER
-		
+
 		for cluster in self.clusters:
 			if observations[cluster.cluster_id] > cut_off:
 				cluster.prevalence = "common"
 			else:
 				cluster.prevalence = "rare"
 
-	def merge_clusters(self, distance_function=cluster_similarity):		
-		self.analyze_clusters_space(self._clusters, distance_function)
+	def merge_clusters(self, distance_function=cluster_similarity):
+		dist, obsv = self.analyze_clusters_space(self._clusters, distance_function)
 
-		self._clusters = self._do_merge_clusters(self._clusters, distance_function)
+		self._clusters = self._do_merge_clusters(self._clusters, distance_function, dist, obsv)
 		self.compute_cluster_metrics()
 
 	def analyze_clusters_space(self, clusters, distance_function):
 		"Determine reasonable parameters for second phase of clustering"
 		previous_c1 = None
 		distances = []
-		distances_all = [] 
+		distances_all = []
 		observations_all = []
 		for c1, c2 in combinations(clusters, 2):
 			sim_score = distance_function(c1, c2)
@@ -310,8 +310,8 @@ class ClusterSet:
 		std = np.std(wr, axis=0)
 		max_val = np.max(wr, axis=0)
 		min_val = np.min(wr, axis=0)
-		threshold = mean + (std * 2) # or 3
-		print "distance tresh: %s, mean:%s, std:%s\n" % (round(threshold, 2), round(mean,2), round(std, 2))
+		distance_threshold = mean + (std * 2) # or 3
+		print "distance tresh: %s, mean:%s, std:%s\n" % (round(distance_threshold, 2), round(mean,2), round(std, 2))
 
 		observations = []
 		for cluster in clusters:
@@ -321,45 +321,51 @@ class ClusterSet:
 		std = np.std(wr, axis=0)
 		max_val = np.max(wr, axis=0)
 		min_val = np.min(wr, axis=0)
-		threshold = mean / self.LOW_VOLUME_CLUSTER_MULTIPLIER # or 3
+		observation_threshold = mean / self.LOW_VOLUME_CLUSTER_MULTIPLIER # or 3
 		print "observations: %s" % observations
-		print "observation tresh: %s, mean:%s, std:%s (can't be above)\n" % (round(threshold, 2), round(mean,2), round(std, 2))
+		print "observation tresh: %s, mean:%s, std:%s (can't be above)\n" % (round(observation_threshold, 2), round(mean,2), round(std, 2))
+
+		return distance_threshold, observation_threshold
 
 
-	def _do_merge_clusters(self, clusters, distance_function):
+	def _do_merge_clusters(self, clusters, distance_function, distance_threshold, observation_threshold):
 		next_cluster_id = len(self._clusters)
 		done = False
 		current_clusters = list(clusters)
-		while not done:
-			most_similar = self._most_similar_pair(current_clusters, distance_function)
-			if most_similar and most_similar[2] >= self.MERGE_THRESHOLD:
-				c1, c2, sim_score = most_similar
-				new_cluster_decks = []
-				new_cluster_decks.extend(c1._decks)
-				new_cluster_decks.extend(c2._decks)
-				new_cluster = Cluster(
-					self,
-					next_cluster_id,
-					new_cluster_decks,
-					parents=[c1, c2],
-					parent_similarity=sim_score
-				)
-				self._all_clusters.append(new_cluster)
-				next_cluster_id += 1
-				next_clusters_list = [new_cluster]
-				for c in current_clusters:
-					if c.cluster_id not in (c1.cluster_id, c2.cluster_id):
-						next_clusters_list.append(c)
-				current_clusters = next_clusters_list
-			else:
-				done = True
+
+		while True:
+			most_similar = self._most_similar_pair(current_clusters, distance_function, observation_threshold)
+			if not most_similar or most_similar[2] < distance_threshold:
+				break
+			c1, c2, sim_score = most_similar
+			new_cluster_decks = []
+			new_cluster_decks.extend(c1._decks)
+			new_cluster_decks.extend(c2._decks)
+			new_cluster = Cluster(
+				self,
+				next_cluster_id,
+				new_cluster_decks,
+				parents=[c1, c2],
+				parent_similarity=sim_score
+			)
+			self._all_clusters.append(new_cluster)
+			next_cluster_id += 1
+			next_clusters_list = [new_cluster]
+			for c in current_clusters:
+				if c.cluster_id not in (c1.cluster_id, c2.cluster_id):
+					next_clusters_list.append(c)
+			current_clusters = next_clusters_list
+
 		return current_clusters
 
-	def _most_similar_pair(self, clusters, distance_function):
+	def _most_similar_pair(self, clusters, distance_function, observation_threshold):
 		result = []
 		history = []
 		cluster_ids = set()
 		for c1, c2 in combinations(clusters, 2):
+			if c1.observations > observation_threshold and c2.observations > observation_threshold:
+				# print("Skipping %s and %s due to observation threshold" % (c1.cluster_id, c2.cluster_id))
+				continue
 			cluster_ids.add("c%s" % c1.cluster_id)
 			cluster_ids.add("c%s" % c2.cluster_id)
 
@@ -416,7 +422,6 @@ class Cluster:
 		self._discarded_cards = {} # odd balls
 
 		self.prevalence = 'NA' # is this a common or rare cluster
-		self.observations = 0
 		self.win_rate = {}
 		self._tag_cards_by_type()
 
@@ -444,7 +449,7 @@ class Cluster:
 			"win_rate": self.win_rate
 		}
 		#"card_name": self._cluster_set.card_name(card_index),
-		
+
 		return [self.cluster_id, signature]
 
 	def lineage(self, depth):
@@ -459,6 +464,10 @@ class Cluster:
 				result += parent.lineage(next_depth)
 
 		return result
+
+	@property
+	def observations(self):
+		return sum(d['observations'] for d in self._decks)
 
 	@property
 	def full_cluster_id(self):
@@ -576,7 +585,7 @@ class Cluster:
 
 		for card in self.cards_in_cluster:
 			prevalence = self.deck_count_for_card(card) / self.deck_count
-			
+
 			# card is shared among all cluster
 			if card in self._cluster_set.final_common_cards:
 				self._common_cards[card] = prevalence
@@ -586,7 +595,7 @@ class Cluster:
 			if prevalence >= CORE_CUTOFF:
 				self._core_cards[card] = prevalence
 				continue
-			
+
 			# card that is likely used as a tech card
 			if prevalence >= TECH_CUTOFF:
 				self._tech_cards[card] = prevalence
