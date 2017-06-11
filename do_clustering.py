@@ -1,6 +1,6 @@
 import json
 import os
-from archetypes.clustering import get_clusters
+from archetypes.clustering import ClusterSet
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -26,18 +26,18 @@ for wild in [True, False]:
 	if os.path.exists(path):
 		input_data = json.loads(open(path, "rb").read())
 
-	clusters = get_clusters(input_data)
+	clusters = ClusterSet.from_input_data(input_data)
 	heatmap_data = []
 
 	signatures = {}
-	for player_class, cluster_set in clusters.items():
+	for player_class, cluster_set in clusters.player_class_clusters.items():
 		cluster_signatures = {}
 		print(str(cluster_set))
 		cluster_set.merge_clusters()
 		heatmap_data.append(cluster_set.heatmap_data)
 		cluster_set.print_summary()
 		print("\n\n")
-		signatures[player_class] = cluster_set.serialize()
+		signatures[player_class] = cluster_set.serialize(legacy=True)
 
 
 	#heatmap

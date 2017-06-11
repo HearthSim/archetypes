@@ -1,3 +1,4 @@
+import json
 import pprint
 import numpy as np
 from itertools import combinations
@@ -11,6 +12,8 @@ from hearthstone.cardxml import load
 pp = pprint.PrettyPrinter(indent=4)
 db, _ = load()
 
+def sanitize_name(name):
+	return name.replace(u"\u2019", u"'").encode("ascii", "ignore")
 
 def cluster_similarity(c1, c2):
 	"Compute a weighted similarity based of the signatures"
@@ -47,8 +50,42 @@ def cluster_similarity(c1, c2):
 
 
 class ClusterSet:
+
+	def __init__(self, player_class_clusters):
+		self.player_class_clusters = player_class_clusters
+
+	@classmethod
+	def from_input_data(cls, input_data):
+		clusters = {}
+		for player_class in CardClass:
+			if CardClass.DRUID <= player_class <= CardClass.WARRIOR:
+				input_map = {int(k): v for k, v in input_data["map"].items()}
+				cluster_set = PlayerClassClusters(
+					player_class,
+					input_map,
+					input_data["decks"].get(str(int(player_class)), [])
+				)
+				cluster_set.merge_clusters()
+				clusters[player_class.name] = cluster_set
+
+		return ClusterSet(clusters)
+
+	@classmethod
+	def from_file(cls, fp):
+		data = json.loads(fp.read())
+		player_class_clusters = {}
+		for player_class, serialized_clusters_obj in data.items():
+			player_class_clusters[player_class] = PlayerClassClusters.deserialize(serialized_clusters_obj)
+		return ClusterSet(player_class_clusters)
+
+	def save(self, fp):
+		for_json = {k:v.serialize() for k,v in self.player_class_clusters.items()}
+		fp.write(json.dumps(for_json, indent=4))
+
+
+class PlayerClassClusters:
 	"""A container for a class's deck clusters."""
-	def __init__(self, player_class, card_map, decks):
+	def __init__(self, player_class, card_map, decks, clusters=[]):
 		self.NUM_CLUSTERS_REQUESTED = 10
 		# % of deck within a cluster that need to have the card to be considered core card
 		self.CORE_CARD_DECK_THRESHOLD = 0.8
@@ -94,6 +131,36 @@ class ClusterSet:
 		self.common_cards = [self.card_name(c) for c in common_cards.keys()]
 
 		self.make_clusters()
+
+	@classmethod
+	def deserialize(cls, json_obj):
+		player_class_cluster = PlayerClassClusters(
+			json_obj["player_class"],
+			json_obj["card_map"],
+			json_obj["decks"]
+		)
+		# TODO: Prevent generating of clusters in constructor since we're going to throw them away.
+		clusters = [Cluster.deserialize(player_class_cluster, cluster_data) for cluster_data in json_obj["clusters"]]
+		player_class_cluster.clusters = clusters
+		return player_class_cluster
+
+	def serialize(self, legacy=False):
+		"Extract the signatures that allows to match decks to clusters"
+		if legacy:
+			return {cluster.cluster_id: cluster.serialize() for cluster in self.clusters}
+
+		return {
+			"player_class": self.player_class,
+			"card_map": self._card_map,
+			"decks": self._decks,
+			"clusters": [cluster.serialize() for cluster in self.clusters]
+		}
+
+	def get_by_id(self, cluster_id):
+		for cluster in self.clusters:
+			if cluster.cluster_id == cluster_id:
+				return cluster
+		return None
 
 	def __repr__(self):
 		return str(self)
@@ -179,7 +246,7 @@ class ClusterSet:
 
 	def card_name(self, card_index):
 		card_id = self._card_map[int(card_index)]
-		return db[card_id].name.replace(",", "")
+		return sanitize_name(db[card_id].name.replace(",", ""))
 
 	def make_clusters(self):
 		self.clusters = []
@@ -228,7 +295,8 @@ class ClusterSet:
 			sim_score = distance_function(c1, c2)
 			if c1 != previous_c1:
 				if len(distances):
-					print("%s - %s" % (c1.cluster_id, distances))
+					pass
+					# print("%s - %s" % (c1.cluster_id, distances))
 				previous_c1 = c1
 				distances = []
 			distances.append(round(sim_score, 2))
@@ -320,20 +388,17 @@ class ClusterSet:
 		for cluster in self.clusters:
 			print(str(cluster))
 
-	def serialize(self):
-		"Extract the signatures that allows to match decks to clusters"
-		return {cluster.cluster_id: cluster.serialize() for cluster in self.clusters}
-
 
 class Cluster:
 	"""A single cluster entity"""
 
-	def __init__(self, cluster_set, cluster_id, decks, parents=None, parent_similarity=None):
+	def __init__(self, cluster_set, cluster_id, decks, parents=[], parent_similarity=None, name=None):
 		self._parents = parents
 		self._parent_similarity = parent_similarity
 		self._cluster_set = cluster_set
 		self.cluster_id = cluster_id
 		self._decks = decks
+		self.name = None
 		self.deck_count = float(sum(1 for d in self._decks))
 
 		cards_in_cluster = set()
@@ -377,19 +442,14 @@ class Cluster:
 			# odd ball, discarding
 			self._discarded_cards[card] = prevalence
 
-	def __repr__(self):
-		return str(self)
-
-	def __str__(self):
-		return self.lineage(0)
-
-	def as_str(self):
-		return "cluster %s (%i decks): %s" % (self.full_cluster_id, self.deck_count, self.pretty_signature)
-
 	def serialize(self):
 		"Return the cluster signature"
 		return {
-			"name": "",
+			"name": self.name,
+			"cluster_id": self.cluster_id,
+			"decks": self._decks,
+			"parents": [p.serialize() for p in self._parents],
+			"parent_similarity": self._parent_similarity,
 			"core_cards": self.signature['core'],
 			"core_cards_name": self.pretty_core_cards,
 			"tech_cards": self.signature['tech'],
@@ -399,6 +459,28 @@ class Cluster:
 			"num_decks": self.deck_count,
 			"win_rate": self.win_rate
 		}
+
+	@classmethod
+	def deserialize(cls, parent_player_class_clusters, data):
+		# cluster_set, cluster_id, decks, parents=None, parent_similarity=None, name=None
+		parents = [Cluster.deserialize(parent_player_class_clusters, data) for data in data["parents"]]
+		return Cluster(
+			parent_player_class_clusters,
+			data["cluster_id"],
+			data["decks"],
+			parents,
+			data["parent_similarity"],
+			data["name"]
+		)
+
+	def __repr__(self):
+		return str(self)
+
+	def __str__(self):
+		return self.lineage(0)
+
+	def as_str(self):
+		return "cluster %s (%i decks): %s" % (self.full_cluster_id, self.deck_count, self.pretty_signature)
 
 	def lineage(self, depth):
 		result = ""
@@ -478,17 +560,3 @@ class Cluster:
 		# Given a new card_list the similarity score is calculated based on the cluster signature
 		raise NotImplementedError("Implement Me!")
 
-
-def get_clusters(input_data):
-	clusters = {}
-	for player_class in CardClass:
-		if CardClass.DRUID <= player_class <= CardClass.WARRIOR:
-			input_map = {int(k): v for k, v in input_data["map"].items()}
-			cluster_set = ClusterSet(
-				player_class,
-				input_map,
-				input_data["decks"].get(str(int(player_class)),[])
-			)
-			clusters[player_class.name] = cluster_set
-
-	return clusters
