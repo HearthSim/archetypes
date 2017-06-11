@@ -4,28 +4,30 @@ from archetypes.clustering import ClusterSet
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-VIZ_OUTPUT_DIR = os.path.join(BASE_DIR, "visualization")
-SIG_OUTPUT_DIR = os.path.join(BASE_DIR, "signatures")
+OUTPUT_DIR = os.path.join(BASE_DIR, "serialization")
 
 INPUTS_DIR = os.path.join(BASE_DIR, "data")
 
-for path in [VIZ_OUTPUT_DIR, SIG_OUTPUT_DIR, INPUTS_DIR]:
+for path in [OUTPUT_DIR, INPUTS_DIR]:
 	if not os.path.exists(path):
 		os.mkdir(path)
 
 path = os.path.join(INPUTS_DIR, "standard.json")
-input_data = None
-if os.path.exists(path):
-	input_data = json.loads(open(path, "rb").read())
+input_data = json.loads(open(path, "rb").read())
 
-# Load Current GoldStandard ClusterSet
-#first_run = ClusterSet.from_input_data(input_data)
-serialized_first_run_path = os.path.join(SIG_OUTPUT_DIR, "first_run_output2.json")
-#first_run.save(open(serialized_first_run_path, "wb"))
+path_first = os.path.join(OUTPUT_DIR, "run_1.json")
+path_second = os.path.join(OUTPUT_DIR, "run_2.json")
 
-cluster_set = ClusterSet.from_file(open(serialized_first_run_path, "rb"))
+# Step 1: uncomment next 5 lines, run, add names to output
+# print("Generating cluster set from input data...")
+# first_run = ClusterSet.from_input_data(input_data)
+# print("Serailzing cluster set to", path_first)
+# first_run.save(open(path_first, "wb"))
+# quit()
 
-print(cluster_set)
+# Step 2: uncomment next 2 lines, run, re-serialized output still has names
+first_annotated = ClusterSet.from_file(open(path_first, "rb"))
+first_annotated.save(open(path_second, "wb"))
 
 # from_file(open("<PATH TO VERSION WITH LABELS>", "r"))
 # Generate New ClusterSet From Latest Redshift Data

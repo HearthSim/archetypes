@@ -33,7 +33,6 @@ for wild in [True, False]:
 	for player_class, cluster_set in clusters.player_class_clusters.items():
 		cluster_signatures = {}
 		print(str(cluster_set))
-		cluster_set.merge_clusters()
 		heatmap_data.append(cluster_set.heatmap_data)
 		cluster_set.print_summary()
 		print("\n\n")

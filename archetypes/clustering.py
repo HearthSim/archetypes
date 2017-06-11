@@ -7,6 +7,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
 from hearthstone.enums import CardClass
 from hearthstone.cardxml import load
+from .mixins import PrettyClusterMixin, PrettyPlayerClassClustersMixin
 
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -19,9 +20,9 @@ def cluster_similarity(c1, c2):
 	"Compute a weighted similarity based of the signatures"
 
 	## Maybe use tech cards as well?
-	c1_sig = c1.signature['core']
+	c1_sig = c1.cards['core']
 	c1_card_list = c1_sig.keys()
-	c2_sig = c2.signature['core']
+	c2_sig = c2.cards['core']
 	c2_card_list = c2_sig.keys()
 
 	intersection = list(set(c1_card_list) & set(c2_card_list))
@@ -49,7 +50,7 @@ def cluster_similarity(c1, c2):
 	return weighted_score
 
 
-class ClusterSet:
+class ClusterSet(object):
 
 	def __init__(self, player_class_clusters):
 		self.player_class_clusters = player_class_clusters
@@ -60,12 +61,11 @@ class ClusterSet:
 		for player_class in CardClass:
 			if CardClass.DRUID <= player_class <= CardClass.WARRIOR:
 				input_map = {int(k): v for k, v in input_data["map"].items()}
-				cluster_set = PlayerClassClusters(
+				cluster_set = PlayerClassClusters.create(
 					player_class,
 					input_map,
 					input_data["decks"].get(str(int(player_class)), [])
 				)
-				cluster_set.merge_clusters()
 				clusters[player_class.name] = cluster_set
 
 		return ClusterSet(clusters)
@@ -83,205 +83,95 @@ class ClusterSet:
 		fp.write(json.dumps(for_json, indent=4))
 
 
-class PlayerClassClusters:
+NUM_CLUSTERS_REQUESTED = 10
+# % of deck within a cluster that need to have the card to be considered core card
+CORE_CARD_DECK_THRESHOLD = 0.8
+# % of deck within a cluster that need to have a card to be considerd a tech card
+TECH_CARD_DECK_THRESHOLD = 0.3
+# % of decks ehat need to contains the card as to count it as common_card accross the class (remove it from signatures)
+COMMON_CARD_CLUSTER_THRESHOLD = 0.93
+LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
+
+
+class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 	"""A container for a class's deck clusters."""
-	def __init__(self, player_class, card_map, decks, clusters=[]):
-		self.NUM_CLUSTERS_REQUESTED = 10
-		# % of deck within a cluster that need to have the card to be considered core card
-		self.CORE_CARD_DECK_THRESHOLD = 0.8
-		# % of deck within a cluster that need to have a card to be considerd a tech card
-		self.TECH_CARD_DECK_THRESHOLD = 0.3
-		# % of decks that need to contains the card as to count it as common_card accross the class (remove it from signatures)
-		self.COMMON_CARD_CLUSTER_THRESHOLD = 0.93
-		self.LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
-		self._low_observation_volume_cutoff = None
-		self.clusters = []
 
-		self.player_class = player_class
-		self._card_map = card_map
-
-		self._decks = decks
-		self._deck_matrix = []
-		self.merge_history = {}
+	def __init__(self, clusters=None):
+		self.clusters = clusters if clusters else []
+		self._merge_history = {}
 		self._merge_pass = 1
 
-		common_cards_tmp = defaultdict(float)
-		for deck in self._decks:
-			for card, count in deck['cards'].items():
-				common_cards_tmp[card] += 1.0
-
-		common_cards = {}
-		num_decks = float(len(self._decks))
-		for card, count in common_cards_tmp.items():
-			prevalence = count / num_decks
-			if prevalence >= self.COMMON_CARD_CLUSTER_THRESHOLD:
-				common_cards[card] = prevalence
-
-		for deck in self._decks:
-			# deck is a dict with 'deck_list', 'cards', 'observations'
-			vector = [0] * len(self._card_map)
-			for card, count in deck['cards'].items():
-				if card in common_cards:
-					continue
-
-				vector[int(card)] = count
-			self._deck_matrix.append(vector)
-
-		self.common_cards_map = common_cards
-		self.common_cards = [self.card_name(c) for c in common_cards.keys()]
-
-		self.make_clusters()
-
 	@classmethod
-	def deserialize(cls, json_obj):
-		player_class_cluster = PlayerClassClusters(
-			json_obj["player_class"],
-			json_obj["card_map"],
-			json_obj["decks"]
+	def create(cls, player_class, card_map, decks):
+		instance = PlayerClassClusters()
+		instance._card_map = card_map
+		instance.player_class = player_class
+
+		common_cards = defaultdict(int)
+		for deck in decks:
+			for card, count in deck["cards"].items():
+				common_cards[card] += 1
+
+		num_decks = float(len(decks))
+		for card, count in list(common_cards.items()):
+			prevalence = float(count) / num_decks
+			if prevalence < COMMON_CARD_CLUSTER_THRESHOLD:
+				del common_cards[card]
+
+		instance.common_cards = common_cards
+		instance.num_decks = num_decks
+
+		deck_matrix = []
+		for deck in decks:
+			vector = [0] * len(card_map)
+			for card, count in deck["cards"].items():
+				if card not in common_cards:
+					vector[int(card)] = count
+			deck_matrix.append(vector)
+
+		# print("deck matrix", deck_matrix)
+		# Then do clustering work
+		x = StandardScaler().fit_transform(deck_matrix)
+		clusterizer = KMeans(
+			n_clusters=min(NUM_CLUSTERS_REQUESTED, len(deck_matrix))
 		)
-		# TODO: Prevent generating of clusters in constructor since we're going to throw them away.
-		clusters = [Cluster.deserialize(player_class_cluster, cluster_data) for cluster_data in json_obj["clusters"]]
-		player_class_cluster.clusters = clusters
-		return player_class_cluster
+		clusterizer.fit(x)
 
-	def serialize(self, legacy=False):
-		"Extract the signatures that allows to match decks to clusters"
-		if legacy:
-			return {cluster.cluster_id: cluster.serialize() for cluster in self.clusters}
+		clustered_decks = defaultdict(list)
+		for deck, cluster_id in zip(decks, clusterizer.labels_):
+			clustered_decks[cluster_id].append(deck)
 
-		return {
-			"player_class": self.player_class,
-			"card_map": self._card_map,
-			"decks": self._decks,
-			"clusters": [cluster.serialize() for cluster in self.clusters]
-		}
+		for cluster_id, decks in clustered_decks.items():
+			cluster = Cluster.create(instance, str(cluster_id), decks, common_cards)
+			instance.clusters.append(cluster)
 
-	def get_by_id(self, cluster_id):
-		for cluster in self.clusters:
-			if cluster.cluster_id == cluster_id:
-				return cluster
-		return None
+		na = np.array([cluster.observations for cluster in instance.clusters])
+		avg = np.mean(na, axis=0)
+		observation_cutoff = avg / LOW_VOLUME_CLUSTER_MULTIPLIER
 
-	def __repr__(self):
-		return str(self)
+		instance._merge_clusters()
 
-	def __str__(self):
-		args = (self.cluster_class_name, self.total_deck_count, self.deck_count, self.cluster_count)
-		return "%s: %i deck observations of %i distinct lists across %i clusters" % args
+		for cluster in instance.clusters:
+			cluster.prevalence = "rare" if cluster.observations < observation_cutoff else "common"
 
-	def print_most_common_cards(self):
-		for card, score in self.common_cards_map:
-			print("{card:>30} -> {score}".format(card = card, score=score))
-
-	@property
-	def deck_count(self):
-		return len(self._decks)
-
-	@property
-	def total_deck_count(self):
-		# float(sum(d['observations'] for d in self._decks)) - previous implementation
-		return float(sum(1 for d in self._decks))
-
-	@property
-	def cluster_class_name(self):
-		return self.player_class.name
-
-	@property
-	def heatmap_data(self):
-		cluster_ids = []
-		zValues = []
-
-		card_list = []
-		num_clusters = len(self.clusters)
-		cards = {}
-
-		cluster_id = 0
-		for cluster in self.clusters:
-			for ctype, members in cluster.signature.items():
-				for card, value in members.items():
-					if card not in cards:
-						cards[card] = [0] * num_clusters
-					if ctype == "core":
-						cards[card][cluster_id] = 1
-					else:
-						cards[card][cluster_id] = .5
-
-			cluster_id  += 1
-			cluster_ids.append(cluster_id)
-
-		for card_id, clusters in cards.items():
-			card_name = self.card_name(card_id)
-			card_list.append(card_name)
-			zValues.append(clusters)
-
-		common_cards = [self.card_name(c) for c in self.common_cards_map.keys()]
-		card_list.extend(common_cards)
-		data = {
-			"class": self.cluster_class_name,
-			"common_cards": common_cards,
-			"num_clusters": len(self.clusters),
-			"card_list": card_list,
-			"clusters": None,
-			"cluster_ids": cluster_ids
-		}
-
-		clusters_for_data = []
-		for cluster in self.clusters:
-			clusters_for_data.append({
-				"core_cards": cluster.pretty_core_cards,
-				"tech_cards": cluster.pretty_tech_cards,
-				"num_decks": cluster.deck_count,
-				"num_observations": cluster.observations,
-				"prevalence": cluster.prevalence,
-				"winrate": cluster.win_rate
-			})
-
-		clusters_for_data = sorted(clusters_for_data, key=lambda c: c["num_observations"], reverse=True)
-		data["clusters"] = clusters_for_data
-		return data
-
-	@property
-	def cluster_count(self):
-		return float(len(self.clusters))
+		return instance
 
 	def card_name(self, card_index):
 		card_id = self._card_map[int(card_index)]
 		return sanitize_name(db[card_id].name.replace(",", ""))
 
-	def make_clusters(self):
-		self.clusters = []
+	@classmethod
+	def deserialize(cls, json_obj):
+		clusters = [Cluster.deserialize(cluster_data) for cluster_data in json_obj]
+		return PlayerClassClusters(clusters)
 
-		# Then do clustering work
-		X = self._deck_matrix
-		X = StandardScaler().fit_transform(X)
-		self._clusterizer = KMeans(
-			n_clusters=min(self.NUM_CLUSTERS_REQUESTED, len(self._deck_matrix))
-		)
-		self._clusterizer.fit(X)
+	def serialize(self, legacy=False):
+		"Extract the signatures that allows to match decks to clusters"
+		if legacy:
+			return {cluster.cluster_id: cluster.serialize() for cluster in self.clusters}
+		return [cluster.serialize() for cluster in self.clusters]
 
-		decks_per_cluster = defaultdict(list)
-		for deck, cluster_id in zip(self._decks, self._clusterizer.labels_):
-			decks_per_cluster[cluster_id].append(deck)
-
-		for cluster_id, decks in decks_per_cluster.items():
-			c = Cluster(
-				self,
-				str(cluster_id),
-				decks
-			)
-			self.clusters.append(c)
-
-	@property
-	def low_observation_volume_cutoff(self):
-		if not self._low_observation_volume_cutoff:
-			na = np.array([cluster.observations for cluster in self.clusters])
-			avg = np.mean(na, axis=0)
-			# std = np.std(na, axis=0)
-			# total = np.sum(na, axis=0)
-			self._low_observation_volume_cutoff = avg / self.LOW_VOLUME_CLUSTER_MULTIPLIER
-		return self._low_observation_volume_cutoff
-
-	def merge_clusters(self, distance_function=cluster_similarity):
+	def _merge_clusters(self, distance_function=cluster_similarity):
 		dist, obsv = self.analyze_clusters_space(self.clusters, distance_function)
 		self.clusters = self._do_merge_clusters(self.clusters, distance_function, dist, obsv)
 
@@ -318,7 +208,7 @@ class PlayerClassClusters:
 		std = np.std(wr, axis=0)
 		max_val = np.max(wr, axis=0)
 		min_val = np.min(wr, axis=0)
-		observation_threshold = mean / self.LOW_VOLUME_CLUSTER_MULTIPLIER # or 3
+		observation_threshold = mean / LOW_VOLUME_CLUSTER_MULTIPLIER
 		#print "observations: %s" % observations
 		#print "observation tresh: %s, mean:%s, std:%s (can't be above)\n" % (round(observation_threshold, 2), round(mean,2), round(std, 2))
 
@@ -336,10 +226,11 @@ class PlayerClassClusters:
 			new_cluster_decks = []
 			new_cluster_decks.extend(c1._decks)
 			new_cluster_decks.extend(c2._decks)
-			new_cluster = Cluster(
+			new_cluster = Cluster.create(
 				self,
 				next_cluster_id,
 				new_cluster_decks,
+				self.common_cards,
 				parents=[c1, c2],
 				parent_similarity=sim_score
 			)
@@ -371,7 +262,7 @@ class PlayerClassClusters:
 			})
 
 		# Used for pretty printing cluster merging
-		self.merge_history[str(self._merge_pass)] = {
+		self._merge_history[str(self._merge_pass)] = {
 			"cluster_ids": sorted(list(cluster_ids)),
 			"scores": history
 		}
@@ -383,178 +274,88 @@ class PlayerClassClusters:
 		else:
 			return None
 
-	def print_summary(self):
-		print("*** %s ***" % (self,))
-		for cluster in self.clusters:
-			print(str(cluster))
 
 
-class Cluster:
+class Cluster(PrettyClusterMixin):
 	"""A single cluster entity"""
 
-	def __init__(self, cluster_set, cluster_id, decks, parents=[], parent_similarity=None, name=None):
-		self._parents = parents
-		self._parent_similarity = parent_similarity
-		self._cluster_set = cluster_set
+	def __init__(self, cluster_id, name, cards, observations, prevalence):
 		self.cluster_id = cluster_id
-		self._decks = decks
-		self.name = None
-		self.deck_count = float(sum(1 for d in self._decks))
-
-		cards_in_cluster = set()
-		self._deck_counts_for_card = {}
-
-		for deck in self._decks:
-			for card, count in deck['cards'].items():
-				cards_in_cluster.add(card)
-				if card not in self._deck_counts_for_card:
-					self._deck_counts_for_card[card] = float(sum(1 for d in self._decks if card in d['cards']))
-
-		self._common_cards = {} # common across the class
-		self._discarded_cards = {} # odd balls
-
-		CORE_CUTOFF = self._cluster_set.CORE_CARD_DECK_THRESHOLD
-		TECH_CUTOFF = self._cluster_set.TECH_CARD_DECK_THRESHOLD
-
-		self.signature = {
-			"core": {},
-			"tech": {}
-		}
-
-		for card in cards_in_cluster:
-			prevalence = self._deck_counts_for_card[card] / self.deck_count
-
-			# card is shared among all cluster
-			if card in self._cluster_set.common_cards:
-				self._common_cards[card] = prevalence
-				continue
-
-			# card core to the cluster
-			if prevalence >= CORE_CUTOFF:
-				self.signature['core'][card] = prevalence
-				continue
-
-			# card that is likely used as a tech card
-			if prevalence >= TECH_CUTOFF:
-				self.signature['tech'][card] = prevalence
-				continue
-
-			# odd ball, discarding
-			self._discarded_cards[card] = prevalence
-
-	def serialize(self):
-		"Return the cluster signature"
-		return {
-			"name": self.name,
-			"cluster_id": self.cluster_id,
-			"decks": self._decks,
-			"parents": [p.serialize() for p in self._parents],
-			"parent_similarity": self._parent_similarity,
-			"core_cards": self.signature['core'],
-			"core_cards_name": self.pretty_core_cards,
-			"tech_cards": self.signature['tech'],
-			"tech_cards_name": self.pretty_tech_cards,
-			"observations": self.observations,
-			"prevalence": self.prevalence,
-			"num_decks": self.deck_count,
-			"win_rate": self.win_rate
-		}
+		self.name = name
+		self.cards = cards
+		self.observations = observations
+		self.prevalence = prevalence
+		self._has_metadata = False
 
 	@classmethod
-	def deserialize(cls, parent_player_class_clusters, data):
-		# cluster_set, cluster_id, decks, parents=None, parent_similarity=None, name=None
-		parents = [Cluster.deserialize(parent_player_class_clusters, data) for data in data["parents"]]
-		return Cluster(
-			parent_player_class_clusters,
-			data["cluster_id"],
-			data["decks"],
-			parents,
-			data["parent_similarity"],
-			data["name"]
+	def create(cls, player_class_cluster, cluster_id, decks, common_cards, parents=None, parent_similarity=None):
+
+		# extract data from decks
+		observations = 0
+		deck_counts_for_card = {}
+		all_cards = set()
+		for deck in decks:
+			observations += deck["observations"]
+			for card, _ in deck["cards"].items():
+				all_cards.add(card)
+				if card not in deck_counts_for_card:
+					deck_counts_for_card[card] = sum(1 for d in decks if card in d["cards"])
+
+		# group cards
+		deck_count = len(decks)
+		cards = {"core": {}, "tech": {}, "common": {}, "discarded": {}}
+		for card in all_cards:
+			prevalence = float(deck_counts_for_card[card]) / deck_count
+			if card in common_cards:
+				cards["common"][card] = prevalence
+			elif prevalence >= CORE_CARD_DECK_THRESHOLD:
+				cards["core"][card] = prevalence
+			elif prevalence >= TECH_CARD_DECK_THRESHOLD:
+				cards["tech"][card] = prevalence
+			else:
+				cards["discarded"][card] = prevalence
+
+		# create cluster
+		cluster = Cluster(
+			cluster_id, None, cards, observations, prevalence
 		)
 
-	def __repr__(self):
-		return str(self)
+		# add debug fields
+		cluster._has_metadata = True
+		cluster._player_class_cluster = player_class_cluster
+		cluster._parents = parents
+		cluster._parent_similarity = parent_similarity
+		cluster._decks = decks
+		cluster._num_decks = deck_count
 
-	def __str__(self):
-		return self.lineage(0)
+		return cluster
 
-	def as_str(self):
-		return "cluster %s (%i decks): %s" % (self.full_cluster_id, self.deck_count, self.pretty_signature)
-
-	def lineage(self, depth):
-		result = ""
-		if depth:
-			result += "\n"
-		result += "\t" * depth
-		result += self.as_str()
-		if self._parents:
-			next_depth = depth + 1
-			for parent in self._parents:
-				result += parent.lineage(next_depth)
-
-		return result
-
-	@property
-	def observations(self):
-		return sum(d['observations'] for d in self._decks)
-
-	@property
-	def win_rate(self):
-		wr = []
-		for d in self._decks:
-			wr.append(d['win_rate'])
-		wr = np.array(wr)
-		return {
-			"mean": np.mean(wr, axis=0),
-			"stddev": np.std(wr, axis=0),
-			"max": np.max(wr, axis=0),
-			"min": np.min(wr, axis=0)
+	def serialize(self):
+		serialized = {
+			"name": self.name,
+			"cluster_id": self.cluster_id,
+			"core_cards": self.cards["core"],
+			"tech_cards": self.cards["tech"],
+			"observations": self.observations,
+			"prevalence": self.prevalence,
 		}
+		if self._has_metadata:
+			serialized.update({
+				"win_rate": self.win_rate,
+				"core_card_names": self.pretty_core_cards,
+				"tech_card_names": self.pretty_tech_cards
+			})
+		return serialized
 
-	@property
-	def full_cluster_id(self):
-		if self._parent_similarity:
-			return "{id} (Sim: {sim:>5})".format(
-				id=self.cluster_id,
-				sim=round(self._parent_similarity, 3)
-			)
-		else:
-			return self.cluster_id
-
-	@property
-	def prevalence(self):
-		cutoff = self._cluster_set.low_observation_volume_cutoff
-		if self.observations > cutoff:
-			return "common"
-		else:
-			return "rare"
-
-	@property
-	def core_cards(self):
-		return [self._cluster_set.card_name(c) for c in self.signature["core"].keys()]
-
-	@property
-	def pretty_core_cards(self):
-		return {self._cluster_set.card_name(c): round(p, 2) for c,p in self.signature["core"].items()}
-
-	@property
-	def tech_cards(self):
-		return [self._cluster_set.card_name(c) for c in self.signature["tech"].keys()]
-
-	@property
-	def pretty_tech_cards(self):
-		return {self._cluster_set.card_name(c): round(p, 2) for c,p in self.signature["tech"].items()}
-
-	@property
-	def discarded_cards(self):
-		return [self._cluster_set.card_name(c) for c in self._discarded_cards.keys()]
-
-	@property
-	def pretty_signature(self):
-		result = {self._cluster_set.card_name(c):round(p, 3) for c, p in self.signature["core"].items()}
-		result.update({self._cluster_set.card_name(c):round(p, 3) for c, p in self.signature["tech"].items()})
-		return result
+	@classmethod
+	def deserialize(cls, data):
+		return Cluster(
+			data["cluster_id"],
+			data["name"],
+			{"core": data["core_cards"], "tech": data["tech_cards"]},
+			data["observations"],
+			data["prevalence"]
+		)
 
 	def signature_match(self, card_list):
 		# Given a new card_list the similarity score is calculated based on the cluster signature
