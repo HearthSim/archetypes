@@ -25,9 +25,12 @@ path_second = os.path.join(OUTPUT_DIR, "run_2.json")
 # first_run.save(open(path_first, "wb"))
 # quit()
 
-# Step 2: uncomment next 2 lines, run, re-serialized output still has names
+# Step 2:
 first_annotated = ClusterSet.from_file(open(path_first, "rb"))
-first_annotated.save(open(path_second, "wb"))
+second_run = ClusterSet.from_input_data(input_data)
+
+second_updated = first_annotated.update(second_run)
+second_updated.save(open(path_second, "wb"))
 
 # from_file(open("<PATH TO VERSION WITH LABELS>", "r"))
 # Generate New ClusterSet From Latest Redshift Data

@@ -82,6 +82,22 @@ class ClusterSet(object):
 		for_json = {k:v.serialize() for k,v in self.player_class_clusters.items()}
 		fp.write(json.dumps(for_json, indent=4))
 
+	def update(self, new_cluster_set):
+		new_player_class_clusters = new_cluster_set.player_class_clusters.copy()
+
+		for player_class, cluster_set in new_player_class_clusters.items():
+			prev_cluster_set = self.player_class_clusters[player_class]
+			for cluster in cluster_set.clusters:
+				prev_cluster = prev_cluster_set.find_cluster(cluster)
+				if prev_cluster is None:
+					print("New %s cluster!" % player_class)
+				else:
+					cluster.name = prev_cluster.name
+
+		#TODO: report dropped clusters
+
+		return ClusterSet(new_player_class_clusters)
+
 
 NUM_CLUSTERS_REQUESTED = 10
 # % of deck within a cluster that need to have the card to be considered core card
@@ -132,8 +148,12 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 		# print("deck matrix", deck_matrix)
 		# Then do clustering work
 		x = StandardScaler().fit_transform(deck_matrix)
+
+		# TODO find good random state, other way go get consistent result
+		# or a way do deal with inconsitent results
 		clusterizer = KMeans(
-			n_clusters=min(NUM_CLUSTERS_REQUESTED, len(deck_matrix))
+			n_clusters=min(NUM_CLUSTERS_REQUESTED, len(deck_matrix)),
+			random_state=827466192
 		)
 		clusterizer.fit(x)
 
@@ -274,6 +294,12 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 		else:
 			return None
 
+	def find_cluster(self, target_cluster):
+		for cluster in self.clusters:
+			if cluster.equals(target_cluster):
+				return cluster
+		return None
+
 
 
 class Cluster(PrettyClusterMixin):
@@ -360,4 +386,15 @@ class Cluster(PrettyClusterMixin):
 	def signature_match(self, card_list):
 		# Given a new card_list the similarity score is calculated based on the cluster signature
 		raise NotImplementedError("Implement Me!")
+
+	def equals(self, cluster):
+		for card_set in ["core", "tech"]:
+			if len(self.cards[card_set].keys()) != len(cluster.cards[card_set].keys()):
+				return False
+			for card_id, prevalence in self.cards[card_set].items():
+				if card_id not in cluster.cards[card_set]:
+					return False
+				if cluster.cards[card_set][card_id] != prevalence:
+					return False
+		return True
 
