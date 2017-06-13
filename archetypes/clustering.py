@@ -10,6 +10,16 @@ from hearthstone.cardxml import load
 from .mixins import PrettyClusterMixin, PrettyPlayerClassClustersMixin
 
 
+NUM_CLUSTERS_REQUESTED = 10
+# % of deck within a cluster that need to have the card to be considered core card
+CORE_CARD_DECK_THRESHOLD = 0.8
+# % of deck within a cluster that need to have a card to be considerd a tech card
+TECH_CARD_DECK_THRESHOLD = 0.3
+# % of decks ehat need to contains the card as to count it as common_card accross the class (remove it from signatures)
+COMMON_CARD_CLUSTER_THRESHOLD = 0.93
+LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
+
+
 pp = pprint.PrettyPrinter(indent=4)
 db, _ = load()
 
@@ -58,9 +68,9 @@ class ClusterSet(object):
 	@classmethod
 	def from_input_data(cls, input_data):
 		clusters = {}
+		input_map = {int(k): v for k, v in input_data["map"].items()}
 		for player_class in CardClass:
 			if CardClass.DRUID <= player_class <= CardClass.WARRIOR:
-				input_map = {int(k): v for k, v in input_data["map"].items()}
 				cluster_set = PlayerClassClusters.create(
 					player_class,
 					input_map,
@@ -88,25 +98,23 @@ class ClusterSet(object):
 		for player_class, cluster_set in new_player_class_clusters.items():
 			prev_cluster_set = self.player_class_clusters[player_class]
 			for cluster in cluster_set.clusters:
-				prev_cluster = prev_cluster_set.find_cluster(cluster)
-				if prev_cluster is None:
-					print("New %s cluster!" % player_class)
+				prev_cluster, similarity = prev_cluster_set.find_cluster(cluster)
+				if similarity < 0.9:
+					print("New %s cluster! (best match %s)" % (player_class, similarity))
 				else:
+					print("Found matching %s cluster with %s similarity" % (player_class, similarity))
 					cluster.name = prev_cluster.name
 
 		#TODO: report dropped clusters
 
 		return ClusterSet(new_player_class_clusters)
 
-
-NUM_CLUSTERS_REQUESTED = 10
-# % of deck within a cluster that need to have the card to be considered core card
-CORE_CARD_DECK_THRESHOLD = 0.8
-# % of deck within a cluster that need to have a card to be considerd a tech card
-TECH_CARD_DECK_THRESHOLD = 0.3
-# % of decks ehat need to contains the card as to count it as common_card accross the class (remove it from signatures)
-COMMON_CARD_CLUSTER_THRESHOLD = 0.93
-LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
+	def classify_deck(self, player_class, card_list, card_map):
+		# card_map needs to be card_id to seq ids
+		pcc = self.player_class_clusters[player_class]
+		cards = [card_map[c] for c in card_list]
+		cluster = pcc.classify_deck(cards)
+		return cluster
 
 
 class PlayerClassClusters(PrettyPlayerClassClustersMixin):
@@ -295,11 +303,28 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 			return None
 
 	def find_cluster(self, target_cluster):
+		max_sim = 0
+		current_cluster = None
 		for cluster in self.clusters:
-			if cluster.equals(target_cluster):
-				return cluster
-		return None
+			sim = cluster_similarity(cluster, target_cluster)
+			if sim > 0.999:
+				return cluster, sim
+			if sim > max_sim:
+				max_sim = sim
+				current_cluster = cluster
+		return current_cluster, max_sim
 
+	def classify_deck(self, card_list):
+		best_score = 0
+		best_cluster = None
+		for cluster in self.clusters:
+			score = cluster.signature_score(card_list)
+			if score > best_score:
+				best_score = score
+				best_cluster = cluster
+		if best_score > 3:
+			return best_cluster
+		return None
 
 
 class Cluster(PrettyClusterMixin):
@@ -312,6 +337,12 @@ class Cluster(PrettyClusterMixin):
 		self.observations = observations
 		self.prevalence = prevalence
 		self._has_metadata = False
+
+		self.signature = {}
+		if "core" in cards:
+			self.signature.update(cards["core"])
+		if "tech" in cards:
+			self.signature.update(cards["tech"])
 
 	@classmethod
 	def create(cls, player_class_cluster, cluster_id, decks, common_cards, parents=None, parent_similarity=None):
@@ -383,18 +414,6 @@ class Cluster(PrettyClusterMixin):
 			data["prevalence"]
 		)
 
-	def signature_match(self, card_list):
-		# Given a new card_list the similarity score is calculated based on the cluster signature
-		raise NotImplementedError("Implement Me!")
-
-	def equals(self, cluster):
-		for card_set in ["core", "tech"]:
-			if len(self.cards[card_set].keys()) != len(cluster.cards[card_set].keys()):
-				return False
-			for card_id, prevalence in self.cards[card_set].items():
-				if card_id not in cluster.cards[card_set]:
-					return False
-				if cluster.cards[card_set][card_id] != prevalence:
-					return False
-		return True
+	def signature_score(self, card_list):
+		return sum(val for card, val in self.signature.items() if card in card_list)
 

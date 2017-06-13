@@ -3,9 +3,7 @@ import os
 from archetypes.clustering import ClusterSet
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
 OUTPUT_DIR = os.path.join(BASE_DIR, "serialization")
-
 INPUTS_DIR = os.path.join(BASE_DIR, "data")
 
 for path in [OUTPUT_DIR, INPUTS_DIR]:

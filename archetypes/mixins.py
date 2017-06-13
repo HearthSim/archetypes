@@ -38,7 +38,9 @@ class PrettyClusterMixin(object):
 		return str(self)
 
 	def __str__(self):
-		return self.lineage(0)
+		if self._has_metadata:
+			return self.lineage(0)
+		return "Cluster %s %s" % (self.cluster_id, self.name)
 
 	def as_str(self):
 		return "cluster %s (%i decks): %s" % (
