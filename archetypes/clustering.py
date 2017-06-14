@@ -124,6 +124,7 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 		self.clusters = clusters if clusters else []
 		self._merge_history = {}
 		self._merge_pass = 1
+		self.DISTANCE_FUNCTION = cluster_similarity
 
 	@classmethod
 	def create(cls, player_class, card_map, decks):
@@ -199,79 +200,51 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 			return {cluster.cluster_id: cluster.serialize() for cluster in self.clusters}
 		return [cluster.serialize() for cluster in self.clusters]
 
-	def _merge_clusters(self, distance_function=cluster_similarity):
-		dist, obsv = self.analyze_clusters_space(self.clusters, distance_function)
-		self.clusters = self._do_merge_clusters(self.clusters, distance_function, dist, obsv)
-
-	def analyze_clusters_space(self, clusters, distance_function):
-		"Determine reasonable parameters for second phase of clustering"
-		previous_c1 = None
-		distances = []
-		distances_all = []
-		observations_all = []
-		for c1, c2 in combinations(clusters, 2):
-			sim_score = distance_function(c1, c2)
-			if c1 != previous_c1:
-				if len(distances):
-					pass
-					# print("%s - %s" % (c1.cluster_id, distances))
-				previous_c1 = c1
-				distances = []
-			distances.append(round(sim_score, 2))
-			distances_all.append(round(sim_score, 2))
-
-		wr = np.array(distances_all)
-		mean = np.mean(wr, axis=0)
-		std = np.std(wr, axis=0)
-		max_val = np.max(wr, axis=0)
-		min_val = np.min(wr, axis=0)
-		distance_threshold = mean + (std * 2) # or 3
-		# print "distance tresh: %s, mean:%s, std:%s\n" % (round(distance_threshold, 2), round(mean,2), round(std, 2))
-
+	def _get_observation_threshold(self):
 		observations = []
-		for cluster in clusters:
-			observations.append(sum(d['observations'] for d in cluster._decks))
-		wr = np.array(observations)
-		mean = np.mean(wr, axis=0)
-		std = np.std(wr, axis=0)
-		max_val = np.max(wr, axis=0)
-		min_val = np.min(wr, axis=0)
-		observation_threshold = mean / LOW_VOLUME_CLUSTER_MULTIPLIER
-		#print "observations: %s" % observations
-		#print "observation tresh: %s, mean:%s, std:%s (can't be above)\n" % (round(observation_threshold, 2), round(mean,2), round(std, 2))
+		for cluster in self.clusters:
+			observations.append(sum(d["observations"] for d in cluster._decks))
+		observation_arr = np.array(observations)
+		observation_mean = np.mean(observation_arr, axis=0)
+		return observation_mean / LOW_VOLUME_CLUSTER_MULTIPLIER
 
-		return distance_threshold, observation_threshold
+	def _get_distance_threshold(self):
+		distances = []
+		for c1, c2 in combinations(self.clusters, 2):
+			sim_score = self.DISTANCE_FUNCTION(c1, c2)
+			distances.append(round(sim_score, 2))
+		distance_arr = np.array(distances)
+		distance_mean = np.mean(distance_arr, axis=0)
+		distance_std = np.std(distance_arr, axis=0)
+		return distance_mean + (distance_std * 2)
 
-	def _do_merge_clusters(self, clusters, distance_function, distance_threshold, observation_threshold):
-		next_cluster_id = len(self.clusters)
-		current_clusters = list(clusters)
+	def _merge_clusters(self):
+		clusters = list(self.clusters)
+		new_cluster_id = len(clusters)
+		observation_threshold = self._get_observation_threshold()
+		distance_threshold = self._get_distance_threshold()
 
 		while True:
-			most_similar = self._most_similar_pair(current_clusters, distance_function, observation_threshold)
+			most_similar = self._most_similar_pair(clusters, observation_threshold)
 			if not most_similar or most_similar[2] < distance_threshold:
 				break
 			c1, c2, sim_score = most_similar
-			new_cluster_decks = []
-			new_cluster_decks.extend(c1._decks)
-			new_cluster_decks.extend(c2._decks)
 			new_cluster = Cluster.create(
 				self,
-				next_cluster_id,
-				new_cluster_decks,
+				new_cluster_id,
+				c1._decks + c2._decks,
 				self.common_cards,
 				parents=[c1, c2],
 				parent_similarity=sim_score
 			)
-			next_cluster_id += 1
-			next_clusters_list = [new_cluster]
-			for c in current_clusters:
-				if c.cluster_id not in (c1.cluster_id, c2.cluster_id):
-					next_clusters_list.append(c)
-			current_clusters = next_clusters_list
+			new_cluster_id += 1
+			clusters.append(new_cluster)
+			clusters.remove(c1)
+			clusters.remove(c2)
 
-		return current_clusters
+		self.clusters = clusters
 
-	def _most_similar_pair(self, clusters, distance_function, observation_threshold):
+	def _most_similar_pair(self, clusters, observation_threshold):
 		result = []
 		history = []
 		cluster_ids = set()
@@ -281,7 +254,7 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 			cluster_ids.add("c%s" % c1.cluster_id)
 			cluster_ids.add("c%s" % c2.cluster_id)
 
-			sim_score = distance_function(c1, c2)
+			sim_score = self.DISTANCE_FUNCTION(c1, c2)
 			result.append((c1, c2, sim_score))
 			history.append({
 				"c1": "c%s" % c1.cluster_id,
@@ -306,7 +279,7 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 		max_sim = 0
 		current_cluster = None
 		for cluster in self.clusters:
-			sim = cluster_similarity(cluster, target_cluster)
+			sim = self.DISTANCE_FUNCTION(cluster, target_cluster)
 			if sim > 0.999:
 				return cluster, sim
 			if sim > max_sim:
