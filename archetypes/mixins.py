@@ -43,8 +43,8 @@ class PrettyClusterMixin(object):
 		return "Cluster %s %s" % (self.cluster_id, self.name)
 
 	def as_str(self):
-		return "cluster %s (%i decks): %s" % (
-			self.full_cluster_id, self._num_decks, self.pretty_signature
+		return "cluster %s (%i decks, %i observations - %s): %s" % (
+			self.full_cluster_id, self._num_decks, self.observations, self.prevalence, self.pretty_signature
 		)
 
 	@property
@@ -69,9 +69,11 @@ class PrettyClusterMixin(object):
 
 	@property
 	def pretty_signature(self):
-		result = {self._player_class_cluster.card_name(c):round(p, 3) for c, p in self.cards["core"].items()}
-		result.update({self._player_class_cluster.card_name(c):round(p, 3) for c, p in self.cards["tech"].items()})
-		return result
+		return {self._player_class_cluster.card_name(c):round(p, 3) for c, p in self.signature.items()}
+
+	@property
+	def pretty_signature_cards(self):
+		return self.pretty_signature.keys()
 
 
 

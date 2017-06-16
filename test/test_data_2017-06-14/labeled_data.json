@@ -1,0 +1,2314 @@
+{
+    "Warlock": {
+        "Zoo Warlock": [
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAf0GBNkHlMcC9q4CkbwCDfcEkccC1LMCtKwC0ATkwgKvrAIwxbsCvLYC\nwgjlB/IBAA=="
+            }, 
+            {
+                "date": "20th April 2017", 
+                "deckstring": "AAECAf0GBOTCAqEGlMcCkbwCDfcEkccC+wXUswKxCNkHr6wCMMW7Ary2AsII\n68IC5QcA"
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAf0GBNkHlMcCkbwCtqwCDfcEkccC1LMCtKwC0ASvrAIwzgf2rgK8tgLC\nCOUH8gEA"
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAf0GBNkHlMcCkbwCtqwCDc4H9wSRxwLUswK0rALQBK+sAjD2rgK8tgLC\nCOUH8gEA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAf0GApTHAoDHAg7OB/cE58ECkccC+wXUswKrwgK0rALZB6+sAjD2rgK8\ntgLCCAA="
+            }, 
+            {
+                "date": "23rd March 2017", 
+                "deckstring": "AAECAf0GAvYIkbwCDvcEx7sC1LMC8BHPFr2sAtkVvxSvrAIw5QfOB8IIvLYC\nAA=="
+            }, 
+            {
+                "date": "12th March 2017", 
+                "deckstring": "AAECAf0GBJkC+wWFF5G8Ag33BMe7AvARuhO/FJEU2QfPFjDFuwK8tgLCCOUH\nAA=="
+            }
+        ], 
+        "Reno Warlock": [
+            {
+                "date": "31st March 2017", 
+                "deckstring": "AAECAf0GHuEHiQbbBt28AswIwxbWEcq/Ao0IkBXYuwK2B/sF/b8CkgfeBfAR\n8wz9EYUX+waKAd/EAooHMM4HkbwCxAjexALlBwA="
+            }, 
+            {
+                "date": "25th March 2017", 
+                "deckstring": "AAECAf0GHuEHxQTdvALbBrkNzAjDFtYRyr8CrwSTBI0IkwGQFdi7ArYHqa0C\n/b8CkgfwEYUX+waKAd/EAs8WigfFuwLOBsQI3sQCAA=="
+            }, 
+            {
+                "date": "12th March 2017", 
+                "deckstring": "AAECAf0GHs8WkgfeBfMMhReKAd/EAs4GxAjexALWB+EHiQbbBt28ArkNzAjD\nFtYRyr8CrwSTBI0I8gWTAZAV2LsCtgeprQL9vwIA"
+            }, 
+            {
+                "date": "11th March 2017", 
+                "deckstring": "AAECAf0GHuEHiQbZvALbBt28AswIwxbsvwLWEcq/AvcEjQiQFdi7ArYH+wX9\nvwKSB/AR8wz9EYUXigHfxALPFooHMM4HxAjexAIA"
+            }, 
+            {
+                "date": "11th March 2017", 
+                "deckstring": "AAECAf0GHuEHiQbbBt28ArkNzAjDFtYRyr8CjQiTAfsEkBXYuwK2B6mtApIH\n3gXwEfMM/RGFF/sGigHfxALPFooHxbsCxAjexAIA"
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAf0GHuEHiQbbBt28AswIwxbWEcq/Ao0I8gWTAZAV2LsCtgf7Bf2/ApIH\n3gXwEfMM/RGFF4oB38QCzxahBs4GigfECN7EAgA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAf0GHvsF8q4CwgbbBqG3At28AswIwxbWEcq/Ao0IkBXYuwK2B/2/AroE\nkgfeBbC8AvAR8wz9EYUXnwOKAd/EAs8WigfECN7EAgA="
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAf0GHqmtAuEHiQbbBt28AswIwxbWEcq/Ao0IkwGQFdi7ArYH+wX9vwKS\nB94F8BHzDP0RhReKAd/EAs8WigcwkbwCxAjlBwA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAf0GHrC8At28As8W8BGSB8QI+wWQFboEnwPeBd/EAo0I1hH9EbYHhRfz\nDP2/AswI2wbyrgIX3sQCyr8CigehtwKHF8MW2LsCAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAf0GHuEHiQbbBt28AswIwxbFvALWEdsKjQj7BJAV2LsCtgf7Bf2/ApIH\n17sC8BHzDP0RhRf7BooB38QCigcwxbsCxAjexAIA"
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAf0GHooHzgfhB4kG2wbdvALMCMMWxbwC1hHKvwKvBJMEjQiQFdi7ArYH\n+wWSB/AR8wz9EYUX+waKAd/EAjDOBsQI3sQCAA=="
+            }, 
+            {
+                "date": "5th March 2017", 
+                "deckstring": "AAECAf0GHti7As4HtKwC2bwC3bwCwxbsvwL3BBf7Bce7Av2/ApIH8BH9EYUX\n+waUFNkH9gjPFqEGigcwzgb2rgLECLy2AsII9QUA"
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAf0GHs4GjQiTBK8Eyr8C1hHDFswI3bwC4QeQFdi7ArYH+wWSB94F8BHz\nDP0RhRf7BooB38QCzxaKB84HkbwCxAjexALlBwA="
+            }, 
+            {
+                "date": "20th February 2017", 
+                "deckstring": "AAECAf0GHsq/AswIzgeJBtsG3bwCwxbFvALWEa8EkwSNCJAV2LsCtgf7Bf2/\nApIH8BHzDP0RhRf7BooB38QCzxaKB84GxAjexAIA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAf0GHuEHuQ3DFtYRyr8CrwSTBI0I8gWQFdi7AqmtAvMMhRf7BooB38QC\nigfexAKJBtsGzAiTAbYHkgfwEf0RzxbOBsQIAA=="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAf0GHvsFhRf2ArkNwxbWEcq/Ao0IkBXYuwLeBfsGigHfxAKKB97EAokG\n2wbdvALMCJMBtgf9vwKSB/AR/RHPFs4HzgbECAA="
+            }
+        ], 
+        "Handlock": [
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAf0GAsUEigEO4QfdvALqwQL3BI0IkccCtgeprQLKwwLzDMW7AsQI3sQC\nvLYCAA=="
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAf0GBIkG6K8Ctgf7BQ3hB5MEjQjyBZMBqa0CkgfFxwLzDPsGigHdBMQI\nAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAf0GBokG3bwCz8cC8gWSB9PFAgzhB8wIjQiTAamtAvsFxccC+wbfxALd\nBMQI3sQCAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAf0GBokGzAjFvALPxwKTAbYHDOEH3bwCjQiprQL7BcXHAvMM+waKAd0E\nxAjexAIA"
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAf0GBswI1hGvBJMEtgeKBwzhB40IkwGQFamtApIH8wz7BooBzgbECN7E\nAgA="
+            }
+        ], 
+        "Custom Warlock": [
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0GHuEHiQbbBt28ArkNzAjDFtYR6sEC+g6vBJME9Q+NCJMB2LsCtgep\nrQL9vwLKwwL9EYUX+waKAd/EAq0QzxbOBsQI3sQCAA=="
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0GBJ4Q+g6vBPsFDc4G58EC3Q/wEfoNsQj1DdkHzxYw9q4CwgjyAQA="
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0GHokG2waeEN28ArkNzAjDFtYRgQ7KvwL6DvUPjQiTAZAQ2LsCtgf7\nBf2/AvAR08UC/RGFF/sGigHfxAKtEM8WxAjexAIA"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAf0GHp4QwxbWEYEO+g71D40I2LsC+wXTxQKFF/sG5MICigHexAKXwQLC\nD4kG2wbdvALMCI4O3Q+2B/AR/RGtEM8WxAjWBwA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAf0GBIkG2waUxwKAxwINysMCm8IC8wzMCPcEkccC1LMC0ASvrAKPxwLF\nuwLECLy2AgA="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAf0GHuEHiQbbBt28AswIwxbWEcq/Aq8EkwSNCPIFkwGQFdi7ArYH/b8C\nkgfwEfMM/RGFF/sGigHfxAKKB84HzgbECN7EAgA="
+            }
+        ]
+    }, 
+    "Warrior": {
+        "Dragon Warrior": [
+            {
+                "date": "14th March 2017", 
+                "deckstring": "AAECAQcG9gK5sgKqsgLUBYQXkbwCDNER6RK5BokUHPi8Ao4FgrUCzhaRA8YV\ngrACAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAQcGwgb2ArmyAtQFhBeRvAIM0RHpErkGiRQcjgXOFugSgrUCkQPGFYKw\nAgA="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAQcCsAKRvAIOuQbREekSiRQcjgWIsAKCtQKRA+EExhX/A6C9AoKwAgA="
+            }
+        ], 
+        "Tempo Warrior": [
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAQcKwgbSArmyAtOuAqLHAoiwApEGnQLUBZG8AgqvwgIc0q4Cgq0CjgWy\nCJEDkAOCsAKGsAIA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAQcOyBX2AtIC064C2wqQB7AC7gbvB5EGkAOEF5G8AoKwAggc0q4Cgq0C\njgWIsAKRA+cHhrACAA=="
+            }
+        ], 
+        "Control Warrior": [
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAQcCz8cCkQYO+wyCtAKCrQLArwL2B8bDArIIkQOCCJAD1AT8BIawAhYA"
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAECAQcG0gL/vQLPxwKyCPwEhrACDMnHAkv+vAKbwgL/B4KtAvsMxsMCkQOR\nBtQEogQA"
+            }, 
+            {
+                "date": "24th May 2017", 
+                "deckstring": "AAECAQcG0gL/vQLPxwKyCPwEhrACDP8HyccCS/68ApvCAoKtAvsMxsMCkQOR\nBtQEogQA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAQcGognSAs/HAvIF08UCmrwCDMnHAkv+vAL/B4KtAvsMxsMCkQORBtQE\n/ASiBAA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAQcIognFBNICqgbPxwLSrgLGwwL8BAvJxwJL/rwCgq0C/wf7DLIIkQOR\nBt/EAqIEAA=="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAECAQcGognSApAHz8cC8gWyCAzJxwJL1AT/B4KtAvsMxsMCkQORBv68AvwE\nogQA"
+            }, 
+            {
+                "date": "7th May 2017", 
+                "deckstring": "AAEBAQcIognFBNICz8cCS9QE08UC/AQLyccCqrIC/weCrQL7DMbDAoK1ApED\nkQb+vAKiBAA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAECAQcI4KwCpAPPxwKArwLTxQLGwwKyCPwEC6LHAkv/B4KtAvsM+wGRA5EG\n38QC1ASiBAA="
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAQcInQL7DOCsAtICz8cCpAOyCL/DAguCrQKixwKrwgLfxAL8BP8HkQbG\nwwKiBEuRAwA="
+            }, 
+            {
+                "date": "14th March 2017", 
+                "deckstring": "AAECAQcGz7EC0gL/vQL5vwLGwwKRBgzUBPi8AtKuAoKtAo4F+wyyCJq8ApED\nkAP+vAL8BAA="
+            }, 
+            {
+                "date": "14th February 2017", 
+                "deckstring": "AAECAQcGz7EC0gKwFYcX+wzGwwIMqgZL/rwC/weCrQKpFfgRsgiRA5EG38QC\nogQA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAQcIwgawFfsM0gKqBrIInQL8BAvfxAJL/rwC/weCrQKpFcbDAvgRkQOR\nBqIEAA=="
+            }
+        ], 
+        "Custom Warrior": [
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAQcErwTIA4QXkbwCDRzuBo0OqAWOBYiwAvsP7weRA+cH/wPUBYKwAgA="
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAQcErwSwAoQXkbwCDRzuBo0OqAWOBYiwAvsP7weRA+cH/wPUBYKwAgA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAQcErwSEF5G8ArACDe4GqAX7D+cH1AUcjQ6OBYiwAu8HkQP/A4KwAgA="
+            }
+        ], 
+        "Taunt Warrior": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAQcIoscC08MCubIC0q4CsgiQB/wEkAMLyccC38QCxsMCm8IC/rwCgq0C\n+wyRBtQEkQNLAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAQcGubICS8rDAvsM/ATTwwIMyccCoscC1ATSrgKbwgKCrQLGwwKyCJED\nkQaQA/68AgA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAQcGubIC1ARLkAP8BNPDAgzJxwLKwwKbwgL7DKLHAtKuAoKtAsbDArII\nkQORBv68AgA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAQcEubICoscC/ATTwwINyccCS/68AtKuApvCAv8Hgq0C+wzGwwKRA5EG\n38QCogQA"
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAQcGubICoscC0q4C/ASiBNPDAgzJxwJL1ASbwgL/B4KtAvsMxsMCkQOR\nBt/EAv68AgA="
+            }, 
+            {
+                "date": "15th April 2017", 
+                "deckstring": "AAECAQcEubICoscC/ATTwwINyccCS/68AtKuApvCAv8Hgq0C+wzGwwKRA5EG\n38QCogQA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAQcGogTSrgK5sgKixwL8BNPDAgzUBMnHAkv+vAKbwgL/B4KtAvsMxsMC\nkQORBt/EAgA="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAQcGubIC+wy8wwKixwL8BNPDAgzJxwLKwwKbwgLfxAJL/rwC0q4Cgq0C\nxsMCsgiRA5EGAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAQcIwgbJxwK5sgKixwL7DPwEogTTwwILS/68AtKuApvCAv8Hgq0CxsMC\nsgiRA5EG38QCAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAQcEubICoscCxsMC08MCDcnHApnHAkv+vALSrgLKwwKbwgL/B4KtArII\nkQOiBIKwAgA="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAQcC+QzTwwIOkQOZxwK8wwKixwJL/rwC0q4CysMCm8ICgq0C+wy+wwKQ\nA/wEAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAQcE+wyyCJG8AtPDAg2ZxwKixwJL/rwC0q4CysMCm8ICgq0CxsMCkQOR\nBt/EAoKwAgA="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAQcGoscCwgbJxwK5sgKqBtPDAgy8wwJL/rwC0q4CysMCm8IC/weCrQKy\nCJEDkQaiBAA="
+            }
+        ], 
+        "Pirate Warrior": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAQcCkbwCyAMOr8ICub8CiLACgrAC7wfnB+4G1AWoBY4F/wORA7ACHAA="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAECAQcGrwTIA/IFub8CkbwC68ICDLACHO4GqAWOBYiwAu8HkQPnB/8D1AWC\nsAIA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAQcGrwTIA/IFub8CpAaRvAIMsAIc7gaoBY4FiLAC7weRA+cH/wPUBYKw\nAgA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAECAQcCrwSRvAIOsAK5vwKkBhzuBqgFjgWIsALvB5ED5wf/A9QFgrACAA=="
+            }, 
+            {
+                "date": "24th April 2017", 
+                "deckstring": "AAECAQcCrwSRvAIOsAK5vwKkBhzuBqgFjgWIsALvB5ED5wf/A9QFgrACAA=="
+            }, 
+            {
+                "date": "20th April 2017", 
+                "deckstring": "AAECAQcErwTIA7m/ApG8Ag2wAqQGHO4GqAWOBYiwAu8HkQPnB/8D1AWCsAIA"
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAQcC8gWRvAIOiLACsAKkBu4GHKgFjgXvB+TCApED5wf/A9QFgrACAA=="
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAQcErwSkBuTCApG8Ag2wArm/AhzuBqgFjgWIsALvB5ED5wf/A9QFgrAC\nAA=="
+            }, 
+            {
+                "date": "16th April 2017", 
+                "deckstring": "AAECAQcCkbwCrwQO8gXuBqgF5wfUBbACpAYcjgWIsALvB5ED/wOCsAIA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAQcEyAO5vwKvBJG8Ag3nB+4GsAIcqAWOBYiwAu8H5MICkQP/A9QFgrAC\nAA=="
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAQcErwSvwgLkwgKRvAINsAKkBhzuBqgFjgWIsALvB5ED5wf/A9QFgrAC\nAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAQcErwTIA7m/ApG8Ag3nB+4GqAWxwQLUBbACHI4FiLAC7weRA/8DgrAC\nAA=="
+            }, 
+            {
+                "date": "19th March 2017", 
+                "deckstring": "AAECAQcErwSKB4QXkbwCDbACpAYc7gaoBY4FiLAC7weRA+cH/wPUBYKwAgA="
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAQcErwSKB4QXkbwCDbACpAYc7gaOBYiwAroT7weRA+cH/wPUBYKwAgA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAQcErwSEF5G8AqQGDbm/Au4GqAXlB9QFsAIcjgWIsALvB5ED/wOCsAIA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAQcErwSkBoQXkbwCDbACHO4G0q4CjgWIsAKpFe8HkQPnB/8D1AWCsAIA"
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAQcE474CqAXlB5G8Ag0c7gawAqcIiLACjgXnB+MF7weRA4KwAtQF/wMA"
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAQcErwTjvgKEF5G8Ag3/A7ACHO4GpwiOBYiwAu8HkQPjBecH1AWCsAIA"
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAQcErwSKB4QXkbwCDbACpAYc7gaOBYiwAqkV7weRA+cH/wPUBYKwAgA="
+            }, 
+            {
+                "date": "1st March 2017", 
+                "deckstring": "AAECAQcErwSpFYQXkbwCDbACpAYcoQK6E+8HkQPjBf8D1AWgvQKCsAKSBQA="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAQcErwTUBYQXkbwCDecH7gaoBaC9ArACpAYcjgWIsALvB5ED/wOCsAIA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAQcErwSoBYQXkbwCDecH7gbUBaC9ArACpAYcjgWIsALvB5ED/wOCsAIA"
+            }
+        ]
+    }, 
+    "Paladin": {
+        "Murloc Paladin": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAZ8FBLnBAuO+ArmyAvoGDYjHArHCAp3CApvCArPBAtO8AtOqAqcIrwfP\nBtwD2wPFAwA="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAECAZ8FArnBAojHAg6xwgKvB9muAqcIpwXFA53CAtAHs8EC4wXTqgLbA/4D\n07wCAA=="
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAECAZ8FBvoG5q4CucEC474Cz8cCrwcMiMcCzwaxwgLcA5vCAqcIncICjwmz\nwQLjBdOqAtsDAA=="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAECAZ8FBvoG0gS5wQLbCuO+Aq8HDIjHAs8GscIC3AObwgKnCI8JncICs8EC\n4wXTqgLbAwA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAZ8FBPoGucECpwXTvAINiMcCzwaxwgLcA68HpwjFA53CAtAHs8EC4wXT\nqgLbAwA="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAECAZ8FCPoG0gS5wQLbCuO+AvIFrwePCQuIxwLPBrHCAtwDm8ICpwidwgKz\nwQLjBdOqAtsDAA=="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAECAZ8FBPoGucECiMcC474CDdmuAsUD3AOvB7HCAqcIm8ICs8ECncIC4wXb\nA9OqAtO8AgA="
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAECAZ8FBvoGucECiMcC2wrjvgKnBQzPBrHCAtwDrwenCMUDncICs8EC4wXT\nqgLbA9O8AgA="
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAECAZ8FCPoGqsECucECiMcC474C3AOvB7y9AgvPBrHCAqcIxQOdwgKzwQLk\nwgLjBdOqAtsD07wCAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAZ8FBvoG5q4CyccCubICucEC2woMiMcCzwaxwgLcA5vCAqcIjwmdwgKz\nwQL0BdOqAtsDAA=="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAECAZ8FArnBAuO+Ag6xwgKbwgL/rwKnCKcFxQOdwgLQB7PBAoqtAtOqAtsD\n/gPTvAIA"
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAZ8FBvoGucECiMcC2wrjvgKnBQzPBrHCAtwDrwenCMUDncICs8EC4wXT\nqgLbA9O8AgA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAZ8FArnBAuO+Ag6xwgKbwgL/rwKnCKcFxQOdwgLQB7PBAoqtAtOqAtsD\n/gPTvAIA"
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAZ8FBvoGubICucECiMcC474CvL0CDM8GscIC3AOvB6cIxQOdwgKzwQLj\nBdOqAtsD07wCAA=="
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAZ8FBvoGucECiMcC2wrjvgKnBQzPBrHCAtwDrwenCMUDncICs8EC4wXT\nqgLbA9O8AgA="
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAZ8FArnBAuO+Ag7bA7HCApvCAv+vAqcIpwXFA53CArPBAoqtAtOqAtAH\n/gPTvAIA"
+            }, 
+            {
+                "date": "18th April 2017", 
+                "deckstring": "AAECAZ8FArnBAuO+Ag6xwgKgvQKGxAKnCMUDncIC0AezwQLjBdOqAtsD07wC\n68IC9QUA"
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAZ8FBqrBAvoGnccC474C3AO8vQIMiMcCscICzwanCMUDs8ECncIC0Afk\nwgLbA9OqAtO8AgA="
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAZ8FBLmyArnBAq8E474CDarBAojHArHCAs8GxQOGxAKnCLPBAuMFncIC\n2wPTqgLTvAIA"
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAZ8FBq8E474Cr8IC3AOtvAKKBwzPBrHCAobEAqcIxQOdwgKzwQLjBdOq\nAtsD07wC2McCAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAZ8FD7O7Ave8ArHCAqcIpwXFA53CAorHAtAHs8EC4wXTqgLbA9O8At0K\nAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAZ8FD7HCAp+3Ap/CAqcIncIC0AexCNkH2wO7A88GpwWzwQLTqgLTvAIA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAZ8FAq8Eur0CDs8GscICrwenCKcFxQOdwgLQB7PBAuMF06oC2wPTvAJG\nAA=="
+            }
+        ], 
+        "Custom Paladin": [
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAZ8FDugB+gb2Ap4QgQ76Ds8GkBCvB7y9AusP9Q2MAdgUCKYVyRbtD+oP\nsQieAcgEjA4A"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZ8FBvoO+gbmrgLSBIPHArnBAgybwgKIxwK7rwLsD88G2ccC3AP/rwLt\nD+oP9AW4xwIA"
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAZ8FAojHAry9Ag6PCcjHAsLDApnCAqzCAsrDAsbHAuTCAuvCApW8As8G\ns8EC97wCs7sCAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAZ8FAp3HAoquAg7cCrMDur0Cjwn7DPYHnAL7Afe8AvQFigGzuwKJtAKB\nvQIA"
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAZ8FCPoG5q4CiMcCnccCz8cCrMICvL0CtMQCC8jHAsLDAs8GmcICysMC\nxscCjwmzwQL3vAKzuwLrwgIA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAZ8FAp3HAoquAg7cCrMDur0Cjwn7DPYHnAL7Afe8AvQFigGzuwKJtAKB\nvQIA"
+            }, 
+            {
+                "date": "29th March 2017", 
+                "deckstring": "AAECAZ8FCvoG5q4CubIC2wrJFry9AvsMigeEF5G8AgrKvwKVvAK5Bs8G+wS6\nE48J97wC5wezuwIA"
+            }
+        ], 
+        "Dragon Paladin": [
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAZ8FDKIJubICuQ3bCo0I+wXoEoUXhBf6Bry9AvQFCekSuQaJFIK1AooB\n+xHPBtwDjwkA"
+            }
+        ], 
+        "Control Paladin": [
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAZ8FDuCsAvoG5q4CyccCubICucEC2wqQB88GgK8C2a4C+wzfxAKKrgII\niMcC3AObwgKPCfYHs8EC9AWKAQA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAZ8FBvoG5q4CubICucECvL0Ciq4CDMnHAojHAo+0AtsKzwbcA5vCAo8J\n9gezwQL0BYoBAA=="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZ8FBvoG5q4CubICucECvL0Ciq4CDMnHAojHAo+0AtsKzwbcA5vCAo8J\n9gezwQL0BYoBAA=="
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAZ8FCuCsAvoG5q4CubICucEC2wqxrwKrwgL7DIquAgrJxwKIxwLPBtwD\nm8ICjwn2B7PBAvQFigEA"
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAZ8FDOCsAvoG5q4C0gS5wQKPtAKkA4CvAvoBvL0C08UCiq4CCYjHAs8G\n3AObwgKPCfYH9AWKAd7EAgA="
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAZ8FEOCsAvoG5q4C0gS5wQKIxwKPtALPxwKArwL6Aby9AtPFAvsMs8EC\n38QCiq4CB88G3AObwgKPCfYH9AWKAQA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZ8FEOCsAvoG5q4C0gS5wQL8vQKPtALPxwKArwL6Aby9AtPFAvsMs8EC\n38QCiq4CB88G3AObwgKPCfYH9AWKAQA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZ8FCsnHArmyAtsK2cIC+wz6BuauArnBAry9AoquAgqbwgL2B4oB68IC\niMcCzwbcA48Js8EC9AUA"
+            }, 
+            {
+                "date": "15th April 2017", 
+                "deckstring": "AAECAZ8FCPoGqsECucECiMcC474C3AOvB7y9AgvPBrHCAqcIxQOdwgKzwQLk\nwgLjBdOqAtsD07wCAA=="
+            }, 
+            {
+                "date": "14th April 2017", 
+                "deckstring": "AAECAZ8FCMnHAuauAvoGubICj7QCucEC2wrkwgILiMcC3AOxwgLPBqcIm8IC\njwmzwQL0BZ3CAtOqAgA="
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAZ8FBvoG5q4CubICucEC2cICvL0CDI+0AtsKjQjPBtwDm8ICjwn2B7PB\nAvQFigHrwgIA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAZ8FBvoG5q4CyccCubICucEC9AUMiMcC2wrPBrHCAtwDm8ICpwiPCZ3C\nArPBAtOqAtsDAA=="
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAZ8FBvoG5q4CubICucEC2cICvL0CDI+0AtsKjQjPBtwDm8ICjwn2B7PB\nAvQFigHrwgIA"
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAZ8FBvoG5q4C0gSDxwK5wQK8vQIMiMcCzwaxwgLcA5vCAqcIjwmdwgKz\nwQLkwgL0BdOqAgA="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAZ8FCNmuAo+0AvoG5q4CucECg8cC/68C2McCC7jHAt7EAruvAojHAs8G\n2ccC3AOPCfYHs8EC9AUA"
+            }
+        ], 
+        "Anyfin Paladin": [
+            {
+                "date": "22nd March 2017", 
+                "deckstring": "AAECAZ8FCvoG0gS5sgLbCuO+AoW4Ary9AvsM9geKBwrSFrkGzwbcA48Jpwj0\nBYoB4wXexAIA"
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAZ8FCPoG5q4C9gLjvgKFuAKPCd7EAoquAgvSFo+0AuIRzwbcA6cI+wz2\nB/QFigHjBQA="
+            }, 
+            {
+                "date": "7th March 2017", 
+                "deckstring": "AAECAZ8FCvoG5q4CubIC2wrjvgKFuAK8vQL2B9YGiq4CCtIWuQbPBtwDpwiP\nCfsM9AWKAeMFAA=="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAZ8FBuO+AoW4AvoG5q4CvL0Ciq4CDKcI+wz2B4oB4wXSFo+0AuIRzwbc\nA48J9AUA"
+            }
+        ], 
+        "N'Zoth Paladin": [
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAZ8FCPoG4KwC5q4C0gSkA8/HAry9AoquAguIxwKPtALPBoCvAtwDjwn7\nDPYH9AWKAd/EAgA="
+            }, 
+            {
+                "date": "25th March 2017", 
+                "deckstring": "AAECAZ8FCuCsAvoG5q4CuQ2kA+IRhbgCvL0CigfexAIKzwaPtAKArwLcA48J\n+wz2B/QFigGKrgIA"
+            }
+        ]
+    }, 
+    "Hunter": {
+        "Face Hunter": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAR8G5MICsQiAB8kErwTHAwyOwwLrwgLquwLEtAK5tAL4sQL+DNsJlwjr\nB7UDqAIA"
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAR8CrwShAg7rB9sJqAL+DMS0ArUDubQCgAfJBI7DAvixApcIuK0C6rsC\nAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAR8CrwS4rQIOuwXrB9sJ7LsCqAL+DLUDgQq5tALkwgLZB47DArsD6rsC\nAA=="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAR8GrwT+DIAHkbwCuwO4rQIMr8IC6wefwgKoArUDgQq5tALkwgKOwwKJ\nwwLlB+q7AgA="
+            }, 
+            {
+                "date": "7th May 2017", 
+                "deckstring": "AAEBAR8CvQOvBA7kwgKvwgLrB7UD2wmoAv4MjsMC+LEC2Qe7A+q7ApcIuK0C\nAA=="
+            }
+        ], 
+        "Custom Hunter": [
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAR8CrwS4rQIOtQO7BesH2wnsuwKoAv4MgQq5tALkwgLZB47DArsD6rsC\nAA=="
+            }
+        ], 
+        "Secret Hunter": [
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAR8PsQjrB9sJqAL+DMS0ArUDxwOBCrm0AskEjsMC+LECicMC6rsCAA=="
+            }
+        ], 
+        "Midrange Hunter": [
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAECAR8E2cICzq4CsQjZBw3tCbsF6wfbCagC/gy1A4EKscECjsMCicMC68IC\n6rsCAA=="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAR8ErwS7BdsJ5MICDa/CAusHtQOoAuy7Av4MgQq5tAKOwwLZB7sD6rsC\n68ICAA=="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAR8E2cICxQiHBJcIDceuAu0Jzq4C6wfbCagC/gy1A4EKubQC5MICjsMC\n6rsCAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAR8EuwXFCLsDuK0CDe0J2cIC6wfbCey7AqgC/gy1A4EK5MICjsMCicMC\n6rsCAA=="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAR8Ex64ClsMCisMC8gUN7QnrB5/CAtsJqAL+DLUDgQq5tALkwgKOwwKJ\nwwLquwIA"
+            }, 
+            {
+                "date": "9th May 2017", 
+                "deckstring": "AAEBAR8CrwSmwQIOr8IC6we1A9sJqAL+DI7DAvixAtkH5MICuwPquwKXCLit\nAgA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAR8Ezq4C7LsC5MICicMCDe0JuwXrB9sJqAL+DLUDgQq5tALZB47DAuvC\nAuq7AgA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAR8ElsMCzq4C2wnJsAIN7Qm7BesHqAL+DLUDgQq5tALkwgKOwwK7A+vC\nAuq7AgA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAR8E2wq7BdsJxQgN2cIC7QnrB+y7AqgC/gy1A4EKubQCjsMCicMCuK0C\n6rsCAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAR8CrwSABw67Beu9AusH2wnsuwKoArUDgQqxCLm0Ao7DAonDArsD6rsC\nAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAR8Ex64CuwXOrgLsuwIN7QnrB9sJqAL+DLUDgQq5tALZB47DArsD68IC\n6rsCAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAR8E2cIC2wnsuwL+DA3tCa/CAusHqAK1A4EKubQC2QeOwwKJwwK7A7it\nAuq7AgA="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAR8G2cIC5MICuwOWwwLbCcUIDO0Jzq4C6wfsuwKoAv4MtQOBCrm0Ao7D\nAonDAuq7AgA="
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAR8Czq4C2wkO7Qm7BesH7LsCqAL+DLUDgQq5tALkwgKOwwKJwwK7A+q7\nAgA="
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAR8IkMMC2cICrwTFCOy7Av4M2Qe7AwvtCesHtQPbCagCgQqOwwK5tALk\nwgLquwKJwwIA"
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAR8ElsMC2cIC2Qe4rQIN7QnrB9sJtQP+DOy7AqgCjsMCsQiBCrm0AonD\nAuq7AgA="
+            }, 
+            {
+                "date": "15th April 2017", 
+                "deckstring": "AAECAR8G2cICr8ICuwXbCcUI/gwM7QnrB7UDqAKBCo7DArm0AuTCAuq7ApcI\nuK0CicMCAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAR8EuwXbCtsJxQgN7QnZwgLrB+y7AqgC/gy1A4EKubQCjsMCicMCuK0C\n6rsCAA=="
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAR8C2cICuK0CDu0J6wfOrgLbCbUD/gzsuwKoAo7DArEIgQq5tAKJwwLq\nuwIA"
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAR8G7L0CoMECn8IC7LsC8MIC/gwM6wftCdnCAs6uAqgCxQi1A7m0AuTC\nAo7DAonDAuq7AgA="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAR8Czq4C2QcOqALtCa/CAusH2wnsuwK1A7m0AobDAuTCAo7DAt4EicMC\n6rsCAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAR8GisMC/gzsvQLkwgKGwwK4rQIM7QmvwgLrB86uAtsJtQPsuwKoAo7D\nAoEKicMC6rsCAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAR8P7Qm7BYrDAusH7LsCqAK1A4EKubQC5MIC2QeOwwKJwwK4rQLquwIA"
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAR8C7LsCmMMCDorDAusHpsECqAK1A7m0AuTCAo7DApDDAo3DAonDArit\nAuq7AvIBAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAR8CuwXZwgIO7QnrB9sJ7LsCqAK1A4EKubQC2QeOwwKQwwKJwwK4rQLq\nuwIA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAR8CxQiYwwIO7Qm7BZnCAusH7LsCgQq5tAKOwwKNwwKJwwLrwgK4rQLd\nwgLquwIA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAR8EkMMClsMCk8MCmMMCDYrDAtnCAusH7LsCqAK1A7m0AobDAo7DAuvC\nAo3DAonDAuq7AgA="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAR8EkbwCjQHyAZjDAg2XwQLeBKsG2wmxCOUH9QW4rQKKwwKXCI3DAuvC\nAuq7AgA="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAR8GqwbbCcUIlwiYwwKQwwIMuwWKwwLrB6gC5MICjsMCjcMCicMCl8EC\n68ICuK0C3cICAA=="
+            }, 
+            {
+                "date": "16th March 2017", 
+                "deckstring": "AAECAR8IpsECuwWFuAL+DNsJ7L0CsQiRvAIL7QnrB+y7AqgCtQO5tALLFNQR\n2QeBCuUHAA=="
+            }, 
+            {
+                "date": "12th March 2017", 
+                "deckstring": "AAECAR8EqKsC474ChbgCxQgN7QnbCacIqAL+DMS0Aq28AscD1BHJBOMF0RSX\nCAA="
+            }
+        ]
+    }, 
+    "Druid": {
+        "Malygos Druid": [
+            {
+                "date": "18th March 2017", 
+                "deckstring": "AAECAZICCumsAuC7ArQD7BWkB9YRvq4CrqsC7QWXaAqLCF+5BkC+qwLEBuQI\n6BXTA/4BAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAZICCOmsArQD7QXguwLsFb6uAq6rApdoC6QHuQaLCF9AvqsCxAbkCOgV\n0wP+AQA="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAZICCOmsAuC7ArQD7BWkB9YRvq4CrqsCC4sIX7kGQL6rAsQG5AiXaOgV\n0wP+AQA="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAZICCLQD6awC4LsC7BWLCK6rAu0Fl2gLpAdfuQZAvqsCxAbkCIoB6BXT\nA/4BAA=="
+            }
+        ], 
+        "Token Druid": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAZICBuTCAq/CApG8AtkHuwNADMrDAuvCAp/CAobBAo3AAs27ArazAsGr\nAuUH5gX3A/4BAA=="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAZICBkCfvQLkwgLZB5G8ArsDDIbBAq/CAp/CAsrDAuYF5BXBqwLNuwLr\nwgK2swLlB/4BAA=="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAZICApG8AkAO5MICtrMCuwPNuwLlB+vCAv4BhsECr8IC5gWfwgLKwwL3\nA8GrAgA="
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAZICAp+9ApG8Ag6GwQKvwgKfwgLKwwLmBfcDwasC2QfNuwK7A+vCAraz\nAuUH/gEA"
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAZICBECfvQLkwgKRvAINhsECr8ICn8ICysMC9wPmBcGrAtkHzbsC68IC\ntrMC5Qf+AQA="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAZICBOO+Ao3AApG8AuUHDYbBArQFQKgF5gWnCOQVwasC4wXNuwLrwgK2\nswL+AQA="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAZICBJ+9ArHBAuTCApG8Ag2GwQKvwgKfwgLKwwLmBfcDwasCzbsCuwPr\nwgK2swLlB/4BAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAZICAuO+ApG8Ag6GwQJAn8IC5gWnCLHBAvcDwasC4wXNuwLrwgK2swLl\nB/4BAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAZICAp+9ApG8Ag73A4bBAq/CAp/CAsrDAuYFscECwasCzbsCuwPrwgK2\nswLlB/4BAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAZICBkCxwQLkwgKRvAL1Bf4BDPcDhsECr8ICn8IC5gWhwgLBqwLNuwK7\nA+vCArazAuUHAA=="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAZICBOO+Aq8Er8ICkbwCDYbBAuYFpwjKwwL3A8GrAuMF5MICtrMCzbsC\n5QfrwgL+AQA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAZICAuO+ApG8Ag6GwQKfwgLmBacI5BXBqwLkwgLjBc27ArsD68ICtrMC\n5Qf+AQA="
+            }, 
+            {
+                "date": "9th May 2017", 
+                "deckstring": "AAEBAZICBOO+Aq/CApG8AuUHDYbBArQFQKgF5gWnCPcDwasC4wXNuwLrwgK2\nswL+AQA="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAZICApG8ArazAg6GwQKvwgKfwgLmBaHCArHBAvcDwasCzbsCuwPrwgLl\nB/UF/gEA"
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAZICAuO+ApG8Ag73A4bBAp/CAuYFpwixwQLBqwLkwgLjBc27AuvCAraz\nAuUH/gEA"
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAZICApG8AvUFDobBAq/CAkCfwgLmBfcDwasC5MIC2QfNuwLrwgK2swLl\nB/4BAA=="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZICAp+9ApG8Ag6GwQKvwgLmBZ/CAqHCAvcDwasCzbsC5QfrwgL1BbsD\ntrMC/gEA"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZICAq/CApG8Ag6GwQJA5gWfwgL3A7HBAsGrAuTCArazArsDzbsC5Qfr\nwgL+AQA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZICBJ/AAuTCArsDkbwCDYbBAuYFn8ICocIC9wOxwQLBqwLNuwK2swLl\nB+vCAvUF/gEA"
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAZICBOO+AkDkwgKRvAINhsECn8IC5gWnCPcDwasC4wXNuwK7A+vCAraz\nAuUH/gEA"
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAZICAuO+ApG8Ag7BqwKGwQKfwgLmBacI9wPkwgLjBc27ArsD68ICtrMC\n5Qf+AQA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAZICBK/CApG8ArsD/gENhsECQJ/CAuYFocIC9wPBqwLkwgLZB827AuvC\nArazAuUHAA=="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAZICCOO+Aq/CAkD7BeTCApG8AvUF/gELhsEC5gWnCPcDwasC4wXNuwK2\nswK7A+UH68ICAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAZICAoW4ApG8Ag6GwQKFCOYFocICigaxwQLVAc27AsGrAuUH68IC9QW2\nswL+AQA="
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAZICCOO+AkD7BeTCApG8ArsD9QX+AQuGwQLmBacIocIC9wPBqwLjBc27\nAuvCArazAuUHAA=="
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAZICD/ADp7ICocICscEC5MIC68IC9QVA5gWkwgLkFcGrAs27ArazAv4B\nAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZICCPsF474CQOTCApG8ArsD9QX+AQuGwQLmBacIocIC9wPBqwLjBc27\nAuvCArazAuUHAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZICBOO+ApG8AvUF/gENhsECQOYFpwixwQL3A8GrAuMFzbsCuwPrwgK2\nswLlBwA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZICAuO+ApG8Ag6GwQJA5gWnCLHBAvcDwasC4wXNuwK7A+vCArazAuUH\n/gEA"
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAZICAuO+ApG8Ag73A4bBAkDmBacIocICscECwasC4wXNuwLrwgK2swLl\nB/4BAA=="
+            }, 
+            {
+                "date": "18th April 2017", 
+                "deckstring": "AAECAZICBOO+AuTCApG8ArazAg2GwQJA5gWnCKHCArHBAuQVwasC4wXNuwLr\nwgLlB/4BAA=="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAZICAuO+ApG8Ag73A4bBAkDmBacIscECwasC5MIC4wXNuwLrwgK2swLl\nB/4BAA=="
+            }, 
+            {
+                "date": "16th April 2017", 
+                "deckstring": "AAECAZICBIbBAq/CAo3AApG8Ag1A5gWnsgKxwQL3A8GrAuTCAs27AuvCAraz\nAuUH9QX+AQA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAZICBOO+AkCRvAK7Aw33A4bBAp/CAuYFpwjBqwLkwgLjBc27AuvCAraz\nAuUH/gEA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAZICApG8AvUFDvcDhsECr8ICQJ/CAuYFwasC5MIC2QfNuwLrwgK2swLl\nB/4BAA=="
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAZICAuO+ApG8Ag77BacIocICscEC4wXrwgLlB/UFhsEC5gWkwgL3A827\nAv4BAA=="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAZICBOmsAtYRrqsC7QUN/60CX7kGhQhAvq4CxAbkCPcDl2jNuwLoFf4B\nAA=="
+            }
+        ], 
+        "Ramp Druid": [
+            {
+                "date": "7th June 2017", 
+                "deckstring": "AAECAZICDMrDAq7CAuC7AoW4ArmyAp+wAuKvAqirAqIJiwjCBqICCcnHAvnA\nAqK2Ar6uAuQIxAb+AV9AAA=="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAZICCMmvAqirAuC7Aq7CAoatAr6uAv7AAovBAgvlsgLirwJEX0CNwALE\nBuQIwasC+cAC/gEA"
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAZICCKirAp+wAsIGognPsQK5sgKFuALLvAILyccCrsIChq0CorYCX0C+\nrgK+qwLEBuQI/gEA"
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAZICCKQDn7ACqKsCwgaiCfgMhbgCy7wCC6K2Al/JxwKuwgKGrQK+rgJA\n5AjEBvnAAv4BAA=="
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAZICCKirAp+wAsIGognPsQK5sgKFuALLvAILyccCrsIChq0CorYCX0C+\nrgK+qwLEBuQI/gEA"
+            }
+        ], 
+        "Jade Druid": [
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAECAZICBOmsAsnHApS9Aq6rAg3dvgKkB19Ay7wC+wzEBvYH5AjNuwK0uwL5\nwAL+AQA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAECAZICBOmsApS9Aq6rAsrDAg3JxwLdvgKkB19Az7wCy7wCvqsCxAbkCLS7\nAvnAAv4BAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAZICApS9Aq6rAg7JxwLdvgKkB19Az7wCysMCy7wCvqsCxAbkCLS7AvnA\nAv4BAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZICBosIpAeUvQKuqwK+qwLtBQzJxwLdvgJftAVAz7wCy7wCxAbkCLS7\nAvnAAv4BAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZICBJS9Aq6rAsrDAtPFAg3JxwLdvgKkB19Az7wCy7wCvqsCxAbkCLS7\nAvnAAv4BAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAZICBJS9AsrDAtPFAq6rAg3JxwKkB8+8At2+Al9Ay7wCvqsCxAbkCLS7\nAvnAAv4BAA=="
+            }, 
+            {
+                "date": "15th April 2017", 
+                "deckstring": "AAECAZICApS9Aq6rAg6kB/q/As+8AosI3b4CX0DLvAK+qwLEBuQItLsC+cAC\n/gEA"
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAZICBosIpAeUvQKuqwLtBfnAAgzdvgJftAVAjcACz7wCy7wCvqsCxAbk\nCLS7Av4BAA=="
+            }, 
+            {
+                "date": "5th April 2017", 
+                "deckstring": "AAECAZICBJS9ApAHrqsC6BUNiwjdvgJfuQZAz7wC6RXLvAK+qwLEBuQItLsC\n/gEA"
+            }, 
+            {
+                "date": "3rd April 2017", 
+                "deckstring": "AAECAZICBumsAosIpAeUvQK0Ba6rAgzdvgK5Bl9Ay7wCz7wC6RW+qwLkCMQG\ntLsC/gEA"
+            }, 
+            {
+                "date": "26th March 2017", 
+                "deckstring": "AAECAZICCOmsAosIorYClL0CrqsC6RXtBegVC92+Al+5BkDPvALLvAK+qwLE\nBuQItLsC/gEA"
+            }, 
+            {
+                "date": "21st March 2017", 
+                "deckstring": "AAECAZICBKQHlL0C6RWKBw2LCN2+ArkGX0DPvALLvAK+qwLEBuQItLsC6BX+\nAQA="
+            }, 
+            {
+                "date": "11th March 2017", 
+                "deckstring": "AAECAZICBpS9ArQFrqsC6RWFF+gVDIsI3b4CX7kGQM+8Asu8Ar6rAsQG5Ai0\nuwL+AQA="
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAZICBqQHtLsC6BWUvQKuqwLpFQzdvgLEBuQIl2j+AYsIX7kGQM+8Asu8\nAr6rAgA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAZICBumsAqQHlL0CtAWuqwLpFQzLvALdvgJfuQZAvqsCxAbkCJdo6BW0\nuwL+AQA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAZICBqQH6awClL0CrqsC6RXoFQyLCN2+Al+5BkDPvALLvAK+qwLEBuQI\ntLsC/gEA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAZICBtYRlL0C7QWuqwLpFb6rAgy5Bs+8AosI3b4CX7QFQMu8AsQG5Ai0\nuwL+AQA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAZICBqQHlL0CtAWuqwLpFegVDLkGz7wCiwjdvgJfQMu8Ar6rAsQG5Ai0\nuwL+AQA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAZICBosIpAeUvQKuqwLpFYUXDN2+Al+5BkDPvALLvAK+qwLEBuQI6BW0\nuwL+AQA="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAZICBqQHlL0ChReKB4sIrqsCDLkGz7wCigHdvgJfQMu8Ar6rAsQG5Ai0\nuwL+AQA="
+            }
+        ], 
+        "Custom Druid": [
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAECAZICBumsAsnHApS9Aq6rAukV5MICDN2+AqQHX0DPvALLvAK+qwLEBuQI\ntLsC+cAC/gEA"
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAZICBsnHAtYRpAeUvQK0Ba6rAgzdvgJfuQbPvAJAvqsCy7wCxAbkCOgV\ntLsC/gEA"
+            }, 
+            {
+                "date": "7th May 2017", 
+                "deckstring": "AAEBAZICBJS9Aq6rAugV+cACDcnHAt2+AqQHX7kGQM+8Asu8Ar6rAsQG5Ai0\nuwL+AQA="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAZICAoQXkbwCDvcD/QKOEJ/AAuYFwasC9Q3NuwLoFevCArazAuYR5Qf+\nAQA="
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAZICBumsAosIpAeUvQKuqwLoFQz5wALJxwLdvgJfuQZAy7wCvqsCxAbk\nCLS7Av4BAA=="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZICBI4Q5MIChBeRvAIN+g31DevCAuUHhsEC5gX3A9UBwasCzbsC6BW2\nswL+AQA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZICBPsFhBeRvAKGwQINjhD6DeTCAsIO68IC5hHlB/0C5gX3A9UBzbsC\n6BUA"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAZICBumsAqQHlL0CrqsC6BX5wAIMyccCuQbPvALdvgJfQMu8Ar6rAsQG\n5Ai0uwL+AQA="
+            }, 
+            {
+                "date": "10th March 2017", 
+                "deckstring": "AAECAZICCumsAuC7ArQD7BWLCNYRvq4CrqsC7QWXaAqkB1+5BkC+qwLEBuQI\n6BXTA/4BAA=="
+            }
+        ], 
+        "Beast Druid": [
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAZICBLmyAuO+Aq6rAuYFDacI4wWQtgKLwAJftAVAjcAC/sACxAakwgLB\nqwL+AQA="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAZICBOLHAq7CApAHi8ECDZC2AovAAq/CAkCNwAL+wALUuwLEBqTCAsGr\nArazAvnAAv4BAA=="
+            }
+        ], 
+        "Aggro Druid": [
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAZICAuO+ApG8Ag73A4bBAvsF5gWnCKHCAqTCArHBAuMFzbsC68IC5Qf1\nBf4BAA=="
+            }
+        ], 
+        "C'Thun Druid": [
+            {
+                "date": "5th March 2017", 
+                "deckstring": "AAECAZICBuC7AsmvAuwVubIChRefAwyLCOKvAl+5BkC+rgL4B8QG5AiKAekB\n/gEA"
+            }
+        ]
+    }, 
+    "Rogue": {
+        "Aggro Rogue": [
+            {
+                "date": "19th March 2017", 
+                "deckstring": "AAECAaIHCrmyAq8E474C970C+wXJvwKyAroTkbwC7QIKuQbdCKcImQeIB+MF\nkrYC1AWMArQBAA=="
+            }, 
+            {
+                "date": "18th March 2017", 
+                "deckstring": "AAECAaIHBq8E474Cyb8CsgKRvALtAgy5Bve9AvsFkxTdCKcIiAfjBZK2AtQF\njAK0AQA="
+            }, 
+            {
+                "date": "16th March 2017", 
+                "deckstring": "AAECAaIHCPm7Aq8E474Cyb8CsgKRvALtAvW7Agu5Bve9ApMU3QinCIgH4wWS\ntgLUBYwCtAEA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaIHCK8E474C+wXJvwKyAroTkbwC7QILuQb3vQKTFN0IpwiIB+MFkrYC\n1AWMArQBAA=="
+            }, 
+            {
+                "date": "5th March 2017", 
+                "deckstring": "AAECAaIHBq8E474Cyb8CsgKRvALtAgyStgLjBbkGxBbdCKcIiAfUBYwC9QX1\nuwK0AQA="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAaIHDK8E474Cg6wChbgC3QjJvwKyAoUXuhORvAL1Be0CCYgHuQa5vwKn\nCOMFkrYC1AWMArQBAA=="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAaIHDLmyAq8E474C8xG5vwLJvwKZB7ICuhPUBZG8Au0CCbkG3QinCIgH\n4wWStgKgvQKMArQBAA=="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAaIHDLm/ArmyAq8E474CmQe6E5G8AvUF8xHJvwKyAu0CCacIuQbjBdQF\n3QiIB5K2AowCtAEA"
+            }
+        ], 
+        "Malygos Rogue": [
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAaIHArQDsgIOpAf6vwKFCIHCAt0ImwXqxgL3wQL4wQKIB+0Chgn1uwK0\nAQA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaIHBrQD1hGDrAKFuAKyAu0FDKQHuQbEFve9ApsFvQT6vQKIB8YFhgn1\nuwK0AQA="
+            }
+        ], 
+        "Tempo Rogue": [
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAaIHCK8EhQiCwgLJvwKyAs0DkbwC7QIL9gSBwgKXBvzBAogHkrYC68IC\njAKGCfW7ArQBAA=="
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAaIHBq8Eyb8CsgLtBZG8ApvIAgyBwgK5vwL7Bd0I8rAC+MECiAeStgLr\nwgKMAvUFtAEA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAaIHBLIC7QWGwgKRvAINtAGGCYUI3Qj8wQLGxwKbBc0DnAKIB5K2AuvC\nAu0CAA=="
+            }
+        ], 
+        "Quest Rogue": [
+            {
+                "date": "3rd June 2017", 
+                "deckstring": "AAEBAaIHBMbHAobCApG8ArQBDcQB/MECnwOcAvi9AoqtApK2AogF1AWXwQLr\nwgLtAoYJAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAaIHBPzBAobCApG8ArQBDcQBxscCnwOcAvi9AooBiq0CiAXUBZfBAuvC\nAu0ChgkA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAaIHBMbHAobCApG8ArQBDcQB/MECnwOcAvi9AooBiq0CiAXUBZfBAuvC\nAu0ChgkA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7EAfzBAsbHAp8DnAL4vQKKAYqtAtQFl8EC68IC7QKG\nCbQBAA=="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7EAZnCAvzBAsbHAp8DnAL4vQKKrQKIBdQFl8EC68IC\n7QKGCQA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7EAfzBAsbHApwCigGfA/i9AtQFiAXrwgKXwQKGCbQB\n7QIA"
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAECAaIHBIivApG8AsQBhsICDcbHAp8DnALUBbsDl8EC68ICswH8wQL4vQLt\nAoYJtAEA"
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAECAaIHBMbHApG8AobCArQBDcQB/MECnAKfA/i9ApfBAoQB68ICiAXUBbMB\nhgntAgA="
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAaIHBMbHAobCApG8ArQBDcQB/MECnwOcAvi9AoqtAogF1AWXwQLrwgKz\nAe0ChgkA"
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAaIHBMbHAobCApG8ArQBDcQB/MECnwOcAvi9AoqtAogF1AWXwQLrwgKz\nAe0ChgkA"
+            }, 
+            {
+                "date": "18th April 2017", 
+                "deckstring": "AAECAaIHBMbHAobCApG8ArQBDcQB/MECnwOcAvi9AoqtAogF1AWXwQLrwgKz\nAe0ChgkA"
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7EAfzBAsbHApwCigHjBZ8D+L0C1AWIBevCApfBAoYJ\n7QIA"
+            }, 
+            {
+                "date": "16th April 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7EAfzBAvgHnwOcAvi9AogHkrYCiAXUBZfBAu0Chgm0\nAQA="
+            }, 
+            {
+                "date": "14th April 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7GxwKbBZ8DvQScAvi9AoqtAogF1AXiBpfBAuvCAu0C\nhgkA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaIHAobCApG8Ag7EAcbHAoqtAvzBAp8DnAL4vQKStgKIBdQFl8EC68IC\n7QKGCQA="
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag6StgLEAfzBAsbHAp8DnALkwgL4vQKIBdQFl8EC68IC\n7QKGCQA="
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag7EAfzBAsbHAp8DnAL4vQKKrQKStgKIBdQFl8EC68IC\n7QKGCQA="
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAaIHBJG8AvzBArIChsICDfgHnwOcAogF1AWXwQLEAfi9AogHkrYC7QKG\nCbQBAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAaIHAobCApG8Ag78wQLGxwKbBZ8DnAL4vQKStgKIBdQF4gaXwQLrwgLt\nAoYJAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAaIHBvsM5MIC7QWGwgKRvAKGCQzGxwKbBZ8DnAL4vQKIB4qtApK2AtQF\n68IC7QK0AQA="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAaIHBJG8AsQBsgKGwgINxscC+AefA5wC1AXrwgKbBfi9AogHkrYC7QKG\nCbQBAA=="
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAaIHBJ20ArIChsICkbwCDYUI/MECmwWfA5wC+L0CiAeStgLUBYgF7QKG\nCbQBAA=="
+            }
+        ], 
+        "Miracle Rogue": [
+            {
+                "date": "7th June 2017", 
+                "deckstring": "AAECAaIHBILCAt0I7QWyAg2byALrwgKBwgL8wQL4wQL1uwKCtAKGCaQHiAeX\nBpsFtAEA"
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaIHCILCAvzBAvjBAsm/ApG8ApcG7QWyAgubyAKBwgL1uwKStgKCtAKG\nCd0IpAeIB5sFtAEA"
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaIHBoLCAsm/ApG8Au0FzQOyAgybyAKBwgL4wQL1uwKStgKCtAKGCd0I\npAeIB5sFtAEA"
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAaIHBoLCAt0I/MECsgLtBZG8AgyCtAKkB4HCApcGmwX4wQKIB5K2ApvI\nAoYJ9bsCtAEA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaIHCMm/AvzBArICvQTNA/jBAu0FkbwCC4K0AqQHgcIClwabBYgHkrYC\nm8gChgn1uwK0AQA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAaIHBq8EgsICsgLtBdQFkbwCDKQHgcIC3QibBfjBAogHkrYCm8gCjAKG\nCfW7ArQBAA=="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAaIHCq8E+r8CgsICyb8C/MECsgLUBZG8AowC9bsCCqQHgcIC3QjNA/jB\nAogHkrYCm8gChgm0AQA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaIHBoLCAt0IlwayAu0FkbwCDIK0AqQHgcIC/MECmwX4wQKIB5K2ApvI\nAoYJ9bsCtAEA"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAaIHBoLCApcGsgLdCO0FkbwCDIK0AqQHgcIC/MECmwWIB/jBApK2ApvI\nAoYJtAH1uwIA"
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAaIHBq8Eyb8CsgLNA5G8Au0CDPYEgcIChQiXBt0IiAeStgKMAuvCAoYJ\ntAH1uwIA"
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAaIHCq8Eg6wCgsICyb8CsgLNA9QFkbwCjAL1uwIKpAeBwgLdCJsF+MEC\niAeStgKbyAKGCbQBAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAaIHDK8Eg6wCgsICyb8CsgLdCM0D7QWRvALUBYwC9bsCCaQHgcICmwWI\nB/jBApK2ApvIAoYJtAEA"
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAaIHCq8Eg6wCgsICyb8CsgLNA9QFkbwCjAL1uwIKpAeBwgLdCJsF+MEC\niAeStgKbyAKGCbQBAA=="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAaIHCsIGgsICiK8C3Qj8wQKbBbICzQPtBYwCCqQHgrQCgcIC+MECiAeS\ntgKbyAKGCfW7ArQBAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaIHCtQFrwSDrAKCwgLJvwKyAs0DkbwCjAL1uwIKkrYCpAeBwgLdCJsF\n+MECiAebyAKGCbQBAA=="
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAaIHCoHCAoOsAoLCAt0I/MECsgLNA+0FkbwCjAIKgrQCpAebBfjBAogH\nkrYCm8gChgn1uwK0AQA="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAaIHBq8EgsICsgLNA9QFkbwCDKQH+r8ChQjdCPzBAvjBAogHkrYCjAKG\nCfW7ArQBAA=="
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAaIHCIUIgsICsgLtBdQFkbwCm8gC68ICC6QH/MECmwXNA/jBAogHkrYC\njAKGCfW7ArQBAA=="
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAaIHCIUIgsIC3QiyAs0D7QWRvAKMAguCtAKkB4HCApsF+MECiAeStgKb\nyAKGCfW7ArQBAA=="
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAaIHCO0FkbwCgsIC/MECsgLNA4wC7QILgrQCpAeBwgKbBfjBAogHkrYC\nm8gChgn1uwK0AQA="
+            }, 
+            {
+                "date": "30th March 2017", 
+                "deckstring": "AAECAaIHBrICvQTNA+0F1AWRvAIMpAe5BsQWlwabBYgHkrYC3geMAoYJ9bsC\ntAEA"
+            }, 
+            {
+                "date": "29th March 2017", 
+                "deckstring": "AAECAaIHBIK0ArICgBLtBQ2kB7KtApsFvQTNA5wC+r0CiAfeB+0Chgn1uwK0\nAQA="
+            }, 
+            {
+                "date": "23rd March 2017", 
+                "deckstring": "AAECAaIHBK8EsgKRvALlBw32BLkGhQjEFt0ImwXNA4gHkrYCjAL1BYYJtAEA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaIHBLICzQPtBZG8Ag2kB7kGxBaXBpsFiAeStgLUBd4HjAKGCfW7ArQB\nAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaIHBK8EhbgC7QWyAg2kB7kGlwbEFpsFzQOIB8sD3geMAoYJ9bsCtAEA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaIHBLKtApG8ArICzQMNpAe5BpcG1AXEFpsFiAeStgLeB4wChgn1uwK0\nAQA="
+            }, 
+            {
+                "date": "7th March 2017", 
+                "deckstring": "AAECAaIHBq8EhbgC3QiyAu0FywMMpAe5BsQWlwabBc0DiAfeB4wChgn1uwK0\nAQA="
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAaIHCK8E3QiyrQKyAs0D7QXUBZG8AgukB7kGxBabBfKwAogHkrYCjAL1\nBYYJtAEA"
+            }
+        ], 
+        "Custom Rogue": [
+            {
+                "date": "6th June 2017", 
+                "deckstring": "AAECAaIHBJS9AuCsAu0FsgIN3sQCgcIC/MEC+r0C+b0Cz7wC8rAC3K8C+asC\niAf7BZsFtAEA"
+            }
+        ]
+    }, 
+    "Mage": {
+        "Tempo Mage": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAf0ECL8IxQShtwLsB5bHApAHTYivAgujtgK7AtIRwAHtBKsEmMQC17YC\nlgXBwQKVAwA="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAf0ECtPFAsrBArC8Aum6AqG3Ar8I7AeQB+0ExQQKlscCmMQCwcEC17YC\no7YClgWrBJUDuwLAAQA="
+            }, 
+            {
+                "date": "3rd June 2017", 
+                "deckstring": "AAEBAf0EBr8IxQShtwLsB5bHAu0EDKO2ArsC6boCwAGrBPsMmMQC17YClgXB\nwQKVA4GyAgA="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAf0ECr8IxQShtwLsB5bHApAHiK8CTe0EysECCqO2ArsC6boCwAGrBJjE\nApYFwcEC17YClQMA"
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAf0ECr8IxQShtwLsB5bHAk2IrwKwvALtBO0FCqO2ArsC6boCwAGrBJjE\nAte2ApYFwcEClQMA"
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAf0EBr8IxQTsB7gI+wHtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0ECqG3Ar8IxQTsB5bHAk2IrwKwvALtBO0FCqO2ArsC6boCwAGrBJjE\nAte2ApYFwcEClQMA"
+            }, 
+            {
+                "date": "7th May 2017", 
+                "deckstring": "AAEBAf0EDL8IxQShtwK4COwHlscCTem6AtPFAu0E7QXKwQIJo7YCuwKrBMAB\nwcECmMQC17YClgWVAwA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAf0ECL8IxQShtwLsB5bHAum6Au0E7QULo7YCuwKwvALAAasEmMQC17YC\nlgXBwQKVA4GyAgA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAf0EBrgIlscCiwPDAXH7DAyjtgL6vwK7AqsE5gSYxAKWBcHBArwIlQOB\nsgK0BAA="
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAf0ECL8IxQShtwLsB+m6Au0E5gTtBQujtgK7AqsEsLwCwAHBwQKYxALX\ntgKWBZUDgbICAA=="
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAf0EDL8IxQShtwLsB5bHAs/HAk3SEbC8Au0E08UC7QUJo7YCuwLAAasE\nmMQC17YClgXBwQKVAwA="
+            }, 
+            {
+                "date": "30th April 2017", 
+                "deckstring": "AAEBAf0EDL8IxQShtwLsB5bHAs/HAk3pugKwvALtBO0FigcJo7YCuwLAAasE\nmMQC17YClgXBwQKVAwA="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAf0ECuwHvwjFBKG3ApbHAs/HAk2wvALtBO0FCqO2ArsC6boCwAGrBJjE\nAte2ApYFwcEClQMA"
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAf0EBumsArgIlscCsLwC+wztBQyjtgL6vwKFCLsCqwTmBJjEApYFvAiV\nA4GyArQEAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAf0EDL8IxQShtwLsB5bHAs/HAk3pugKwvALtBNPFAu0FCaO2ArsCwAGr\nBJjEAte2ApYFwcEClQMA"
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAf0ED8jHAsLDAqzCApfBAuvCAosDwsECuwKrBOYEh6wCmMQClgW/wQKV\nAwA="
+            }, 
+            {
+                "date": "24th April 2017", 
+                "deckstring": "AAECAf0ECr8IxQShtwLsB6O2Ak3pugLtBNPFAu0FCrC8ApbHArsCwAGrBJjE\nAte2ApYFwcEClQMA"
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAf0ECL8IxQShtwLsB5bHAu0E08UC5gQLo7YCuwKwvALAAasEmMQC17YC\nlgXBwQKVA4GyAgA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0ECNPFAr8IxQShtwLsB5bHAu0E7QULsLwCo7YCuwLAAasEmMQC17YC\nlgXBwQKVA4GyAgA="
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAf0ECL8IxQShtwLsB5bHAu0E08UC7QULo7YCuwKwvALAAasEmMQC17YC\nlgXBwQKVA4GyAgA="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAf0EBuwHuAiLA4W4AvsM7QUMo7YC+r8CuwLDAasE5gSYxAKWBcHBArwI\nlQO0BAA="
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAf0EBL8InccC7QW8CA2jtgK7AsABqwTmBJjEAte2AvsBlgXBwQKVA4Gy\nArQEAA=="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAf0EBKO2Aq8E7QW8CA27AsAB+AerBOYEmMQC17YC+wGWBcHBApUDgbIC\ntAQA"
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAf0EBMLBAsrBArwI7QUNyMcCwsMCiwOZwgK7AqsE5gSYxAKWBb/BApUD\n68ICgbICAA=="
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAf0EBOmsAr8I7QW8CA27AsAB+AerBOYEmMQC17YC+wGWBcHBApUDgbIC\ntAQA"
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAf0ECOwHuAiLA4W4AsMBxsEC+wztBQujtgL6vwK7AqsE5gSYxAKWBcHB\nArwIlQO0BAA="
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAf0EBqO2Ap3HAs/HAosDuwLKwQIMyMcClscCwsMCmcICwsECysMCxscC\nmMQC5MIClgWVA+vCAgA="
+            }, 
+            {
+                "date": "26th March 2017", 
+                "deckstring": "AAECAf0EBPYC7AeFuALtBQ2jtgK5BrsCuhbjEasE+wzmBJYFvAiVA7QEjBQA"
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAf0ECPYC7Ae4CIsDhbgCuhb7DO0FC6O2ArkGuwLjEasE5gSWBbwIlQO0\nBIwUAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAf0EAoW4Au0FDvsM+wG7AroW4xGrBOYElgW8CJUDtATAAYwUhLsCAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAf0EAvsM7QUOuQa7AroW4xGrBOYE+wGWBZUDrAGBsgK0BIwUhLsCAA=="
+            }, 
+            {
+                "date": "7th March 2017", 
+                "deckstring": "AAECAf0ECPYC7Ae4CIsDhbgCuhb7DO0FC6O2ArkGuwLjEasE5gSWBbwIlQO0\nBIwUAA=="
+            }, 
+            {
+                "date": "5th March 2017", 
+                "deckstring": "AAECAf0ECOwHuAiLA4W4AroW+wztBYGyAgujtgK5BrsC4xGrBOYElgW8CJUD\ntASMFAA="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAf0ECPYCo7YCuAjWEYW4AroW+wztBQu5BosDuwLjEasE5gSWBbwIlQO0\nBIwUAA=="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAf0EAoW4Au0FDuwHo7YCuQa7AroW4xGrBPsM5gT7AZYFlQO0BIwUAA=="
+            }
+        ], 
+        "Reno Mage": [
+            {
+                "date": "14th March 2017", 
+                "deckstring": "AAECAf0EHum6AsUEo7YC7Af9vQK4CNYRwxbJA+sTkAe5BrsCkBXYuwJNuhbL\nBKsEwAGwvAKFF/sM7QWKAZYFigeMFIGyAo2sAgA="
+            }, 
+            {
+                "date": "12th March 2017", 
+                "deckstring": "AAECAf0EHti7ApAVuwK5BpAHyQPWEbgI/b0C7AejtgLFBE2LA+m6AroWywTA\nAasEsLwChRf7DO0FigGWBYoH3sQCjBSBsgKNrAIA"
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAf0EHooHgbICjBS5BqwB38QCvwiwvAKFF/sM2LsCigHtBcUE/b0C7Aej\ntgK4CMMW1hGQB8kDTbsC6boCwAHLBLoWqwSWBQA="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAf0EHuwHobcC/b0Co7YCuAi5DcMW1hHJA7kGiwNN2LsCuwLpugLeBee/\nArC8AsABuhaFF6sE+wyKAZYF38QC7QWKB4wUjawCAA=="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAf0EHsUEwxbWEfq/ArkGkBXYuwLzDIUXigHfxALtBYoH7AejtgK4CMkD\nuxaLA027Aum6Aue/AsABuharBJYFgbICjBSNrAIA"
+            }
+        ], 
+        "Custom Mage": [
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAf0EBJ4QuAiJDnENuQaQELsC4xGrBIkP5gSYxAL3DZYFlQO0BIwUAA=="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAf0EBJ4QuAj6Du0FDbkGkBC7AsMB4xGrBIkP5gSYxAL3DZYFlQOCEAA="
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0EAvoO7QUOuQaQELsCwwHjEasEiQ/mBJjEAvcNlgWVA7QEjBQA"
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0EBsUEuAjWEckD7QXBwQIMuwLAAe0EywSrBPsMmMQC17YC9w2WBYoB\nrAEA"
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0EBsUEuAjWEfsMmMQC7QUMyQO7AsAB7QTLBKsE17YC9w37AZYFigGs\nAQA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAf0EBsUE1hGIrAL7DO0F6boCDJwC9w2KAckDuwLAAe0EywS6FqsElgWs\nAQA="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAf0EBrgIyQPtBPsB0MECgbICDJKsAtrFAsABywT4B6sE5gSYxAKcApYF\nigHBwQIA"
+            }
+        ], 
+        "Freeze Mage": [
+            {
+                "date": "6th June 2017", 
+                "deckstring": "AAECAf0EBr8IxQTsB7gIiK8C7QUMyQO7AsAB7QTLBKsE+wyYxALXtgKWBYoB\nwcECAA=="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAf0EBoivAr8IuAjsB+0FxQQMmMQCwcEC17YC+wyWBe0EywSrBMkDuwLA\nAYoBAA=="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAf0EBr8IxQTsB7gInALtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAf0EBr8IxQS4COwH+wHtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAf0ECr8IxQShtwLsB5bHAs/HAum6Au0EywSKAQqjtgK7ArC8AsABqwSY\nxALXtgKWBcHBApUDAA=="
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAf0EBr8IxQTsB7gI+wHtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAf0EBsUETem6Au0E7QXQwQIM3AqCtALJA5KsAssEqwTAAZjEApYFigHB\nwQKBsgIA"
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAf0EBr8IxQTsB7gI+wHtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAf0EBL8IxQS4CO0FDckDuwLAAe0EywSrBPsMmMQCnALXtgKWBYoBwcEC\nAA=="
+            }, 
+            {
+                "date": "24th April 2017", 
+                "deckstring": "AAECAf0EBMWuAsMB7gJxDaO2Aoe9AosD7AW7AqsE17YCmMQClgXBwQLmBJUD\ngbICAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAf0EAsUE7QUOvwjJA7sCwAHtBMsEqwT7DJjEAte2AvsBlgWKAcHBAgA="
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAf0EBsUE+wHtBb8I7Ae4CAz7DIoByQO7AsAB7QTLBKsEmMQC17YClgXB\nwQIA"
+            }, 
+            {
+                "date": "20th April 2017", 
+                "deckstring": "AAECAf0EApKsAtDBAg6CtAKwvALrwgK7AsABywSrBMfHApjEAte2ApYFwcEC\nlQOBsgIA"
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAf0EAsUE7QUOvwjJA7sCwAHtBMsEqwT7DJjEApwC17YClgWKAcHBAgA="
+            }, 
+            {
+                "date": "15th April 2017", 
+                "deckstring": "AAECAf0EBMUE7Af7DO0FDb8IyQO7AsAB7QTLBKsEmMQCnALXtgKWBYoBwcEC\nAA=="
+            }, 
+            {
+                "date": "14th April 2017", 
+                "deckstring": "AAECAf0EBr8IxQTsB7gI+wHtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAf0EBsUEkqwCTdrFAu0F0MECDLC8AoK0AskD6boC7QTLBKsEx8cCmMQC\nigHBwQKBsgIA"
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAf0EBrgIyQPtBPsB0MECgbICDJKsAtrFAsABywT4B6sE5gSYxAKcApYF\nigHBwQIA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0EBr8IxQTsB7gI+wHtBQzJA7sCwAHtBMsEqwT7DJjEAte2ApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAf0EBL8IxQS4CO0FDckDuwLAAe0EywSrBPsMmMQC17YC+wGWBYoBwcEC\nAA=="
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAf0ECsUE7Ae4CM/HAsAB7QTKwQKWBcHBAtDBAgqCtALJA5KsAsrDAssE\nqwTmBJjEAooBgbICAA=="
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAf0ECLgIvwjFBK4D7QScAu0FgbICC8kDuwLAAcsEqwT7DJjEAvsBlgWK\nAcHBAgA="
+            }, 
+            {
+                "date": "12th April 2017", 
+                "deckstring": "AAECAf0EBr8IxQTsB7gI6boC7QUMyQO7AsAB7QTLBKsE+wyYxAKcApYFigHB\nwQIA"
+            }, 
+            {
+                "date": "11th April 2017", 
+                "deckstring": "AAECAf0ECOm6Au0FuAjJA+0ElgXQwQKBsgIL+Af7AYoBkqwC2sUCwAHLBKsE\n5gSYxALBwQIA"
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAf0EBrgIyQPCwQLtBO0F0MECDNrFAsABywT4B6sE5gTHxwKYxAKcAooB\nwcECgbICAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAf0EBM/HAte7Au0F0MECDYK0AsbBArC8AsABywSrBPsMx8cCmMQC+wGK\nAcHBAoGyAgA="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAf0EBsUE08UC7AfJA8sE0MECDIK0AooBkqwC6boCwAHtBKsEmMQC17YC\nlgXBwQKBsgIA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAf0EBrgIyQOSrAL6vwLtBNDBAgywvALaxQLAAcsEqwTmBJjEApwClgWK\nAcHBAoGyAgA="
+            }, 
+            {
+                "date": "10th March 2017", 
+                "deckstring": "AAECAf0EBMUE1hGIrALtBQ3JA7sCwAHtBMsEuharBPsMnAL7AZYFigGsAQA="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAf0EBsUE7AfWEYisAvsM7QUMyQO7AsAB7QTLBLoWqwScAvsBlgWKAawB\nAA=="
+            }, 
+            {
+                "date": "14th February 2017", 
+                "deckstring": "AAECAf0EBMUE1hGIrALtBQ3JA7sCwAHtBMsEuhb4B6sEnAL7AZYFigGsAQA="
+            }
+        ], 
+        "Secrets Mage": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAf0ECMMBwsMCiwPCwQLuAuwFysEC68ICC8jHAoe9ArsCcasE5gSYxALX\ntgKWBcHBApUDAA=="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAf0EAsrBAumsAg6YxALBwQKHvQLXtgKjtgKBsgLsBZYF5gSrBJUDuwLD\nAXEA"
+            }, 
+            {
+                "date": "24th May 2017", 
+                "deckstring": "AAEBAf0EBr/BArgI+r8C7gLAAYGyAgyjtgKHvQK7AqsEcewFwcECmMQC17YC\nlgW8CJUDAA=="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAf0ECMrBAumsAqG3ApbHAs/HAum6Au4CwwELo7YCh70CuwLsBasEcZjE\nApYFwcEC17YClQMA"
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAf0EBsrDAumsAsMBwAHKwQKBsgIMo7YCh70CuwKrBHHsBcHBAuYEmMQC\n17YClgWVAwA="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAf0EBr8IobcC7gLZuwLAAeu6AgyjtgLXuwK7AuwFcasE5gSYxALXtgKW\nBcHBApUDAA=="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAf0EBOmsAosDysEC67oCDaO2Aoe9ArsCwwHsBXGrBOYEmMQC17YClgXB\nwQKVAwA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0EAsWuAsrBAg6jtgKHvQK7AsMB7AVxqwTmBJjEAte2ApYFwcEClQOB\nsgIA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0EBOmsArC8AsrBAoGyAg2jtgKHvQK7AsMB7AVxqwTmBJjEAte2ApYF\nwcEClQMA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0EBOmsAu4CcfsMDaO2Aoe9AosDuwLDAewFqwSYxALXtgKWBcHBApUD\ngbICAA=="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAf0EAu4CgbICDqO2Aoe9ArsCwwHsBXGrBOYEmMQC17YClgXBwQKVA+u6\nAgA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAf0EBsbBAumsAqO2Au4CwAHZuwIMh70CuwLJDewFqwRxmMQClgXBwQLX\ntgLrugKVAwA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAf0EAsABgbICDqO2Aoe9AskNuwLDAewFcasEmMQC17YClgXBwQKVA+u6\nAgA="
+            }, 
+            {
+                "date": "9th May 2017", 
+                "deckstring": "AAEBAf0ED6O2Aoe9ArsCwwHsBXGrBOYEmMQC17YClgXBwQKVA+u6AoGyAgA="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAf0ED6O2Aoe9ArsCwwHsBXGrBOYEmMQC17YClgXBwQKVA+u6AoGyAgA="
+            }, 
+            {
+                "date": "8th May 2017", 
+                "deckstring": "AAEBAf0EBOmsAqO2Au4CwAENh70CuwLJDasEcewFwcECmMQC17YClgWVA+u6\nAoGyAgA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAf0EBKO2Au4C2bsCwAENh70CuwLJDewFcasEmMQC17YClgXBwQKVA+u6\nAoGyAgA="
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAf0EBKO2Au4CwAHZuwINh70CuwLsBckNqwRxmMQClgXBwQLXtgLrugKV\nA4GyAgA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAf0EAsABo7YCDoe9AsG0ArsCwwHsBXGrBOYEmMQC17YClgXBwQKVA+u6\nAgA="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAf0EBL8I7gLGwQLAAQ2HvQK7AskNwwHsBXGrBNe2ApYFwcEClQPrugKB\nsgIA"
+            }
+        ]
+    }, 
+    "Shaman": {
+        "Midrange Shaman": [
+            {
+                "date": "9th May 2017", 
+                "deckstring": "AAEBAaoIApS9ApfHAg75vwKbwgLrwgL7qgLHwQLgsAKHvAKBBPUE/gWgtgLR\nvALwB/qqAgA="
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAaoIBO0FigemvALCrgINkwTKwwKbwgL7qgLHwQL1CN26AoEE9QT+BaC2\nAva9ApQDAA=="
+            }, 
+            {
+                "date": "16th March 2017", 
+                "deckstring": "AAECAaoIBpS9AvUEhRfwB/qqAva9AgzmuwL7qgK5Bt26As+8Aoe8AoEE/gWy\nFKC2AtG8AsoWAA=="
+            }, 
+            {
+                "date": "14th March 2017", 
+                "deckstring": "AAECAaoIBpS9ArcUkwndugKBBO0FDPuqArkGh7wC9QT+Be4BshSgtgLRvALw\nB8oW+QMA"
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAaoIBJS9ArQUhRf2vQINz7wC5rsC+6oCuQbdugKHvAKBBPUE/gWyFKC2\nAtG8AvkDAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaoIBvYCIN26AoW4Au4B7QUM+6oCtxS5BoEE9QT+BbIUoLYC8AfKFvkD\n9QUA"
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaoIBpS9AoUX7QUggQT1BAy5BvuqAt26Aoe8Av4F7gGyFKC2AtG8AvAH\nyhb5AwA="
+            }, 
+            {
+                "date": "5th March 2017", 
+                "deckstring": "AAECAaoICCCUvQKQB4EE9QT+BYUX7QUL+6oCuQbdugKHvALuAbIUoLYC0bwC\n8AfKFvkDAA=="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAaoIBJS9ArcU3boC7QUN+6oCuQaHvAKBBPUE/gXuAbIUoLYC0bwC8AfK\nFvkDAA=="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAaoIBJS9Au0FjrYCkbwCDea7AvuqArkG3boCz7wCh7wCgQT+BaC2AtG8\nAvAH1AWgvQIA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAaoIBPYChbgC7QUgDbkG+6oCtxSBBPUE/gXuAbIUoLYC8AfKFo62AvkD\nAA=="
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAaoIBJS9AoUX7QX2vQINuQbPvALmuwL7qgLdugKHvAKBBPUE/gWgtgLR\nvAKOtgL6qgIA"
+            }
+        ], 
+        "Elemental Shaman": [
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAaoIAvPCApzBAg7IxwK9AcLDApnCAsrDAoEE9QSHxAL+BaC2AvAHk8EC\nl8EC68ICAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBPPCAiCTCe0FDcjHAr0BwsMCmcIC3boC9QTGxwKHxAL+BaC2AvAH\nk8EC68ICAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBPPCArHEAoEE7QUN8AecwQLIxwK9AcLDApnCAsrDAvUEh8QC/gWg\ntgKTwQLrwgIA"
+            }
+        ], 
+        "Aggro Shaman": [
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAaoIBOO+ArHCApvEAtsDDYe8AuO7AqcIh8QC/gXFA53CApHBAtAHoLYC\n0bwC8AfjBQA="
+            }, 
+            {
+                "date": "23rd March 2017", 
+                "deckstring": "AAECAaoIBJS9AoQXkbwC5QcN1AX+qgK5Boe8AveqAuAG7gGyFKC2AtG8AvAH\nyhb5AwA="
+            }, 
+            {
+                "date": "12th March 2017", 
+                "deckstring": "AAECAaoIBpS9ArkG7QWEF5G8AuUHDP6qAoe8AveqAuAG7gGyFKC2AtG8AvAH\nyhbUBfkDAA=="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAaoIApS9AoQXDrkGuhP1Bf6qAoe8AveqAuAG7gGyFKC2AtG8AvAHyhb5\nAwA="
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAaoIApS9AuO+Ag7+qgKHvAL3qgKnCOAG7gGyFKC2AtG8AvAH4wXKFvkD\n9QUA"
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAaoIApQUhBcO4AKHvAL3qgLgBu4BuhOyFO8BoLYC0bwC8AfKFvkD9QUA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAaoIBpS9Au0F1AWEF5G8AqC2Agy5BqC9Aoe8AveqAuAG7gGyFNG8AvAH\nyhaOtgL5AwA="
+            }
+        ], 
+        "Jade Shaman": [
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaoIApS9ApG8Ag7rwgKbwgKRwQL5vwL2vQLRvAKHvAKgtgL7qgL6qgKT\nCfAH5QeBBAA="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaoIApS9ApG8Ag77qgKTCfm/Aoe8AoEEm8IC9r0C0bwC8AeRwQKgtgL6\nqgLlB+vCAgA="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaoIApS9ApG8Ag7rwgKbwgKRwQL5vwL2vQLRvAKHvAKgtgL7qgL6qgKT\nCfAH5QeBBAA="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaoIApS9ApG8Ag7rwgKbwgKRwQL5vwL2vQLRvAKHvAKgtgL7qgL6qgKT\nCfAH5QeBBAA="
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAaoIBPPCApS9ApG8AuUHDcrDAuvCApHBAtG8Aoe8AqC2Av6qAvuqApMJ\n8AfUBYEEvQEA"
+            }, 
+            {
+                "date": "3rd June 2017", 
+                "deckstring": "AAEBAaoIApS9ApG8Ag7PvAKbwgLrwgLlB/uqAv6qApMJh7wCgQSRwQKgtgLR\nvALwB/a9AgA="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAaoIBOa7ApS9Aqa8AvUEDfuqAsfBAt26As+8Aoe8ApvCApfHAoEEh8QC\n/gWgtgLRvAL2vQIA"
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAaoIApS9Av8FDvAH9qoC+6oCkwmWsgLPvAKHvAKBBP4FkcECoLYC0bwC\n68ICvgYA"
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAaoIBpS9AoEEwAfZB5G8AuUHDPuqApMJh7wCqwbuAZHBAqC2AtG8AvAH\n1AWXwQLrwgIA"
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAaoIApS9Au0FDvuqAsfBAt26As+8Aoe8ApvCApfHAoEEh8QC/gWgtgLR\nvAL2vQL5AwA="
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAaoIBJS9Au0FkbwC9r0CDfuqAvm/ApMJh7wCm8ICgQSRwQKgtgLRvALw\nB/qqAuvCAuUHAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaoIBvPCApS9AsfBApMJ9r0CkbwCDPuqAr0Bh7wCm8ICgQSHxAL+BaC2\nAtG8AvAH68IC5QcA"
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAaoIBpS9ApAHwq4Cl8cCh8QC3sQCDOa7AvuqAsfBAt26As+8Aoe8ApvC\nAvUE/gWgtgLRvAL2vQIA"
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAaoICvPCAua7ApS9AsKuAsrDAoEE9QTwB/a9Au0FCr0B0hHdugLPvAKH\nvAKHxAL+BaC2AtG8AuvCAgA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAaoIApS9AuO+Ag6HvAKxwgLjuwKnCMUDncICkcECoLYC0bwC8AfjBdsD\n+QPrwgIA"
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAaoIBvuqAvsFqwaBBJG8AvUFDNMBkwmHvALjuwKnCKHCApHBAqC2AtG8\nAvAH1AXrwgIA"
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAaoIBvPCAsjHApS9AsrDAoEE7QUMvQHCwwKHvAKTwQKbwgL1BIfEAv4F\noLYC0bwC8AfrwgIA"
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAaoIArHBApG8Ag77qgKTCYe8AqsGysMCgQSGxAKgtgLRvALwB9kH68IC\n5Qf1BQA="
+            }, 
+            {
+                "date": "25th April 2017", 
+                "deckstring": "AAECAaoIBpS9AoW4Au0FIJMJ9QQM3sQC+6oClrICh7wCgQT+BaC2AtG8AvAH\n9qoC+QO+BgA="
+            }, 
+            {
+                "date": "21st April 2017", 
+                "deckstring": "AAECAaoIBvPCApS9ApAHkwn1BPa9AgzIxwK9AcLDApnCAsrDAoe8AofEAv4F\noLYC0bwC8AfrwgIA"
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAaoIBvPCApS9AsrDApfHAvUE7QUM+6oCvQHCwwKZwgKHvAKBBIfEAv4F\noLYC0bwC8AfrwgIA"
+            }, 
+            {
+                "date": "18th April 2017", 
+                "deckstring": "AAECAaoIBJfHApS9AqsGkbwCDfuqApMJh7wCz7wCgQT+BZHBAvAHoLYC0bwC\n1AXrwgL1BQA="
+            }, 
+            {
+                "date": "18th April 2017", 
+                "deckstring": "AAECAaoIBJS9AuO+Av4FkbwCDfuqApMJh7wC47sCpwiBBJHBAqC2AtG8AvAH\n4wXrwgLlBwA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaoIBKsGwAeRvAKUvQIN+6oCkwnPvALUBfUFh7wCgQT+BZHBAqC2AtG8\nAvAH68ICAA=="
+            }, 
+            {
+                "date": "13th April 2017", 
+                "deckstring": "AAECAaoIBJS9AqsGwAeRvAIN+6oCkwnPvAKHvAL+BYEE0bwC8AeRwQKgtgLU\nBevCAvUFAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAaoIBPPCApS9ApMJgQQNyMcCvQGmvgKHvALKwwKbwgL1BP4FkcECoLYC\n0bwC8AfrwgIA"
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBPPCApS9ApnCAoEEDcjHAvuqAr0BwsMCh7wC9QTGxwKHxAL+BaC2\nAtG8AvAH68ICAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBPPCApS9Ava9ApG8Ag3CwwKHvAKZwgKHxAL+BfUEysMC0bwC8Aeg\ntgLUBfkD68ICAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBPPCApS9ApG8AuUHDcLDApnCAsrDAoe8AvUEh8QC/gWgtgLRvALw\nB9QF+QPrwgIA"
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBCDzwgL1BO0FDcrDAt26ApzBAsjHAr0BwsMCmcICh8QC/gWOtgKg\ntgLwB5PBAgA="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAaoIBPkDlL0C7QXzwgIN9QTKwwL+BaC2AsjHAr0BwsMCmcICh7wC0bwC\nxscCk8EC68ICAA=="
+            }
+        ], 
+        "Custom Shaman": [
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAaoIBuCsAqIQgg65Daa8AoW4AgzHwQKBDvUI9QT+BbQUsgaRDqC2Ava9\nApQD0hMA"
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAaoIBJS9AtQFkbwC5QcNuQaHvAL3qgLgBu4BshSgtgLRvALkwgLwB9YP\nyhb5AwA="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAaoIBuCsAqIQ9gKFuAKmvALSEwyBDvuqAsfBAvUI9QT+BbQUsgagtgL2\nvQKUA/kDAA=="
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAaoIBJS9AoQXkbwC/qoCDeTCAuUHh7wC96oC4AbuAbIUoLYC0bwC8AfW\nD8oW+QMA"
+            }, 
+            {
+                "date": "25th March 2017", 
+                "deckstring": "AAECAaoIBJS9AoQXkbwC5QcN/qoCuQaHvAL3qgLgBu4BshSgtgLRvALwB8oW\nqAX5AwA="
+            }, 
+            {
+                "date": "21st March 2017", 
+                "deckstring": "AAECAaoIBJS9AoQXkbwC5QcN/qoCuQaHvAL3qgLgBu4BshSgtgLRvALwB8oW\n1AX5AwA="
+            }
+        ], 
+        "Control Shaman": [
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAaoIBOCsAqQDprwCwq4CDfuqAsfBArHEAt26ApvCApfHAoEE9QSHxAL+\nBaC2At/EAva9AgA="
+            }, 
+            {
+                "date": "20th April 2017", 
+                "deckstring": "AAECAaoIBKIJkAemvALCrgINyccCm8IC+6oCx8EC9QixxALdugKBBPUEh8QC\n/gWgtgKUAwA="
+            }, 
+            {
+                "date": "8th April 2017", 
+                "deckstring": "AAECAaoIAqIJprwCDsnHAvuqAsfBAvUIscQC3boCgQT1BIfEAv4FoLYCigHf\nxAKUAwA="
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAaoIBqirAqIJ9gLxxgKmvAKFuAIM+6oC9Qj1BP4FtBSyBrwUoLYC8RH2\nvQKUA/kDAA=="
+            }, 
+            {
+                "date": "5th March 2017", 
+                "deckstring": "AAECAaoICPYCuQ2mvALCrgL1CIW4ArQU7QUL+6oCkwSBBPUE/gWyBrwUoLYC\n8RHRvAKUAwA="
+            }, 
+            {
+                "date": "4th March 2017", 
+                "deckstring": "AAECAaoICOCsAvYCuQ2kA6a8AsKuAsSuAu0FC/uqAvUI3boCgQT1BP4FtBS8\nFKC2AvERlAMA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAaoIBpS9AoUX7QW0FPER0hMMuQbPvALmuwL7qgLdugKHvAKBBPUE/gWg\ntgLRvAKOtgIA"
+            }
+        ]
+    }, 
+    "Priest": {
+        "Reno Priest": [
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAa0GHuG/AscXognDFqqyAukSuQbqvwKDuwLJBrcXursCt7sC2AqJFI0I\n2LsChRfoEoK1AooBigfTCvC7AqQU1wruEeUE8gyXAgA="
+            }
+        ], 
+        "N'Zoth Priest": [
+            {
+                "date": "15th April 2017", 
+                "deckstring": "AAECAa0GHuCsAqQD6r8CwsMCg7sCvsgC4b8CyQawwgKZwgL6sAKStALYuwK3\nuwIeysMC2ArTCvC7AsbHAtcK0cEC2MEC+wGKAd/EAuUEtbsC8gzVwQIA"
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAa0GBOCsAqQDz8cC1woN6r8C3MEC7QHTCvsM9gfRwQKKAd/EAuUE8gzV\nwQLSCgA="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAa0GHuCsAuq/AqQDkAKDuwLPxwLJBtzBAvqwAqGsApK0Ati7AoCvAtMK\n8LsC2cECtMQC1wrRwQL7AYoB38QC7QXlBLW7Aui/AvIM3sQC1cEClsQCAA=="
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAa0GBOCsAoqwAtcKlsQCDbGvAvsFq8IC+wHfxAKJtALexALqvwLcwQLT\nCsPBAuUE1cECAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAa0GBuCsAqQDz8cCycIC7QWWxAIMxsICtMQC+wHqvwLcwQL6sALTCsPB\nAtnBAtcK5QTVwQIA"
+            }
+        ], 
+        "Custom Priest": [
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAa0GHsnHAqG3ApnIAtUK6r8CkAKDuwK+yALJBtwBkrQC2LsC7QEe0wrw\nuwKwvALTxQLZwQL2B9cK0cEC2MECigHfxALlBLW7AvIM1cEC0goA"
+            }
+        ], 
+        "Midrange Priest": [
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAa0GBr7IAs/HAtzBApK0ArW7AqUJDMrDAvC7AvsM9gfXCtHBAtjBAtEK\n5QTyDPgC0goA"
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAa0GAocXt7sCDsnHAuq/Arq7Au0B0wrVCPYH1wrRwQKCtQKKAeUE8gzS\nCgA="
+            }, 
+            {
+                "date": "9th May 2017", 
+                "deckstring": "AAECAa0GBr7IApAHz8cCtbsCpQnSCgzcwQLwuwL7DPYH1wrRwQLYwQLRCuUE\n8gz4AtLBAgA="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAECAa0GBuCsAoqwAs/HAsnCAvsF1woM6r8C3MEC0wrDwQLwuwLGwgLRwQLf\nxALlBPIM3sQC1cECAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAa0GCKG3ApnIAr7IAskGz8cCm8IC38QC1cECC+q/ApK0AsrDAtMK8LsC\n1wrRwQLYwQLlBLW7AvIMAA=="
+            }, 
+            {
+                "date": "16th April 2017", 
+                "deckstring": "AAECAa0GBL7IAs/HAvYH0sECDZnIAuq/ApK0Ah7TCtnBAtcK0cEC2MEC5QS1\nuwLyDNXBAgA="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAa0GBs/HAqG3ApnIAr7IAuG/ArW7AgzKwwLqvwLJBpK0AtMK8LsC1wrR\nwQLYwQK9uwLlBPIMAA=="
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAa0GBL7IAkTtAdcKDfsM1QjwuwL4AvYH0cEC2MEC0sEC5QS1uwLRCvIM\n0goA"
+            }, 
+            {
+                "date": "17th April 2017", 
+                "deckstring": "AAECAa0GAr7IAtcKDpK0Au0B0wrwuwLVCPsM9gfRwQLYwQLRCuUE8gz4AtIK\nAA=="
+            }
+        ], 
+        "Control Priest": [
+            {
+                "date": "7th June 2017", 
+                "deckstring": "AAECAa0GBqG3ApnIAr7IAskGkAfPxwIM0cEC6r8CkrQC0wrZwQLXCtjBAt/E\nAuUEtbsC8gzVwQIA"
+            }, 
+            {
+                "date": "5th June 2017", 
+                "deckstring": "AAECAa0GDOmsAuq/Ar7IAuG/As/HAtMK8LsCsLwC08UC2cECp6wC0sECCZK0\nAu0B9gfRwQLYwQLlBLW7AvIM0goA"
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAa0GCOmsAgihtwKQAr7IAuyuAtwBtbsCC5nIAuq/ApK0Ah7TCtnBAtcK\n0cEC2MEC5QTyDAA="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAa0GHqG3AgiZyAKGrQLVCuq/ApACg7sCyQbPxwKStALYuwK3uwLtAcrD\nAtgK0wrTxQKdvQL7DPYH1wrRwQL7Ad/EAuUEtbsC8gy7A6UJAA=="
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAa0GAqG3As/HAg7XCpnIAuq/AuG/Au0B0wrwuwLZwQL2B+UE5MICtbsC\n8gzSCgA="
+            }
+        ], 
+        "Purify Priest": [
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAvC7Ag7FxwL7DPYH0cEC2MECrLQC0QrdBOUEtbsC8gz4AqUJ\n0goA"
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAa0GAr7IAvC7Ag7FxwL7DPYH0cEC2MECrLQC0QrdBOUEtbsC8gz4AqUJ\n0goA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAsrDAg6prQLwuwLFxwL7DNHBAtjBAqy0AtEK3QTlBLW7AvIM\n+AKlCQA="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAs/HAg7JBqmtAvC7AsXHAtHBAtjBAqy0AtEK3QTlBLW7AvIM\n+AKlCQA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAvsMDqmtAvC7AsXHAtHBAtjBAqy0AtEK38QC3QTlBLW7AvIM\n+AKlCQA="
+            }, 
+            {
+                "date": "12th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAvC7Ag7FxwL7DPYH3QTRwQLYwQKstALRCuUEtbsC8gz4AqUJ\n0goA"
+            }, 
+            {
+                "date": "5th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAsrDAg6prQLwuwLFxwL7DNHBAtjBAqy0AtEK3QTlBLW7AvIM\n+AKlCQA="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAa0GAr7IArsDDqmtAvC7AsXHAvsM0cEC2MECrLQC0QrdBOUEtbsC8gz4\nAqUJAA=="
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAvYHDvsMtbsCqa0C8LsCxccC0cEC2MECrLQC0QrdBOUE8gz4\nAqUJAA=="
+            }, 
+            {
+                "date": "10th April 2017", 
+                "deckstring": "AAECAa0GBL7IAuG/AvsF1woNqa0C8LsCxccC+wz7BtHBAqy0AtEK3QTlBPIM\n+AKlCQA="
+            }
+        ], 
+        "Dragon Priest": [
+            {
+                "date": "3rd June 2017", 
+                "deckstring": "AAEBAa0GBIUXyQbTCtcKDekSuQaJFIK1Arq7AtnBAqQU0cEC2MEC7hHlBLW7\nAvIMAA=="
+            }, 
+            {
+                "date": "28th May 2017", 
+                "deckstring": "AAEBAa0GAuq/Ar7IAg7JxwKqsgK6uwKNCMrDAvC7AtHBAtjBAoK1AtEK5QS1\nuwLyDPgCAA=="
+            }, 
+            {
+                "date": "23rd May 2017", 
+                "deckstring": "AAEBAa0GBOq/As/HAtPFAvYHDcnHArq7Ao0IkrQC0wrwuwLXCtHBAtjBAoK1\nAuUEtbsC8gwA"
+            }, 
+            {
+                "date": "22nd May 2017", 
+                "deckstring": "AAEBAa0GBKqyAr7IAs/HAo0IDcnHAuq/AtERkrQC0wrwuwLXCtHBAtjBAoK1\nAuUEtbsC8gwA"
+            }, 
+            {
+                "date": "9th May 2017", 
+                "deckstring": "AAEBAa0GBKqyAr7IAs/HAvsFDcnHAuq/AtERkrQC0wrwuwLXCtHBAtjBAoK1\nAuUEtbsC8gwA"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAa0GAuG/AtMKDsnHAuq/AqqyAtERjQiStALZwQLXCtHBAtjBAoK1AuUE\ntbsC8gwA"
+            }, 
+            {
+                "date": "3rd May 2017", 
+                "deckstring": "AAEBAa0GBM/HAtPFAtcK0sECDcnHAuq/Arq7Au0B0wrVCPYH0cECgrUC38QC\n5QTyDNIKAA=="
+            }, 
+            {
+                "date": "1st May 2017", 
+                "deckstring": "AAEBAa0GBL7IAs/HAtEK+AINyccC6r8CqrIC0RGNCNMK8LsC1wrRwQLYwQKC\ntQLlBPIMAA=="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAa0GBsIGyccCvsgC4b8CtbsC6L8CDOq/ApACursCkrQC0wrwuwL2B9cK\ngrUC5QTyDNLBAgA="
+            }, 
+            {
+                "date": "27th April 2017", 
+                "deckstring": "AAEBAa0GAr7IAs/HAg7JxwLqvwKqsgK6uwKNCNMK8LsC1wrRwQLYwQKCtQLl\nBLW7AvIMAA=="
+            }, 
+            {
+                "date": "23rd April 2017", 
+                "deckstring": "AAECAa0GBKIJz8cC08UC2cECDcnHAuq/AqqyArq7Ao0IkrQC0wrXCtHBAoK1\nAuUEtbsC8gwA"
+            }, 
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAa0GAr7IAskGDrW7AsnHAuq/AqqyArq7Ao0I0wrwuwLXCtHBAtjBAoK1\nAuUE8gwA"
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAa0GBMIGyccC0Qq1uwIN6r8CursCkrQCjQjTCvC7AtHBAtcK2MECgrUC\n5QT4AvIMAA=="
+            }, 
+            {
+                "date": "9th April 2017", 
+                "deckstring": "AAECAa0GBL7IAskG08UC2cECDcnHAuq/AqqyAtERjQjTCvC7AtcK0cEC2MEC\ngrUC5QTyDAA="
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAa0GBL7IAskG2cECigcNyccC6r8CqrICursCjQjTCvC7AtcK0cEC2MEC\ngrUC5QTyDAA="
+            }, 
+            {
+                "date": "7th April 2017", 
+                "deckstring": "AAECAa0GBMnHAsjHAqqyAr7IAg3qvwK6uwKStALTCtnBAvC7AtHBAtcK2MEC\ngrUC1cEC5QTyDAA="
+            }, 
+            {
+                "date": "12th March 2017", 
+                "deckstring": "AAECAa0GBPYC6r8CyQaFFw2qsgK6uwLpErkGiRTTCte7AqQU1wqCtQLuEeUE\n8gwA"
+            }, 
+            {
+                "date": "11th March 2017", 
+                "deckstring": "AAECAa0GBPsFhReqsgKCtQINpBTqvwLREekSuQaJFNMK8LsC1wqKB+4R5QTy\nDAA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAa0GBqqyArkG+wWFF+q/AskGDOkSiRToEoK1Arq7AtMK8LsCpBTXCu4R\n5QTyDAA="
+            }, 
+            {
+                "date": "8th March 2017", 
+                "deckstring": "AAECAa0GCNER+wWFF+gS6r8CyQbXCrW7AgvpErkGiRSCtQK6uwLTCvC7AqQU\n7hHlBPIMAA=="
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAa0GBqIJ6r8CyQaFF4oHtbsCDNER6RK5BokU0wrXuwKkFNcKgrUC7hHl\nBPIMAA=="
+            }, 
+            {
+                "date": "2nd March 2017", 
+                "deckstring": "AAECAa0GCtcK4KwC+hS5Deq/AqQDyQb7BYUX7hEKursC6RKJFNMK8LsCpBSC\ntQK+FuUE8gwA"
+            }, 
+            {
+                "date": "12th February 2017", 
+                "deckstring": "AAECAa0GHrkNognDFqqyApAH6RK5BokU2LsCsLwChReCtQKKAYoH3sQC6r8C\ng7sCyQa6uwLcAZK0AtgK0wrwuwKkFNcKvhbuEeUE8gwA"
+            }, 
+            {
+                "date": "3rd February 2017", 
+                "deckstring": "AAECAa0GBPYC0RH7BYUXDckGursC6RK5BokU0wrwuwKkFNcKgrUC7hHlBPIM\nAA=="
+            }
+        ], 
+        "OTK Priest": [
+            {
+                "date": "17th May 2017", 
+                "deckstring": "AAEBAa0GCL7IArDCApK0Au0B1Qj2B9cKpQkLysMC8LsC+wzRwQLYwQLRCuUE\ntbsC8gz4AtIKAA=="
+            }, 
+            {
+                "date": "19th April 2017", 
+                "deckstring": "AAECAa0GAr7IAqUJDpnCAsrDAvsM38QC3MECkrQC8LsC0cEC2MEC0QrlBLW7\nAvIM+AIA"
+            }, 
+            {
+                "date": "6th April 2017", 
+                "deckstring": "AAECAa0GAr7IAtMKDpK0AvC7AtUI+wz2B9cK0cEC2MEC0QrlBLW7AvIM+ALS\nCgA="
+            }, 
+            {
+                "date": "9th March 2017", 
+                "deckstring": "AAECAa0GBsUECdYRtxe3uwLtBQzhB/sM9gf6EaEE+wGnrALlBPIMlwKWFNIK\nAA=="
+            }, 
+            {
+                "date": "6th March 2017", 
+                "deckstring": "AAECAa0GBNYR1wq1uwLovwIN7RbtAdMK8LsC1Qj7DPYH0QrfxALlBPIM+ALS\nCgA="
+            }
+        ]
+    }
+}

@@ -19,6 +19,9 @@ TECH_CARD_DECK_THRESHOLD = 0.3
 COMMON_CARD_CLUSTER_THRESHOLD = 0.93
 LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
 
+CLASSIFICATION_SCORE_THRESHOLD = 3
+UPDATE_CLUSTER_SIMILARITY_THRESHOLD = 0.9
+
 
 pp = pprint.PrettyPrinter(indent=4)
 db, _ = load()
@@ -99,7 +102,7 @@ class ClusterSet(object):
 			prev_cluster_set = self.player_class_clusters[player_class]
 			for cluster in cluster_set.clusters:
 				prev_cluster, similarity = prev_cluster_set.find_cluster(cluster)
-				if similarity < 0.9:
+				if similarity < UPDATE_CLUSTER_SIMILARITY_THRESHOLD:
 					print("New %s cluster! (best match %s)" % (player_class, similarity))
 				else:
 					print("Found matching %s cluster with %s similarity" % (player_class, similarity))
@@ -295,9 +298,9 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 			if score > best_score:
 				best_score = score
 				best_cluster = cluster
-		if best_score > 3:
-			return best_cluster
-		return None
+		if best_score > CLASSIFICATION_SCORE_THRESHOLD:
+			return best_cluster, best_score
+		return None, None
 
 
 class Cluster(PrettyClusterMixin):
