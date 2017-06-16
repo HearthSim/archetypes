@@ -388,5 +388,5 @@ class Cluster(PrettyClusterMixin):
 		)
 
 	def signature_score(self, card_list):
-		return sum(val for card, val in self.signature.items() if card in card_list)
+		return sum(self.signature.get(card, 0) for card in card_list)
 
