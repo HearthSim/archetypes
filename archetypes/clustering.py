@@ -19,8 +19,11 @@ TECH_CARD_DECK_THRESHOLD = 0.3
 COMMON_CARD_CLUSTER_THRESHOLD = 0.93
 LOW_VOLUME_CLUSTER_MULTIPLIER = 1.5
 
-CLASSIFICATION_SCORE_THRESHOLD = 3
+CLASSIFICATION_SCORE_THRESHOLD = 0
 UPDATE_CLUSTER_SIMILARITY_THRESHOLD = 0.9
+
+CORE_CLASSIFICATION_WEIGHT = 1.0
+TECH_CLASSIFICATION_WEIGHT = 0.5
 
 
 pp = pprint.PrettyPrinter(indent=4)
@@ -67,21 +70,27 @@ class ClusterSet(object):
 
 	def __init__(self, player_class_clusters):
 		self.player_class_clusters = player_class_clusters
+		self.decks = None
 
 	@classmethod
 	def from_input_data(cls, input_data):
 		clusters = {}
-		input_map = {int(k): v for k, v in input_data["map"].items()}
+		decks = input_data["decks"]
+		card_map = input_data["map"]
+		input_map = {int(k): v for k, v in card_map.items()}
 		for player_class in CardClass:
 			if CardClass.DRUID <= player_class <= CardClass.WARRIOR:
 				cluster_set = PlayerClassClusters.create(
 					player_class,
 					input_map,
-					input_data["decks"].get(str(int(player_class)), [])
+					decks.get(str(int(player_class)), [])
 				)
 				clusters[player_class.name] = cluster_set
 
-		return ClusterSet(clusters)
+		cluster_set = ClusterSet(clusters)
+		cluster_set.decks = decks
+		cluster_set.card_map = card_map
+		return cluster_set
 
 	@classmethod
 	def from_file(cls, fp):
@@ -112,11 +121,11 @@ class ClusterSet(object):
 
 		return ClusterSet(new_player_class_clusters)
 
-	def classify_deck(self, player_class, card_list, card_map):
+	def classify_deck(self, player_class, card_list):
 		# card_map needs to be card_id to seq ids
 		pcc = self.player_class_clusters[player_class]
-		cards = [card_map[c] for c in card_list]
-		cluster = pcc.classify_deck(cards)
+		# cards = [card_map[int(c)] for c in card_list]
+		cluster = pcc.classify_deck(card_list)
 		return cluster
 
 
@@ -135,6 +144,8 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 		instance._card_map = card_map
 		instance.player_class = player_class
 
+		# decks = [d for d in decks if d["observations"] >= 1000]
+
 		common_cards = defaultdict(int)
 		for deck in decks:
 			for card, count in deck["cards"].items():
@@ -149,42 +160,24 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 		instance.common_cards = common_cards
 		instance.num_decks = num_decks
 
-		deck_matrix = []
-		for deck in decks:
-			vector = [0] * len(card_map)
-			for card, count in deck["cards"].items():
-				if card not in common_cards:
-					vector[int(card)] = count
-			deck_matrix.append(vector)
-
-		# print("deck matrix", deck_matrix)
-		# Then do clustering work
-		x = StandardScaler().fit_transform(deck_matrix)
-
-		# TODO find good random state, other way go get consistent result
-		# or a way do deal with inconsitent results
-		clusterizer = KMeans(
-			n_clusters=min(NUM_CLUSTERS_REQUESTED, len(deck_matrix)),
-			random_state=827466192
-		)
-		clusterizer.fit(x)
-
 		clustered_decks = defaultdict(list)
-		for deck, cluster_id in zip(decks, clusterizer.labels_):
-			clustered_decks[cluster_id].append(deck)
+		for deck in decks:
+			if deck["archetype_id"]:
+				clustered_decks[deck["archetype_id"]].append(deck)
 
-		for cluster_id, decks in clustered_decks.items():
-			cluster = Cluster.create(instance, str(cluster_id), decks, common_cards)
-			instance.clusters.append(cluster)
+		for archetype_id, decks in clustered_decks.items():
+			if len(decks) > 2:
+				cluster = Cluster.create(instance, str(archetype_id), decks, common_cards)
+				instance.clusters.append(cluster)
 
-		na = np.array([cluster.observations for cluster in instance.clusters])
-		avg = np.mean(na, axis=0)
-		observation_cutoff = avg / LOW_VOLUME_CLUSTER_MULTIPLIER
+		# na = np.array([cluster.observations for cluster in instance.clusters])
+		# avg = np.mean(na, axis=0)
+		# observation_cutoff = avg / LOW_VOLUME_CLUSTER_MULTIPLIER
 
-		instance._merge_clusters()
+		# instance._merge_clusters()
 
-		for cluster in instance.clusters:
-			cluster.prevalence = "rare" if cluster.observations < observation_cutoff else "common"
+		# for cluster in instance.clusters:
+		# 	cluster.prevalence = "rare" if cluster.observations < observation_cutoff else "common"
 
 		return instance
 
@@ -391,5 +384,10 @@ class Cluster(PrettyClusterMixin):
 		)
 
 	def signature_score(self, card_list):
-		return sum(self.signature.get(card, 0) for card in card_list)
+		score = 0
+		if len(self.cards["core"]):
+			score += sum(self.cards["core"].get(card, 0) for card in card_list) * CORE_CLASSIFICATION_WEIGHT / len(self.cards["core"])
+		if len(self.cards["tech"]):
+			score += sum(self.cards["tech"].get(card, 0) for card in card_list) * TECH_CLASSIFICATION_WEIGHT / len(self.cards["tech"])
+		return score
 

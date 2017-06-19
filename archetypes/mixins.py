@@ -48,6 +48,10 @@ class PrettyClusterMixin(object):
 		)
 
 	@property
+	def common_cards(self):
+		return [self._player_class_cluster.card_name(c) for c in self.cards["common"].keys()]
+
+	@property
 	def core_cards(self):
 		return [self._player_class_cluster.card_name(c) for c in self.cards["core"].keys()]
 
