@@ -25,6 +25,8 @@ UPDATE_CLUSTER_SIMILARITY_THRESHOLD = 0.9
 CORE_CLASSIFICATION_WEIGHT = 1.0
 TECH_CLASSIFICATION_WEIGHT = 0.5
 
+CLASS_CLUSTER_PREVALENCE_FACTOR = 3
+
 
 pp = pprint.PrettyPrinter(indent=4)
 db, _ = load()
@@ -170,6 +172,24 @@ class PlayerClassClusters(PrettyPlayerClassClustersMixin):
 				cluster = Cluster.create(instance, str(archetype_id), decks, common_cards)
 				instance.clusters.append(cluster)
 
+		num_clusters = len(instance.clusters)
+
+		if num_clusters > 1:
+			for cluster in instance.clusters:
+				other_clusters = [c for c in instance.clusters if c != cluster]
+				for group in ["core", "tech"]:
+					for card in cluster.cards[group].keys():
+						count = 0.0
+						for other_cluster in other_clusters:
+							for other_card in other_cluster.signature.keys():
+								if card == other_card:
+									count += 1
+									break
+
+						ccp = (1 - count / num_clusters)
+						cluster.cards[group][card] += CLASS_CLUSTER_PREVALENCE_FACTOR * ccp * ccp
+
+
 		# na = np.array([cluster.observations for cluster in instance.clusters])
 		# avg = np.mean(na, axis=0)
 		# observation_cutoff = avg / LOW_VOLUME_CLUSTER_MULTIPLIER
@@ -307,12 +327,6 @@ class Cluster(PrettyClusterMixin):
 		self.prevalence = prevalence
 		self._has_metadata = False
 
-		self.signature = {}
-		if "core" in cards:
-			self.signature.update(cards["core"])
-		if "tech" in cards:
-			self.signature.update(cards["tech"])
-
 	@classmethod
 	def create(cls, player_class_cluster, cluster_id, decks, common_cards, parents=None, parent_similarity=None):
 
@@ -382,6 +396,14 @@ class Cluster(PrettyClusterMixin):
 			data["observations"],
 			data["prevalence"]
 		)
+
+	@property
+	def signature(self):
+		cards = {}
+		for group in ["core", "tech"]:
+			if group in self.cards:
+				cards.update(self.cards[group])
+		return cards
 
 	def signature_score(self, card_list):
 		score = 0
